@@ -10,7 +10,7 @@ differ in exactly one further coordinate `j`.
 Source: F. Sagols, G. Morales-Luna, *Parity balance of the i-th dimension edges in Hamiltonian
 cycles of the hypercube*, arXiv:1009.3304 (2010), Conjecture 5.1.
 
-Status: open. Verified by computer for `n ≤ 6`; see README.md.
+Status: **false**. `Counterexample.lean` builds a square-free Hamiltonian cycle of `Q_8`.
 -/
 import Mathlib.Combinatorics.SimpleGraph.Hamiltonian
 
@@ -36,9 +36,9 @@ def HasInscribedSquare {n : ℕ} {v : Fin n → Bool} (c : (cube n).Walk v v) : 
     s(u, flip u i) ∈ c.edges ∧ s(flip u j, flip (flip u j) i) ∈ c.edges
 
 /-- **Sagols–Morales-Luna conjecture.** Every Hamiltonian cycle of `Q_n`, `n ≥ 2`, has an
-inscribed square. -/
-theorem hamiltonian_cycle_has_inscribed_square (n : ℕ) (hn : 2 ≤ n) (v : Fin n → Bool)
-    (c : (cube n).Walk v v) (hc : c.IsHamiltonianCycle) : HasInscribedSquare c := by
-  sorry
+inscribed square. It is **false**: see `not_conjecture` in `Counterexample.lean`. -/
+def Conjecture : Prop :=
+  ∀ n : ℕ, 2 ≤ n → ∀ (v : Fin n → Bool) (c : (cube n).Walk v v),
+    c.IsHamiltonianCycle → HasInscribedSquare c
 
 end Conjectures.HypercubeSquares

@@ -1,6 +1,8 @@
 # Inscribed squares in Hamiltonian cycles of the hypercube
 
-**Status:** Open (n ≤ 6 checked by computer; n = 7 is the smallest open case)
+**Status:** **False.** A square-free Hamiltonian cycle of $Q_8$ is checked in Lean
+(`not_conjecture` in `Counterexample.lean`). Square-free cycles of $Q_9$ and $Q_{10}$ are in
+`computations/counterexamples/`.
 
 ## Statement
 
@@ -12,62 +14,59 @@ exactly one other coordinate.
 **Conjecture (Sagols & Morales-Luna, 2010).** For every $n \ge 2$, every Hamiltonian
 cycle of $Q_n$ has an inscribed square.
 
-Formal statement: `hamiltonian_cycle_has_inscribed_square` in `Main.lean`.
+Source: F. Sagols, G. Morales-Luna, *Parity balance of the i-th dimension edges in
+Hamiltonian cycles of the hypercube*, arXiv:1009.3304 (2010), Conjecture 5.1.
 
-## Source
+## Result
 
-F. Sagols, G. Morales-Luna, *Parity balance of the i-th dimension edges in Hamiltonian
-cycles of the hypercube*, arXiv:1009.3304 (2010), Conjecture 5.1.
+**Theorem (`not_conjecture`).** The conjecture is false: $Q_8$ has a Hamiltonian cycle
+with no inscribed square.
 
-## Reformulation
+| n | square-free Hamiltonian cycle? | how we know |
+|---|---|---|
+| 2–5 | none | exhaustive search, `computations/square_free_search.c` |
+| 6 | none | CP-SAT search (shortlist notes) |
+| 7 | none (claimed) | SAT refutation with a DRUP proof (audit zip; not re-checked with drat-trim here) |
+| 8 | **yes** | Lean kernel check + `check_square_free_cycle.py` |
+| 9, 10 | **yes** | `check_square_free_cycle.py` |
 
-For each direction $i$, let $S_i \subseteq V(Q_{n-1})$ be the set of direction-$i$
-edges of $H$, each projected by deleting coordinate $i$. Then $H$ is square-free
-exactly when every $S_i$ is an independent set in $Q_{n-1}$. The sizes satisfy
-$\sum_i |S_i| = 2^n$.
+So if the $n = 7$ claim holds, the conjecture is true exactly for $n \le 7$ among the cases
+checked so far. Whether square-free cycles exist for every $n \ge 8$ is open.
 
-A local consequence: if $H$'s direction sequence contains the pattern $a\,b\,a$ (three
-consecutive edges), the first and third edges are opposite sides of a square. So a
-square-free $H$ has a direction sequence with no $aba$ pattern, cyclically. That
-condition alone isn't enough to give a contradiction.
+## Files
 
-## Known results
+- `Main.lean`: definitions (`cube`, `flip`, `HasInscribedSquare`) and the statement
+  `Conjecture`.
+- `Cert.lean`: a general certificate theorem. A list of natural numbers (bit $i$ is
+  coordinate $i$) that passes the Boolean check `goodCycle` gives a Hamiltonian cycle of
+  `cube n` with no inscribed square (`exists_of_goodCycle`). The square test uses a
+  bitmask of edge codes, so the kernel check is fast.
+- `Counterexample.lean`: the $Q_8$ cycle, `q8_good : goodCycle 8 … = true` by
+  `decide +kernel` (no `native_decide`), and `not_conjecture : ¬ Conjecture`.
+- `computations/check_square_free_cycle.py`: a standalone checker written from the
+  definition. It checks one Hamiltonian cycle and counts inscribed squares.
+  `python3 computations/check_square_free_cycle.py computations/counterexamples/Q8_edges.txt`
+- `computations/counterexamples/Q{8,9,10}_{edges,sequence}.txt`: the cycles, as edge
+  lists and as vertex and transition sequences.
+- `computations/square_free_search.c`: exhaustive backtracking for small $n$.
 
-- Sagols–Morales-Luna prove *parity balance*: half of the direction-$i$ edges of $H$ are
-  even and half are odd. So each $S_i$ is a balanced independent set. If some $|S_i|$
-  exceeds the balanced independence number $\alpha_=(Q_{n-1})$, then $H$ has a square.
-- They also prove the conjecture for any $H$ with more than $2^{n-2}$ edges in one direction.
-- They claim $n \le 7$ using $\alpha_=(Q_3..Q_7) = 2,4,10,16,40$. That table appears to be
-  wrong: CP-SAT gives $\alpha_=(Q_6) = 20$ and $\alpha_=(Q_7) \ge 44$. Then
-  $7 \cdot 20 = 140 \ge 128$, so the counting argument does not settle $n = 7$.
-  (Source: the "Obscure Open Problems in Graph Theory: A Verified Shortlist" notes, problem 1.)
+The counterexample cycles come from an outside SAT-based audit
+(`inscribed_squares_audit.zip`). They were re-verified here independently: by the Lean
+kernel ($Q_8$) and by a new Python checker that shares no code with the audit ($Q_8$–$Q_{10}$).
 
-## Computations
+## Background
 
-`computations/square_free_search.c` is an exhaustive backtracking search for square-free
-Hamiltonian cycles. It prunes each partial path as soon as it closes a square.
-
-```
-cc -O2 -o sfs computations/square_free_search.c && ./sfs 5
-```
-
-| n | square-free Hamiltonian cycles |
-|---|---|
-| 3 | 0 |
-| 4 | 0 |
-| 5 | 0 (0.06 s) |
-| 6 | 0 (per the shortlist's SAT search; this program is slow at n = 6) |
+- **Reformulation.** For each direction $i$, take the direction-$i$ edges of $H$ and delete
+  coordinate $i$. This gives a set $S_i \subseteq V(Q_{n-1})$. $H$ is square-free exactly
+  when every $S_i$ is independent, and $\sum |S_i| = 2^n$.
+- **Parity balance.** Sagols–Morales-Luna prove that half of the direction-$i$ edges are
+  even and half are odd. Their claimed $n \le 7$ proof used the values
+  $\alpha_=(Q_6) = 16$ and $\alpha_=(Q_7) = 40$. In fact $\alpha_=(Q_6) = 20$ and
+  $\alpha_=(Q_7) \ge 44$, so that counting argument does not cover $n = 7$.
 
 ## Progress
 
-- [x] Formal statement in Lean (`Main.lean`)
-- [x] Computer check for n ≤ 5 (n ≤ 6 reported independently)
-- [ ] n = 7
-- [ ] Full proof
-
-## Approaches
-
-1. Sharpen the counting: the $S_i$ are linked because $H$ is a single cycle. Look for
-   constraints between $S_i$ and $S_j$ where $H$ turns from direction $i$ to direction $j$.
-2. Compute $\alpha_=(Q_n)$ exactly (a vertex-isoperimetric problem within one parity class).
-3. Look for a counterexample in $Q_7$/$Q_8$ with SAT plus symmetry breaking.
+- [x] Formal statement (`Main.lean`)
+- [x] Disproof, Lean-verified (`Counterexample.lean`)
+- [ ] Independent check of the $n = 7$ DRUP refutation (drat-trim)
+- [ ] Square-free cycles for all $n \ge 8$ (e.g. a recursive construction)
