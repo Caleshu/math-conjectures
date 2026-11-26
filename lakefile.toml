@@ -1,0 +1,23 @@
+name = "Math"
+version = "0.1.0"
+keywords = ["math", "conjectures"]
+defaultTargets = ["Conjectures", "Playground"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+relaxedAutoImplicit = false
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.36.0"
+
+# Every .lean file under Conjectures/ gets built.
+[[lean_lib]]
+name = "Conjectures"
+globs = ["Conjectures.+"]
+
+# Scratch space for experiments.
+[[lean_lib]]
+name = "Playground"
