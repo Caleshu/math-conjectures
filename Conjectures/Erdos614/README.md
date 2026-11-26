@@ -1,64 +1,143 @@
 # Erdős Problem 614
 
-**Status:** Open in general. This folder proves an exact formula for f(n,k) when
-k+2 ≤ n ≤ (3k+2)/2. It also shows the formula stops working at n = 2k+1, and gives
-exhaustive computer data for every n ≤ 10.
-
-> **Novelty caveat.** I could not read the erdosproblems.com page or forum thread (the site
-> blocks automated access), so I couldn't check whether the results below appear in the
-> forum discussion, including the January 2026 Turán-type reformulation. Check there before
-> treating them as new. The other sources I could read (the UCSD problem page, the
-> formal-conjectures entry, its PR discussion, and web search) give no values or bounds.
+**Status:** Open in general.
+- **Formula:** f(n,k) = (n−k−1)(n+k−2)/2 for k+2 ≤ n ≤ (3k+2)/2. Proved here, with a complete
+  Lean 4 proof (no `sorry`).
+- **Sharpness:** the formula fails for every n ≥ 2k+1. Proved on paper and checked by computer;
+  not in Lean.
+- **Prior work:** most of the surrounding picture was already known. See
+  [What was already known](#what-was-already-known).
 
 ## Statement
 
-Let $f(n,k)$ be the minimum number of edges in a graph on $n$ vertices in which every set of
-$k+2$ vertices induces a subgraph of maximum degree at least $k$. Determine $f(n,k)$.
-([erdosproblems.com/614](https://www.erdosproblems.com/614); Faudree, Rousseau and Schelp,
-*Problems in graph theory from Memphis*, 1996.)
+$f(n,k)$ is the minimum number of edges of a graph on $n$ vertices in which every set of $k+2$
+vertices induces a subgraph of maximum degree at least $k$. Determine $f(n,k)$.
+([erdosproblems.com/614](https://www.erdosproblems.com/614); Faudree–Rousseau–Schelp, *Problems in
+graph theory from Memphis*, 1997.)
 
-Trivially $f(n,k)=0$ when $n<k+2$ (the condition is vacuous) or $k=0$.
+## What was already known
 
-## Results
+I read the erdosproblems.com forum thread (in a browser; it blocks automated fetches), the Tang–Ma
+note it links, both available primary papers, and the citing literature.
 
-**Notation:** $m = k+2$, $j = n-m$, and $H = \overline{G}$ (the complement of $G$).
+1. **Complement / Turán reformulation:** known. Quanyu Tang (with Ma) posted it on the forum on
+   7 Jan 2026 ([note](https://github.com/QuanyuTang/erdos-614-turan-reduction/blob/main/erdos614_note.pdf)).
+   They show $f(n,k) = \binom n2 - \mathrm{ex}(n,\mathcal F_k^{\min})$, where $\mathcal F_k^{\min}$ is the
+   edge-minimal graphs on $k+2$ vertices with minimum degree $\ge 2$. They also give explicit
+   families for $k\le 6$, and $f(n,1)$, $f(n,2)$, $f(n,3)$ as Turán numbers. My Lemma 1 is the same
+   reformulation.
+2. **The formula and the conjectured range:** known. Problem 614 is the case $j=2$ of the
+   function $q(a,j,l)$ of **Erdős, Reid, Schelp, Staton** (*Sizes of graphs with induced subgraphs of
+   large maximum degree*, Discrete Math. 158 (1996) 283–286). Here $f(n,k) = q(k,2,l)$ with
+   $l = n-k-2$. What I could not read directly I take from Pikhurko–Thomason's account below
+   (ScienceDirect presented a CAPTCHA, which I did not attempt):
+   - ERSS proved $q = (l+1)k + \binom{l+1}{2}$, which is **exactly this formula**, whenever
+     $k\ge\max(2l, \binom{l+2}{2})$;
+   - ERSS *conjectured* the same formula for all $k \ge l+2$, i.e. $n\le 2k$. That is
+     "Conjecture 4" below, which is therefore **not mine**.
+3. **Pikhurko–Thomason** (*Disjoint subgraphs of large maximum degree*, Discrete Math. 248 (2002)
+   125–141; [author's PDF](https://opikhurko.warwick.ac.uk/E/PikhurkoThomason02dm.pdf), read in full):
+   - Theorem 14 proves the formula when $k \ge (j+\tfrac12)l + \frac{2j+l}{4j-2}$, which for
+     $j = 2$ is $k \ge \frac{8l+2}{3}$;
+   - Theorem 13 shows it fails when $k < (j-1)l$, which for $j = 2$ is $k<l$, i.e. $n \ge 2k+3$;
+   - they also give asymptotics, and disprove the ERSS conjecture for $j, l = \Theta(n)$. That does
+     not touch $j=2$.
+4. **Later work:** none found. Google Scholar lists 5 papers citing ERSS and 4 citing
+   Pikhurko–Thomason. None improves the exact range; they are size-Ramsey and Hamiltonicity papers.
+   An open-problem aggregator ([GEWU](https://magazine.gewu-lab.ai/en/problems/math-auth-0b992c70286f89653ff4))
+   lists "the band between the known failure and success thresholds" as **open**.
 
-### Lemma 1 (complement reformulation)
+## What is (as far as I can find) new
 
-$G$ is good if and only if $H$ has **no** $m$-vertex set $S$ such that $H[S]$ has minimum degree
-$\ge 2$. Therefore
-$$f(n,k) = \binom n2 - g(n,k+2),\qquad g(n,m)=\max\{e(H): |H|=n,\ \text{no } m\text{-set } S \text{ with } \delta(H[S])\ge 2\}.$$
+- **A wider proven range for $j=2$:** the formula holds for $k \ge 2l+2$, i.e. $n\le\frac{3k+2}{2}$.
+  This contains Pikhurko–Thomason's range $k\ge\frac{8l+2}{3}$ (for $k \ge 6$; for $k \le 5$ the
+  ranges coincide). With $l = n-k-2$, the **new cases** are
+  $$2l+2\ \le\ k\ <\ \min\Bigl(\tfrac{8l+2}{3},\ \tbinom{l+2}{2}\Bigr),$$
+  a band of width about $2l/3$. The first new case is $(n,k) = (13,8)$, then $(16,10)$ and $(17,11)$,
+  and so on. The proof is different from ERSS/PT. It works in the complement and uses a
+  "free vertex" gluing argument plus degree-sum counting.
+- **Failure at $n = 2k+1$ and $n=2k+2$:** PT's Theorem 13 only reaches $n\ge 2k+3$. With it, the
+  formula fails for **every** $n\ge 2k+1$ ($k\ge 2$). So for Problem 614 the ERSS threshold $n\le 2k$
+  is exactly right, and what remains open is precisely $\frac{3k+2}{2} < n \le 2k$.
+- **A machine-checked proof** of the formula on this range, also covering the previously known
+  sub-ranges. I found no earlier formalization: formal-conjectures has only the open statement.
 
-*Proof.* Take a vertex $v \in S$ with $|S| = k+2$. Then $\deg_{G[S]}(v) = (k+1) - \deg_{H[S]}(v)$,
-so $\deg_{G[S]}(v) \ge k$ iff $\deg_{H[S]}(v) \le 1$. So $S$ fails the condition in $G$ iff
-every vertex of $S$ has $H[S]$-degree $\ge 2$. ∎
+**Caveats.** I could not read the ERSS paper itself; its results are taken from PT and the GEWU
+page. The literature search used web search, Google Scholar citations and the erdosproblems.com
+thread. An unpublished or non-indexed result could exist. A specialist (for example Pikhurko) would
+know.
 
-So the problem is a Turán-type problem: forbid every $m$-vertex graph of minimum degree $\ge 2$.
-This is my own derivation; I expect it is the forum's reformulation, but I couldn't check.
+## Claims ledger
 
-### Theorem 2 (new range, proved)
+### Proved, and formally verified in Lean 4
 
-For $k+2 \le n \le \frac{3k+2}{2}$:
-$$\boxed{f(n,k) = \frac{(n-k-1)(n+k-2)}{2}}$$
-Equivalently $g(n,m) = \binom{m-1}{2} + (n-m+1)$ for $m \le n$ and $2n \le 3m-4$.
+The axioms used are only `propext`, `Classical.choice`, `Quot.sound`; check with `#print axioms`.
 
-**Extremal graph.** Take $H = K_{k+1}$ with each of the other $n-k-1$ vertices joined by a single
-edge to the clique. So $G$ is a clique $O$ on $n-k-1$ vertices plus an independent set $I$ of $k+1$
-vertices, where each $o\in O$ is adjacent to every vertex of $I$ except its own partner.
+| Claim | Lean |
+|---|---|
+| **Theorem.** $f(n,k) = (n-k-1)(n+k-2)/2$ for $k+2\le n$, $2n\le 3k+2$ | `Main.lean: f_eq` |
+| Same, stated with the **verbatim** formal-conjectures set-builder | `erdos_614_of_two_mul_le` |
+| Complement form: no 2-set of size $M+1$ in $U$, $\lvert U\rvert = M+1+J$, $2J+3\le M$ $\Rightarrow$ $e(H[U])\le \binom M2+J+1$ | `Claim.lean: claim` |
+| Good $G$ $\Rightarrow$ $\overline G$ has no $(k+2)$-vertex subgraph of min degree $\ge 2$ (forward half of the reformulation) | `not_twoSet_compl_of_good` |
+| The extremal graph $G_0$ is good and has exactly the formula's number of edges | `G₀_good`, `G₀_edges` |
+| Peeling lemma, gluing lemma, counting inequalities | `Basic.lean`, `Claim.lean`, `Arith.lean` |
 
-### Proposition 3 (sharpness, proved)
+### Proved on paper, not in Lean (but computer-checked)
 
-For $k \ge 2$: $f(2k+1,k) \le \frac{k(3k-1)}{2} - 1$, one below the formula. So no single formula
-of this shape extends past $n = 2k$.
+| Claim | Evidence |
+|---|---|
+| Full reformulation (both directions); already known (Tang–Ma) | `PROOF.md` §2; checked against `direct.c` for all graphs, $n\le 8$ |
+| **Sharpness:** for $k\ge 2$, $n\ge 2k+1$: $f(n,k)\le$ formula $-1$ | `PROOF.md` §5; `sharpness.c`: every $k\le 15$ at $n=2k+1$, $k\le 14$ at $n=2k+2$, $k\le 13$ at $n = 2k+4$, from the original definition |
+| The formula fails for all $n\ge 2k+1$ | sharpness above, plus PT Thm 13 |
 
-### Conjecture 4 (verified for all n ≤ 10)
+### Computationally established (exhaustive)
 
-The formula of Theorem 2 holds on the full range $k+2 \le n \le 2k$.
+| Claim | Method |
+|---|---|
+| Exact $f(n,k)$ for all $n\le 10$ (table below) | nauty `geng` + `sizes.c`, every graph on $\le 10$ vertices |
+| The formula holds for every $k+2\le n\le\min(10,2k)$ | same table |
+| SAT cross-check of a **new** case $(n,k)=(13,8)$: $f=38$ | `sat_check.py` (CaDiCaL); see `out/sat_n13_k8.txt` |
+| SAT check of the encoding on known cases $(9,6)$, $(10,6)$, $(9,4)$ | `sat_check.py` |
 
-## Exact values (exhaustive search, all graphs up to 10 vertices)
+### Conjectural (open)
 
-$f(n,k)$. Entries marked \* lie in the range $n \le 2k$, where they match the formula
-$(n-k-1)(n+k-2)/2$.
+| Claim | Status |
+|---|---|
+| **ERSS Conjecture (j=2):** the formula holds for all $k+2\le n\le 2k$ | Open. Due to Erdős–Reid–Schelp–Staton (1996), not to me. True for $n\le 10$; recorded as the Lean `Prop` `ERSSConjecture614` with no proof |
+| Exact $f(n,k)$ for $n > 2k$ | Open. For fixed $k$ this is a Turán problem for $\mathcal F_k^{\min}$ (Tang–Ma) |
+
+## Attack on range 2 ((3k+2)/2 < n ≤ 2k): status, 26 Nov 2026
+
+**Not proved.** These notes record what was tried. Notation: m = k+2, J = n−m.
+
+- **Where the Lean proof breaks.** Just past J = (m−4)/2 it fails in two places:
+  - a ∈ {0,1}: fixable. The forest leaf-path argument in `PROOF.md` history works for all J ≤ m−4;
+  - a ≈ J: the real obstruction.
+- **Bootstrap closure.** Let B be the 2-neighbour bootstrap closure of the free set F inside the
+  low-degree set L. By gluing, |B| ≤ a, and every other vertex of L has at most one neighbour in
+  F ∪ B. Combined with:
+  - strong induction on the 2-core of the remainder;
+  - a "stuck descent" lemma (deleting vertices with no degree-2 neighbour; a stuck set has at least
+    half of its vertices of degree 2);
+  - a corrected count of edges inside F ∪ B,
+
+  this scheme closes numerically up to about J ≤ 0.59m at m = 80. Compare J ≤ 0.5m for the proved
+  theorem (`computations/range2_v4.py`). It is **not yet a written or verified proof**, and the gain
+  is modest (n ≲ 1.6k instead of 1.5k).
+- **Hard wall: graphs with no high-degree vertices.** If every vertex of H has degree ≤ J+1, the
+  only available bound is n(J+1)/2. That bound exceeds the target once J > ((√5−1)/2)·k ≈ 0.618k.
+  Beyond that point counting cannot work, and a structural theorem is needed. In G-language: a
+  graph of minimum degree ≥ k on n = k+2+J vertices with fewer than (J+1)(2k+J)/2 edges must
+  contain a (k+2)-set in which every vertex misses at least two others. Equivalently, in H: some
+  J-set T leaves every vertex outside T with at least two neighbours outside T.
+- **Consistency with the literature.** Pikhurko–Thomason's asymptotics give q(k,2,l) ~ formula
+  when l = Θ(k), so no counterexample is expected from their methods. Their disproof of the ERSS
+  conjecture needs j = Θ(n), not j = 2.
+
+## Exact values for n ≤ 10 (exhaustive)
+
+$f(n,k)$. Entries marked \* have $n\le 2k$ and match the formula. Entries with $n\in\{2k+1, 2k+2\}$
+are one or two below it, as the sharpness result predicts.
 
 | n \ k | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
 |---|---|---|---|---|---|---|---|---|
@@ -70,151 +149,35 @@ $(n-k-1)(n+k-2)/2$.
 | 9 | 16 | 23 | 22 | 21 | 18\* | 13\* | 7\* | |
 | 10 | 20 | 29 | 29 | 28 | 26\* | 21\* | 15\* | 8\* |
 
-Sanity checks against known results:
-- **k = 1:** $f = \binom n2 - \lfloor n^2/4\rfloor$, from Turán's theorem.
-- **k = 2:** $f = \binom n2 - \mathrm{ex}(n, C_4)$, matching the known Zarankiewicz values
-  4, 6, 7, 9, 11, 13, 16.
-- **n = 2k+1 (beyond the range):** the values for (n,k) = (5,2), (7,3), (9,4) are exactly one
-  below the formula, as Proposition 3 predicts.
+## Files
 
-## Proofs
+- **[`PROOF.md`](PROOF.md):** the complete proof, every step explicit and keyed to Lean lemma names.
+- **`Basic.lean`, `Arith.lean`, `Claim.lean`, `Main.lean`:** the Lean 4 formalization.
+- **[`computations/`](computations/):**
+  - `sizes.c`: exhaustive search in the complement form;
+  - `direct.c`: exhaustive search from the original definition;
+  - `sharpness.c`: the sharpness checks;
+  - `sat_check.py`: the SAT cross-check;
+  - `check_proof_inequalities.py`, `lean_case_split_check.py`: numeric checks of the case analysis;
+  - `out/`: raw outputs.
 
-Throughout, a **2-set** is a vertex set $S$ with $\delta(H[S])\ge 2$. If $A$ and $B$ are 2-sets,
-so is $A\cup B$.
-
-### Proof of Proposition 3 and the lower bound in Theorem 2
-
-*Lower bound.* Let $H$ be $K_{m-1}$ plus $n-m+1$ pendant edges. A pendant vertex has degree
-$\le 1$ in every induced subgraph, so every 2-set lies inside the clique and has at most $m-1$
-vertices. So $g(n,m) \ge \binom{m-1}2 + n-m+1$ for all $n \ge m$.
-
-*Proposition 3.* Let $n = 2m-3$ and $H = K_{m-1}$ on $Q$, plus a cycle $z_0z_1\cdots z_{m-2}z_0$
-with $z_0 \in Q$ and $z_1, \dots, z_{m-2}$ new. Then $e(H) = \binom{m-1}2 + m-1$, one more than
-the formula. Let $S$ be a 2-set and $P = S \cap \{z_1,\dots,z_{m-2}\}$.
-- If $P$ is nonempty but proper, pick a maximal run of consecutive path vertices in $P$. Its end
-  next to a missing path vertex has $\le 1$ neighbour in $S$, a contradiction.
-- So $P = \emptyset$, which forces $S \subseteq Q$ and $|S|\le m-1$; or $P$ is the whole path.
-  Then $z_0\in S$ (it is $z_1$'s second neighbour), and $S\cap Q$ is either $\{z_0\}$ or has
-  $\ge 3$ vertices (a second clique vertex alone would have degree 1).
-- Hence $|S| \in [3,m-1] \cup \{m-1\} \cup [m+1, 2m-3]$, which never equals $m$. ∎
-
-### Proof of the upper bound in Theorem 2
-
-We prove: if $|H| = n = m+j$ with $m \ge 2j+4$ and $H$ has no 2-set of size $m$, then
-$e(H) \le \binom{m-1}2 + j + 1$. The proof is by induction on $j$.
-
-**Base case, $j=0$.** $V$ itself is not a 2-set, so some vertex has degree $\le 1$. Deleting it
-leaves at most $\binom{m-1}2$ edges.
-
-**Low-degree vertex.** If some $v$ has $\deg v \le 1$, then $H-v$ has no 2-set of size $m$.
-Also $m \ge 2(j-1)+4$, so induction gives $e(H) \le \binom{m-1}2 + (j-1) + 1 + 1$.
-
-**Main case.** From now on $\delta(H)\ge 2$ and $j \ge 1$. Suppose for contradiction that
-$e(H) \ge T+1$, where $T = \binom{m-1}2+j+1$.
-
-Let $F = \{v : \deg v \ge j+2\}$, with $f = |F|$. Let $L = V\setminus F$; every vertex of $L$ has
-degree in $[2, j+1]$. Put $a = m-1-f$, so $|L| = j+1+a$.
-
-*Fact A (high-degree vertices are free).* If $|S| = m$ and $v\in S\cap F$, then
-$|N(v)\cap S| \ge \deg v - |V\setminus S| = \deg v - j \ge 2$. So any $m$-subset of $F$ is a
-2-set, and therefore $f \le m-1$, i.e. $a \ge 0$.
-
-*Fact B (gluing).* Suppose $W \subseteq L$ and $Y\subseteq F$ satisfy
-$|W|+|Y| \le m \le |W|+f$, and every $w\in W$ has $\ge 2$ neighbours in $W\cup Y$. Then
-$S = W\cup Y\cup Y'$, for any $Y'\subseteq F\setminus Y$ of the right size, is a 2-set of size $m$.
-This uses Fact A for the vertices of $F$. So such $W$ and $Y$ cannot exist.
-
-Call $v\in L$ **good** if it has $\ge 2$ neighbours in $F$, and let $\gamma$ be the number of good
-vertices.
-
-*Fact C: $\gamma\le a$.* Otherwise apply Fact B with $a+1$ good vertices as $W$ and $Y=F$
-(then $|W|+|Y| = m$).
-
-*Fact D (core of $L$).* Let $C$ be the 2-core of $H[L]$, with $c = |C|$. If $f\ge j$ (so
-$|L|\le m$), then $c \le a$. Otherwise apply Fact B with $W=C$ and $Y=\emptyset$. Peeling
-$H[L]$ down to $C$ removes vertices that each have $\le 1$ neighbour among the vertices that
-remain, so $e(H[L]) \le \binom c2 + |L| - c$.
-
-**Case $a=0$.** By Fact C, no vertex is good. By Fact D (here $f = m-1 \ge j$), $H[L]$ is a forest.
-Every $L$-vertex has degree $\ge 2$ but at most one $F$-neighbour, so it has $\ge 1$ neighbour in
-$L$. Take a path $P$ between two leaves of a component. Each leaf has an $F$-neighbour. Apply
-Fact B with $W = P$ and $Y$ the $\le 2$ leaf attachments: $|W|+|Y|\le j+3\le m$ and
-$|W| + f \ge m$. Contradiction.
-
-**Case $a=1$.** The same argument works. Fact D gives $c \le 1$, so $c=0$ and $H[L]$ is a forest.
-- If some component has an edge, use a leaf-to-leaf path: $|P|\ge 2=a+1$ and
-  $|P|+|Y|\le j+4\le m$.
-- Otherwise every $L$-vertex has both of its $\ge 2$ neighbours in $F$, so $\gamma = j+2 > a$,
-  contradicting Fact C.
-
-**Case $a \ge 2$.** Let $s=\min(f, j+1)$, the most $F$-neighbours an $L$-vertex can have. By
-Fact C, $e(F,L) \le a s + (|L|-a)$: good vertices contribute at most $s$ each and the others at
-most 1; when $f=0$ the bound holds trivially, since $e(F,L)=0$. Also $\binom{m-1}2 = \binom f2 + \binom a2 + fa$.
-
-- **(I) $2\le a\le j-1$.** Here $f \ge j+4$ and $s = j+1$. By Fact D,
-  $e(H)\le \binom f2 + e(F,L) + |L| + \max(0,\binom a2 - a)$. For $a\ge 3$, $e(H)\le T$ reduces to
-  $(a+1)(j+1)\le fa$, which follows from $f\ge 2j+3-a$ and $a(j+2-a)\ge j+1$ on $[3,j-1]$
-  (a concave function; check the two endpoints). For $a=2$ it reduces to $2f\ge 3j+4$, true since
-  $f = m-3 \ge 2j+1$ and $j\ge 3$.
-- **(II) $a\ge\max(2,j)$.** Use
-  $e(F,L)+e(L) = \tfrac12\big(\sum_{v\in L}\deg v + e(F,L)\big) \le \tfrac12\big((j+1)|L| + as + |L| - a\big)$.
-  Then $e(H)\le T$ reduces to $j(j+1) + a(j+2+s) \le a^2 + 2fa$.
-  - If $f\le j+1$ (so $s=f$ and $a \ge m-j-2 \ge j+2$), this is $j(j+1)\le a(m-j-3)$. It holds
-    since $m-j-3 \ge j+1$.
-  - If $f\ge j+1$ (so $s=j+1$), it is $j(j+1)\le a(2m-2j-5-a)$. The right side is concave in $a$.
-    It holds at $a=\max(2,j)$ because $m\ge 2j+4$, and at $a = m-j-2$ because
-    $(m-j-2)(m-j-3) \ge (j+2)(j+1)$.
-
-Every case gives $e(H)\le T$, contradicting $e(H) \ge T+1$. ∎
-
-Translating back with $m=k+2$: the condition $m\ge 2j+4$ is $2n\le 3k+2$, and
-$\binom n2 - \binom{k+1}2 - (n-k-1) = \frac{(n-k-1)(n+k-2)}2$.
-
-## Verification
-
-All code is in [`computations/`](computations/).
-
-| Check | How | Result |
-|---|---|---|
-| Lemma 1 numerically | `direct.c` (original definition, on G) vs `sizes.c` (complement form) on all graphs, n ≤ 8 | identical |
-| Exact values | `geng` (nauty) piped into `sizes.c`: every graph on ≤ 10 vertices (about 12 million for n = 10) | table above |
-| Theorem 2 and Conjecture 4 | compared against the table for n ≤ 10 | all agree |
-| Case inequalities in the proof | `check_proof_inequalities.py`: every (m, j, a) with m ≤ 500, exactly as written above | 20,491,124 cases, 0 failures |
-| Constructions | `constructions.py` piped into `sizes.c`, sizes up to 16 vertices | pendant graph meets the formula; cycle graph beats it by 1 at n = 2m−3 for m = 4..9 |
-
-The case analysis is also proved by hand for every m. The computer check is a guard against
-algebra slips, not part of the proof.
-
-Rebuild the n ≤ 10 data: `cc -O3 -o sizes sizes.c && geng -q 10 | ./sizes 10` (about 10 minutes on 8 cores if
-split with `geng res/mod`).
-
-## Progress
-
-- [x] Formal statement in Lean (`Main.lean`: definition matching formal-conjectures, plus the
-      statements of Theorem 2, Conjecture 4 and Proposition 3)
-- [x] Partial results: exact formula for k+2 ≤ n ≤ (3k+2)/2, proved
-- [x] Sharpness of the n ≤ 2k range
-- [ ] Close the gap (3k+2)/2 < n ≤ 2k (Conjecture 4)
-- [ ] Lean proofs of Theorem 2 and Proposition 3
-- [ ] Understand n > 2k (for fixed k as n → ∞, g grows like the Turán number of a family
-      containing $K_{2,k}$ and $C_{k+2}$, so it is subquadratic)
-
-## Notes
-
-- **Where the proof is lossy.** The only cases that stop at m ≥ 2j+4 are the counting
-  cases. The gluing argument (Fact B) is much stronger than the edge counting needs, so extending
-  the path argument from a ∈ {0,1} to larger a looks like the natural route to Conjecture 4.
-- **Structure of the hard case.** The largest minimum-degree-2 graphs with no 2-set of size m
-  (`out/d2_n*.txt`) decode to dense blobs of size ≤ m−1, with long cycles threaded through blob
-  vertices of low connectivity. Example (n = 10, m = 7, 16 edges): $K_5$ minus an edge, plus a
-  vertex joined to both ends of the missing edge, plus a 5-cycle through that vertex. Past
-  n = 2k the overall extremal graphs use the same trick; see Proposition 3.
+Rebuild and check:
+```sh
+lake build Conjectures.Erdos614.Main
+# then, in a file: import Conjectures.Erdos614.Main
+#                  #print axioms Conjectures.Erdos614.f_eq
+```
 
 ## References
 
-- [erdosproblems.com/614](https://www.erdosproblems.com/614)
-- [UCSD Erdős problems: A problem on sparse induced subgraphs](https://mathweb.ucsd.edu/~erdosproblems/erdos/newproblems/SparseInducedSubgraphs.html)
-- [FRS97] R. J. Faudree, C. C. Rousseau and R. H. Schelp, *Problems in graph theory from Memphis*,
-  The Mathematics of Paul Erdős II (1996), 7–26.
+- [erdosproblems.com/614](https://www.erdosproblems.com/614) and its
+  [forum thread](https://www.erdosproblems.com/forum/thread/614)
+- Q. Tang and Ma, *Erdős Problem #614: a Turán-type reformulation* (note, Jan 2026),
+  [GitHub](https://github.com/QuanyuTang/erdos-614-turan-reduction)
+- P. Erdős, T. J. Reid, R. Schelp, W. Staton, *Sizes of graphs with induced subgraphs of large maximum
+  degree*, Discrete Math. 158 (1996) 283–286
+- O. Pikhurko, A. Thomason, *Disjoint subgraphs of large maximum degree*, Discrete Math. 248 (2002)
+  125–141
+- R. J. Faudree, C. C. Rousseau, R. H. Schelp, *Problems in graph theory from Memphis*, The
+  Mathematics of Paul Erdős II (1997), 7–26
 - Formal statement: [google-deepmind/formal-conjectures, ErdosProblems/614.lean](https://github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/614.lean) (Apache 2.0)
-- nauty / `geng`: B. D. McKay and A. Piperno, *Practical graph isomorphism II*, J. Symbolic Comput. 60 (2014).
