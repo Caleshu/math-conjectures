@@ -30,3 +30,4 @@ Unproven conjectures use `sorry`, which Lean reports as a warning, not an error.
 
 ## Conjectures
 
+- [Erdős Problem 63](Conjectures/Erdos63/) — Solved (Liu–Montgomery 2020); statement formalized
