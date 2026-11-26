@@ -96,7 +96,7 @@ The axioms used are only `propext`, `Classical.choice`, `Quot.sound`; check with
 |---|---|
 | Exact $f(n,k)$ for all $n\le 10$ (table below) | nauty `geng` + `sizes.c`, every graph on $\le 10$ vertices |
 | The formula holds for every $k+2\le n\le\min(10,2k)$ | same table |
-| SAT cross-check of a **new** case $(n,k)=(13,8)$: $f=38$ | `sat_check.py` (CaDiCaL); see `out/sat_n13_k8.txt` |
+| SAT cross-check of the first **new** case $(n,k)=(13,8)$, expecting $f=38$ | **Pending:** still running after 20+ min of CPU, no result yet (`out/sat_n13_k8.txt` is empty). This case is covered by the Lean proof regardless |
 | SAT check of the encoding on known cases $(9,6)$, $(10,6)$, $(9,4)$ | `sat_check.py` |
 
 ### Conjectural (open)
