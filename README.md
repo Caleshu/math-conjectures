@@ -33,4 +33,8 @@ Unproven conjectures use `sorry`, which Lean reports as a warning, not an error.
 - [Erdős Problem 64 (Erdős–Gyárfás conjecture)](Conjectures/Erdos64/) — Open; statement formalized
 - [Erdős Problem 614](Conjectures/Erdos614/) — Open; formula proved (Lean-verified) for k+2 ≤ n ≤ (3k+2)/2, extending Erdős–Reid–Schelp–Staton / Pikhurko–Thomason; fails for all n ≥ 2k+1
 - [Altitude of the hypercube](Conjectures/AltitudeQ4/) — **f(Q_d) = d fails for every d ≥ 4**: f(Q_d) ≤ d − ⌊d/4⌋, Lean-verified for all d (product bound + explicit Q_4 ordering); f(Q_3) = f(Q_4) = 3
+- [Digital anomalies (Seraj)](Conjectures/DigitalAnomalies/) — **Conjecture 4.6 false; infinitely many two-digit anomalies**, Lean-verified (Pell family x = B²/2)
+- [Proper conflict-free colouring, Δ = 4](Conjectures/PCFColouring/) — Open; no counterexample on ≤ 12 vertices (exhaustive)
+- [Local Irregularity Conjecture, subcubic](Conjectures/LocalIrregularity/) — Open; holds for all connected subcubic graphs on ≤ 16 vertices (exhaustive)
+- [Additive colouring of bipartite graphs](Conjectures/AdditiveColouring/) — Open; η ≤ 2 for all connected bipartite graphs on ≤ 15 vertices (exhaustive)
 - [Inscribed squares in hypercube Hamiltonian cycles (Sagols–Morales-Luna)](Conjectures/HypercubeSquares/) — **False**; Lean-verified square-free Hamiltonian cycle of Q_8 (also Q_9, Q_10); true for n ≤ 6
