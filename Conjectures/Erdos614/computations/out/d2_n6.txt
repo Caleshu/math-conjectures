@@ -1,0 +1,5 @@
+n=6
+m=3 k=1  g=9  f=6  witness_H=EFz_
+m=4 k=2  g=7  f=8  witness_H=EEho
+m=5 k=3  g=7  f=8  witness_H=ECZo
+m=6 k=4  g=-1  f=16  witness_H=

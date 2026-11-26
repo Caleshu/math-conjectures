@@ -1,0 +1,7 @@
+n=8
+m=3 k=1  g=16  f=12  witness_H=G?~vf_
+m=4 k=2  g=11  f=17  witness_H=G?otQw
+m=5 k=3  g=13  f=15  witness_H=GQhTUg
+m=6 k=4  g=11  f=17  witness_H=G?ouV_
+m=7 k=5  g=12  f=16  witness_H=GCpbQs
+m=8 k=6  g=-1  f=29  witness_H=

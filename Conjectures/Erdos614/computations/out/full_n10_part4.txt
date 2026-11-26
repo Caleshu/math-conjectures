@@ -1,0 +1,9 @@
+n=10
+m=3 k=1  g=24  f=21  witness_H=I?Bvvrw}?
+m=4 k=2  g=16  f=29  witness_H=I?qa``eeO
+m=5 k=3  g=16  f=29  witness_H=I?qa`boBo
+m=6 k=4  g=16  f=29  witness_H=I?aJBAKvG
+m=7 k=5  g=19  f=26  witness_H=I?aJCYLvW
+m=8 k=6  g=22  f=23  witness_H=I?BEENF~w
+m=9 k=7  g=28  f=17  witness_H=ICXbZ\nzw
+m=10 k=8  g=34  f=11  witness_H=I?zn^^n~w

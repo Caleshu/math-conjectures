@@ -31,3 +31,4 @@ Unproven conjectures use `sorry`, which Lean reports as a warning, not an error.
 ## Conjectures
 
 - [Erdős Problem 64 (Erdős–Gyárfás conjecture)](Conjectures/Erdos64/) — Open; statement formalized
+- [Erdős Problem 614](Conjectures/Erdos614/) — Open; new exact formula for k+2 ≤ n ≤ (3k+2)/2, values for n ≤ 10
