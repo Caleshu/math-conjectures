@@ -40,5 +40,5 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run c28f698d](research/2026-11-27-run-c28f698d.md): running. 
+- [2026-11-27 run c28f698d](research/2026-11-27-run-c28f698d.md): completed. orchestrator: Iteration $2$ of $2$ is complete. The record supports partial bounds, and the outstanding classification check would settle only which eight-vertex neighborhoods can obstruct extension of a given coloring.
 
