@@ -38,4 +38,5 @@ Unproven conjectures use `sorry`, which Lean reports as a warning, not an error.
 - [Proper conflict-free colouring, Δ = 4](Conjectures/PCFColouring/) — Open; no counterexample on ≤ 12 vertices (exhaustive)
 - [Local Irregularity Conjecture, subcubic](Conjectures/LocalIrregularity/) — Open; holds for all connected subcubic graphs on ≤ 16 vertices (exhaustive)
 - [Additive colouring of bipartite graphs](Conjectures/AdditiveColouring/) — Open; η ≤ 2 for all connected bipartite graphs on ≤ 15 vertices (exhaustive)
+- [Order sequences of equal-order simple groups (Cameron–Dey Q8.5)](Conjectures/OrderSequenceSimple/) — **Answered: no**; PSp(6,5) and Ω(7,5) (also PSp(8,3), Ω(9,3)) have incomparable order sequences (GAP, cross-checked)
 - [Inscribed squares in hypercube Hamiltonian cycles (Sagols–Morales-Luna)](Conjectures/HypercubeSquares/) — **False**; Lean-verified square-free Hamiltonian cycle of Q_8 (also Q_9, Q_10); true for n ≤ 6
