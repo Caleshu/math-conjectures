@@ -41,11 +41,14 @@ What the platform did with arXiv:1009.3304 (Sagols & Morales-Luna, 2010), runnin
      n, and CP-SAT's minimum square counts equal the enumeration for n ≤ 4.
    - Also computed: every Hamiltonian cycle of Q₅ has ≥ 16 inscribed squares, and CP-SAT proved this optimal
      (takes about 95 s, so it is not in the default parameters).
-6. **Conclusion as recorded**: the *statement* of Theorem 5.4 is independently reproduced by a different
-   method. The paper's intermediate value α₌(Q₆)=16 was **not** reproduced. The result is finite and
-   conditional on solver correctness, not a proof for general n. Status remains **UNVERIFIED**: no
-   verification agents have run, and OpenAlex and Semantic Scholar list no citing works, which is not
-   evidence either way.
+6. **Conclusion as recorded**: the *statement* of Theorem 5.4 (n ≤ 7) is independently reproduced by a different
+   method. The paper's intermediate value α₌(Q₆)=16 was **not** reproduced. This repository's
+   [`Conjectures/HypercubeSquares`](../Conjectures/HypercubeSquares/) states it is actually 20.
+7. **Disproved at n = 8.** This repository contains a Lean-verified square-free Hamiltonian cycle of Q₈
+   (`not_conjecture`), plus cycles for Q₉ and Q₁₀. The platform re-checked all three in its sandbox with a
+   fresh checker written from the definition, finding 0 inscribed squares in each (control: a Gray code of Q₈
+   has 770). It then set the status to **DISPROVED**, with both pieces of evidence attached. So, among n ≤ 10,
+   the conjecture holds exactly for 2 ≤ n ≤ 7.
 
 Re-create the demonstration on an empty database: `cd backend && .venv/bin/python -m scripts.seed_demo`.
 
