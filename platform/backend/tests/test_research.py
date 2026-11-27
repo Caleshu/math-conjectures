@@ -193,3 +193,27 @@ def test_launch_api_refuses_without_provider(client):
     r = client.post("/api/research/runs", json={"conjecture_id": cid})
     assert r.status_code == 409
     assert client.get("/api/research/meta").json()["agents"][0]["role"] == "strategist"
+
+
+def test_usage_limit_stops_run_resumably(setup):
+    """A provider usage limit (HTTP 429) must leave the run failed (resumable), not 'completed'."""
+    from app.llm.base import LLMError
+    from app.research import orchestrator
+    from app.research.orchestrator import Orchestrator
+    rid, script = setup({"max_iterations": 1, "max_experiments": 0})
+    inner = orchestrator.tracked_json_call
+
+    def limited(**kw):
+        if kw["purpose"] == "research:extremal":
+            raise LLMError("Claude Code call failed: API error 429: You've hit your 5-hour limit · resets 4:10am (America/New_York)")
+        return inner(**kw)
+
+    orchestrator.tracked_json_call = limited
+    try:
+        out = Orchestrator(rid).run()
+    finally:
+        orchestrator.tracked_json_call = inner
+    assert out["status"] == "failed" and "usage limit" in out["stop_reason"]
+    from app.autopilot import is_rate_limit
+    with session_scope() as db:
+        assert is_rate_limit(db.get(ResearchRun, rid).error)

@@ -368,6 +368,9 @@ def _tick(st: dict) -> None:
                 note(st, f"run {last.id[:8]} hit the usage limit; resuming at {t.astimezone().strftime('%H:%M %Z')}")
                 return
             last.status, last.error, last.finished_at = "queued", None, None
+            # restart the runtime clock: time spent waiting for a usage-limit reset doesn't count
+            last.checkpoint = {**(last.checkpoint or {}), "first_started_at": (last.checkpoint or {}).get("first_started_at") or (last.started_at.isoformat() if last.started_at else None)}
+            last.started_at = None
             job = enqueue(db, "research_run", {"research_run_id": last.id}, subject_type="research_run",
                           subject_id=last.id, max_attempts=2)
             cp = {k: v for k, v in (last.checkpoint or {}).items() if k not in ("stop_reason", "agent_errors", "usage")}

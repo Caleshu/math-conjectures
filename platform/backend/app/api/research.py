@@ -133,6 +133,8 @@ def resume(run_id: str, db: Session = Depends(get_db), _: dict = Depends(current
     if r.status not in ("failed", "cancelled"):
         raise HTTPException(409, f"only failed or cancelled runs can be resumed (run is {r.status})")
     r.status, r.error, r.finished_at = "queued", None, None
+    r.checkpoint = {**(r.checkpoint or {}), "first_started_at": (r.checkpoint or {}).get("first_started_at") or (r.started_at.isoformat() if r.started_at else None)}
+    r.started_at = None  # restart the runtime clock on resume
     job = enqueue(db, "research_run", {"research_run_id": r.id}, subject_type="research_run", subject_id=r.id,
                   max_attempts=2)
     cp = {k: v for k, v in (r.checkpoint or {}).items() if k not in ("stop_reason", "agent_errors", "usage")}

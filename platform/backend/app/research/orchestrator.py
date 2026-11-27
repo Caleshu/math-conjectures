@@ -16,6 +16,7 @@ checkpointed in `agent_tasks`, so a run interrupted by a restart resumes without
 from __future__ import annotations
 
 import json
+import re
 import logging
 import time
 from concurrent.futures import ThreadPoolExecutor
@@ -610,6 +611,9 @@ class Orchestrator:
                         except (LLMError, LLMUnavailable, LLMBudgetExceeded) as e:
                             errors.append(f"{r}: {e}")
                             log.warning("agent %s failed: %s", r, e)
+                limit_errs = [e for e in errors if re.search(r"429|usage limit|hit your .*limit|rate.?limit", e, re.I)]
+                if limit_errs:  # stop resumably; the autopilot resumes after the provider's limit resets
+                    raise LLMError(f"usage limit: {limit_errs[0]}")
                 if len(errors) == len(plan):
                     raise LLMError("all agents failed: " + "; ".join(errors))
                 self.checkpoint(phase=f"iteration {it}: adversarial review", agent_errors=errors)
@@ -625,6 +629,8 @@ class Orchestrator:
             final_status = "completed"
         except LimitReached as e:
             stop_reason, final_status = str(e), "completed"
+            if "runtime" in str(e) and self._recent_limit_error():
+                stop_reason, final_status = f"usage limit (runtime ran out while waiting): {e}", "failed"
         except Cancelled as e:
             stop_reason, final_status = str(e), "cancelled"
         except (LLMUnavailable, LLMBudgetExceeded) as e:
@@ -649,6 +655,13 @@ class Orchestrator:
                                    summary=f"Research run {final_status}: {stop_reason}",
                                    details={"research_run_id": self.run_id, "usage": cp["usage"]}))
         return {"status": final_status, "stop_reason": stop_reason, "usage": self.usage()}
+
+    def _recent_limit_error(self) -> bool:
+        with session_scope() as db:
+            errs = db.scalars(select(LLMUsage.error).where(LLMUsage.subject_id == self.run_id,
+                                                           LLMUsage.success.is_(False))).all()
+            terrs = db.scalars(select(AgentTask.error).where(AgentTask.research_run_id == self.run_id)).all()
+        return any(e and re.search(r"429|usage limit|hit your .*limit", e, re.I) for e in [*errs, *terrs])
 
     def run_synthesis_cached(self, iteration: int) -> dict:
         with session_scope() as db:
