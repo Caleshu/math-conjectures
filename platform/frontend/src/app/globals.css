@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif), "Iowan Old Style", Georgia, serif;
+  --font-mono: var(--font-mono), ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Paper-and-ink palette with one restrained accent. */
+  --color-paper: #fbfaf7;
+  --color-surface: #ffffff;
+  --color-ink: #1c1f24;
+  --color-ink-2: #4a5059;
+  --color-ink-3: #7b828c;
+  --color-rule: #e6e3dc;
+  --color-rule-strong: #d3cfc5;
+  --color-accent: #2b4c7e;
+  --color-accent-soft: #e9eef6;
+  --color-ok: #2f6b4f;
+  --color-ok-soft: #e7f1ec;
+  --color-warn: #8a5a12;
+  --color-warn-soft: #f7efe0;
+  --color-bad: #9b2c2c;
+  --color-bad-soft: #f8e9e8;
+}
+
+html, body { background: var(--color-paper); color: var(--color-ink); }
+body { font-feature-settings: "ss01", "cv11"; -webkit-font-smoothing: antialiased; }
+
+.katex { font-size: 1.04em; }
+.math-display .katex-display { margin: 0.4rem 0; overflow-x: auto; overflow-y: hidden; }
+
+/* Statement block: the conjecture itself. */
+.statement {
+  font-family: var(--font-serif);
+  font-size: 1.075rem;
+  line-height: 1.7;
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-surface);
+  padding: 0.9rem 1.15rem;
+}
+
+.prose-math p + p { margin-top: 0.6rem; }
+
+.tabular { font-variant-numeric: tabular-nums; }
+
+::selection { background: #dbe5f3; }
+
+/* Grid items default to min-width:auto, so wide <pre>/tables would push columns off-screen. */
+.grid > * { min-width: 0; }

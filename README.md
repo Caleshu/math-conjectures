@@ -11,6 +11,7 @@ Conjectures/<Name>/Main.lean   formal statement (and eventually the proof)
 Playground.lean                scratch space
 templates/conjecture/          template for new conjectures
 scripts/new-conjecture.sh      creates a new conjecture folder
+platform/                      MathResearchLab: web app for finding, recording and testing conjectures (see platform/README.md)
 ```
 
 ## Adding a conjecture
