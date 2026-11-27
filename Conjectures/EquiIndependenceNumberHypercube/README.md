@@ -57,11 +57,31 @@ Fixing $x_0=1$ loses no generality. Translating by an even vector preserves the 
 
 For $n=8$ the run only gives $88\le\alpha_=(Q_8)\le 112$, with the solver timing out at 30 s. It agrees with, but does not prove, the Harper-based value 88.
 - **CP-SAT without Harper: infeasibility of |A|=45 with |N[A]|<=83 in Q_7 (alpha_=(Q_8)<90), witness for 44, exact Phi_5 and critical Phi_6** [succeeded, finite computation]: sanity_ok=True; Q7 k=44 cap84: OPTIMAL lift_ok=True; Q7 k=45 cap83: UNKNOWN (wall 55.03s); Harper I44 nbhd=84; Q6 critical: [(22, 'FEASIBLE', 42, 33.0, 42), (23, 'FEASIBLE', 45, 37.0, 45)]; Q5 profile all_optimal=True matches_harper=True kappa5=10; elapsed=72.9s ([code](computations/mrl_765d1571.py), [result](computations/mrl_765d1571.result.json))
+  - [Computational Mathematician] Sanity passed: for $m=3,4$, CP-SAT with and without symmetry breaking agrees with brute force and with the simplicial profile at every $k$.
+
+Results:
+1. $Q_7$, $k=44$, cap 84: CP-SAT returned a set with $|N[A]|=84$ (OPTIMAL here just means it found a feasible point). The independent lift to $Q_8$ checks out: 88 vertices, 44 even and 44 odd, independent. Only the bound $\alpha_=(Q_8)\ge88$ follows.
+2. $Q_7$, $k=45$, cap 83: UNKNOWN after 55 s. No infeasibility proof, so nothing about the upper bound on $\alpha_=(Q_8)$ follows from this run.
+3. $Q_6$, $k=22,23$: FEASIBLE only, with objective 42 and 45 (equal to the simplicial profile) but proven bounds of only 33 and 37. Not a certification of $\Phi_6$.
+4. $Q_5$, all $k$: every one of the 33 minimisations returned OPTIMAL with matching bounds, and every objective was re-verified by recomputing $|N[A]|$. $\Phi_5$ equals the simplicial profile exactly, so $\kappa(5)=10$ and $\alpha_=(Q_6)=20$, independently of Harper.
+
+The symmetry breaking is valid; I checked it. Translate a vertex of maximum $A$-degree to $0$, then permute coordinates so the weight-1 members of $A$ come first. Both maps are automorphisms preserving $|A|$ and $|N[A]|$. The constraint $\deg_A(v)+m\,a_v\le\deg_A(0)+m$ says exactly that $\deg_A(v)\le\deg_A(0)$ for $v\in A$, and is vacuous otherwise.
 - **Recursive (coordinate-split) lower bound for Phi_m vs simplicial upper profile: Harper-free bounds on alpha_=(Q_n) for n<=13** [succeeded, finite computation]: brute sanity (L<=Phi<=H, m<=4): True; n=2: 0..0 gaps=0; n=3: 2..2 gaps=0; n=4: 4..4 gaps=0; n=5: 10..10 gaps=0; n=6: 20..20 gaps=0; n=7: 44..44 gaps=0; n=8: 88..88 gaps=0; n=9: 186..186 gaps=0; n=10: 372..372 gaps=0; n=11: 772..772 gaps=0; n=12: 1544..1544 gaps=0; n=13: 3172..3172 gaps=0; formula matches constructive lower bound: True; seeding calls: 0; elapsed 0.1s ([code](computations/mrl_3b0ebddf.py), [result](computations/mrl_3b0ebddf.result.json))
+  - [Computational Mathematician] Exact integer computation (numpy int64, 0.1 s, no CP-SAT seeding used). Sanity check passed: $L_m\le\Phi_m\le H_m$ against brute force for $m\le4$.
+
+Why the two bounds are valid:
+- $L_m$ is a valid lower bound by the coordinate-split lemma plus the monotonicity of $\Phi_m$ (both proved in the claims below).
+- $H_m$ is the neighbourhood profile of explicit initial segments of the simplicial order, so it is a valid upper bound.
+
+The run found $L_m(k)=H_m(k)$ for every $k\in[0,2^m]$ and every $m=1,\dots,12$ (gaps=0 in each case). So $\Phi_m=H_m$ exactly for $m\le12$, and $\kappa(m)$ is exact. Combined with the parity-lift reduction (re-checked by me), this gives $\alpha_=(Q_n)$ for $2\le n\le13$ as 0, 2, 4, 10, 20, 44, 88, 186, 372, 772, 1544, 3172. These match the closed form $2^{n-1}-2^{n-1-2s}\binom{2s}{s}$ with $s=\lfloor(n-1)/2\rfloor$.
+
+At the critical points: in $Q_7$, $L=H=84$ at $k=44$ and $87$ at $k=45$. Since $45+87=132>128$, $\alpha_=(Q_8)\le88$. In $Q_8$, $L=H=163$ at $k=93$ and $167$ at $k=94$. Since $94+167=261>256$, $\alpha_=(Q_9)\le186$.
+
+Limitations: the JSON was truncated for $m\ge9$, but the summary line reports gaps=0 and exactness through $n=13$. It is a single implementation and has not been independently re-run. It is a finite check only; nothing is shown for $n\ge14$.
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run bf46b0d7](research/2026-11-27-run-bf46b0d7.md): failed. usage limit: computational: Claude Code call failed: API error 429: You've hit your 5-hour limit · resets 2:10pm (America/New_York)
+- [2026-11-27 run bf46b0d7](research/2026-11-27-run-bf46b0d7.md): completed. orchestrator: This was the final allowed iteration. The main question is answered with an exact closed form. The reduction, constructions and monotonicity are reviewed; the upper bound uses only the standard Harper theorem, and the $n\le7$ values are confirmed independently. The remaining gaps are bibliographic (Harper, the source definition, Barber) or a code re-check, and another round of model 
 
