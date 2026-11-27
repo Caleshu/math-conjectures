@@ -48,6 +48,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run succeeded and its sanity checks passed. No supplied word contributed a target. Recovery used heuristic search, followed by exact verification of the recovered words. The final audit decoded the serialized digits, recomputed each word’s six counts, rejected invalid cycles and duplicate targets, and formed the set difference $U\setminus V$. The reported size of that difference was zero. The long field `missing_from_supplied_words_in_scope` records the gap before recovery. The finite scope was $n=6$ and all $550$ sorted even sextuples of total $64$ with $\sum_{i=1}^k s_i\ge 2^k$ for $1\le k\le6$.
 - **Witness coverage and exact feasibility for missing septuples** [succeeded, heuristic search]: partial: 28387 of 28456 sorted Q7 targets have audited words ([code](computations/mrl_5eebf3b5.py), [result](computations/mrl_5eebf3b5.result.json))
   - [Computational Mathematician] The run exited successfully after its assertions comparing two target enumerations and checking a feasible and an infeasible $Q_3$ instance. Its search was heuristic, but its registration test was exact for each word it accepted. Registration derives the sorted target from the word and stores one word per distinct target, so duplicate witnesses cannot inflate the reported coverage. The truncated output prevents independent replay of the full coverage count. It also gives no solver status for any particular missing septuple.
+- **Certify words against the fixed seven-dimensional residual** [succeeded, heuristic search]: Fixed audit identities absent. The candidate passed the word check. Residual membership and set equality are undetermined for the reported 69 targets. ([code](computations/mrl_28c4e5ab.py), [result](computations/mrl_28c4e5ab.result.json))
+  - [Computational Mathematician] The run exhaustively enumerated the $28{,}456$ nondecreasing even septuples of total $128$ whose first $k$ entries sum to at least $2^k$ for every $1\le k\le7$. The word checker passed both square sanity checks and validated the single $Q_7$ word below. The fixed audit identities were absent, so the run returned before any solver call or residual membership test. Both `remaining` and `coverage_equal` were null.
 
 ## AI research runs
 
@@ -57,5 +59,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-27 run bb1ab967](research/2026-11-27-run-bb1ab967.md): completed. focused round complete
 - [2026-11-27 run ee9cbcc2](research/2026-11-27-run-ee9cbcc2.md): completed. focused round complete
 - [2026-11-27 run 8edc085b](research/2026-11-27-run-8edc085b.md): completed. focused round complete
-- [2026-11-27 run f9dea480](research/2026-11-27-run-f9dea480.md): running. 
+- [2026-11-27 run f9dea480](research/2026-11-27-run-f9dea480.md): completed. focused round complete
+- [2026-11-27 run 7305dc75](research/2026-11-27-run-7305dc75.md): running. 
 

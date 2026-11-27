@@ -1,0 +1,24 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.92,
+ "result": {
+  "universe_count": 28456,
+  "prism_candidate": {
+   "target": [
+    4,
+    4,
+    4,
+    8,
+    16,
+    32,
+    60
+   ],
+   "word": "05065456061606260616063606160626061606460616062606160636061606260615160626061606360616062606160646061606260616063606160626061604"
+  },
+  "new_certificates": [],
+  "remaining": null,
+  "coverage_equal": null,
+  "solver_runs": [],
+  "summary": "Fixed audit identities absent. The candidate passed the word check. Residual membership and set equality are undetermined for the reported 69 targets."
+ }
+}
