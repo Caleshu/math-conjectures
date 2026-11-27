@@ -1,0 +1,13 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.193,
+ "result": {
+  "scope": {
+   "n": 1,
+   "graph": "bottom",
+   "candidate": "empty"
+  },
+  "status": "NOT_CHECKED",
+  "summary": "Missing staged Lean executable at toolchain/bin/lean"
+ }
+}

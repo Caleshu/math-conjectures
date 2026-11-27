@@ -37,6 +37,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run completed an exhaustive finite classification up to isomorphism. At orders $0,1,\ldots,8$ it checked $1,1,2,3,7,14,38,107,410$ types, respectively. For each reported witness, a separate check tested all $2^8=256$ assignments to the incident edges and found zero extensions. The search recognized the explicit obstruction, all $32$ edge colorings of the five-cycle extended, and two counts of labeled triangle-free graphs on five vertices agreed at $388$. The result identifies exactly when a fixed coloring can block this local step at degree eight. The clique-transversal conjecture remains open in this analysis.
 - **Kernel-check the singleton using the Erdős 151 import** [succeeded, finite computation]: The formal singleton inequality remains unchecked. ([code](computations/mrl_e154e615.py), [result](computations/mrl_e154e615.result.json))
   - [Computational Mathematician] The Python sanity check passed for $n=1$, covering one graph and two vertex subsets. Requiring the singleton clique to be met gave transversal number $1$. Requiring only maximal cliques of size at least two to be met gave $0$. The Lean executable was absent at the specified path and `attempts` was empty. The run therefore supplies no kernel verdict and does not identify the imported convention.
+- **Check the empty witness against the imported definition** [succeeded, finite computation]: Missing staged Lean executable at toolchain/bin/lean ([code](computations/mrl_fe7af131.py), [result](computations/mrl_fe7af131.result.json))
+  - [Computational Mathematician] The intended scope was one graph, the edgeless graph on $\mathrm{Fin}\,1$, and one candidate, $\varnothing$. The wrapper exited with code 0 after detecting that `toolchain/bin/lean` was missing. It checked zero instances. The import, definition lookup, sanity check, and proof attempts never ran.  (marked UNTRUSTWORTHY by the agent)
 
 ## AI research runs
 
@@ -44,5 +46,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 
 - [2026-11-27 run c28f698d](research/2026-11-27-run-c28f698d.md): completed. orchestrator: Iteration $2$ of $2$ is complete. The record supports partial bounds, and the outstanding classification check would settle only which eight-vertex neighborhoods can obstruct extension of a given coloring.
 - [2026-11-27 run 1e1b30e5](research/2026-11-27-run-1e1b30e5.md): completed. focused round complete
-- [2026-11-27 run 8bae3789](research/2026-11-27-run-8bae3789.md): running. 
+- [2026-11-27 run 8bae3789](research/2026-11-27-run-8bae3789.md): completed. focused round complete
+- [2026-11-27 run f7450353](research/2026-11-27-run-f7450353.md): running. 
 
