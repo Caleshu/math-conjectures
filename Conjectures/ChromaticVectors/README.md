@@ -47,5 +47,5 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run ecf549cb](research/2026-11-27-run-ecf549cb.md): running. 
+- [2026-11-27 run ecf549cb](research/2026-11-27-run-ecf549cb.md): completed. orchestrator: This was iteration 2 of at most 2, so no more rounds are possible. The general sufficiency question also needs new ideas, such as a general twist or balancing lemma, or a Robinson–Cohn style construction for vectors with all entries ≥4. Those are unlikely to come from one more short round. The well-supported findings are settled: necessity of (P), insufficiency of the recorded condit
 
