@@ -2,7 +2,7 @@
 # Q6: CP-SAT realisation of vectors satisfying the projection condition (P+), tight-boundary cases first
 # sha256(code) = 3206d91451e814361766180ec818b2e017b2ced2feb5fb94e03296ec18e4e9c1
 # parameters: {"tl_n5": 5.0, "tl_n6": 3.0, "tl_control": 4.0, "budget": 105.0, "n_control": 3, "workers": 8}
-# environment: {}
+# environment: {"python": "3.13.5", "platform": "macOS-27.0-arm64-arm-64bit-Mach-O", "networkx": "3.7", "sympy": "1.14.0", "ortools": "9.15.6755", "numpy": "2.5.5", "pysat": null, "isolation": "macos-sandbox-exec(no-network,write-confined)+rlimits", "limits": {"wall_timeout_s": 120, "memory_mb": 2048, "memory_enforced": false, "cpu_seconds": 965, "max_file_mb": 200, "max_open_files": 256}, "interpreter": "/Users/andrewcaleshu/Documents/myProjects/math-conjectures/platform/backend/.venv/bin/python", "host": "local", "cwd_isolated": true}
 
 import json, os, time, itertools, random
 from ortools.sat.python import cp_model
