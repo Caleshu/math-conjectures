@@ -24,7 +24,7 @@ Conjecture: a(n) with n > 2 is a perfect power only for n = 4 with a(4) = 3^2. T
 
 ## Novelty pre-check
 
-Verdict: **likely_open**. No matching problem in the repository. None of the returned records (R1-R22) mentions perfect powers among derangement numbers. They cover identities, permutation statistics and unrelated topics. The search was degraded because Semantic Scholar and OpenAlex returned HTTP 429, so not finding a resolution is weak evidence of openness. The problem is a genuine Diophantine question about a factorial-type recurrence, a(n) = n·a(n-1) + (-1)^n. The congruence a(n) ≡ ±1 mod n does not settle it trivially, and the only support is the stated check for n ≤ 1000. It looks like an OEIS-style conjecture (possibly Z.-W. Sun's) with no known proof.
+Verdict: **likely_open**. No supplied title or abstract reports a resolution, and the repository index lists no matching problem. The earlier run reports that 4 was the only qualifying index through 20,000. Even if its density-zero claim is correct, it allows exceptions beyond that range. The absence of a resolution in these search results does not prove openness.
 
 ## Computations
 
