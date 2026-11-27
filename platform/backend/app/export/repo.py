@@ -185,9 +185,33 @@ def _app_owned_path(repo: Path, rel: str) -> bool:
     if len(parts) >= 3 and parts[0] == "Conjectures" and parts[2] == SIDE_FILE:
         return True
     for i in range(2, len(parts)):
-        if (repo.joinpath(*parts[:i]) / MARKER).exists():
+        d = "/".join(parts[:i])
+        if (repo / d / MARKER).exists():
+            return True
+        # deleted by orphan cleanup: ownership is judged by the committed marker
+        if subprocess.run(["git", "cat-file", "-e", f"HEAD:{d}/{MARKER}"], cwd=repo, capture_output=True).returncode == 0:
             return True
     return False
+
+
+def _remove_orphans(repo: Path, keep: set[str]) -> None:
+    """Remove app-owned material for problems no longer exported. Never touches user-owned files."""
+    root = repo / "Conjectures"
+    readme = repo / "README.md"
+    for d in sorted(p for p in root.iterdir() if p.is_dir()) if root.exists() else []:
+        if d.name in keep:
+            continue
+        if (d / MARKER).exists():  # a folder the app created
+            _git(repo, "rm", "-r", "-q", "--ignore-unmatch", f"Conjectures/{d.name}")
+            if readme.exists():
+                lines = readme.read_text().split("\n")
+                lines = [l for l in lines if not (f"(Conjectures/{d.name}/)" in l and l.rstrip().endswith("(MathResearchLab)"))]
+                readme.write_text("\n".join(lines))
+        else:  # user folder: only our side file and subfolder
+            if (d / SIDE_FILE).exists():
+                _git(repo, "rm", "-q", "--ignore-unmatch", f"Conjectures/{d.name}/{SIDE_FILE}")
+            if (d / "MathResearchLab" / MARKER).exists():
+                _git(repo, "rm", "-r", "-q", "--ignore-unmatch", f"Conjectures/{d.name}/MathResearchLab")
 
 
 def sync(conjecture_ids: list[str] | None = None, *, dry_run: bool = False, force_enabled: bool = False) -> dict:
@@ -206,6 +230,9 @@ def sync(conjecture_ids: list[str] | None = None, *, dry_run: bool = False, forc
                 if conjecture_ids:
                     q = q.where(Conjecture.id.in_(conjecture_ids))
                 for c in db.scalars(q):
+                    det = c.extraction_details or {}
+                    if det.get("duplicate_of") or det.get("autopilot", {}).get("skipped") == "already_in_repo":
+                        continue  # never duplicate a problem the repo already has
                     folder, owned = assign_folder(repo, c)
                     if (c.extraction_details or {}).get("repo_folder") != folder:
                         c.extraction_details = {**(c.extraction_details or {}), "repo_folder": folder}
@@ -232,6 +259,8 @@ def sync(conjecture_ids: list[str] | None = None, *, dry_run: bool = False, forc
                         p.parent.mkdir(parents=True, exist_ok=True)
                         p.write_text(content)
                     written.append(folder)
+            if not conjecture_ids:
+                _remove_orphans(repo, set(written))
             _update_index(repo, index_entries)
             _git(repo, "add", "-A", "Conjectures", "README.md")
             if not _git(repo, "status", "--porcelain").strip():

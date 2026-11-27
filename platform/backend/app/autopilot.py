@@ -194,6 +194,22 @@ def promote_candidate(db) -> str | None:
             continue
         if not a.get("wording_verified_in_source") or (a.get("confidence") or 0) < 0.75:
             continue
+        # duplicates: the same passage was already recorded (via a sibling heuristic candidate, or same label)
+        dup = None
+        for sid in a.get("candidate_ids", []):
+            sib = db.get(CandidatePassage, sid)
+            if sib and sib.conjecture_id:
+                dup = sib.conjecture_id
+        if not dup and a.get("label"):
+            for o in db.scalars(select(Conjecture).where(Conjecture.source_paper_id == cand.paper_id)):
+                oc = db.get(CandidatePassage, o.source_candidate_id) if o.source_candidate_id else None
+                labels = {oc.label if oc else None, ((o.extraction_details or {}).get("assessment") or {}).get("label")}
+                if a["label"] in labels:
+                    dup = o.id
+        if dup:
+            cand.review_status = "rejected"
+            cand.review_note = f"autopilot: duplicate of an already recorded conjecture ({dup})"
+            continue
         paper = db.get(Paper, cand.paper_id)
         cite = f"{', '.join((paper.authors or [])[:3])}, {paper.title}" + (f", arXiv:{paper.arxiv_id}" if paper.arxiv_id else "")
         data = {

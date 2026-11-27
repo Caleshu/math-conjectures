@@ -86,3 +86,20 @@ def test_export_survives_push_race(remote, tmp_path, monkeypatch):
     check = tmp_path / "check2"
     subprocess.run(["git", "clone", "-q", str(bare), str(check)], check=True, capture_output=True)
     assert (check / "other.txt").exists() and (check / "Conjectures/RaceProblem/README.md").exists()
+
+
+def test_orphaned_app_folders_are_removed_but_user_files_kept(remote, tmp_path):
+    from app.export.repo import sync
+    bare, seed = remote
+    a = _conj("Temporary duplicate")
+    assert sync()["pushed"]
+    with session_scope() as db:
+        c = db.get(Conjecture, a)
+        c.extraction_details = {**c.extraction_details, "duplicate_of": "x"}
+    res = sync()
+    check = tmp_path / "check3"
+    subprocess.run(["git", "clone", "-q", str(bare), str(check)], check=True, capture_output=True)
+    assert not (check / "Conjectures/TemporaryDuplicate").exists()
+    assert "TemporaryDuplicate" not in (check / "README.md").read_text()
+    assert (check / "Conjectures/UserProblem/README.md").read_text() == "# mine\n"
+    assert "- [Mine](Conjectures/UserProblem/) — Open" in (check / "README.md").read_text()
