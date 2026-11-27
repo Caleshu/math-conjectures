@@ -63,6 +63,29 @@ def note(st: dict, msg: str, **kw) -> None:
     st["last_action"] = msg
 
 
+def reset_time(err: str | None) -> datetime:
+    """When the provider says the usage limit resets ("resets 8:50pm (America/New_York)"), wake 2 minutes after.
+    Otherwise retry in 15 minutes. Retrying costs only one refused call."""
+    fallback = _now() + timedelta(minutes=15)
+    m = re.search(r"resets\s+(\d{1,2})(?::(\d{2}))?\s*([ap]m)?\s*(?:\(([^)]+)\))?", err or "", re.I)
+    if not m:
+        return fallback
+    try:
+        from zoneinfo import ZoneInfo
+        tz = ZoneInfo(m.group(4)) if m.group(4) else timezone.utc
+        h, mi = int(m.group(1)) % 12 if m.group(3) else int(m.group(1)), int(m.group(2) or 0)
+        if (m.group(3) or "").lower() == "pm":
+            h += 12
+        local_now = _now().astimezone(tz)
+        t = local_now.replace(hour=h, minute=mi, second=0, microsecond=0)
+        if t <= local_now:
+            t += timedelta(days=1)
+        t = t.astimezone(timezone.utc) + timedelta(minutes=2)
+        return t if t - _now() < timedelta(hours=8) else fallback
+    except Exception:  # noqa: BLE001
+        return fallback
+
+
 def is_rate_limit(err: str | None) -> bool:
     return bool(err) and bool(re.search(r"429|rate.?limit|usage limit|hit your .*limit", err, re.I))
 
@@ -304,8 +327,9 @@ def tick() -> None:
     except Exception as e:  # noqa: BLE001
         msg = f"{type(e).__name__}: {e}"
         if is_rate_limit(msg):
-            st["cooldown_until"] = (_now() + timedelta(minutes=30)).isoformat()
-            note(st, "usage limit reached; pausing 30 min")
+            t = reset_time(msg)
+            st["cooldown_until"] = t.isoformat()
+            note(st, f"usage limit reached; resuming at {t.astimezone().strftime('%H:%M %Z')} (reset time)")
         else:
             st["last_error"] = msg[:500]
             st["cooldown_until"] = (_now() + timedelta(minutes=5)).isoformat()
@@ -336,12 +360,12 @@ def _tick(st: dict) -> None:
             return
         # resume a run that stopped on a usage limit
         last = db.scalars(select(ResearchRun).order_by(ResearchRun.created_at.desc()).limit(1)).first()
-        if last and last.status == "failed" and is_rate_limit(last.error) and \
-                (last.checkpoint or {}).get("autopilot_resumes", 0) < 6:
+        if last and last.status == "failed" and is_rate_limit(last.error):
             if not st.get("cooldown_for") == last.id:
                 st["cooldown_for"] = last.id
-                st["cooldown_until"] = (_now() + timedelta(minutes=30)).isoformat()
-                note(st, f"run {last.id[:8]} hit the usage limit; resuming in 30 min")
+                t = reset_time(last.error)
+                st["cooldown_until"] = t.isoformat()
+                note(st, f"run {last.id[:8]} hit the usage limit; resuming at {t.astimezone().strftime('%H:%M %Z')}")
                 return
             last.status, last.error, last.finished_at = "queued", None, None
             job = enqueue(db, "research_run", {"research_run_id": last.id}, subject_type="research_run",
@@ -412,21 +436,44 @@ def _request_export(db) -> None:
 
 
 def export_watch() -> None:
-    """Always-on: queue a GitHub export whenever problem data changed since the last successful sync."""
+    """Always-on GitHub sync.
+    * App data changed since the last successful sync: push, batched to at most once every 15 minutes, except
+      that a research run finishing is pushed right away.
+    * Every 10 minutes, check the remote: if someone else pushed (a new folder, an edited status), re-sync so the
+      categorised README tables pick it up."""
     from app.export import latest_change, request_export
     if not get_settings().repo_export_enabled:
         return
     st = load_state()
-    last = (st.get("last_export") or {})
-    last_ok = datetime.fromisoformat(last["at"]) if last.get("ok") and last.get("at") else None
-    if last_ok and last_ok.tzinfo is None:
-        last_ok = last_ok.replace(tzinfo=timezone.utc)
-    if not last.get("ok") and last.get("at") and \
-            datetime.fromisoformat(last["at"]).replace(tzinfo=timezone.utc) > _now() - timedelta(minutes=10):
-        return  # back off for 10 min after a failed export
+    last = st.get("last_export") or {}
+
+    def ts(x):
+        t = datetime.fromisoformat(x)
+        return t if t.tzinfo else t.replace(tzinfo=timezone.utc)
+
+    if last.get("at") and not last.get("ok") and ts(last["at"]) > _now() - timedelta(minutes=10):
+        return  # back off after a failed export
+    last_ok = ts(last["at"]) if last.get("ok") and last.get("at") else None
     with session_scope() as db:
         ch = latest_change(db)
+        run_done = db.scalar(select(func.max(ResearchRun.finished_at)))
+        run_done = run_done.replace(tzinfo=run_done.tzinfo or timezone.utc) if run_done else None
         if ch and (last_ok is None or ch > last_ok):
+            urgent = run_done and (last_ok is None or run_done > last_ok)
+            if urgent or last_ok is None or _now() - last_ok > timedelta(minutes=15):
+                request_export(db)
+                return
+        if st.get("remote_checked_at") and ts(st["remote_checked_at"]) > _now() - timedelta(minutes=10):
+            return
+    import subprocess
+    s = get_settings()
+    st["remote_checked_at"] = _now().isoformat()
+    save_state(st)
+    p = subprocess.run(["git", "ls-remote", s.repo_export_remote, f"refs/heads/{s.repo_export_branch}"],
+                       capture_output=True, text=True, timeout=60)
+    remote = (p.stdout.split() or [""])[0]
+    if remote and remote != last.get("head"):
+        with session_scope() as db:
             request_export(db)
 
 

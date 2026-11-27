@@ -48,7 +48,7 @@ def test_export_respects_ownership_and_index(remote, tmp_path):
     bare, seed = remote
     a = _conj("A brand new problem")
     b = _conj("User's problem", extraction_details={"repo_folder": "UserProblem"})
-    res = sync([a, b])
+    res = sync()
     assert res["pushed"]
     check = tmp_path / "check"
     subprocess.run(["git", "clone", "-q", str(bare), str(check)], check=True, capture_output=True)
@@ -58,10 +58,13 @@ def test_export_respects_ownership_and_index(remote, tmp_path):
     new = check / "Conjectures/BrandNew"
     assert (new / ".mathresearchlab").exists() and "Status:" in (new / "README.md").read_text()
     readme = (check / "README.md").read_text()
-    assert "- [Mine](Conjectures/UserProblem/) — Open" in readme and "## Other\nkeep" in readme
-    assert readme.count("(Conjectures/BrandNew/)") == 1
+    assert "| [Mine](Conjectures/UserProblem/) | Open |" in readme and "## Other\nkeep" in readme
+    assert readme.count("(Conjectures/BrandNew/)") == 1 and "## ⏳ Open" in readme
+    import tomllib
+    reg = tomllib.loads((check / "problems.toml").read_text())
+    assert reg["UserProblem"]["category"] == "open" and "BrandNew" not in reg
     assert not list(check.rglob("*.lean"))[1:]  # only the user's own Lean file
-    assert sync([a, b])["pushed"] is False      # idempotent
+    assert sync()["pushed"] is False            # idempotent
 
 
 def test_export_survives_push_race(remote, tmp_path, monkeypatch):
@@ -102,7 +105,7 @@ def test_orphaned_app_folders_are_removed_but_user_files_kept(remote, tmp_path):
     assert not (check / "Conjectures/TemporaryDuplicate").exists()
     assert "TemporaryDuplicate" not in (check / "README.md").read_text()
     assert (check / "Conjectures/UserProblem/README.md").read_text() == "# mine\n"
-    assert "- [Mine](Conjectures/UserProblem/) — Open" in (check / "README.md").read_text()
+    assert "| [Mine](Conjectures/UserProblem/) | Open |" in (check / "README.md").read_text()
 
 
 def test_app_index_lines_refresh_but_user_lines_do_not(remote, tmp_path):
@@ -116,6 +119,28 @@ def test_app_index_lines_refresh_but_user_lines_do_not(remote, tmp_path):
     check = tmp_path / "check4"
     subprocess.run(["git", "clone", "-q", str(bare), str(check)], check=True, capture_output=True)
     readme = (check / "README.md").read_text()
-    assert "(Conjectures/StatusFlip/) — **False** (MathResearchLab)" in readme
+    disproved = readme.split("## ❌ Disproved")[1].split("## ⏳ Open")[0]
+    assert "(Conjectures/StatusFlip/)" in disproved
     assert readme.count("(Conjectures/StatusFlip/)") == 1
-    assert "- [Mine](Conjectures/UserProblem/) — Open" in readme
+    assert "| [Mine](Conjectures/UserProblem/) | Open |" in readme
+
+
+def test_stray_script_lines_are_absorbed_and_categorised(remote, tmp_path):
+    """A line appended by scripts/new-conjecture.sh ends up in the right table, exactly once."""
+    from app.export.repo import sync
+    bare, seed = remote
+    sync()
+    git(seed, "pull", "-q", "origin", "main")
+    (seed / "Conjectures" / "NewThing").mkdir()
+    (seed / "Conjectures" / "NewThing" / "README.md").write_text("# New\n\n**Status:** **False.** Counterexample found.\n")
+    with open(seed / "README.md", "a") as f:
+        f.write("- [New thing](Conjectures/NewThing/) — Open\n")
+    git(seed, "add", "-A")
+    git(seed, "-c", "user.name=u", "-c", "user.email=u@x", "commit", "-q", "-m", "script")
+    git(seed, "push", "-q", "origin", "HEAD:main")
+    sync()
+    check = tmp_path / "check5"
+    subprocess.run(["git", "clone", "-q", str(bare), str(check)], check=True, capture_output=True)
+    readme = (check / "README.md").read_text()
+    assert readme.count("(Conjectures/NewThing/)") == 1
+    assert "## Other\nkeep" in readme
