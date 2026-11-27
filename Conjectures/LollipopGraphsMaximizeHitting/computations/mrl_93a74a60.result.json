@@ -1,0 +1,1617 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 11.308,
+ "result": {
+  "geng_available": false,
+  "sanity": [
+   {
+    "name": "P6",
+    "direct": "223",
+    "montante": "223",
+    "float": 223.0,
+    "paper_value": "223",
+    "ok": true
+   },
+   {
+    "name": "L(6,4)",
+    "direct": "224",
+    "montante": "224",
+    "float": 224.00000000000003,
+    "paper_value": "224",
+    "ok": true
+   },
+   {
+    "name": "15 random graphs: direct==montante==float and hash relabel-invariant",
+    "ok": true
+   }
+  ],
+  "levels": [
+   {
+    "n": 2,
+    "num_candidates_generated": 1,
+    "expected_candidates": 1,
+    "aborted": false,
+    "distinct_invariant_classes": 1,
+    "oeis_connected_count": 1,
+    "count_matches_oeis": true,
+    "pool_saturated_warning": false,
+    "top_classes": [
+     {
+      "HT": "1",
+      "HT_float": 1.0,
+      "identity": "L(2,2)",
+      "num_edges": 1,
+      "degseq": [
+       1,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ]
+      ],
+      "graph6": "A_"
+     }
+    ],
+    "lollipop_values": {
+     "2": "1"
+    },
+    "best_lollipop_k": 2,
+    "best_lollipop_HT": "1",
+    "max_is_lollipop": true,
+    "best_non_lollipop": null,
+    "crosscheck_reps": {
+     "top3_float_from_reps": [
+      1.0
+     ],
+     "top3_float_from_pool": [
+      1.0
+     ],
+     "best_nonlolli_float_reps": null,
+     "best_nonlolli_float_pool": -1.0,
+     "agree": true
+    },
+    "seconds": 0.0
+   },
+   {
+    "n": 3,
+    "num_candidates_generated": 3,
+    "expected_candidates": 3,
+    "aborted": false,
+    "distinct_invariant_classes": 2,
+    "oeis_connected_count": 2,
+    "count_matches_oeis": true,
+    "pool_saturated_warning": false,
+    "top_classes": [
+     {
+      "HT": "10",
+      "HT_float": 10.0,
+      "identity": "L(3,2)",
+      "num_edges": 2,
+      "degseq": [
+       2,
+       1,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "graph6": "Bg"
+     },
+     {
+      "HT": "6",
+      "HT_float": 6.0,
+      "identity": "L(3,3)",
+      "num_edges": 3,
+      "degseq": [
+       2,
+       2,
+       2
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "graph6": "Bw"
+     }
+    ],
+    "gap_top1_minus_top2": "4",
+    "gap_top1_minus_top2_float": 4.0,
+    "lollipop_values": {
+     "2": "10",
+     "3": "6"
+    },
+    "best_lollipop_k": 2,
+    "best_lollipop_HT": "10",
+    "max_is_lollipop": true,
+    "best_non_lollipop": null,
+    "crosscheck_reps": {
+     "top3_float_from_reps": [
+      9.999999999999998,
+      6.0
+     ],
+     "top3_float_from_pool": [
+      10.0,
+      6.0
+     ],
+     "best_nonlolli_float_reps": null,
+     "best_nonlolli_float_pool": -1.0,
+     "agree": true
+    },
+    "seconds": 0.0
+   },
+   {
+    "n": 4,
+    "num_candidates_generated": 14,
+    "expected_candidates": 14,
+    "aborted": false,
+    "distinct_invariant_classes": 6,
+    "oeis_connected_count": 6,
+    "count_matches_oeis": true,
+    "pool_saturated_warning": false,
+    "top_classes": [
+     {
+      "HT": "38",
+      "HT_float": 38.0,
+      "identity": "L(4,2)",
+      "num_edges": 3,
+      "degseq": [
+       2,
+       2,
+       1,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "graph6": "Cq"
+     },
+     {
+      "HT": "103/3",
+      "HT_float": 34.333333333333336,
+      "identity": "L(4,3)",
+      "num_edges": 4,
+      "degseq": [
+       3,
+       2,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "graph6": "Cu"
+     },
+     {
+      "HT": "33",
+      "HT_float": 33.0,
+      "identity": "CMother(4,3)",
+      "num_edges": 3,
+      "degseq": [
+       3,
+       1,
+       1,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "graph6": "Cs"
+     }
+    ],
+    "gap_top1_minus_top2": "11/3",
+    "gap_top1_minus_top2_float": 3.6666666666666665,
+    "lollipop_values": {
+     "2": "38",
+     "3": "103/3",
+     "4": "18"
+    },
+    "best_lollipop_k": 2,
+    "best_lollipop_HT": "38",
+    "max_is_lollipop": true,
+    "best_non_lollipop": {
+     "HT": "33",
+     "HT_float": 33.0,
+     "identity": "CMother(4,3)",
+     "num_edges": 3,
+     "degseq": [
+      3,
+      1,
+      1,
+      1
+     ],
+     "edges": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       3
+      ]
+     ],
+     "graph6": "Cs",
+     "gap_best_lollipop_minus_this": "5",
+     "gap_float": 5.0
+    },
+    "crosscheck_reps": {
+     "top3_float_from_reps": [
+      38.0,
+      34.33333333333334,
+      33.0
+     ],
+     "top3_float_from_pool": [
+      38.0,
+      34.33333333333334,
+      33.0
+     ],
+     "best_nonlolli_float_reps": 33.0,
+     "best_nonlolli_float_pool": 33.0,
+     "agree": true
+    },
+    "seconds": 0.0
+   },
+   {
+    "n": 5,
+    "num_candidates_generated": 90,
+    "expected_candidates": 90,
+    "aborted": false,
+    "distinct_invariant_classes": 21,
+    "oeis_connected_count": 21,
+    "count_matches_oeis": true,
+    "pool_saturated_warning": false,
+    "top_classes": [
+     {
+      "HT": "102",
+      "HT_float": 102.0,
+      "identity": "L(5,2)",
+      "num_edges": 4,
+      "degseq": [
+       2,
+       2,
+       2,
+       1,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        4
+       ]
+      ],
+      "graph6": "DqG"
+     },
+     {
+      "HT": "296/3",
+      "HT_float": 98.66666666666667,
+      "identity": "L(5,3)",
+      "num_edges": 5,
+      "degseq": [
+       3,
+       2,
+       2,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        4
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "graph6": "DqS"
+     },
+     {
+      "HT": "92",
+      "HT_float": 92.0,
+      "identity": "CMother(5,3)",
+      "num_edges": 4,
+      "degseq": [
+       3,
+       2,
+       1,
+       1,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "graph6": "DsO"
+     }
+    ],
+    "gap_top1_minus_top2": "10/3",
+    "gap_top1_minus_top2_float": 3.3333333333333335,
+    "lollipop_values": {
+     "2": "102",
+     "3": "296/3",
+     "4": "167/2",
+     "5": "40"
+    },
+    "best_lollipop_k": 2,
+    "best_lollipop_HT": "102",
+    "max_is_lollipop": true,
+    "best_non_lollipop": {
+     "HT": "92",
+     "HT_float": 92.0,
+     "identity": "CMother(5,3)",
+     "num_edges": 4,
+     "degseq": [
+      3,
+      2,
+      1,
+      1,
+      1
+     ],
+     "edges": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       3
+      ],
+      [
+       1,
+       4
+      ]
+     ],
+     "graph6": "DsO",
+     "gap_best_lollipop_minus_this": "10",
+     "gap_float": 10.0
+    },
+    "crosscheck_reps": {
+     "top3_float_from_reps": [
+      102.00000000000001,
+      98.66666666666664,
+      92.0
+     ],
+     "top3_float_from_pool": [
+      102.00000000000001,
+      98.66666666666669,
+      92.0
+     ],
+     "best_nonlolli_float_reps": 92.0,
+     "best_nonlolli_float_pool": 92.0,
+     "agree": true
+    },
+    "seconds": 0.0
+   },
+   {
+    "n": 6,
+    "num_candidates_generated": 651,
+    "expected_candidates": 651,
+    "aborted": false,
+    "distinct_invariant_classes": 112,
+    "oeis_connected_count": 112,
+    "count_matches_oeis": true,
+    "pool_saturated_warning": false,
+    "top_classes": [
+     {
+      "HT": "224",
+      "HT_float": 224.0,
+      "identity": "L(6,4)",
+      "num_edges": 8,
+      "degseq": [
+       4,
+       3,
+       3,
+       3,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        4,
+        5
+       ]
+      ],
+      "graph6": "Eqig"
+     },
+     {
+      "HT": "223",
+      "HT_float": 223.0,
+      "identity": "L(6,2)",
+      "num_edges": 5,
+      "degseq": [
+       2,
+       2,
+       2,
+       2,
+       1,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        4,
+        5
+       ]
+      ],
+      "graph6": "EqGG"
+     },
+     {
+      "HT": "222",
+      "HT_float": 222.0,
+      "identity": "L(6,3)",
+      "num_edges": 6,
+      "degseq": [
+       3,
+       2,
+       2,
+       2,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        5
+       ]
+      ],
+      "graph6": "EqHO"
+     }
+    ],
+    "gap_top1_minus_top2": "1",
+    "gap_top1_minus_top2_float": 1.0,
+    "lollipop_values": {
+     "2": "223",
+     "3": "222",
+     "4": "224",
+     "5": "833/5",
+     "6": "75"
+    },
+    "best_lollipop_k": 4,
+    "best_lollipop_HT": "224",
+    "max_is_lollipop": true,
+    "best_non_lollipop": {
+     "HT": "213",
+     "HT_float": 213.0,
+     "identity": "PC(6,3,2)",
+     "num_edges": 7,
+     "degseq": [
+      3,
+      3,
+      3,
+      2,
+      2,
+      1
+     ],
+     "edges": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       4
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       4,
+       5
+      ]
+     ],
+     "graph6": "Eqgg",
+     "gap_best_lollipop_minus_this": "11",
+     "gap_float": 11.0
+    },
+    "crosscheck_reps": {
+     "top3_float_from_reps": [
+      224.0,
+      223.0,
+      222.00000000000009
+     ],
+     "top3_float_from_pool": [
+      224.0,
+      223.00000000000009,
+      222.00000000000009
+     ],
+     "best_nonlolli_float_reps": 213.0,
+     "best_nonlolli_float_pool": 213.00000000000009,
+     "agree": true
+    },
+    "seconds": 0.0
+   },
+   {
+    "n": 7,
+    "num_candidates_generated": 7056,
+    "expected_candidates": 7056,
+    "aborted": false,
+    "distinct_invariant_classes": 853,
+    "oeis_connected_count": 853,
+    "count_matches_oeis": true,
+    "pool_saturated_warning": false,
+    "top_classes": [
+     {
+      "HT": "933/2",
+      "HT_float": 466.5,
+      "identity": "L(7,4)",
+      "num_edges": 9,
+      "degseq": [
+       4,
+       3,
+       3,
+       3,
+       2,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        4,
+        5
+       ]
+      ],
+      "graph6": "Fqig_"
+     },
+     {
+      "HT": "432",
+      "HT_float": 432.0,
+      "identity": "PC(7,3,2)",
+      "num_edges": 8,
+      "degseq": [
+       3,
+       3,
+       3,
+       2,
+       2,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        5,
+        6
+       ]
+      ],
+      "graph6": "FqGQg"
+     },
+     {
+      "HT": "2156/5",
+      "HT_float": 431.2,
+      "identity": "L(7,5)",
+      "num_edges": 12,
+      "degseq": [
+       5,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        0,
+        6
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        6
+       ],
+       [
+        5,
+        6
+       ]
+      ],
+      "graph6": "FqilW"
+     }
+    ],
+    "gap_top1_minus_top2": "69/2",
+    "gap_top1_minus_top2_float": 34.5,
+    "lollipop_values": {
+     "2": "428",
+     "3": "1286/3",
+     "4": "933/2",
+     "5": "2156/5",
+     "6": "878/3",
+     "7": "126"
+    },
+    "best_lollipop_k": 4,
+    "best_lollipop_HT": "933/2",
+    "max_is_lollipop": true,
+    "best_non_lollipop": {
+     "HT": "432",
+     "HT_float": 432.0,
+     "identity": "PC(7,3,2)",
+     "num_edges": 8,
+     "degseq": [
+      3,
+      3,
+      3,
+      2,
+      2,
+      2,
+      1
+     ],
+     "edges": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       1,
+       6
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       6
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "graph6": "FqGQg",
+     "gap_best_lollipop_minus_this": "69/2",
+     "gap_float": 34.5
+    },
+    "crosscheck_reps": {
+     "top3_float_from_reps": [
+      466.5,
+      432.00000000000006,
+      431.19999999999976
+     ],
+     "top3_float_from_pool": [
+      466.50000000000006,
+      432.0000000000001,
+      431.19999999999976
+     ],
+     "best_nonlolli_float_reps": 432.00000000000006,
+     "best_nonlolli_float_pool": 432.0000000000001,
+     "agree": true
+    },
+    "seconds": 0.03
+   },
+   {
+    "n": 8,
+    "num_candidates_generated": 108331,
+    "expected_candidates": 108331,
+    "aborted": false,
+    "distinct_invariant_classes": 11117,
+    "oeis_connected_count": 11117,
+    "count_matches_oeis": true,
+    "pool_saturated_warning": false,
+    "top_classes": [
+     {
+      "HT": "4354/5",
+      "HT_float": 870.8,
+      "identity": "L(8,5)",
+      "num_edges": 13,
+      "degseq": [
+       5,
+       4,
+       4,
+       4,
+       4,
+       2,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        1,
+        7
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        3,
+        7
+       ],
+       [
+        5,
+        6
+       ],
+       [
+        5,
+        7
+       ],
+       [
+        6,
+        7
+       ]
+      ],
+      "graph6": "GqHQik"
+     },
+     {
+      "HT": "842",
+      "HT_float": 842.0,
+      "identity": "L(8,4)",
+      "num_edges": 10,
+      "degseq": [
+       4,
+       3,
+       3,
+       3,
+       2,
+       2,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        2,
+        7
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        6
+       ],
+       [
+        4,
+        7
+       ],
+       [
+        6,
+        7
+       ]
+      ],
+      "graph6": "GqGPPS"
+     },
+     {
+      "HT": "825",
+      "HT_float": 825.0,
+      "identity": "PC(8,4,3)",
+      "num_edges": 12,
+      "degseq": [
+       4,
+       4,
+       4,
+       4,
+       3,
+       2,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        5
+       ],
+       [
+        1,
+        6
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        3,
+        6
+       ],
+       [
+        3,
+        7
+       ],
+       [
+        5,
+        6
+       ],
+       [
+        5,
+        7
+       ],
+       [
+        6,
+        7
+       ]
+      ],
+      "graph6": "GqHQgk"
+     }
+    ],
+    "gap_top1_minus_top2": "144/5",
+    "gap_top1_minus_top2_float": 28.8,
+    "lollipop_values": {
+     "2": "748",
+     "3": "2255/3",
+     "4": "842",
+     "5": "4354/5",
+     "6": "2224/3",
+     "7": "3295/7",
+     "8": "196"
+    },
+    "best_lollipop_k": 5,
+    "best_lollipop_HT": "4354/5",
+    "max_is_lollipop": true,
+    "best_non_lollipop": {
+     "HT": "825",
+     "HT_float": 825.0,
+     "identity": "PC(8,4,3)",
+     "num_edges": 12,
+     "degseq": [
+      4,
+      4,
+      4,
+      4,
+      3,
+      2,
+      2,
+      1
+     ],
+     "edges": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       1,
+       6
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       6
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       5,
+       7
+      ],
+      [
+       6,
+       7
+      ]
+     ],
+     "graph6": "GqHQgk",
+     "gap_best_lollipop_minus_this": "229/5",
+     "gap_float": 45.8
+    },
+    "crosscheck_reps": {
+     "top3_float_from_reps": [
+      870.8000000000005,
+      842.0,
+      825.0000000000002
+     ],
+     "top3_float_from_pool": [
+      870.8000000000005,
+      842.0,
+      825.0000000000002
+     ],
+     "best_nonlolli_float_reps": 825.0000000000002,
+     "best_nonlolli_float_pool": 825.0000000000002,
+     "agree": true
+    },
+    "seconds": 0.36
+   },
+   {
+    "n": 9,
+    "num_candidates_generated": 2834835,
+    "expected_candidates": 2834835,
+    "aborted": false,
+    "distinct_invariant_classes": 261080,
+    "oeis_connected_count": 261080,
+    "count_matches_oeis": true,
+    "pool_saturated_warning": false,
+    "top_classes": [
+     {
+      "HT": "7632/5",
+      "HT_float": 1526.4,
+      "identity": "L(9,5)",
+      "num_edges": 14,
+      "degseq": [
+       5,
+       4,
+       4,
+       4,
+       4,
+       2,
+       2,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        2,
+        7
+       ],
+       [
+        2,
+        8
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        4,
+        6
+       ],
+       [
+        4,
+        7
+       ],
+       [
+        4,
+        8
+       ],
+       [
+        6,
+        7
+       ],
+       [
+        6,
+        8
+       ],
+       [
+        7,
+        8
+       ]
+      ],
+      "graph6": "HqGPPSj"
+     },
+     {
+      "HT": "1470",
+      "HT_float": 1470.0,
+      "identity": "L(9,6)",
+      "num_edges": 18,
+      "degseq": [
+       6,
+       5,
+       5,
+       5,
+       5,
+       5,
+       2,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ],
+       [
+        0,
+        6
+       ],
+       [
+        0,
+        7
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        2,
+        6
+       ],
+       [
+        2,
+        7
+       ],
+       [
+        3,
+        8
+       ],
+       [
+        4,
+        5
+       ],
+       [
+        4,
+        6
+       ],
+       [
+        4,
+        7
+       ],
+       [
+        5,
+        6
+       ],
+       [
+        5,
+        7
+       ],
+       [
+        6,
+        7
+       ]
+      ],
+      "graph6": "Hqil\\[O"
+     },
+     {
+      "HT": "4306/3",
+      "HT_float": 1435.3333333333333,
+      "identity": "PC(9,4,3)",
+      "num_edges": 13,
+      "degseq": [
+       4,
+       4,
+       4,
+       4,
+       3,
+       2,
+       2,
+       2,
+       1
+      ],
+      "edges": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        7
+       ],
+       [
+        1,
+        8
+       ],
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        5
+       ],
+       [
+        3,
+        7
+       ],
+       [
+        3,
+        8
+       ],
+       [
+        4,
+        6
+       ],
+       [
+        5,
+        7
+       ],
+       [
+        5,
+        8
+       ],
+       [
+        7,
+        8
+       ]
+      ],
+      "graph6": "HqGOQhT"
+     }
+    ],
+    "gap_top1_minus_top2": "282/5",
+    "gap_top1_minus_top2_float": 56.4,
+    "lollipop_values": {
+     "2": "1220",
+     "3": "1228",
+     "4": "2777/2",
+     "5": "7632/5",
+     "6": "1470",
+     "7": "8228/7",
+     "8": "2839/4",
+     "9": "288"
+    },
+    "best_lollipop_k": 5,
+    "best_lollipop_HT": "7632/5",
+    "max_is_lollipop": true,
+    "best_non_lollipop": {
+     "HT": "4306/3",
+     "HT_float": 1435.3333333333333,
+     "identity": "PC(9,4,3)",
+     "num_edges": 13,
+     "degseq": [
+      4,
+      4,
+      4,
+      4,
+      3,
+      2,
+      2,
+      2,
+      1
+     ],
+     "edges": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       6
+      ],
+      [
+       2,
+       7
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       4,
+       7
+      ],
+      [
+       4,
+       8
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       7,
+       8
+      ]
+     ],
+     "graph6": "HqGPPSJ",
+     "gap_best_lollipop_minus_this": "1366/15",
+     "gap_float": 91.06666666666666
+    },
+    "seconds": 9.82
+   }
+  ],
+  "n10": "not attempted (261080*511 ~ 1.3e8 candidates exceed the time limit)",
+  "summary": "Exhaustive search over connected graphs by adding one vertex at a time, with exact relabelling-invariant dedup. n=2: classes=1 (OEIS 1, match=True, aborted=False); max=1 [L(2,2)]; 2nd=None; best non-lollipop=None; max_is_lollipop=True | n=3: classes=2 (OEIS 2, match=True, aborted=False); max=10 [L(3,2)]; 2nd=6 [L(3,3)]; best non-lollipop=None; max_is_lollipop=True | n=4: classes=6 (OEIS 6, match=True, aborted=False); max=38 [L(4,2)]; 2nd=103/3 [L(4,3)]; best non-lollipop=33 [CMother(4,3)]; max_is_lollipop=True | n=5: classes=21 (OEIS 21, match=True, aborted=False); max=102 [L(5,2)]; 2nd=296/3 [L(5,3)]; best non-lollipop=92 [CMother(5,3)]; max_is_lollipop=True | n=6: classes=112 (OEIS 112, match=True, aborted=False); max=224 [L(6,4)]; 2nd=223 [L(6,2)]; best non-lollipop=213 [PC(6,3,2)]; max_is_lollipop=True | n=7: classes=853 (OEIS 853, match=True, aborted=False); max=933/2 [L(7,4)]; 2nd=432 [PC(7,3,2)]; best non-lollipop=432 [PC(7,3,2)]; max_is_lollipop=True | n=8: classes=11117 (OEIS 11117, match=True, aborted=False); max=4354/5 [L(8,5)]; 2nd=842 [L(8,4)]; best non-lollipop=825 [PC(8,4,3)]; max_is_lollipop=True | n=9: classes=261080 (OEIS 261080, match=True, aborted=False); max=7632/5 [L(9,5)]; 2nd=1470 [L(9,6)]; best non-lollipop=4306/3 [PC(9,4,3)]; max_is_lollipop=True | sanity ok: [True, True, True] | elapsed 10.3s"
+ }
+}
