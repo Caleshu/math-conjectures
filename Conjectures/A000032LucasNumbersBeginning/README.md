@@ -36,5 +36,5 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 40191a8d](research/2026-11-27-run-40191a8d.md): running. 
+- [2026-11-27 run 40191a8d](research/2026-11-27-run-40191a8d.md): completed. orchestrator: Iteration 2 exhausts the two-round limit. The remaining decision depends on the definitions of the conjuncts. Further recurrence checks cannot recover a missing quantifier or establish which assertion Forberg makes.
 

@@ -19,3 +19,13 @@ Normalized:
 
 Conjecture: starting with offset 1 represents the numbers of ordered compositions of n using the signed (++--++...) terms of A001318 starting (1, 2, -5, -7, 12, 15, ...). - Gary W. Adamson, Apr 04 2013 (this is true by the pentagonal number theorem, Joerg Arndt, Apr 08 2013) · Conjecture: No a(n) has the form x^m with m > 1 and x > 1. · Conjecture: Each integer n > 2 different from 6 can be written as a sum of finitely many numbers of the form a(k) + 2 (k > 0) with no summand dividing another. This has been verified for n <= 7140.
 
+## Novelty pre-check
+
+Verdict: **unclear**. The entry bundles three claims. The supplied statement identifies the signed-composition identity as a consequence of the pentagonal number theorem. The perfect-power claim and the representation by pairwise nondividing summands of the form p(k) + 2 are separate research questions. The reported check through 7140 applies only to the representation claim. No supplied record settles either remaining question, and that absence does not establish openness.
+
+## AI research runs
+
+Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
+
+- [2026-11-27 run 8d2ba2a0](research/2026-11-27-run-8d2ba2a0.md): running. 
+
