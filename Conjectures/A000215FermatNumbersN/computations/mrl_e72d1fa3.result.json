@@ -1,0 +1,45 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 2.05,
+ "result": {
+  "summary": "The consecutive search reached n=1000000. The additional family contributed 31116 tests. There were 0 mismatches in the cases examined.",
+  "sanity_checks_passed": true,
+  "interval_complete": true,
+  "interval_last_n": 1000000,
+  "interval": {
+   "tested": 999995,
+   "passed_even": 499997,
+   "passed_m_minus_1": 121,
+   "also_passed_m_plus_1": 35,
+   "solutions_n": [
+    17,
+    257,
+    65537
+   ],
+   "counterexamples": []
+  },
+  "additional_family_complete": true,
+  "additional_family_last_pair_a_u": [
+   256,
+   255
+  ],
+  "additional_family": {
+   "tested": 31116,
+   "passed_even": 31116,
+   "passed_m_minus_1": 4,
+   "also_passed_m_plus_1": 4,
+   "solutions_n": [
+    4294967297,
+    18446744073709551617,
+    340282366920938463463374607431768211457,
+    115792089237316195423570985008687907853269984665640564039457584007913129639937
+   ],
+   "counterexamples": []
+  },
+  "method_claim": {
+   "claim": "The successive tests exactly decide the divisibility for every examined input.",
+   "author_support": "proved_here",
+   "justification": "Put $m=n-1\\ge5$. For odd $m$, the divisor is even and $2^m-1$ is odd. For even $m$, the factors $m-1,m+1,m^2+1$ are odd and pairwise coprime: any shared prime would divide $2$, by subtraction or by substituting $m\\equiv\\pm1$ into $m^2+1$. Their product is $m^4-1$, so all three modular tests together are equivalent to the original divisibility."
+  }
+ }
+}

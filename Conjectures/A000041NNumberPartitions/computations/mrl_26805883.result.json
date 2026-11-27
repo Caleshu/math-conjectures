@@ -1,0 +1,51 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.074,
+ "result": {
+  "summary": "Completed 4 of 4 exact coverage checks.",
+  "checks": [
+   {
+    "bound": 40,
+    "missing": [
+     6
+    ]
+   },
+   {
+    "bound": 7140,
+    "missing": [
+     6
+    ]
+   },
+   {
+    "bound": 50000,
+    "missing": [
+     6
+    ]
+   },
+   {
+    "bound": 250000,
+    "missing": [
+     6
+    ]
+   }
+  ],
+  "eligible_at_largest_completed_bound": 51,
+  "direct_subset_check": {
+   "range": [
+    0,
+    40
+   ],
+   "mismatches": []
+  },
+  "witness_7141": {
+   "summands": [
+    137,
+    178,
+    299,
+    1960,
+    4567
+   ],
+   "valid": true
+  }
+ }
+}

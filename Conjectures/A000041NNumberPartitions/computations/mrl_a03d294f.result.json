@@ -1,0 +1,23 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 1.421,
+ "result": {
+  "summary": "Exact perfect-power census through 20000.",
+  "completed_through": 20000,
+  "witnesses": [],
+  "direct_power_check": {
+   "range": [
+    1,
+    512
+   ],
+   "mismatches": []
+  },
+  "partition_check": {
+   "range": [
+    0,
+    64
+   ],
+   "mismatches": []
+  }
+ }
+}

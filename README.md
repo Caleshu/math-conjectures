@@ -9,7 +9,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 
 | ✅ Proved (true) | ❌ Disproved (false) | ⏳ Open |
 |:-:|:-:|:-:|
-| **2** | **6** | **17** |
+| **2** | **6** | **20** |
 
 *Verification* says how a result is known. **Lean-verified**: checked by the Lean kernel. **Computer-assisted / computer-checked**: an exact computation, reproducible from the folder. **AI research**: produced by MathResearchLab's AI agents and not yet checked by a human. Treat it as a lead, not a theorem. Problems marked 🤖 were found and researched by MathResearchLab (`platform/`). New folders are picked up automatically. To change a problem's category or summary, edit `problems.toml`.
 
@@ -36,16 +36,19 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 | Problem | Progress so far | Verification |
 |---|---|---|
 | [A000032: Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.](Conjectures/A000032LucasNumbersBeginning/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
-| [A000041: a(n) is the number of partitions of n (the partition numbers).](Conjectures/A000041NNumberPartitions/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
+| [A000041: a(n) is the number of partitions of n (the partition numbers).](Conjectures/A000041NNumberPartitions/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A000122: Expansion of Jacobi theta function theta3(x) = Sum{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n).](Conjectures/A000122ExpansionJacobiTheta/) 🤖 | Novelty pre-check: likely resolved. | AI research (not human-reviewed) |
 | [A000166: Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.](Conjectures/A000166SubfactorialOrRencontres/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A000188: (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d](Conjectures/A0001881NumberSolutions/) 🤖 | Novelty pre-check: trivial or ill posed. | AI research (not human-reviewed) |
+| [A000215: Fermat numbers: a(n) = 2^(2^n) + 1.](Conjectures/A000215FermatNumbersN/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
+| [A000247: a(n) = 2^n - n - 2.](Conjectures/A000247N2N/) 🤖 | Recorded from the literature; not yet researched. | AI research (not human-reviewed) |
 | [Additive colouring of bipartite graphs](Conjectures/AdditiveColouring/) | η ≤ 2 for all connected bipartite graphs on ≤ 15 vertices (exhaustive) | Computational evidence |
 | [Chromatic vectors of Hamiltonian cycles of Qₙ (Sagols–Morales-Luna)](Conjectures/ChromaticVectors/) 🤖 | New necessary condition $\sum_{i\in S}c_i\ge 2^{\lvert S\rvert}$; with evenness it characterises chromatic vectors for $n\le 4$ (exhaustive) and $n=5$ (CP-SAT). Open for $n\ge 6$ | AI research + computation (not human-reviewed) |
 | [Chromatic-segment vectors δᵢ(h) of Hamiltonian cycles of Qₙ (Sagols–Morales-Luna)](Conjectures/ChromaticSegmentsVectors/) 🤖 | First AI research run stopped at its runtime limit before review (31 unreviewed claims); being re-run | AI research (not human-reviewed) |
 | [Critical exponents of morphic images (Currie Conj. 1)](Conjectures/CurrieExponent/) | 4 of 10 morphisms proved, the rest reduce to two words; numerics consistent | Partial proof |
 | [Equi-independence number α₌(Qₙ) of the hypercube (Sagols–Morales-Luna)](Conjectures/EquiIndependenceNumberHypercube/) 🤖 | Exact values for $m\le 7$: 0, 0, 2, 4, 10, 20, 44 (CP-SAT; $m\le 4$ also brute force). Open in general | Computational (solver-dependent for m ≥ 5) |
 | [Erdős Problem 151 — cliqueFree four](Conjectures/ErdS151CliqueFree/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
+| [Erdős Problem 366 — weaker](Conjectures/ErdS366Weaker/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
 | [Erdős Problem 614](Conjectures/Erdos614/) | Formula proved for k+2 ≤ n ≤ (3k+2)/2, extending Erdős–Reid–Schelp–Staton / Pikhurko–Thomason; fails for all n ≥ 2k+1 | Partial result Lean-verified |
 | [Erdős Problem 64 (Erdős–Gyárfás conjecture)](Conjectures/Erdos64/) | Statement formalized | Statement formalized in Lean |
 | [Hypercubes with distant faulty vertices (Gregor–Škrekovski)](Conjectures/DistantFaults/) | Holds for n ≤ 6 in both forms (exhaustive) | Computational evidence |

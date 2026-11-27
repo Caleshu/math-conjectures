@@ -31,10 +31,89 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run completed every index $0\le n\le 20000$ and returned an empty witness list. Every perfect power with base greater than $1$ has a prime-exponent witness. The modular filters reject only impossible witnesses, and the remaining candidates received exact integer-root tests. The witness routine agreed with direct power enumeration for $1\le v\le512$, and the partition recurrence agreed with an independent calculation through $n=100$. The conclusion is exhaustive over the stated index range.
 - **All sums of pairwise nondividing shifted partition numbers** [succeeded, finite computation]: Completed 4 of 4 exact coverage checks. Largest completed bound: 250000. ([code](computations/mrl_d0ae1b47.py), [result](computations/mrl_d0ae1b47.result.json))
   - [Computational Mathematician] For each $B\in\{40,7140,50000,250000\}$, the run found exactly one missing sum in $3\le n\le B$, namely $6$. At $B=250000$ it included all $51$ eligible values. Its recurrence covers every legal subset, and direct subset enumeration agreed on every sum through $40$. The run also recovered and checked explicit witnesses, including $7141=137+178+299+1960+4567$. The largest check extends the supplied verification through $250000$.
+- **Exact perfect-power census through $n=20000$** [succeeded, finite computation]: Exact perfect-power census through 20000. ([code](computations/mrl_a03d294f.py), [result](computations/mrl_a03d294f.result.json))
+  - [Computational Mathematician] The sandbox exited successfully in 1.421 seconds. The completion field reached $20000$, and the witness list was empty. Direct enumeration of powers agreed with the witness routine for every integer $1\le v\le512$. An independent partition count by permitted part size agreed with the pentagonal recurrence for every $0\le n\le64$.
+
+To reproduce with Python 3.10 or later, save the source below as `powers.py` and the following input as `powers-params.json`. Run `MRL_PARAMS=powers-params.json python3 powers.py` in a writable directory. The program writes `result.json` and reports the last completed index if its time limit is reached.
+
+```json
+{"n_max":20000}
+```
+
+```python
+import json, os
+from functools import cache
+from math import isqrt
+from time import monotonic
+
+params = json.load(open(os.environ['MRL_PARAMS']))
+
+
+def is_prime(n):
+    return n >= 2 and all(n % d for d in range(2, isqrt(n) + 1))
+
+
+@cache
+def residue_filter(q):
+    # A modulus of the form a*q+1 often removes most candidates.
+    for a in range(1, 65):
+        modulus = a * q + 1
+        if is_prime(modulus):
+            residues = {pow(b, q, modulus) for b in range(modulus)}
+            return modulus, residues
+    return 1, {0}  # Pass all integers to the exact root test.
+
+
+@cache
+def tests_for_bits(bits):
+    return [(q, *residue_filter(q)) for q in range(2, bits) if is_prime(q)]
+
+
+def power_witness(v):
+    if v < 4:
+        return None
+    bits = v.bit_length()
+    for q, modulu
+- **Exact divisibility-antichain coverage through $250000$** [succeeded, finite computation]: Completed 4 of 4 exact coverage checks. ([code](computations/mrl_26805883.py), [result](computations/mrl_26805883.result.json))
+  - [Computational Mathematician] The sandbox exited successfully in 0.074 seconds. Each requested cutoff returned the same missing list, $[6]$. The largest check used all $51$ eligible values. Direct enumeration of the subsets of $\{3,4,5,7,9,13,17,24,32\}$ agreed with every reachability bit for $0\le t\le40$, including the empty sum. The program also verified the sum, membership of every summand, and pairwise nondivisibility for $7141=137+178+299+1960+4567$.
+
+To reproduce with Python 3.10 or later, save the source below as `antichains.py` and the following input as `antichain-params.json`. Run `MRL_PARAMS=antichain-params.json python3 antichains.py` in its own writable directory to retain both experiments' `result.json` files.
+
+```json
+{"bounds":[40,7140,50000,250000]}
+```
+
+```python
+import json, os
+from functools import lru_cache
+from itertools import combinations
+from time import monotonic
+
+params = json.load(open(os.environ['MRL_PARAMS']))
+
+
+def shifted_partitions(bound):
+    last = 16
+    while True:
+        counts = [1] + [0] * last
+        for part in range(1, last + 1):
+            for total in range(part, last + 1):
+                counts[total] += counts[total - part]
+        if counts[last] + 2 > bound:
+            return sorted({p + 2 for p in counts[1:] if p + 2 <= bound})
+        last *= 2
+
+
+def attainable(values, bound, deadline):
+    size = len(values)
+    edges = [0] * size
+    for i in range(size):
+        for j in range(i + 1, size):
+            if values[j] %
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 8d2ba2a0](research/2026-11-27-run-8d2ba2a0.md): running. 
+- [2026-11-27 run 8d2ba2a0](research/2026-11-27-run-8d2ba2a0.md): completed. orchestrator: Iteration $2$ of $2$ and all four experiments are complete. The outstanding review issues concern evidence presentation and a missing qualification. Resolving them would improve the record while leaving both universal clauses open.
 
