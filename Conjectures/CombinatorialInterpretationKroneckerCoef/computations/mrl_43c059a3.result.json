@@ -1,0 +1,2796 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 1.484,
+ "result": {
+  "summary": "n=2 prescribed matching 6/7, all-transfer matching 7/7. Mixed-length all-transfer cases completed 115/115, with 0 failures.",
+  "array_format": "Flatten in lexicographic cell order, last axis fastest. Dimensions are the three partition lengths. The margins uniquely determine the permutation labels.",
+  "n2_certificate": {
+   "prescribed": {
+    "shapes": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "negative": 7,
+    "positive": 7,
+    "edges": 21,
+    "matching_size": 6,
+    "character_coefficient": 0,
+    "deficient_subset": [
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "full_neighborhood": [
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+     ],
+     [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+     ]
+    ],
+    "matching_edges": [
+     [
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       2
+      ],
+      [
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       1
+      ]
+     ],
+     [
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       1,
+       0
+      ],
+      [
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0
+      ]
+     ],
+     [
+      [
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1
+      ],
+      [
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1
+      ]
+     ],
+     [
+      [
+       0,
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       1
+      ]
+     ],
+     [
+      [
+       0,
+       0,
+       0,
+       1,
+       0,
+       1,
+       0,
+       0
+      ],
+      [
+       0,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0
+      ]
+     ],
+     [
+      [
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       1
+      ],
+      [
+       0,
+       0,
+       0,
+       0,
+       0,
+       1,
+       0,
+       1
+      ]
+     ]
+    ]
+   },
+   "all_transfer": {
+    "shapes": [
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      1
+     ],
+     [
+      1,
+      1
+     ]
+    ],
+    "negative": 7,
+    "positive": 7,
+    "edges": 27,
+    "matching_size": 7,
+    "character_coefficient": 0
+   }
+  },
+  "coverage_by_n": {
+   "7": {
+    "requested": 40,
+    "completed": 40,
+    "failures": 0
+   },
+   "8": {
+    "requested": 75,
+    "completed": 75,
+    "failures": 0
+   }
+  },
+  "range_complete": true,
+  "first_pending_triple": null,
+  "cases": [
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      3,
+      2,
+      2
+     ]
+    ],
+    "negative": 561,
+    "positive": 562,
+    "edges": 7462,
+    "matching_size": 561,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      3,
+      3,
+      1
+     ]
+    ],
+    "negative": 330,
+    "positive": 331,
+    "edges": 3845,
+    "matching_size": 330,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      4,
+      2,
+      1
+     ]
+    ],
+    "negative": 247,
+    "positive": 248,
+    "edges": 2852,
+    "matching_size": 247,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      5,
+      1,
+      1
+     ]
+    ],
+    "negative": 131,
+    "positive": 132,
+    "edges": 1200,
+    "matching_size": 131,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      3,
+      2,
+      2
+     ]
+    ],
+    "negative": 349,
+    "positive": 350,
+    "edges": 4387,
+    "matching_size": 349,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      3,
+      3,
+      1
+     ]
+    ],
+    "negative": 207,
+    "positive": 208,
+    "edges": 2294,
+    "matching_size": 207,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      4,
+      2,
+      1
+     ]
+    ],
+    "negative": 161,
+    "positive": 163,
+    "edges": 1746,
+    "matching_size": 161,
+    "character_coefficient": 2
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      5,
+      1,
+      1
+     ]
+    ],
+    "negative": 91,
+    "positive": 92,
+    "edges": 789,
+    "matching_size": 91,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      3,
+      2,
+      2
+     ]
+    ],
+    "negative": 143,
+    "positive": 143,
+    "edges": 1255,
+    "matching_size": 143,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      3,
+      3,
+      1
+     ]
+    ],
+    "negative": 86,
+    "positive": 87,
+    "edges": 654,
+    "matching_size": 86,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      4,
+      2,
+      1
+     ]
+    ],
+    "negative": 70,
+    "positive": 71,
+    "edges": 525,
+    "matching_size": 70,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      5,
+      1,
+      1
+     ]
+    ],
+    "negative": 43,
+    "positive": 43,
+    "edges": 262,
+    "matching_size": 43,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      7
+     ],
+     [
+      3,
+      2,
+      2
+     ]
+    ],
+    "negative": 29,
+    "positive": 29,
+    "edges": 177,
+    "matching_size": 29,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      7
+     ],
+     [
+      3,
+      3,
+      1
+     ]
+    ],
+    "negative": 18,
+    "positive": 18,
+    "edges": 91,
+    "matching_size": 18,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      7
+     ],
+     [
+      4,
+      2,
+      1
+     ]
+    ],
+    "negative": 15,
+    "positive": 15,
+    "edges": 74,
+    "matching_size": 15,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      3
+     ],
+     [
+      7
+     ],
+     [
+      5,
+      1,
+      1
+     ]
+    ],
+    "negative": 10,
+    "positive": 10,
+    "edges": 39,
+    "matching_size": 10,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      2
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      3,
+      2,
+      2
+     ]
+    ],
+    "negative": 228,
+    "positive": 229,
+    "edges": 2687,
+    "matching_size": 228,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      5,
+      2
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      3,
+      3,
+      1
+     ]
+    ],
+    "negative": 136,
+    "positive": 137,
+    "edges": 1430,
+    "matching_size": 136,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      5,
+      2
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      4,
+      2,
+      1
+     ]
+    ],
+    "negative": 113,
+    "positive": 115,
+    "edges": 1135,
+    "matching_size": 113,
+    "character_coefficient": 2
+   },
+   {
+    "shapes": [
+     [
+      5,
+      2
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      5,
+      1,
+      1
+     ]
+    ],
+    "negative": 70,
+    "positive": 71,
+    "edges": 568,
+    "matching_size": 70,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      5,
+      2
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      3,
+      2,
+      2
+     ]
+    ],
+    "negative": 99,
+    "positive": 99,
+    "edges": 828,
+    "matching_size": 99,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      2
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      3,
+      3,
+      1
+     ]
+    ],
+    "negative": 60,
+    "positive": 60,
+    "edges": 442,
+    "matching_size": 60,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      2
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      4,
+      2,
+      1
+     ]
+    ],
+    "negative": 53,
+    "positive": 54,
+    "edges": 379,
+    "matching_size": 53,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      5,
+      2
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      5,
+      1,
+      1
+     ]
+    ],
+    "negative": 36,
+    "positive": 37,
+    "edges": 220,
+    "matching_size": 36,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      5,
+      2
+     ],
+     [
+      7
+     ],
+     [
+      3,
+      2,
+      2
+     ]
+    ],
+    "negative": 21,
+    "positive": 21,
+    "edges": 121,
+    "matching_size": 21,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      2
+     ],
+     [
+      7
+     ],
+     [
+      3,
+      3,
+      1
+     ]
+    ],
+    "negative": 13,
+    "positive": 13,
+    "edges": 64,
+    "matching_size": 13,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      2
+     ],
+     [
+      7
+     ],
+     [
+      4,
+      2,
+      1
+     ]
+    ],
+    "negative": 12,
+    "positive": 12,
+    "edges": 56,
+    "matching_size": 12,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      2
+     ],
+     [
+      7
+     ],
+     [
+      5,
+      1,
+      1
+     ]
+    ],
+    "negative": 9,
+    "positive": 9,
+    "edges": 35,
+    "matching_size": 9,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      3,
+      2,
+      2
+     ]
+    ],
+    "negative": 47,
+    "positive": 47,
+    "edges": 280,
+    "matching_size": 47,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      3,
+      3,
+      1
+     ]
+    ],
+    "negative": 29,
+    "positive": 29,
+    "edges": 151,
+    "matching_size": 29,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      4,
+      2,
+      1
+     ]
+    ],
+    "negative": 28,
+    "positive": 28,
+    "edges": 146,
+    "matching_size": 28,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      1
+     ],
+     [
+      6,
+      1
+     ],
+     [
+      5,
+      1,
+      1
+     ]
+    ],
+    "negative": 21,
+    "positive": 22,
+    "edges": 106,
+    "matching_size": 21,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      6,
+      1
+     ],
+     [
+      7
+     ],
+     [
+      3,
+      2,
+      2
+     ]
+    ],
+    "negative": 11,
+    "positive": 11,
+    "edges": 43,
+    "matching_size": 11,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      1
+     ],
+     [
+      7
+     ],
+     [
+      3,
+      3,
+      1
+     ]
+    ],
+    "negative": 7,
+    "positive": 7,
+    "edges": 23,
+    "matching_size": 7,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      1
+     ],
+     [
+      7
+     ],
+     [
+      4,
+      2,
+      1
+     ]
+    ],
+    "negative": 7,
+    "positive": 7,
+    "edges": 23,
+    "matching_size": 7,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      1
+     ],
+     [
+      7
+     ],
+     [
+      5,
+      1,
+      1
+     ]
+    ],
+    "negative": 6,
+    "positive": 6,
+    "edges": 19,
+    "matching_size": 6,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7
+     ],
+     [
+      7
+     ],
+     [
+      3,
+      2,
+      2
+     ]
+    ],
+    "negative": 3,
+    "positive": 3,
+    "edges": 6,
+    "matching_size": 3,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7
+     ],
+     [
+      7
+     ],
+     [
+      3,
+      3,
+      1
+     ]
+    ],
+    "negative": 2,
+    "positive": 2,
+    "edges": 3,
+    "matching_size": 2,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7
+     ],
+     [
+      7
+     ],
+     [
+      4,
+      2,
+      1
+     ]
+    ],
+    "negative": 2,
+    "positive": 2,
+    "edges": 3,
+    "matching_size": 2,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7
+     ],
+     [
+      7
+     ],
+     [
+      5,
+      1,
+      1
+     ]
+    ],
+    "negative": 2,
+    "positive": 2,
+    "edges": 3,
+    "matching_size": 2,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 1284,
+    "positive": 1284,
+    "edges": 13928,
+    "matching_size": 1284,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 965,
+    "positive": 966,
+    "edges": 10769,
+    "matching_size": 965,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 574,
+    "positive": 574,
+    "edges": 5754,
+    "matching_size": 574,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 384,
+    "positive": 384,
+    "edges": 3691,
+    "matching_size": 384,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 187,
+    "positive": 187,
+    "edges": 1377,
+    "matching_size": 187,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 975,
+    "positive": 976,
+    "edges": 13784,
+    "matching_size": 975,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 747,
+    "positive": 747,
+    "edges": 10469,
+    "matching_size": 747,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 444,
+    "positive": 445,
+    "edges": 5675,
+    "matching_size": 444,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 305,
+    "positive": 306,
+    "edges": 3632,
+    "matching_size": 305,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 152,
+    "positive": 153,
+    "edges": 1403,
+    "matching_size": 152,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 547,
+    "positive": 547,
+    "edges": 6655,
+    "matching_size": 547,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 431,
+    "positive": 432,
+    "edges": 5254,
+    "matching_size": 431,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 259,
+    "positive": 260,
+    "edges": 2855,
+    "matching_size": 259,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 185,
+    "positive": 186,
+    "edges": 1938,
+    "matching_size": 185,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 98,
+    "positive": 98,
+    "edges": 815,
+    "matching_size": 98,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 207,
+    "positive": 207,
+    "edges": 1652,
+    "matching_size": 207,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 168,
+    "positive": 168,
+    "edges": 1376,
+    "matching_size": 168,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 103,
+    "positive": 104,
+    "edges": 743,
+    "matching_size": 103,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 77,
+    "positive": 77,
+    "edges": 538,
+    "matching_size": 77,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 44,
+    "positive": 44,
+    "edges": 252,
+    "matching_size": 44,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      8
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 40,
+    "positive": 40,
+    "edges": 220,
+    "matching_size": 40,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      8
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 33,
+    "positive": 33,
+    "edges": 188,
+    "matching_size": 33,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      8
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 21,
+    "positive": 21,
+    "edges": 100,
+    "matching_size": 21,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      8
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 16,
+    "positive": 16,
+    "edges": 74,
+    "matching_size": 16,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      4,
+      4
+     ],
+     [
+      8
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 10,
+    "positive": 10,
+    "edges": 37,
+    "matching_size": 10,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 755,
+    "positive": 756,
+    "edges": 12622,
+    "matching_size": 755,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 594,
+    "positive": 596,
+    "edges": 9519,
+    "matching_size": 594,
+    "character_coefficient": 2
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 353,
+    "positive": 355,
+    "edges": 5205,
+    "matching_size": 353,
+    "character_coefficient": 2
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 253,
+    "positive": 255,
+    "edges": 3348,
+    "matching_size": 253,
+    "character_coefficient": 2
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      5,
+      3
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 132,
+    "positive": 133,
+    "edges": 1332,
+    "matching_size": 132,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 434,
+    "positive": 435,
+    "edges": 6246,
+    "matching_size": 434,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 357,
+    "positive": 358,
+    "edges": 4904,
+    "matching_size": 357,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 213,
+    "positive": 215,
+    "edges": 2687,
+    "matching_size": 213,
+    "character_coefficient": 2
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 162,
+    "positive": 164,
+    "edges": 1846,
+    "matching_size": 162,
+    "character_coefficient": 2
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 91,
+    "positive": 92,
+    "edges": 807,
+    "matching_size": 91,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 168,
+    "positive": 168,
+    "edges": 1651,
+    "matching_size": 168,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 144,
+    "positive": 144,
+    "edges": 1356,
+    "matching_size": 144,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 87,
+    "positive": 88,
+    "edges": 739,
+    "matching_size": 87,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 70,
+    "positive": 71,
+    "edges": 542,
+    "matching_size": 70,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 43,
+    "positive": 43,
+    "edges": 264,
+    "matching_size": 43,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      8
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 33,
+    "positive": 33,
+    "edges": 227,
+    "matching_size": 33,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      8
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 29,
+    "positive": 29,
+    "edges": 189,
+    "matching_size": 29,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      8
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 18,
+    "positive": 18,
+    "edges": 102,
+    "matching_size": 18,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      8
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 15,
+    "positive": 15,
+    "edges": 76,
+    "matching_size": 15,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      5,
+      3
+     ],
+     [
+      8
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 10,
+    "positive": 10,
+    "edges": 39,
+    "matching_size": 10,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 262,
+    "positive": 262,
+    "edges": 3294,
+    "matching_size": 262,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 229,
+    "positive": 230,
+    "edges": 2746,
+    "matching_size": 229,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 137,
+    "positive": 138,
+    "edges": 1506,
+    "matching_size": 137,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 113,
+    "positive": 115,
+    "edges": 1140,
+    "matching_size": 113,
+    "character_coefficient": 2
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 70,
+    "positive": 71,
+    "edges": 568,
+    "matching_size": 70,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 107,
+    "positive": 107,
+    "edges": 933,
+    "matching_size": 107,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 99,
+    "positive": 99,
+    "edges": 832,
+    "matching_size": 99,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 60,
+    "positive": 60,
+    "edges": 453,
+    "matching_size": 60,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 53,
+    "positive": 54,
+    "edges": 379,
+    "matching_size": 53,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 36,
+    "positive": 37,
+    "edges": 220,
+    "matching_size": 36,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      8
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 22,
+    "positive": 22,
+    "edges": 133,
+    "matching_size": 22,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      8
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 21,
+    "positive": 21,
+    "edges": 121,
+    "matching_size": 21,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      8
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 13,
+    "positive": 13,
+    "edges": 65,
+    "matching_size": 13,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      8
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 12,
+    "positive": 12,
+    "edges": 56,
+    "matching_size": 12,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      6,
+      2
+     ],
+     [
+      8
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 9,
+    "positive": 9,
+    "edges": 35,
+    "matching_size": 9,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7,
+      1
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 48,
+    "positive": 48,
+    "edges": 286,
+    "matching_size": 48,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7,
+      1
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 47,
+    "positive": 47,
+    "edges": 280,
+    "matching_size": 47,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7,
+      1
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 29,
+    "positive": 29,
+    "edges": 152,
+    "matching_size": 29,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7,
+      1
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 28,
+    "positive": 28,
+    "edges": 146,
+    "matching_size": 28,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7,
+      1
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 21,
+    "positive": 22,
+    "edges": 106,
+    "matching_size": 21,
+    "character_coefficient": 1
+   },
+   {
+    "shapes": [
+     [
+      7,
+      1
+     ],
+     [
+      8
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 11,
+    "positive": 11,
+    "edges": 43,
+    "matching_size": 11,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7,
+      1
+     ],
+     [
+      8
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 11,
+    "positive": 11,
+    "edges": 43,
+    "matching_size": 11,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7,
+      1
+     ],
+     [
+      8
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 7,
+    "positive": 7,
+    "edges": 23,
+    "matching_size": 7,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7,
+      1
+     ],
+     [
+      8
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 7,
+    "positive": 7,
+    "edges": 23,
+    "matching_size": 7,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      7,
+      1
+     ],
+     [
+      8
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 6,
+    "positive": 6,
+    "edges": 19,
+    "matching_size": 6,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      8
+     ],
+     [
+      8
+     ],
+     [
+      3,
+      3,
+      2
+     ]
+    ],
+    "negative": 3,
+    "positive": 3,
+    "edges": 6,
+    "matching_size": 3,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      8
+     ],
+     [
+      8
+     ],
+     [
+      4,
+      2,
+      2
+     ]
+    ],
+    "negative": 3,
+    "positive": 3,
+    "edges": 6,
+    "matching_size": 3,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      8
+     ],
+     [
+      8
+     ],
+     [
+      4,
+      3,
+      1
+     ]
+    ],
+    "negative": 2,
+    "positive": 2,
+    "edges": 3,
+    "matching_size": 2,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      8
+     ],
+     [
+      8
+     ],
+     [
+      5,
+      2,
+      1
+     ]
+    ],
+    "negative": 2,
+    "positive": 2,
+    "edges": 3,
+    "matching_size": 2,
+    "character_coefficient": 0
+   },
+   {
+    "shapes": [
+     [
+      8
+     ],
+     [
+      8
+     ],
+     [
+      6,
+      1,
+      1
+     ]
+    ],
+    "negative": 2,
+    "positive": 2,
+    "edges": 3,
+    "matching_size": 2,
+    "character_coefficient": 0
+   }
+  ]
+ }
+}

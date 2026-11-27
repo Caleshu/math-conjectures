@@ -1,0 +1,247 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.6,
+ "result": {
+  "summary": "Checked 17444 degree-compatible triples. Width two failed on 502. Requested ranges complete: True.",
+  "complete": true,
+  "reports": [
+   {
+    "config": {
+     "n": 4,
+     "u_max": 6,
+     "v_max": 6
+    },
+    "eligible_pairs_with_targets": 341,
+    "pairs_finished": 341,
+    "triples_checked": 1115,
+    "triples_with_negatives": 229,
+    "widths": {
+     "1": {
+      "saturated": 990,
+      "failed": 125,
+      "first_failure": {
+       "u": [
+        1,
+        3,
+        4,
+        2
+       ],
+       "v": [
+        1,
+        2,
+        3,
+        4
+       ],
+       "w": [
+        2,
+        3,
+        1,
+        4
+       ],
+       "coefficient": 0,
+       "positive_count": 2,
+       "negative_count": 2,
+       "hall_witness": {
+        "negative_indices": [
+         1
+        ],
+        "positive_neighbor_indices": [],
+        "sample_negative_steps": [
+         [
+          2,
+          1,
+          2,
+          3
+         ],
+         [
+          3,
+          1,
+          1,
+          3
+         ]
+        ]
+       }
+      }
+     },
+     "2": {
+      "saturated": 1080,
+      "failed": 35,
+      "first_failure": {
+       "u": [
+        1,
+        4,
+        3,
+        2
+       ],
+       "v": [
+        1,
+        2,
+        3,
+        4
+       ],
+       "w": [
+        2,
+        4,
+        1,
+        3
+       ],
+       "coefficient": 0,
+       "positive_count": 1,
+       "negative_count": 1,
+       "hall_witness": {
+        "negative_indices": [
+         0
+        ],
+        "positive_neighbor_indices": [],
+        "sample_negative_steps": [
+         [
+          2,
+          2,
+          2,
+          3
+         ],
+         [
+          2,
+          1,
+          2,
+          4
+         ],
+         [
+          3,
+          1,
+          1,
+          3
+         ]
+        ]
+       }
+      }
+     }
+    },
+    "complete": true,
+    "sanity_checks_passed": true
+   },
+   {
+    "config": {
+     "n": 5,
+     "u_max": 3,
+     "v_max": 3
+    },
+    "eligible_pairs_with_targets": 841,
+    "pairs_finished": 841,
+    "triples_checked": 16329,
+    "triples_with_negatives": 3183,
+    "widths": {
+     "1": {
+      "saturated": 14486,
+      "failed": 1843,
+      "first_failure": {
+       "u": [
+        1,
+        2,
+        4,
+        5,
+        3
+       ],
+       "v": [
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "w": [
+        1,
+        3,
+        4,
+        2,
+        5
+       ],
+       "coefficient": 0,
+       "positive_count": 2,
+       "negative_count": 2,
+       "hall_witness": {
+        "negative_indices": [
+         1
+        ],
+        "positive_neighbor_indices": [],
+        "sample_negative_steps": [
+         [
+          3,
+          1,
+          3,
+          4
+         ],
+         [
+          4,
+          1,
+          2,
+          4
+         ]
+        ]
+       }
+      }
+     },
+     "2": {
+      "saturated": 15862,
+      "failed": 467,
+      "first_failure": {
+       "u": [
+        1,
+        2,
+        5,
+        4,
+        3
+       ],
+       "v": [
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "w": [
+        1,
+        3,
+        5,
+        2,
+        4
+       ],
+       "coefficient": 0,
+       "positive_count": 1,
+       "negative_count": 1,
+       "hall_witness": {
+        "negative_indices": [
+         0
+        ],
+        "positive_neighbor_indices": [],
+        "sample_negative_steps": [
+         [
+          3,
+          2,
+          3,
+          4
+         ],
+         [
+          3,
+          1,
+          3,
+          5
+         ],
+         [
+          4,
+          1,
+          2,
+          4
+         ]
+        ]
+       }
+      }
+     }
+    },
+    "complete": true,
+    "sanity_checks_passed": true
+   }
+  ],
+  "witness_convention": "Indices are zero-based within each sign, sorted lexicographically by the full step sequence. Each step is [row, column, left position, right position], all one-based."
+ }
+}

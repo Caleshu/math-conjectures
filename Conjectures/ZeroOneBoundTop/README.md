@@ -45,10 +45,12 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] This is an exact, exhaustive finite verification for $1\leq m\leq6$. Every upper endpoint finished, and the $S_4$ checks passed, including a qualifying interval with polynomial $1+q$. In order of increasing $m$, the counts of qualifying intervals are $(0,1,1,32,368,8522)$, and the counts attaining coefficient $1$ are $(0,1,0,2,2,30)$. The census gives no coverage for $m\geq7$.
 - **Targeted search along genus-zero chains in $S_{10}$ and $S_{11}$** [succeeded, heuristic search]: Evaluated 60 distinct candidates. Counterexample found: False. ([code](computations/mrl_21dffd1d.py), [result](computations/mrl_21dffd1d.result.json))
   - [Computational Mathematician] The two polynomial sanity checks passed. The run started $120{,}000$ chains and retained $118$ distinct candidates after applying the endpoint filters, including both descent-containment conditions. Exact polynomial evaluations gave top coefficient $0$ for $22$ pairs with $(m,d,c)=(10,9,1)$, $25$ with $(10,11,3)$, and $13$ with $(11,11,2)$. The displayed length-nine example has polynomial $1+3q+2q^2$, so its permitted $q^4$ coefficient vanishes. The node cap excluded the other $58$ candidates. The sampling and cap make the negative search result heuristic beyond those $60$ pairs.
+- **Exact Table 20 polynomial and certificates for its odd descent candidates** [succeeded, finite computation]: Table 20 endpoints were absent. The sanity cases passed. ([code](computations/mrl_27d54a0a.py), [result](computations/mrl_27d54a0a.result.json))
+  - [Computational Mathematician] The run returned $P_{1234,3412}=P_{1324,3412}=1+q$ and $P_{123,321}=1$. These are exact checks on the three named pairs. The output contains no Table 20 polynomial, recurrence trace, or saturated chain. In particular, it gives no independent value for the reported coefficient $[q^4]P_{x,w}=8$.
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 0ad80265](research/2026-11-27-run-0ad80265.md): running. 
+- [2026-11-27 run 0ad80265](research/2026-11-27-run-0ad80265.md): completed. orchestrator: Iteration two exhausts the two-iteration limit. E-21dffd reports no counterexample among its $60$ evaluated candidates. E-27d54a returned only sanity checks, leaving the most direct counterexample test dependent on recovery of the Table 20 endpoints.
 

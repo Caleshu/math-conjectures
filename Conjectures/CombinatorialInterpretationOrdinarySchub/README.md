@@ -28,3 +28,19 @@ Source: Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, Emily Xia Meng, Henry Kv
 - Direct baselines gave positive rules for families with restricted output permutations or separated input supports. *(Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, PatternMiner: Automated Mathematical Discovery Through LLM-Guided Training and Interpretation of Small Models, arXiv:2611.33966 (Appendix C, Table 22, p. 46))*
 - For every $n\geq5$ there is a degree-compatible triple with zero coefficient and $n-3$ dimensions in the union of the two factors' descent sets, although every projection retaining a proper subset of those dimensions has nonempty generic intersection. *(Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, PatternMiner: Automated Mathematical Discovery Through LLM-Guided Training and Interpretation of Small Models, arXiv:2611.33966 (B.1.7, Theorem B.1.3, pp. 22–24))*
 
+## Novelty pre-check
+
+Verdict: **likely_open**. R1 gives a signed puzzle rule. Turning its signed sum into a count for arbitrary permutations would require explaining the cancellations. R9 gives a positive puzzle rule for the Grassmannian case. No supplied record gives a positive counting rule for all permutation triples, and no listed repository problem matches. The absence of a general rule in these results does not prove the problem is open.
+
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Can two consecutive changes cancel every negative pipe-dream chain?** [succeeded, finite computation]: Checked 17444 degree-compatible triples. Width two failed on 502. Requested ranges complete: True. ([code](computations/mrl_72e0c49c.py), [result](computations/mrl_72e0c49c.result.json))
+
+## AI research runs
+
+Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
+
+- [2026-11-27 run f140f6f1](research/2026-11-27-run-f140f6f1.md): running. 
+

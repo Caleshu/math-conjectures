@@ -1,0 +1,23 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.13,
+ "result": {
+  "summary": "Table 20 endpoints were absent. The sanity cases passed.",
+  "sanity": {
+   "passed": true,
+   "P_1234_3412": [
+    1,
+    1
+   ],
+   "P_1324_3412": [
+    1,
+    1
+   ],
+   "P_123_321": [
+    1
+   ]
+  },
+  "descent_candidates": [],
+  "table20_status": "Missing Table 20 endpoint permutations"
+ }
+}
