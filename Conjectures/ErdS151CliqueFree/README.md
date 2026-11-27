@@ -23,7 +23,7 @@ Erdős and Gallai made no progress on the question even when $G$ is $K_4$-free [
 
 ## Novelty pre-check
 
-Verdict: **likely_open**. The clique-transversal bound for K₄-free graphs is a genuine extremal graph question with no apparent repository match. None of the returned records indicates a proof or counterexample. Two searches were rate-limited, so the absence of a resolution in these results does not establish openness.
+Verdict: **likely_open**. No supplied R-ref indicates a resolution, and the repository index has no matching problem. The earlier assessment reports a conditional bound for n < R(3,11) under the convention that a transversal meets every maximal clique of size at least two. The displayed Lean declaration leaves the singleton convention implicit. Absence of a reported resolution is not proof of openness.
 
 ## Computations
 
