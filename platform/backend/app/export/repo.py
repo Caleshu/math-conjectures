@@ -111,6 +111,8 @@ def render(db, c: Conjecture, app_owned: bool) -> tuple[str, dict[str, str]]:
         L[0] = f"# MathResearchLab notes: {c.title}"
         L += ["*This folder's README and Lean files are yours and are never modified. This file holds only "
               "what MathResearchLab recorded.*", ""]
+    if det_early := (c.extraction_details or {}).get("counterexample_md"):
+        L += ["## Counterexample", "", det_early.strip(), ""]
     L += ["## Statement", "", "Original wording (verbatim from the source):", "", "```latex", c.original_statement, "```", ""]
     if c.normalized_statement:
         L += ["Normalized:", "", c.normalized_statement, ""]
