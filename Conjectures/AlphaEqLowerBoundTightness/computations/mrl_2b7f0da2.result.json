@@ -1,0 +1,13 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.301,
+ "result": {
+  "size": 20,
+  "in_Q6": true,
+  "independent": true,
+  "even": 10,
+  "odd": 10,
+  "bound_2^(n-2)": 16,
+  "summary": "Witness of size 20 in Q6: independent=True, parity classes 10/10; exceeds 2^(6-2)=16"
+ }
+}
