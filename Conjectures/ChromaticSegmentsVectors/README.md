@@ -70,5 +70,5 @@ This is a finite, exact verification for $n=5$, $c\in\{12,14,16\}$ only.
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 301fac8a](research/2026-11-27-run-301fac8a.md): failed. usage limit: construction: Claude Code call failed: API error 429: You've hit your 5-hour limit · resets 9:10am (America/New_York)
+- [2026-11-27 run 301fac8a](research/2026-11-27-run-301fac8a.md): completed. model-call limit reached (24)
 

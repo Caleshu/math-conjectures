@@ -28,3 +28,19 @@ Source: Feliú Sagols, Guillermo Morales-Luna, *Parity balance of the $i$-th dim
 - Computing $\alpha_=$ of a bipartite graph reduces in polynomial time to computing the independence number of an auxiliary graph. *(Feliú Sagols, Guillermo Morales-Luna, Parity balance of the $i$-th dimension edges in Hamiltonian cycles of the hypercube, arXiv:1009.3304 (Theorem 5.3, p. 7))*
 - Computed values: $\alpha_=(Q_3)=2$, $\alpha_=(Q_4)=4$, $\alpha_=(Q_5)=10$, $\alpha_=(Q_6)=16$, $\alpha_=(Q_7)=40$. The value for $n=8$ was not computed because the auxiliary graph is too large. *(Feliú Sagols, Guillermo Morales-Luna, Parity balance of the $i$-th dimension edges in Hamiltonian cycles of the hypercube, arXiv:1009.3304 (Table 1, p. 7); computational; reproduced: None)*
 
+## Novelty pre-check
+
+Verdict: **likely_open**. This is worth a full run, though the evidence for openness is thin. The only relevant search result is the source paper itself [R1]. It leaves the general value of α_=(Q_n) as an open calculation and only tabulates small cases. None of the other results is about this problem, and one search source (Semantic Scholar) failed with HTTP 429, so not finding a resolution does not show the problem is open.
+
+The repository does not already contain it. Conjectures/HypercubeSquares computed α_=(Q_m) for m ≤ 7 only as a tool for the inscribed-square question; it does not attempt a formula for all n.
+
+Results already recorded in this app don't settle it, but they help in two ways. First, CP-SAT computations give α_= = 0, 0, 2, 4, 10, 20, 44 for m = 1..7. The m = 5..7 values come from a solver, not brute force. Second, the paper's own table appears to be wrong at n = 6 (16 reported, 20 found and checked by an explicit witness) and probably at n = 7 (40 reported, 44 found). So reliable data exists only for very small n.
+
+The problem is a real question in hypercube isoperimetry. It asks for the largest k such that some set of k even vertices has at most 2^{n-1} − k odd neighbours. Known results on the even and odd halves of the hypercube (I have in mind Körner–Wei-type work, which is not among the search results) might give the asymptotics, or even exact values. Before investing heavily, a run should first check that literature.
+
+## AI research runs
+
+Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
+
+- [2026-11-27 run bf46b0d7](research/2026-11-27-run-bf46b0d7.md): running. 
+
