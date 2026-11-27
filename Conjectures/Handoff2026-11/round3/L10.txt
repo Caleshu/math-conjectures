@@ -1,0 +1,1 @@
+L=10 NMAX=60 pairs=420012 violations=0 n<n0-inequalities=0

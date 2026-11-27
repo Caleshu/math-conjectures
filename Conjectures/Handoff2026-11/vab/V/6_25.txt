@@ -1,0 +1,4 @@
+V(6,25): 3 even terms <= 600000: 6 50 106
+  odd register: period P=50258, periodic from u0=395173
+  PROVED: V(6,25) has exactly 3 even terms; odd part periodic with period 50258 (10496 odd terms/period; 0 residue classes needed the exact count)
+exit=0

@@ -1,0 +1,4 @@
+U(4,53): 3 even terms <= 600000: 4 110 216
+  odd register: period P=13824, periodic from u0=3
+  PROVED: U(4,53) has exactly 3 even terms; odd part periodic with period 13824 (928 odd terms/period; 259 residue classes needed the exact count)
+exit=0

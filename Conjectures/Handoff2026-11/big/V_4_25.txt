@@ -1,0 +1,1 @@
+V(4,25): Brent search stopped by hand after ~20 CPU-minutes (budget 8e10 steps) without finding a cycle; inconclusive.

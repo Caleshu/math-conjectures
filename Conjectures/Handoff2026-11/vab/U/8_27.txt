@@ -1,0 +1,3 @@
+U(8,27): 6 even terms <= 600000: 8 62 116 170 224 540
+  inconclusive: no cycle with period <= 2e+09 odd-steps
+exit=5

@@ -1,0 +1,9 @@
+n=3 q=3  PSp invol=196,911  Omega invol=354,159
+n=3 q=5  PSp invol=153,969,375  Omega invol=138,345,375
+n=4 q=3  PSp invol=1,284,001,551  Omega invol=2,414,735,631
+
+Does PSp(2n,q) have more involutions than Omega(2n+1,q)?
+n=3: q=3:no q=5:yes q=7:no q=9:yes q=11:no q=13:yes q=17:yes q=19:no q=23:no q=25:yes q=27:no
+n=4: q=3:no q=5:yes q=7:no q=9:yes q=11:no q=13:yes q=17:yes q=19:no q=23:no q=25:yes q=27:no
+n=5: q=3:no q=5:yes q=7:no q=9:yes q=11:no q=13:yes q=17:yes q=19:no q=23:no q=25:yes q=27:no
+n=6: q=3:no q=5:yes q=7:no q=9:yes q=11:no q=13:yes q=17:yes q=19:no q=23:no q=25:yes q=27:no

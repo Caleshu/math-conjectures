@@ -1,0 +1,4 @@
+V(10,23): 4 even terms <= 600000: 10 46 102 194
+  odd register: period P=6091270, periodic from u0=801361
+  PROVED: V(10,23) has exactly 4 even terms; odd part periodic with period 6091270 (1025734 odd terms/period; 0 residue classes needed the exact count)
+exit=0

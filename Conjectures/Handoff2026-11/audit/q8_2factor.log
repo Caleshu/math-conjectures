@@ -1,0 +1,3 @@
+Q_8: 1024 edge vars, 1792 squares, 19968 base clauses, mode=2factor
+SAT: 3 cycle(s), lengths [52, 76, 128], after 0 cuts, 0.7s
+re-check OK. squares by #H-edges: {0: 256, 1: 1280, 2: 256}

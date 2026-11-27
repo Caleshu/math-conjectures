@@ -1,0 +1,3 @@
+U(4,7): 4 even terms <= 600000: 4 18 32 206
+  odd register: period P=11301098, periodic from u0=80188453
+  PROVED: U(4,7) has exactly 4 even terms; odd part periodic with period 11301098 (1927959 odd terms/period; 0 residue classes needed the exact count)

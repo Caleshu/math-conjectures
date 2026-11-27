@@ -1,0 +1,4 @@
+V(4,15): 4 even terms <= 1000000: 4 30 64 176 (max 176)
+  odd register: period P=720, periodic from u0=36358275
+  PROVED: V(4,15) has exactly 4 even terms; odd part periodic with period 720 (154 odd terms per period)
+exit=0

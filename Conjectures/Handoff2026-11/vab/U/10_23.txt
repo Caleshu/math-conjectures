@@ -1,0 +1,4 @@
+U(10,23): 7 even terms <= 600000: 10 56 102 148 194 240 552
+  odd register: period P=4416, periodic from u0=354169929
+  PROVED: U(10,23) has exactly 7 even terms; odd part periodic with period 4416 (528 odd terms/period; 0 residue classes needed the exact count)
+exit=0
