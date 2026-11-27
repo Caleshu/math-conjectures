@@ -44,5 +44,5 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 78d70693](research/2026-11-27-run-78d70693.md): running. 
+- [2026-11-27 run 78d70693](research/2026-11-27-run-78d70693.md): completed. orchestrator: Iteration $2$ exhausted the limit of $2$. The normalized question has a reviewed construction. The reported all-transfer experiments cover finite ranges, and the crystal review identifies a missing compatibility argument between adjacent colors. Neither supports a general local rule.
 

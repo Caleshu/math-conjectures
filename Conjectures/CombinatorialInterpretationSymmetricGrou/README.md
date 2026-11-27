@@ -29,3 +29,13 @@ Source: Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, Emily Xia Meng, Henry Kv
 - In a restricted tableau expansion, a lookup matching paired all 50 negative objects with distinct positive objects. The learned rule had five excess collisions on the held-out test partitions. *(Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, PatternMiner: Automated Mathematical Discovery Through LLM-Guided Training and Interpretation of Small Models, arXiv:2611.33966 (B.3.1, Tables 17–18, p. 32); computational; reproduced: None)*
 - Appendix C reports an unsigned matching count for all shapes and direct rules for hooks and two-row shapes. The all-shape construction uses an algebraic argument and has no established efficient membership test. *(Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, PatternMiner: Automated Mathematical Discovery Through LLM-Guided Training and Interpretation of Small Models, arXiv:2611.33966 (Appendix C, Table 22, p. 46))*
 
+## Novelty pre-check
+
+Verdict: **likely_open**. The problem asks for a combinatorial set that counts the unweighted sum across each irreducible character row. R9 studies column sums of normalized central characters, and R10 studies signed column sums. Neither gives the requested rule. No listed repository problem matches, and no recorded result settles the question. The absence of a resolution in the supplied evidence does not prove openness.
+
+## AI research runs
+
+Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
+
+- [2026-11-27 run 7e0dcdf9](research/2026-11-27-run-7e0dcdf9.md): running. 
+

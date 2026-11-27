@@ -37,6 +37,7 @@ Verdict: **likely_open**. R1 gives a signed puzzle rule. Turning its signed sum 
 Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 - **Can two consecutive changes cancel every negative pipe-dream chain?** [succeeded, finite computation]: Checked 17444 degree-compatible triples. Width two failed on 502. Requested ranges complete: True. ([code](computations/mrl_72e0c49c.py), [result](computations/mrl_72e0c49c.result.json))
+  - [Computational Mathematician] The run completed an exact matching test on every degree-compatible triple in $S_4$ and every degree-compatible triple in $S_5$ with $\ell(u),\ell(v)\le3$. In $S_4$, widths one and two failed on $125$ and $35$ of $1{,}115$ triples, respectively. In the stated $S_5$ range, they failed on $1{,}843$ and $467$ of $16{,}329$. The pipe-dream monomials agreed with the divided-difference Schubert polynomials, and the signed chain count agreed with independent coefficient extraction for every tested triple. The failures certify obstructions for this graph, whose edges compare steps at the same indices.
 
 ## AI research runs
 
