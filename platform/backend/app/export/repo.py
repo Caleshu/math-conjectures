@@ -62,10 +62,12 @@ def ensure_clone() -> Path:
 
 
 def folder_name(title: str) -> str:
+    title = re.sub(r"\$[^$]*\$", " ", title)  # drop inline math, which makes unreadable names
     words = re.findall(r"[A-Za-z0-9]+", title)
-    stop = {"of", "the", "a", "an", "and", "in", "on", "are", "is", "for", "to", "exactly", "with"}
-    name = "".join(w[:1].upper() + w[1:] for w in words if w.lower() not in stop)[:48]
-    return name or "Problem"
+    stop = {"of", "the", "a", "an", "and", "in", "on", "are", "is", "for", "to", "exactly", "with", "characterize",
+            "characterization", "compute", "determine", "conjecture", "problem", "all", "every", "that", "its"}
+    keep = [w for w in words if w.lower() not in stop][:4]
+    return "".join(w[:1].upper() + w[1:] for w in keep)[:40] or "Problem"
 
 
 def assign_folder(repo: Path, c: Conjecture) -> tuple[str, bool]:
@@ -84,6 +86,11 @@ def assign_folder(repo: Path, c: Conjecture) -> tuple[str, bool]:
 
 
 def _status_line(c: Conjecture) -> str:
+    ap = (c.extraction_details or {}).get("autopilot", {})
+    if c.status == "UNVERIFIED" and ap.get("skipped") == "likely_resolved":
+        return "Likely already resolved (novelty pre-check); not researched"
+    if c.status == "UNVERIFIED" and ap.get("skipped") == "trivial_or_ill_posed":
+        return "Judged trivial or ill-posed (novelty pre-check); not researched"
     return {"DISPROVED": "**False**", "SOLVED": "**Solved**", "VERIFIED_OPEN": "Open (verified)",
             "LIKELY_OPEN": "Likely open", "UNVERIFIED": "Open per source; openness not yet verified",
             "SUPERSEDED": "Superseded"}.get(c.status, c.status)
@@ -171,12 +178,20 @@ def _update_index(repo: Path, entries: dict[str, str]) -> bool:
     while end < len(lines) and not lines[end].startswith("## "):
         end += 1
     last_item = max((i for i in range(start, end) if lines[i].startswith("- ")), default=start)
+    changed = False
+    for i, l in enumerate(lines):  # refresh the app's own lines only (they end with "(MathResearchLab)")
+        for folder, line in entries.items():
+            if f"(Conjectures/{folder}/)" in l and l.rstrip().endswith("(MathResearchLab)") and l != line:
+                lines[i] = line
+                changed = True
+    text = "\n".join(lines)
     new = [line for folder, line in entries.items() if f"(Conjectures/{folder}/)" not in text]
-    if not new:
-        return False
-    lines[last_item + 1:last_item + 1] = new
-    readme.write_text("\n".join(lines))
-    return True
+    if new:
+        lines[last_item + 1:last_item + 1] = new
+        changed = True
+    if changed:
+        readme.write_text("\n".join(lines))
+    return changed
 
 
 def _app_owned_path(repo: Path, rel: str) -> bool:

@@ -55,11 +55,11 @@ def test_export_respects_ownership_and_index(remote, tmp_path):
     assert (check / "Conjectures/UserProblem/README.md").read_text() == "# mine\n"          # untouched
     assert (check / "Conjectures/UserProblem/Main.lean").exists()
     assert (check / "Conjectures/UserProblem/MathResearchLab.md").exists()                # side file only
-    new = check / "Conjectures/BrandNewProblem"
+    new = check / "Conjectures/BrandNew"
     assert (new / ".mathresearchlab").exists() and "Status:" in (new / "README.md").read_text()
     readme = (check / "README.md").read_text()
     assert "- [Mine](Conjectures/UserProblem/) — Open" in readme and "## Other\nkeep" in readme
-    assert readme.count("(Conjectures/BrandNewProblem/)") == 1
+    assert readme.count("(Conjectures/BrandNew/)") == 1
     assert not list(check.rglob("*.lean"))[1:]  # only the user's own Lean file
     assert sync([a, b])["pushed"] is False      # idempotent
 
@@ -85,7 +85,7 @@ def test_export_survives_push_race(remote, tmp_path, monkeypatch):
     assert R.sync([a])["pushed"]
     check = tmp_path / "check2"
     subprocess.run(["git", "clone", "-q", str(bare), str(check)], check=True, capture_output=True)
-    assert (check / "other.txt").exists() and (check / "Conjectures/RaceProblem/README.md").exists()
+    assert (check / "other.txt").exists() and (check / "Conjectures/Race/README.md").exists()
 
 
 def test_orphaned_app_folders_are_removed_but_user_files_kept(remote, tmp_path):
@@ -103,3 +103,19 @@ def test_orphaned_app_folders_are_removed_but_user_files_kept(remote, tmp_path):
     assert "TemporaryDuplicate" not in (check / "README.md").read_text()
     assert (check / "Conjectures/UserProblem/README.md").read_text() == "# mine\n"
     assert "- [Mine](Conjectures/UserProblem/) — Open" in (check / "README.md").read_text()
+
+
+def test_app_index_lines_refresh_but_user_lines_do_not(remote, tmp_path):
+    from app.export.repo import sync
+    bare, seed = remote
+    a = _conj("Status flip")
+    sync()
+    with session_scope() as db:
+        db.get(Conjecture, a).status = "DISPROVED"
+    sync()
+    check = tmp_path / "check4"
+    subprocess.run(["git", "clone", "-q", str(bare), str(check)], check=True, capture_output=True)
+    readme = (check / "README.md").read_text()
+    assert "(Conjectures/StatusFlip/) — **False** (MathResearchLab)" in readme
+    assert readme.count("(Conjectures/StatusFlip/)") == 1
+    assert "- [Mine](Conjectures/UserProblem/) — Open" in readme
