@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useApi } from "@/lib/hooks";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const NAV = [
   { href: "/", label: "Dashboard", glyph: "◳" },
@@ -19,7 +20,7 @@ export function Sidebar() {
   const path = usePathname();
   const { data, error } = useApi<Health>("/health", { pollMs: 15000, shouldPoll: () => true });
   return (
-    <aside className="print:hidden sticky top-0 flex h-screen w-60 shrink-0 flex-col border-r border-rule bg-[#f6f4ef]">
+    <aside className="print:hidden sticky top-0 flex h-screen w-60 shrink-0 flex-col border-r border-rule bg-sidebar">
       <div className="px-5 pb-5 pt-6">
         <Link href="/" className="block">
           <div className="font-serif text-[1.3rem] leading-none tracking-tight text-ink">MathResearchLab</div>
@@ -38,6 +39,9 @@ export function Sidebar() {
           );
         })}
       </nav>
+      <div className="px-3 pb-2">
+        <ThemeToggle />
+      </div>
       <div className="border-t border-rule px-5 py-3.5 text-[11px] text-ink-3">
         <span className={`mr-1.5 inline-block h-1.5 w-1.5 rounded-full align-middle ${data?.ok ? "bg-ok" : error ? "bg-bad" : "bg-ink-3"}`} />
         {data?.ok ? "API connected" : error ? "API unreachable" : "Connecting…"}

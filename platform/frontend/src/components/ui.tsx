@@ -39,7 +39,7 @@ export function Button({ variant = "secondary", size = "md", className = "", ...
   const base = "inline-flex items-center justify-center gap-1.5 rounded-[5px] font-medium transition-colors disabled:opacity-45 disabled:cursor-not-allowed focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
   const sizes = { sm: "h-7 px-2.5 text-xs", md: "h-8.5 px-3.5 text-[13px]" };
   const variants = {
-    primary: "bg-accent text-white hover:bg-[#223d66]",
+    primary: "bg-accent text-on-accent hover:bg-accent-hover",
     secondary: "border border-rule-strong bg-surface text-ink hover:bg-paper",
     ghost: "text-ink-2 hover:bg-paper hover:text-ink",
     danger: "border border-bad/30 bg-surface text-bad hover:bg-bad-soft",
@@ -51,16 +51,16 @@ const STATUS_STYLE: Record<string, string> = {
   VERIFIED_OPEN: "bg-ok-soft text-ok border-ok/25",
   LIKELY_OPEN: "bg-accent-soft text-accent border-accent/25",
   UNVERIFIED: "bg-warn-soft text-warn border-warn/25",
-  SOLVED: "bg-[#eeeaf6] text-[#4b3b80] border-[#4b3b80]/20",
+  SOLVED: "bg-solved-soft text-solved border-solved/20",
   DISPROVED: "bg-bad-soft text-bad border-bad/25",
-  SUPERSEDED: "bg-[#efefef] text-ink-2 border-rule-strong",
+  SUPERSEDED: "bg-muted-surface text-ink-2 border-rule-strong",
   succeeded: "bg-ok-soft text-ok border-ok/25",
   running: "bg-accent-soft text-accent border-accent/25",
-  queued: "bg-[#f1f0ec] text-ink-2 border-rule-strong",
+  queued: "bg-muted-surface text-ink-2 border-rule-strong",
   failed: "bg-bad-soft text-bad border-bad/25",
   completed: "bg-ok-soft text-ok border-ok/25",
   cancelling: "bg-warn-soft text-warn border-warn/25",
-  unverified: "bg-[#f1f0ec] text-ink-2 border-rule-strong",
+  unverified: "bg-muted-surface text-ink-2 border-rule-strong",
   no_issues_found: "bg-accent-soft text-accent border-accent/25",
   review_passed: "bg-accent-soft text-accent border-accent/25",
   needs_work: "bg-warn-soft text-warn border-warn/25",
@@ -70,16 +70,16 @@ const STATUS_STYLE: Record<string, string> = {
   review_flawed: "bg-bad-soft text-bad border-bad/25",
   refuted: "bg-bad-soft text-bad border-bad/25",
   review_false: "bg-bad-soft text-bad border-bad/25",
-  awaiting_review: "bg-[#f1f0ec] text-ink-2 border-rule-strong",
+  awaiting_review: "bg-muted-surface text-ink-2 border-rule-strong",
   timeout: "bg-bad-soft text-bad border-bad/25",
-  cancelled: "bg-[#efefef] text-ink-3 border-rule-strong",
+  cancelled: "bg-muted-surface text-ink-3 border-rule-strong",
   pending: "bg-warn-soft text-warn border-warn/25",
   accepted: "bg-ok-soft text-ok border-ok/25",
-  rejected: "bg-[#efefef] text-ink-3 border-rule-strong",
+  rejected: "bg-muted-surface text-ink-3 border-rule-strong",
 };
 
 export function Badge({ children, tone, title }: { children: ReactNode; tone?: string; title?: string }) {
-  const cls = (tone && STATUS_STYLE[tone]) || "bg-[#f3f2ee] text-ink-2 border-rule";
+  const cls = (tone && STATUS_STYLE[tone]) || "bg-muted-surface text-ink-2 border-rule";
   return (
     <span title={title} className={`inline-flex items-center whitespace-nowrap rounded-[4px] border px-1.5 py-[1px] text-[11px] font-medium tracking-wide ${cls}`}>
       {children}
@@ -111,7 +111,7 @@ export function ErrorBox({ error, onRetry }: { error: unknown; onRetry?: () => v
 }
 
 export function Notice({ children, tone = "info" }: { children: ReactNode; tone?: "info" | "warn" | "ok" }) {
-  const c = { info: "border-accent/20 bg-accent-soft text-[#24426d]", warn: "border-warn/25 bg-warn-soft text-warn", ok: "border-ok/25 bg-ok-soft text-ok" }[tone];
+  const c = { info: "border-accent/20 bg-accent-soft text-accent", warn: "border-warn/25 bg-warn-soft text-warn", ok: "border-ok/25 bg-ok-soft text-ok" }[tone];
   return <div className={`rounded-md border px-3.5 py-2.5 text-[13px] leading-relaxed ${c}`}>{children}</div>;
 }
 

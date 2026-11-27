@@ -22,6 +22,44 @@
   --color-warn-soft: #f7efe0;
   --color-bad: #9b2c2c;
   --color-bad-soft: #f8e9e8;
+  --color-sidebar: #f6f4ef;
+  --color-muted-surface: #f1f0ec;
+  --color-solved: #4b3b80;
+  --color-solved-soft: #eeeaf6;
+  --color-on-accent: #ffffff;
+  --color-accent-hover: #223d66;
+  --color-selection: #dbe5f3;
+}
+
+html { color-scheme: light; }
+
+/* Keep printed and PDF reports on the original light palette. */
+@media screen {
+  html[data-theme="dark"] {
+    color-scheme: dark;
+    --color-paper: #12161c;
+    --color-surface: #1a212b;
+    --color-sidebar: #151b23;
+    --color-ink: #ecf0f6;
+    --color-ink-2: #c3cdd9;
+    --color-ink-3: #a2afbf;
+    --color-rule: #313b49;
+    --color-rule-strong: #536174;
+    --color-accent: #a8c8ff;
+    --color-accent-soft: #24354e;
+    --color-accent-hover: #c2d8ff;
+    --color-on-accent: #142238;
+    --color-ok: #92d4b2;
+    --color-ok-soft: #20382f;
+    --color-warn: #f1c981;
+    --color-warn-soft: #3b3021;
+    --color-bad: #ffa9a9;
+    --color-bad-soft: #402a31;
+    --color-muted-surface: #252e3a;
+    --color-solved: #d3c4ff;
+    --color-solved-soft: #352b49;
+    --color-selection: #354b6c;
+  }
 }
 
 html, body { background: var(--color-paper); color: var(--color-ink); }
@@ -44,7 +82,7 @@ body { font-feature-settings: "ss01", "cv11"; -webkit-font-smoothing: antialiase
 
 .tabular { font-variant-numeric: tabular-nums; }
 
-::selection { background: #dbe5f3; }
+::selection { background: var(--color-selection); }
 
 /* Grid items default to min-width:auto, so wide <pre>/tables would push columns off-screen. */
 .grid > * { min-width: 0; }
