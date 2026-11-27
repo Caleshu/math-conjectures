@@ -1,0 +1,808 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.049,
+ "result": {
+  "summary": "Completed 55 of 55 prime-power cycles. Each completed residue list describes every index for its modulus by periodicity.",
+  "complete": true,
+  "mismatching_moduli": [],
+  "rows": [
+   {
+    "p": 2,
+    "m": 1,
+    "modulus": 2,
+    "least_period": 3,
+    "zero_residues": [
+     0
+    ],
+    "first_positive_hit": 3,
+    "base_entry_valuation": 2,
+    "predicted_entry": 3,
+    "predicted_residue": 0,
+    "predicted_step": 3,
+    "matches": true
+   },
+   {
+    "p": 2,
+    "m": 2,
+    "modulus": 4,
+    "least_period": 6,
+    "zero_residues": [
+     3
+    ],
+    "first_positive_hit": 3,
+    "base_entry_valuation": 2,
+    "predicted_entry": 3,
+    "predicted_residue": 3,
+    "predicted_step": 6,
+    "matches": true
+   },
+   {
+    "p": 2,
+    "m": 3,
+    "modulus": 8,
+    "least_period": 12,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": 2,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 2,
+    "m": 4,
+    "modulus": 16,
+    "least_period": 24,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": 2,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 2,
+    "m": 5,
+    "modulus": 32,
+    "least_period": 48,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": 2,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 2,
+    "m": 6,
+    "modulus": 64,
+    "least_period": 96,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": 2,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 2,
+    "m": 7,
+    "modulus": 128,
+    "least_period": 192,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": 2,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 2,
+    "m": 8,
+    "modulus": 256,
+    "least_period": 384,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": 2,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 2,
+    "m": 9,
+    "modulus": 512,
+    "least_period": 768,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": 2,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 2,
+    "m": 10,
+    "modulus": 1024,
+    "least_period": 1536,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": 2,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 3,
+    "m": 1,
+    "modulus": 3,
+    "least_period": 8,
+    "zero_residues": [
+     2,
+     6
+    ],
+    "first_positive_hit": 2,
+    "base_entry_valuation": 1,
+    "predicted_entry": 2,
+    "predicted_residue": 2,
+    "predicted_step": 4,
+    "matches": true
+   },
+   {
+    "p": 3,
+    "m": 2,
+    "modulus": 9,
+    "least_period": 24,
+    "zero_residues": [
+     6,
+     18
+    ],
+    "first_positive_hit": 6,
+    "base_entry_valuation": 1,
+    "predicted_entry": 6,
+    "predicted_residue": 6,
+    "predicted_step": 12,
+    "matches": true
+   },
+   {
+    "p": 3,
+    "m": 3,
+    "modulus": 27,
+    "least_period": 72,
+    "zero_residues": [
+     18,
+     54
+    ],
+    "first_positive_hit": 18,
+    "base_entry_valuation": 1,
+    "predicted_entry": 18,
+    "predicted_residue": 18,
+    "predicted_step": 36,
+    "matches": true
+   },
+   {
+    "p": 3,
+    "m": 4,
+    "modulus": 81,
+    "least_period": 216,
+    "zero_residues": [
+     54,
+     162
+    ],
+    "first_positive_hit": 54,
+    "base_entry_valuation": 1,
+    "predicted_entry": 54,
+    "predicted_residue": 54,
+    "predicted_step": 108,
+    "matches": true
+   },
+   {
+    "p": 3,
+    "m": 5,
+    "modulus": 243,
+    "least_period": 648,
+    "zero_residues": [
+     162,
+     486
+    ],
+    "first_positive_hit": 162,
+    "base_entry_valuation": 1,
+    "predicted_entry": 162,
+    "predicted_residue": 162,
+    "predicted_step": 324,
+    "matches": true
+   },
+   {
+    "p": 3,
+    "m": 6,
+    "modulus": 729,
+    "least_period": 1944,
+    "zero_residues": [
+     486,
+     1458
+    ],
+    "first_positive_hit": 486,
+    "base_entry_valuation": 1,
+    "predicted_entry": 486,
+    "predicted_residue": 486,
+    "predicted_step": 972,
+    "matches": true
+   },
+   {
+    "p": 5,
+    "m": 1,
+    "modulus": 5,
+    "least_period": 4,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 5,
+    "m": 2,
+    "modulus": 25,
+    "least_period": 20,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 5,
+    "m": 3,
+    "modulus": 125,
+    "least_period": 100,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 5,
+    "m": 4,
+    "modulus": 625,
+    "least_period": 500,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 7,
+    "m": 1,
+    "modulus": 7,
+    "least_period": 16,
+    "zero_residues": [
+     4,
+     12
+    ],
+    "first_positive_hit": 4,
+    "base_entry_valuation": 1,
+    "predicted_entry": 4,
+    "predicted_residue": 4,
+    "predicted_step": 8,
+    "matches": true
+   },
+   {
+    "p": 7,
+    "m": 2,
+    "modulus": 49,
+    "least_period": 112,
+    "zero_residues": [
+     28,
+     84
+    ],
+    "first_positive_hit": 28,
+    "base_entry_valuation": 1,
+    "predicted_entry": 28,
+    "predicted_residue": 28,
+    "predicted_step": 56,
+    "matches": true
+   },
+   {
+    "p": 7,
+    "m": 3,
+    "modulus": 343,
+    "least_period": 784,
+    "zero_residues": [
+     196,
+     588
+    ],
+    "first_positive_hit": 196,
+    "base_entry_valuation": 1,
+    "predicted_entry": 196,
+    "predicted_residue": 196,
+    "predicted_step": 392,
+    "matches": true
+   },
+   {
+    "p": 11,
+    "m": 1,
+    "modulus": 11,
+    "least_period": 10,
+    "zero_residues": [
+     5
+    ],
+    "first_positive_hit": 5,
+    "base_entry_valuation": 1,
+    "predicted_entry": 5,
+    "predicted_residue": 5,
+    "predicted_step": 10,
+    "matches": true
+   },
+   {
+    "p": 11,
+    "m": 2,
+    "modulus": 121,
+    "least_period": 110,
+    "zero_residues": [
+     55
+    ],
+    "first_positive_hit": 55,
+    "base_entry_valuation": 1,
+    "predicted_entry": 55,
+    "predicted_residue": 55,
+    "predicted_step": 110,
+    "matches": true
+   },
+   {
+    "p": 11,
+    "m": 3,
+    "modulus": 1331,
+    "least_period": 1210,
+    "zero_residues": [
+     605
+    ],
+    "first_positive_hit": 605,
+    "base_entry_valuation": 1,
+    "predicted_entry": 605,
+    "predicted_residue": 605,
+    "predicted_step": 1210,
+    "matches": true
+   },
+   {
+    "p": 13,
+    "m": 1,
+    "modulus": 13,
+    "least_period": 28,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 13,
+    "m": 2,
+    "modulus": 169,
+    "least_period": 364,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 17,
+    "m": 1,
+    "modulus": 17,
+    "least_period": 36,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 17,
+    "m": 2,
+    "modulus": 289,
+    "least_period": 612,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 19,
+    "m": 1,
+    "modulus": 19,
+    "least_period": 18,
+    "zero_residues": [
+     9
+    ],
+    "first_positive_hit": 9,
+    "base_entry_valuation": 1,
+    "predicted_entry": 9,
+    "predicted_residue": 9,
+    "predicted_step": 18,
+    "matches": true
+   },
+   {
+    "p": 19,
+    "m": 2,
+    "modulus": 361,
+    "least_period": 342,
+    "zero_residues": [
+     171
+    ],
+    "first_positive_hit": 171,
+    "base_entry_valuation": 1,
+    "predicted_entry": 171,
+    "predicted_residue": 171,
+    "predicted_step": 342,
+    "matches": true
+   },
+   {
+    "p": 23,
+    "m": 1,
+    "modulus": 23,
+    "least_period": 48,
+    "zero_residues": [
+     12,
+     36
+    ],
+    "first_positive_hit": 12,
+    "base_entry_valuation": 1,
+    "predicted_entry": 12,
+    "predicted_residue": 12,
+    "predicted_step": 24,
+    "matches": true
+   },
+   {
+    "p": 23,
+    "m": 2,
+    "modulus": 529,
+    "least_period": 1104,
+    "zero_residues": [
+     276,
+     828
+    ],
+    "first_positive_hit": 276,
+    "base_entry_valuation": 1,
+    "predicted_entry": 276,
+    "predicted_residue": 276,
+    "predicted_step": 552,
+    "matches": true
+   },
+   {
+    "p": 29,
+    "m": 1,
+    "modulus": 29,
+    "least_period": 14,
+    "zero_residues": [
+     7
+    ],
+    "first_positive_hit": 7,
+    "base_entry_valuation": 1,
+    "predicted_entry": 7,
+    "predicted_residue": 7,
+    "predicted_step": 14,
+    "matches": true
+   },
+   {
+    "p": 29,
+    "m": 2,
+    "modulus": 841,
+    "least_period": 406,
+    "zero_residues": [
+     203
+    ],
+    "first_positive_hit": 203,
+    "base_entry_valuation": 1,
+    "predicted_entry": 203,
+    "predicted_residue": 203,
+    "predicted_step": 406,
+    "matches": true
+   },
+   {
+    "p": 31,
+    "m": 1,
+    "modulus": 31,
+    "least_period": 30,
+    "zero_residues": [
+     15
+    ],
+    "first_positive_hit": 15,
+    "base_entry_valuation": 1,
+    "predicted_entry": 15,
+    "predicted_residue": 15,
+    "predicted_step": 30,
+    "matches": true
+   },
+   {
+    "p": 31,
+    "m": 2,
+    "modulus": 961,
+    "least_period": 930,
+    "zero_residues": [
+     465
+    ],
+    "first_positive_hit": 465,
+    "base_entry_valuation": 1,
+    "predicted_entry": 465,
+    "predicted_residue": 465,
+    "predicted_step": 930,
+    "matches": true
+   },
+   {
+    "p": 37,
+    "m": 1,
+    "modulus": 37,
+    "least_period": 76,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 37,
+    "m": 2,
+    "modulus": 1369,
+    "least_period": 2812,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 41,
+    "m": 1,
+    "modulus": 41,
+    "least_period": 40,
+    "zero_residues": [
+     10,
+     30
+    ],
+    "first_positive_hit": 10,
+    "base_entry_valuation": 1,
+    "predicted_entry": 10,
+    "predicted_residue": 10,
+    "predicted_step": 20,
+    "matches": true
+   },
+   {
+    "p": 41,
+    "m": 2,
+    "modulus": 1681,
+    "least_period": 1640,
+    "zero_residues": [
+     410,
+     1230
+    ],
+    "first_positive_hit": 410,
+    "base_entry_valuation": 1,
+    "predicted_entry": 410,
+    "predicted_residue": 410,
+    "predicted_step": 820,
+    "matches": true
+   },
+   {
+    "p": 43,
+    "m": 1,
+    "modulus": 43,
+    "least_period": 88,
+    "zero_residues": [
+     22,
+     66
+    ],
+    "first_positive_hit": 22,
+    "base_entry_valuation": 1,
+    "predicted_entry": 22,
+    "predicted_residue": 22,
+    "predicted_step": 44,
+    "matches": true
+   },
+   {
+    "p": 43,
+    "m": 2,
+    "modulus": 1849,
+    "least_period": 3784,
+    "zero_residues": [
+     946,
+     2838
+    ],
+    "first_positive_hit": 946,
+    "base_entry_valuation": 1,
+    "predicted_entry": 946,
+    "predicted_residue": 946,
+    "predicted_step": 1892,
+    "matches": true
+   },
+   {
+    "p": 47,
+    "m": 1,
+    "modulus": 47,
+    "least_period": 32,
+    "zero_residues": [
+     8,
+     24
+    ],
+    "first_positive_hit": 8,
+    "base_entry_valuation": 1,
+    "predicted_entry": 8,
+    "predicted_residue": 8,
+    "predicted_step": 16,
+    "matches": true
+   },
+   {
+    "p": 53,
+    "m": 1,
+    "modulus": 53,
+    "least_period": 108,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 59,
+    "m": 1,
+    "modulus": 59,
+    "least_period": 58,
+    "zero_residues": [
+     29
+    ],
+    "first_positive_hit": 29,
+    "base_entry_valuation": 1,
+    "predicted_entry": 29,
+    "predicted_residue": 29,
+    "predicted_step": 58,
+    "matches": true
+   },
+   {
+    "p": 61,
+    "m": 1,
+    "modulus": 61,
+    "least_period": 60,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 67,
+    "m": 1,
+    "modulus": 67,
+    "least_period": 136,
+    "zero_residues": [
+     34,
+     102
+    ],
+    "first_positive_hit": 34,
+    "base_entry_valuation": 1,
+    "predicted_entry": 34,
+    "predicted_residue": 34,
+    "predicted_step": 68,
+    "matches": true
+   },
+   {
+    "p": 71,
+    "m": 1,
+    "modulus": 71,
+    "least_period": 70,
+    "zero_residues": [
+     35
+    ],
+    "first_positive_hit": 35,
+    "base_entry_valuation": 1,
+    "predicted_entry": 35,
+    "predicted_residue": 35,
+    "predicted_step": 70,
+    "matches": true
+   },
+   {
+    "p": 73,
+    "m": 1,
+    "modulus": 73,
+    "least_period": 148,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 79,
+    "m": 1,
+    "modulus": 79,
+    "least_period": 78,
+    "zero_residues": [
+     39
+    ],
+    "first_positive_hit": 39,
+    "base_entry_valuation": 1,
+    "predicted_entry": 39,
+    "predicted_residue": 39,
+    "predicted_step": 78,
+    "matches": true
+   },
+   {
+    "p": 83,
+    "m": 1,
+    "modulus": 83,
+    "least_period": 168,
+    "zero_residues": [
+     42,
+     126
+    ],
+    "first_positive_hit": 42,
+    "base_entry_valuation": 1,
+    "predicted_entry": 42,
+    "predicted_residue": 42,
+    "predicted_step": 84,
+    "matches": true
+   },
+   {
+    "p": 89,
+    "m": 1,
+    "modulus": 89,
+    "least_period": 44,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   },
+   {
+    "p": 97,
+    "m": 1,
+    "modulus": 97,
+    "least_period": 196,
+    "zero_residues": [],
+    "first_positive_hit": null,
+    "base_entry_valuation": null,
+    "predicted_entry": null,
+    "predicted_residue": null,
+    "predicted_step": null,
+    "matches": true
+   }
+  ]
+ }
+}

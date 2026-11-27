@@ -26,6 +26,15 @@ Conjecture: a(n) with n > 2 is a perfect power only for n = 4 with a(4) = 3^2. T
 
 Verdict: **likely_open**. No matching problem in the repository. None of the returned records (R1-R22) mentions perfect powers among derangement numbers. They cover identities, permutation statistics and unrelated topics. The search was degraded because Semantic Scholar and OpenAlex returned HTTP 429, so not finding a resolution is weak evidence of openness. The problem is a genuine Diophantine question about a factorial-type recurrence, a(n) = n·a(n-1) + (-1)^n. The congruence a(n) ≡ ±1 mod n does not settle it trivially, and the only support is the stated check for n ≤ 1000. It looks like an OEIS-style conjecture (possibly Z.-W. Sun's) with no known proof.
 
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Exhaustive perfect-power test using factors of $n-1$** [succeeded, finite computation]: Exhaustively classified 3 <= n <= 20000 and found 1 prime-exponent representations. ([code](computations/mrl_0ca132b9.py), [result](computations/mrl_0ca132b9.result.json))
+  - [Computational Mathematician] The run completed all $19998$ indices in $3\le n\le20000$. The valuation gcd excluded $19744$ indices, modular tests excluded another $245$, and exact integer-root tests excluded the remaining $8$ unsuccessful cases. The sole representation with prime exponent was $(n,q,b)=(4,2,3)$. The recurrence agreed with direct permutation counts for $0\le n\le8$, and the classifier recovered both prime exponents of $64$. The finite classification is exhaustive because every possible prime exponent divides the valuation gcd.
+- **Exact density of indices excluded by valuation one** [succeeded, finite computation]: Listed all valuation-one progressions for 25 primes. Their union has exact density 9981152021894700893584993972647697925767426752159523783/12365358680605846008139666446702930504055308036254762908. ([code](computations/mrl_4257c2a5.py), [result](computations/mrl_4257c2a5.result.json))
+  - [Computational Mathematician] For each of the $25$ primes $2\le p\le97$, the run checked every residue $0\le r<p^2$ and recorded those with $p\mid D_r$ and $p^2\nmid D_r$. The sanity checks passed, including comparison with exact derangement numbers for $3\le n\le201$ at $p=2,3,5,7$. Periodicity extends each certificate to its entire progression. The reported density is exact for the union certified by these primes. An index outside that union may still be excluded by other primes or by the exponent tests.
+
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
