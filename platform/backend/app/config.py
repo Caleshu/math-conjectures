@@ -67,6 +67,15 @@ class Settings(BaseSettings):
     sandbox_default_memory_mb: int = 2048
     sandbox_python: str = ""  # interpreter used for experiments; defaults to the backend's own
 
+    # --- GitHub export of problem write-ups ---------------------------------------------------
+    # Pushes Conjectures/<Folder>/ write-ups, research reports and sandbox code to this repo/branch.
+    # Uses your local git credentials (e.g. `gh auth login`). Only app-owned paths are written.
+    repo_export_enabled: bool = True
+    repo_export_remote: str = "https://github.com/Caleshu/math-conjectures.git"
+    repo_export_branch: str = "main"
+    repo_export_author_email: str = ""  # commit email; empty = a GitHub noreply address
+    autopilot_default_enabled: bool = False
+
     cors_origins: str = "http://localhost:3000,http://127.0.0.1:3000"
 
     @property

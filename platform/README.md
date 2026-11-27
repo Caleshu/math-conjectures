@@ -81,6 +81,32 @@ Launch from **Research Lab** or from a conjecture's *Research Agents* tab. A run
 Every claim keeps its authoring agent, the author's own rating of its support (`proved_here`, `sketch`, `heuristic`,
 `speculative`, `recalled_literature`), its stated confidence, its evidence, related claims, and its reviews.
 
+## Autopilot and GitHub sync
+
+**Autopilot** (Research Lab → Autopilot → Start) keeps researching open problems one after another:
+
+1. It picks a conjecture that is not settled (UNVERIFIED / LIKELY_OPEN / VERIFIED_OPEN) and has never been researched.
+2. It runs a **novelty pre-check** (one model call): real searches by title, works citing the source paper, your
+   repository's README index and folders, and results this app already recorded for problems from the same
+   paper. Problems that are `likely_resolved`, `already_in_repo` or `trivial_or_ill_posed` are **skipped**, with
+   the reason recorded. Already-known problems are never re-solved.
+3. It launches a research run with the default limits.
+4. When nothing is eligible, it promotes AI-extracted open problems from indexed papers. These need wording
+   verified verbatim against the source and confidence ≥ 0.75. Next it runs AI extraction on papers that lack
+   it, and after that it discovers recent math.CO arXiv papers.
+5. On a usage-limit error (HTTP 429), it waits 30 minutes and resumes the run from its checkpoints.
+
+**GitHub sync** (always on; `REPO_EXPORT_*` settings). Within about a minute of any change to a problem (a status,
+known result, experiment or finished run), the app pushes to `main` of `math-conjectures`:
+
+- `Conjectures/<Folder>/README.md` for problems the app created (marked by a `.mathresearchlab` file), plus a
+  root-README index line. Existing index lines are never edited.
+- For problems already in your repo, only `Conjectures/<YourFolder>/MathResearchLab.md` and a
+  `MathResearchLab/` subfolder. Your README, Lean files and computations are never touched.
+- `research/<date>-run-<id>.md` reports and `computations/mrl_<id>.py` plus `.result.json` for every sandbox run.
+- **Never** `.lean` files (the Lean CI builds every `.lean` under `Conjectures/`). It never force-pushes; on a push
+  race it re-fetches your latest `main` and retries. It works in its own clone under `backend/data/repo-export`.
+
 ## Architecture
 
 ```

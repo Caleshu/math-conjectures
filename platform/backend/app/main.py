@@ -8,7 +8,7 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from app.api import conjectures, experiments, papers, research, system
+from app.api import autopilot, conjectures, experiments, papers, research, system
 from app.config import get_settings
 from app.sources.base import SourceError
 
@@ -32,6 +32,13 @@ async def lifespan(app: FastAPI):
         for w in workers:
             w.start_background()
         log.info("embedded job workers started")
+        from app.autopilot import AutopilotThread, load_state, save_state
+        st = load_state()
+        if "enabled" not in st or (s.autopilot_default_enabled and not st.get("enabled")):
+            st["enabled"] = s.autopilot_default_enabled
+            save_state(st)
+        workers.append(AutopilotThread())
+        workers[-1].start()
     yield
     for w in workers:
         w.stop()
@@ -59,5 +66,5 @@ def health():
     return {"ok": True}
 
 
-for r in (system.router, papers.router, conjectures.router, experiments.router, research.router):
+for r in (system.router, papers.router, conjectures.router, experiments.router, research.router, autopilot.router):
     app.include_router(r)

@@ -108,7 +108,25 @@ def research_run(job_id: str, payload: dict, progress: Callable) -> dict:
     return {"research_run_id": rid, **Orchestrator(rid, job_id, progress).run()}
 
 
+def export_repo(job_id: str, payload: dict, progress: Callable) -> dict:
+    from app.autopilot import load_state, save_state
+    from app.export.repo import ExportError, sync
+    progress("syncing_to_github", None)
+    st = load_state()
+    try:
+        res = sync(payload.get("conjecture_ids"))
+    except ExportError as e:
+        st["last_export"] = {"at": utcnow().isoformat(), "ok": False, "error": str(e)[:500]}
+        save_state(st)
+        raise
+    st["last_export"] = {"at": utcnow().isoformat(), "ok": True, **{k: v for k, v in res.items() if k != "files"},
+                         "n_files": len(res.get("files", []))}
+    save_state(st)
+    return res
+
+
 HANDLERS: dict[str, Callable] = {
+    "export_repo": export_repo,
     "research_run": research_run,
     "ingest_identifier": ingest_identifier,
     "process_paper": process_paper,

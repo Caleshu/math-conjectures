@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
+import { AutopilotCard } from "@/components/Autopilot";
 import { MathText } from "@/components/Math";
 import { Button, Card, Empty, ErrorBox, Label, Loading, Notice, PageHeader, StatusBadge, fmtDate, inputCls } from "@/components/ui";
 import { api } from "@/lib/api";
@@ -74,7 +75,7 @@ function ResearchLab() {
             </Card>
           )}
         </div>
-        <div>{meta ? <Launch meta={meta} onLaunched={reload} /> : <Loading />}</div>
+        <div className="space-y-6"><AutopilotCard />{meta ? <Launch meta={meta} onLaunched={reload} /> : <Loading />}</div>
       </div>
     </>
   );
