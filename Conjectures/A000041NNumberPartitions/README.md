@@ -21,7 +21,7 @@ Conjecture: starting with offset 1 represents the numbers of ordered composition
 
 ## Novelty pre-check
 
-Verdict: **unclear**. The entry bundles three claims. The supplied statement identifies the signed-composition identity as a consequence of the pentagonal number theorem. The perfect-power claim and the representation by pairwise nondividing summands of the form p(k) + 2 are separate research questions. The reported check through 7140 applies only to the representation claim. No supplied record settles either remaining question, and that absence does not establish openness.
+Verdict: **likely_open**. The original note settles the signed-composition clause under the signed-weight interpretation: “this is true by the pentagonal number theorem.” The perfect-power and pairwise-nondividing sum clauses appear open. Earlier scans reported no perfect power through index 20000 and no missing sum except 6 through 250000, but both scans lack complete certification. No supplied record settles either clause, and absence of a resolution in these results is not proof of openness.
 
 ## Computations
 
