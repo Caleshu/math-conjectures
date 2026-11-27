@@ -276,6 +276,56 @@ def papers_needing_ai_extraction(db) -> list[str]:
     return out
 
 
+LTS = "https://lefttosolve.com"
+FIELD_MAP = {"Combinatorics": "combinatorics", "Graph Theory": "graph_theory", "Number Theory": "number_theory"}
+
+
+def import_lefttosolve(st: dict) -> str | None:
+    """Take the next open problem from lefttosolve.com (read-only API): easiest first, unsolved, unclaimed, and
+    nobody currently working on it. 'known' problems are never imported (they are already solved)."""
+    import httpx
+    seen = set(st.get("lts_seen", []))
+    offset = st.get("lts_offset", 0)
+    for _ in range(4):
+        r = httpx.get(f"{LTS}/api/problems", params={"kind": "open", "sort": "easiest", "limit": 50, "offset": offset},
+                      timeout=30, headers={"User-Agent": get_settings().http_user_agent})
+        r.raise_for_status()
+        items = r.json().get("items", [])
+        if not items:
+            st["lts_offset"] = 0
+            return None
+        for it in items:
+            if it["id"] in seen or it.get("solved") or it.get("claimed") or it.get("liveAgents"):
+                continue
+            seen.add(it["id"])
+            st["lts_seen"] = sorted(seen)[-5000:]
+            d = httpx.get(f"{LTS}/api/problems/{it['id']}", timeout=30,
+                          headers={"User-Agent": get_settings().http_user_agent}).json()
+            if d.get("kind") != "open" or d.get("solution"):
+                continue
+            from app.services import conjectures as svc
+            fields = d.get("fields") or []
+            with session_scope() as db:
+                if db.scalar(select(Conjecture.id).where(Conjecture.title == d["title"])):
+                    continue
+                c = svc.create_conjecture(db, {
+                    "title": d["title"], "field": FIELD_MAP.get(fields[0] if fields else "", "combinatorics"),
+                    "subfields": fields, "problem_type": "conjecture",
+                    "original_statement": (d.get("statement") or d["title"]) + "\n\nLean (formal-conjectures):\n" + (d.get("lean") or ""),
+                    "normalized_statement": d.get("statement") or d["title"],
+                    "notation": f"Lean declaration {d.get('decl')} in {d.get('module')}",
+                    "known_results": [], "difficulty_estimate": str(d.get("difficulty")),
+                    "difficulty_rationale": "lefttosolve.com difficulty score (0-100)",
+                    "extraction_details": {"source": "lefttosolve", "lts_id": d["id"], "lean": d.get("lean"),
+                                           "module": d.get("module"), "ref": d.get("ref"),
+                                           "url": f"{LTS}/p/{d['id']}", "lts_source": d.get("source")},
+                }, actor="autopilot:lefttosolve")
+                return c.id
+        offset += len(items)
+        st["lts_offset"] = offset
+    return None
+
+
 DISCOVERY_QUERIES = ["conjecture graph", "open problem combinatorics", "we conjecture hypercube",
                      "open question extremal graph", "conjecture coloring", "conjecture permutations"]
 
@@ -393,6 +443,15 @@ def _tick(st: dict) -> None:
                 db.flush()
                 _request_export(db)
                 return
+            if st.get("lefttosolve", True):
+                try:
+                    new = import_lefttosolve(st)
+                except Exception as e:  # noqa: BLE001 - the site being down must not stop the autopilot
+                    new = None
+                    note(st, f"lefttosolve import failed: {type(e).__name__}: {str(e)[:150]}")
+                if new:
+                    note(st, "imported an open problem from lefttosolve.com", conjecture_id=new)
+                    return
             papers = papers_needing_ai_extraction(db)
             busy = db.scalar(select(func.count(Job.id)).where(Job.job_type.in_(["llm_extract", "process_paper", "ingest_identifier"]),
                                                              Job.status.in_(["queued", "running"])))
