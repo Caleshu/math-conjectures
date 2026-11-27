@@ -9,7 +9,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 
 | ✅ Proved (true) | ❌ Disproved (false) | ⏳ Open |
 |:-:|:-:|:-:|
-| **2** | **6** | **12** |
+| **2** | **6** | **13** |
 
 *Verification* says how a result is known. **Lean-verified**: checked by the Lean kernel. **Computer-assisted / computer-checked**: an exact computation, reproducible from the folder. **AI research**: produced by MathResearchLab's AI agents and not yet checked by a human. Treat it as a lead, not a theorem. Problems marked 🤖 were found and researched by MathResearchLab (`platform/`). New folders are picked up automatically. To change a problem's category or summary, edit `problems.toml`.
 
@@ -35,6 +35,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 
 | Problem | Progress so far | Verification |
 |---|---|---|
+| [A000166: Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.](Conjectures/A000166SubfactorialOrRencontres/) 🤖 | Recorded from the literature; not yet researched. | AI research (not human-reviewed) |
 | [A000188: (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d](Conjectures/A0001881NumberSolutions/) 🤖 | Novelty pre-check: trivial or ill posed. | AI research (not human-reviewed) |
 | [Additive colouring of bipartite graphs](Conjectures/AdditiveColouring/) | η ≤ 2 for all connected bipartite graphs on ≤ 15 vertices (exhaustive) | Computational evidence |
 | [Chromatic vectors of Hamiltonian cycles of Qₙ (Sagols–Morales-Luna)](Conjectures/ChromaticVectors/) 🤖 | New necessary condition $\sum_{i\in S}c_i\ge 2^{\lvert S\rvert}$; with evenness it characterises chromatic vectors for $n\le 4$ (exhaustive) and $n=5$ (CP-SAT). Open for $n\ge 6$ | AI research + computation (not human-reviewed) |
@@ -45,7 +46,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 | [Erdős Problem 64 (Erdős–Gyárfás conjecture)](Conjectures/Erdos64/) | Statement formalized | Statement formalized in Lean |
 | [Hypercubes with distant faulty vertices (Gregor–Škrekovski)](Conjectures/DistantFaults/) | Holds for n ≤ 6 in both forms (exhaustive) | Computational evidence |
 | [Local Irregularity Conjecture, subcubic](Conjectures/LocalIrregularity/) | Holds for all connected subcubic graphs on ≤ 16 vertices (exhaustive) | Computational evidence |
-| [Lollipop graphs maximize the hitting time index among connected n-vertex graphs](Conjectures/LollipopGraphsMaximizeHitting/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
+| [Lollipop graphs maximize the hitting time index among connected n-vertex graphs](Conjectures/LollipopGraphsMaximizeHitting/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [Proper conflict-free colouring, Δ = 4](Conjectures/PCFColouring/) | No counterexample on ≤ 12 vertices (exhaustive) | Computational evidence |
 
 ## 📝 Notes and handoffs

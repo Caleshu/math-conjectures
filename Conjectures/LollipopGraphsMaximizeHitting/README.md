@@ -45,11 +45,43 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 - **Counterexample search over every small connected core with an attached rooted tree** [succeeded, finite computation]: Exact comparisons over the indicated core and tree combinations. Only rows with class_exhausted=true certify a class maximum. Counts include duplicate unrooted graphs. ([code](computations/mrl_097f9a91.py), [result](computations/mrl_097f9a91.result.json))
   - [Computational Mathematician] For each $n\in\{11,12,13\}$, the run exhausted every connected simple core of order $2\le c\le7$, every core attachment vertex, and every rooted tree of order $n-c+1$, identifying the two roots. The respective counts $78133,178613,431758$ include repeated representations. The exact maxima were $11950/3,42697/7,62400/7$, witnessed by $L(11,6),L(12,7),L(13,7)$. The composition formula passed the independent first-step checks. The program retained one maximizing witness per order, so uniqueness within this class and maximality over unrestricted graphs remain undecided.
 - **Exhaustive exact reproduction of the lollipop-maximality check for n<=9** [succeeded, finite computation]: Exhaustive search over connected graphs by adding one vertex at a time, with exact relabelling-invariant dedup. n=2: classes=1 (OEIS 1, match=True, aborted=False); max=1 [L(2,2)]; 2nd=None; best non-lollipop=None; max_is_lollipop=True | n=3: classes=2 (OEIS 2, match=True, aborted=False); max=10 [L(3,2)]; 2nd=6 [L(3,3)]; best non-lollipop=None; max_is_lollipop=True | n=4: classes=6 (OEIS 6, match=True, aborted=False); max=38 [L(4,2)]; 2nd=103/3 [L(4,3)]; best non-lollipop=33 [CMother(4,3)]; max_is_lollipop=True | n=5: classes=21 (OEIS 21, match=True, aborted=False); max=102 [L(5,2)]; 2nd=296/3 [L(5,3)]; best non-lollipop=92 [CMother(5,3)]; max_is_lollipop=True | n=6: classes=112 (OEIS 112, match=True, aborted=False); max=224 [L(6,4)]; 2nd=223 [L(6,2)]; best non-lollipop=213 [PC(6,3,2)]; max_is_lollipop=True | n=7: classes=853 (OEIS 853, match=True, aborted=False); max=933/2 [L(7,4)]; 2nd=432 [PC(7,3,2)]; best non-lollipop=432 [PC(7,3,2)]; max_is_lollipop=True | n=8: classes=11117 (OEIS 11117, match=True, aborted=False); max=4354/5 [L(8,5)]; 2nd=842 [L(8,4)]; best non-lollipop=825 [PC(8,4,3)]; max_is_lollipop=True | n=9: classes=261080 (OEIS 261080, match=True, aborted=False); max=7632/5 [L(9,5)]; 2nd=1470 [L(9,6)]; best non-lollipop=4306/3 [PC(9,4,3)]; max_is_lollipop=True | sanity ok: [True, True, True] | elapsed 10.3s ([code](computations/mrl_93a74a60.py), [result](computations/mrl_93a74a60.result.json))
-- **Exact lollipop k_opt offset, exact family comparisons (n<=40), and local search for non-lollipop maximisers (n=11..18)** [running, heuristic search] ([code](computations/mrl_78aa4548.py), [result](computations/mrl_78aa4548.result.json))
+  - [Computational Mathematician] With geng unavailable, the program extended each smaller representative by a vertex with every possible nonempty neighborhood. This generation rule covers every connected graph inductively because a leaf of a spanning tree can be removed while preserving connectivity. For $2\le n\le9$, the class counts matched the reference counts at every order, and all three sanity checks passed. The reported rankings follow. Here $PC(n,k,j)$ consists of $K_k$ and a path on $n-k$ vertices whose first vertex is adjacent to $j$ clique vertices.
+
+| $n$ | Classes | Maximizer and $HT$ | Runner-up and $HT$ | Gap |
+|---:|---:|---|---|---:|
+| $2$ | $1$ | $P_2$, $1$ | none | — |
+| $3$ | $2$ | $P_3$, $10$ | $K_3$, $6$ | $4$ |
+| $4$ | $6$ | $P_4$, $38$ | $L(4,3)$, $103/3$ | $11/3$ |
+| $5$ | $21$ | $P_5$, $102$ | $L(5,3)$, $296/3$ | $10/3$ |
+| $6$ | $112$ | $L(6,4)$, $224$ | $P_6$, $223$ | $1$ |
+| $7$ | $853$ | $L(7,4)$, $933/2$ | $PC(7,3,2)$, $432$ | $69/2$ |
+| $8$ | $11117$ | $L(8,5)$, $4354/5$ | $L(8,4)$, $842$ | $144/5$ |
+| $9$ | $261080$ | $L(9,5)$, $7632/5$ | $L(9,6)$, $1470$ | $282/5$ |
+
+For $n=4,5,6,7,8,9$, the gaps to the best reported non-lollipop were respectively $5,10,11,69/2,229/5,1366/15$. The code uses rounded floating-point resistance data for deduplication and floating-point scores to select finalists for exact evaluation. The matching counts and independent hitting-time checks support the rankings, but the log supplies no certified error bound for either
+- **Exact lollipop k_opt offset, exact family comparisons (n<=40), and local search for non-lollipop maximisers (n=11..18)** [succeeded, heuristic search]: Validation: known values [True, True, True, True], random ok=True, lollipop formula ok=True. Part A: gamma=-G'/F''=0.134535 (exact 1/5 - sqrt(21)/70); G matches C-15d835: True; continuous offsets [(100, 0.14446), (1000, 0.13553), (10000, 0.13463), (100000, 0.13454), (1000000, 0.13454), (100000000, 0.13453)]; k_opt=round(alpha n+gamma) for 996/1000 n in [6,1000], mismatches [[6, [4], 3.4840800499027065], [49, [28], 27.48915553821282], [92, [52], 51.49423102652293], [135, [76], 75.49930651483305]]; mean interp offset upper half=0.135696321820872. Part B (n<=40): n with some family member >= B_n (float): [4, 5]; exact failures: [(4, 'CM_end'), (5, 'CM_end')]. Part C: n=11: B_n=3983.3333 (k=[6]), best found=L(11,6) eqB=True exceeds=False, best non-lolli gap=181.3333 [PC(11,5,4)], climbs=2135, ties/beats=0 | n=12: B_n=6099.5714 (k=[7]), best found=L(12,7) eqB=True exceeds=False, best non-lolli gap=207.5714 [PC(12,6,5)], climbs=1458, ties/beats=0 | n=13: B_n=8914.2857 (k=[7]), best found=L(13,7) eqB=True exceeds=False, best non-lolli gap=262.9524 [PC(13,7,6)], climbs=767, ties/beats=0 | n=14: B_n=12883.5000 (k=[8]), best found=L(14,8) eqB=True exceeds=False, best non-lolli gap=350.5000 [PC(14,7,6)], climbs=613, ties/beats=0 | n=15: B_n=17922.6667 (k=[9]), best found=L(15,9) eqB=True exceeds=False, best non-lolli gap=387.2381 [PC(15,8,7)], climbs=408, ties/beats=0 | n=16: B_n=24688.4444 (k=[9]), best found=L(16,9) eqB=True exceeds=False, best non-lolli gap=545.4444 [PC(16,8,7)], climbs=308, ties/beats=0 | n=17: B_n=33135.6000 (k=[10]), best found=L(17,10) eqB=True exceeds=False, best non-lolli gap=595.1000 [PC(17,9,8)], climbs=237, ties/beats=0 | n=18: B_n=43895.4000 (k=[10]), best found=L(18,10) eqB=True exceeds=False, best non-lolli gap=800.4000 [PC(18,9,8)], climbs=155, ties/beats=0 | elapsed 104.0s ([code](computations/mrl_78aa4548.py), [result](computations/mrl_78aa4548.result.json))
+  - [Computational Mathematician] The direct hitting-time solver, fraction-free Laplacian solver, and lollipop formula passed their reported validation checks. Write $B_n=\max_k HT(L(n,k))$.
+
+For each $11\le n\le18$, the local search reached $B_n$ at a lollipop. Every non-lollipop it reported had a positive gap. The table gives the best non-lollipop found at each order. The exact gaps can be recovered from the printed decimals by the denominator argument below.
+
+| $n$ | Optimal lollipop $k$ | Best non-lollipop found | $B_n-HT$ | Climbs |
+|---:|---:|---|---:|---:|
+| $11$ | $6$ | $PC(11,5,4)$ | $544/3$ | $2135$ |
+| $12$ | $7$ | $PC(12,6,5)$ | $1453/7$ | $1458$ |
+| $13$ | $7$ | $PC(13,7,6)$ | $5522/21$ | $767$ |
+| $14$ | $8$ | $PC(14,7,6)$ | $701/2$ | $613$ |
+| $15$ | $9$ | $PC(15,8,7)$ | $8132/21$ | $408$ |
+| $16$ | $9$ | $PC(16,8,7)$ | $4909/9$ | $308$ |
+| $17$ | $10$ | $PC(17,9,8)$ | $5951/10$ | $237$ |
+| $18$ | $10$ | $PC(18,9,8)$ | $4002/5$ | $155$ |
+
+These comparisons are exact for the displayed witnesses. The search over connected graphs was heuristic.
+
+For $4\le n\le40$, the family scan reported every interior $PC(n,k,j)$, $2\le j\le k-1$, below $B_n$. For clique-minus-one-edge cores it reported two equalities, at $n=4,5$. In both, the core is $K_3$ minus an edge, which is $P_3$. Attaching a path at an endpoint gives $P_n$ itself. Thus strictness as phrased has two exceptions in the scanned range, both lollipops. The program sets the default all-member exact cutoff at $n=24$
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 00032b6d](research/2026-11-27-run-00032b6d.md): running. 
+- [2026-11-27 run 00032b6d](research/2026-11-27-run-00032b6d.md): completed. orchestrator: Iteration 2 of 2 is complete, and all four experiments have been used. The remaining proof gap concerns the structure of an exact maximizer. Correcting the endpoint, the rounding statement, or the Wiener citation would leave that gap open.
 

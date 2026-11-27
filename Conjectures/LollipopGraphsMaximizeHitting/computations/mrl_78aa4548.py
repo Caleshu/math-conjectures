@@ -2,7 +2,7 @@
 # Exact lollipop k_opt offset, exact family comparisons (n<=40), and local search for non-lollipop maximisers (n=11..18)
 # sha256(code) = d1df624a3b640db969cc2024c9410d3803595951bbf847102dc5e3c66e12f3c6
 # parameters: {"time_budget": 108, "scan_nmax": 1000, "scan_large": [2000, 5000, 10000, 20000, 50000], "family_nmax": 40, "family_exact_all_nmax": 24, "ls_n": [11, 12, 13, 14, 15, 16, 17, 18], "seed": 7, "partA_deadline": 16, "partB_deadline": 42}
-# environment: {}
+# environment: {"python": "3.13.5", "platform": "macOS-27.0-arm64-arm-64bit-Mach-O", "networkx": "3.7", "sympy": "1.14.0", "ortools": "9.15.6755", "numpy": "2.5.5", "pysat": null, "isolation": "macos-sandbox-exec(no-network,write-confined)+rlimits", "limits": {"wall_timeout_s": 120, "memory_mb": 2048, "memory_enforced": false, "cpu_seconds": 965, "max_file_mb": 200, "max_open_files": 256}, "interpreter": "/Users/andrewcaleshu/Documents/myProjects/math-conjectures/platform/backend/.venv/bin/python", "host": "local", "cwd_isolated": true}
 
 import json, os, time, random, math, warnings
 import numpy as np
