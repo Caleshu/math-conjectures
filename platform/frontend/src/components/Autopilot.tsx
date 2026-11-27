@@ -27,10 +27,22 @@ export function AutopilotCard() {
         <div className="flex items-center gap-2">
           {a.enabled ? <Badge tone="running">running</Badge> : <Badge tone="cancelled">paused</Badge>}
           {a.enabled && a.current && <Link className="text-accent" href={`/research/${a.current.research_run_id}`}>current run</Link>}
+          {a.enabled && (a.current?.active_runs?.length ?? 0) > 1 && <span className="text-xs text-ink-3">{a.current.active_runs.length} runs in parallel (up to {a.parallel_runs})</span>}
           {cooling && <span className="text-xs text-warn">cooling down until {fmtDate(a.cooldown_until, true)}</span>}
           {a.blocked && <span className="text-xs text-bad">{a.blocked}</span>}
         </div>
-        <p className="text-xs leading-relaxed text-ink-3">The autopilot researches open problems one after another. Before each run it does a novelty pre-check: real searches plus your repository&apos;s index. It skips anything already resolved, already in your repo, or trivial. When it runs out of problems, it takes AI-extracted open problems from papers, then discovers new arXiv papers. It waits out usage limits and resumes.</p>
+        {a.providers?.length > 0 && (
+          <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs">
+            {a.providers.map((p: any) => (
+              <span key={p.provider} className="text-ink-2">
+                <strong>{p.provider}</strong>{" "}
+                {p.resting ? <span className="text-warn">resting until {fmtDate(p.until, true)} ({p.reason})</span> : <span className="text-ok">working</span>}
+                {Object.entries(p.windows ?? {}).map(([w, v]: any) => v?.utilization != null && <span key={w} className="text-ink-3"> · {w.replace("_", "-")} {Math.round(v.utilization * 100)}%</span>)}
+              </span>
+            ))}
+          </div>
+        )}
+        <p className="text-xs leading-relaxed text-ink-3">The autopilot keeps several research runs going at once. When Claude passes 90% of a usage window, Codex takes over all of its work until the window resets, and the reverse also applies, so research only pauses if both are at their limits. Before each run it does a novelty pre-check: real searches plus your repository&apos;s index. It skips anything already resolved, already in your repo, or trivial. When it runs out of problems, it takes AI-extracted open problems from papers, then discovers new arXiv papers. Novelty pre-checks and paper extraction run on Codex to save Claude usage for research.</p>
         {a.last_action && <div className="flex items-start gap-1.5 text-ink-2">{a.enabled && !cooling && <Spinner className="mt-0.5" />}<span>Last: {a.last_action}</span></div>}
         {a.waiting && <div className="text-xs text-ink-3">Waiting: {a.waiting}</div>}
         {a.last_error && <div className="text-xs text-bad">Last error: {a.last_error}</div>}

@@ -51,6 +51,14 @@ class Settings(BaseSettings):
     codex_path: str = "codex"
     codex_model: str = "gpt-6.2-astra"
     codex_timeout_s: int = 1800
+    # Hand Claude's work to the other model once any Claude plan usage window (5-hour or 7-day) reaches this
+    # fraction, until that window resets. Research never stops just because one provider is resting.
+    claude_handoff_utilization: float = 0.90
+    # Novelty pre-checks and paper extraction go here when available, saving Claude usage for research.
+    background_llm_provider: str = "codex"
+    # How many research runs the autopilot keeps going at once (each runs on its own job worker). Only the first
+    # uses the Claude+GPT team; the rest run on the GPT provider alone so Claude usage stays focused.
+    autopilot_parallel_runs: int = 3
     # "auto" = anthropic if a key is set, else claude_code if the CLI is installed, else openai.
     default_llm_provider: str = "auto"  # "auto" | "anthropic" | "claude_code" | "openai"
     # Hard ceiling on total LLM spend (USD) recorded in llm_usage. Calls are refused past it.

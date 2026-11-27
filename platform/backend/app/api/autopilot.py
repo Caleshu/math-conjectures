@@ -32,7 +32,9 @@ def status(db: Session = Depends(get_db), _: dict = Depends(current_user)):
         elif c.status in ELIGIBLE and c.id not in researched:
             queue.append(brief)
     jobs = db.scalars(select(Job).where(Job.job_type == "export_repo").order_by(Job.created_at.desc()).limit(5)).all()
+    from app.llm.registry import provider_status
     return {"enabled": bool(st.get("enabled")), "cooldown_until": st.get("cooldown_until"), "blocked": st.get("blocked"),
+            "providers": provider_status(), "parallel_runs": s.autopilot_parallel_runs,
             "last_action": st.get("last_action"), "last_error": st.get("last_error"), "current": st.get("current"),
             "waiting": st.get("waiting"), "limits": st.get("limits") or {}, "log": list(reversed(st.get("log", [])))[:40],
             "queue": queue, "skipped": skipped,

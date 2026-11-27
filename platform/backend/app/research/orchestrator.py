@@ -42,7 +42,7 @@ DEFAULT_LIMITS = {
     "max_experiments": 4,
     "experiment_timeout_s": 120,
     "experiment_memory_mb": 2048,
-    "concurrency": 3,
+    "concurrency": 5,
     "provider": None,
     "effort": "high",
 }
@@ -219,20 +219,13 @@ class Orchestrator:
         return team[(i + shift) % 2]
 
     def call(self, role: str, iteration: int, system: str, prompt: str, schema: dict) -> dict:
+        """One agent call. If the assigned model is resting (usage limit, or Claude past its hand-off threshold),
+        the registry routes the call to the other model, so the run keeps going on whichever model has capacity."""
         self.check()
-        provider = self.provider_for(role, iteration)
-        kw = dict(purpose=f"research:{role}", system=system, prompt=prompt, schema=schema, job_id=self.job_id,
-                  subject_id=self.run_id, max_tokens=32000, effort=self.limits.get("effort", "high"))
-        try:
-            return tracked_json_call(provider=provider, **kw).data
-        except (LLMError, LLMUnavailable) as e:
-            team = self._team()
-            if not team or not re.search(r"429|usage limit|hit your .*limit|rate.?limit|unavailable|not found", str(e), re.I):
-                raise
-            other = team[1] if provider == team[0] else team[0]
-            log.warning("%s on %s failed (%s); falling back to %s", role, provider, e, other)
-            self.check()
-            return tracked_json_call(provider=other, **kw).data
+        return tracked_json_call(purpose=f"research:{role}", system=system, prompt=prompt, schema=schema,
+                                 provider=self.provider_for(role, iteration), job_id=self.job_id,
+                                 subject_id=self.run_id, max_tokens=32000,
+                                 effort=self.limits.get("effort", "high")).data
 
     def checkpoint(self, **kw) -> None:
         with session_scope() as db:

@@ -28,7 +28,9 @@ class ClaudeCodeProvider:
 
     def complete_json(self, *, system: str, prompt: str, schema: dict, max_tokens: int = 16000,
                       effort: str = "high") -> LLMResult:
-        cmd = [self.path, "-p", "--output-format", "json", "--json-schema", json.dumps(schema),
+        # stream-json (with --verbose) adds a rate_limit_event carrying plan utilization per window, which the
+        # registry uses to hand work to another provider before the limit is actually hit.
+        cmd = [self.path, "-p", "--output-format", "stream-json", "--verbose", "--json-schema", json.dumps(schema),
                "--system-prompt", system, "--model", self.model, "--tools", "", "--strict-mcp-config",
                "--no-session-persistence"]
         if effort in _EFFORTS:
@@ -43,11 +45,22 @@ class ClaudeCodeProvider:
                 raise LLMError(f"Claude Code call timed out after {self.timeout_s}s") from e
             except OSError as e:
                 raise LLMError(f"Could not start Claude Code CLI: {e}") from e
-        try:
-            out = json.loads(proc.stdout)
-        except json.JSONDecodeError as e:
+        out, rate_limit = None, None
+        for line in proc.stdout.splitlines():
+            try:
+                ev = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if ev.get("type") == "result":
+                out = ev
+            elif ev.get("type") == "rate_limit_event":
+                rate_limit = ev.get("rate_limit_info") or rate_limit
+        if out is None:
             tail = (proc.stderr or proc.stdout or "")[-500:].strip()
-            raise LLMError(f"Claude Code returned no JSON (exit {proc.returncode}): {tail}") from e
+            err = LLMError(f"Claude Code returned no result (exit {proc.returncode}): {tail}")
+            if rate_limit:
+                err.result = LLMResult(data={}, provider=self.name, model=self.model, meta={"rate_limit": rate_limit})
+            raise err
 
         mu = out.get("modelUsage") or {}
         served = next(iter(mu), self.model)
@@ -58,7 +71,7 @@ class ClaudeCodeProvider:
             output_tokens=u.get("output_tokens") or 0, cache_read_tokens=u.get("cache_read_input_tokens") or 0,
             cost_usd=0.0, stop_reason=out.get("subtype"), raw_text=out.get("result") or "",
             meta={"billing": "claude subscription", "list_price_equivalent_usd": out.get("total_cost_usd"),
-                  "session_id": out.get("session_id"), "num_turns": out.get("num_turns")},
+                  "session_id": out.get("session_id"), "num_turns": out.get("num_turns"), "rate_limit": rate_limit},
         )
         if out.get("is_error") or out.get("subtype") != "success":
             msg = out.get("result") or out.get("subtype") or "unknown error"

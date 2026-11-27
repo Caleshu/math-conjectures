@@ -293,6 +293,15 @@ LTS = "https://lefttosolve.com"
 FIELD_MAP = {"Combinatorics": "combinatorics", "Graph Theory": "graph_theory", "Number Theory": "number_theory"}
 
 
+def _lts_difficulty(score) -> str:
+    """Map lefttosolve.com's 0-100 difficulty score onto the app's difficulty categories."""
+    try:
+        v = float(score)
+    except (TypeError, ValueError):
+        return "unknown"
+    return "accessible" if v < 25 else "moderate" if v < 50 else "hard" if v < 75 else "very_hard"
+
+
 def import_lefttosolve(st: dict) -> str | None:
     """Take the next open problem from lefttosolve.com (read-only API): easiest first, unsolved, unclaimed, and
     nobody currently working on it. 'known' problems are never imported (they are already solved)."""
@@ -327,8 +336,8 @@ def import_lefttosolve(st: dict) -> str | None:
                     "original_statement": (d.get("statement") or d["title"]) + "\n\nLean (formal-conjectures):\n" + (d.get("lean") or ""),
                     "normalized_statement": d.get("statement") or d["title"],
                     "notation": f"Lean declaration {d.get('decl')} in {d.get('module')}",
-                    "known_results": [], "difficulty_estimate": str(d.get("difficulty")),
-                    "difficulty_rationale": "lefttosolve.com difficulty score (0-100)",
+                    "known_results": [], "difficulty_estimate": _lts_difficulty(d.get("difficulty")),
+                    "difficulty_rationale": f"lefttosolve.com difficulty score {d.get('difficulty')} (0-100)",
                     "extraction_details": {"source": "lefttosolve", "lts_id": d["id"], "lean": d.get("lean"),
                                            "module": d.get("module"), "ref": d.get("ref"),
                                            "url": f"{LTS}/p/{d['id']}", "lts_source": d.get("source")},
@@ -382,17 +391,23 @@ def tick() -> None:
         return
     st.pop("blocked", None)
     cd = st.get("cooldown_until")
+    from app.llm.registry import next_available_at
     if cd and datetime.fromisoformat(cd) > _now():
-        save_state(st)
-        return
+        if not (st.get("cooldown_kind") == "usage" and next_available_at() is None):
+            save_state(st)
+            return
+        st.pop("cooldown_until", None)  # a provider came back early (or a different one has capacity)
+        note(st, "an AI provider has capacity again; continuing")
+    st.pop("cooldown_kind", None)
     try:
         _tick(st)
     except Exception as e:  # noqa: BLE001
         msg = f"{type(e).__name__}: {e}"
         if is_rate_limit(msg):
-            t = reset_time(msg)
-            st["cooldown_until"] = t.isoformat()
-            note(st, f"usage limit reached; resuming at {t.astimezone().strftime('%H:%M %Z')} (reset time)")
+            t = next_available_at() or (_now() + timedelta(minutes=2))  # another provider can go: retry soon
+            st["cooldown_until"], st["cooldown_kind"] = t.isoformat(), "usage"
+            note(st, f"usage limit reached on every AI provider; resuming at {t.astimezone().strftime('%H:%M %Z')}"
+                 if t - _now() > timedelta(minutes=3) else "a provider hit its usage limit; switching to the other one")
         else:
             st["last_error"] = msg[:500]
             st["cooldown_until"] = (_now() + timedelta(minutes=5)).isoformat()
@@ -405,6 +420,15 @@ def _launch(db, cid: str, st: dict) -> None:
     from app.jobs.queue import enqueue
     from app.research.orchestrator import normalize_limits
     lim = normalize_limits(st.get("limits") or {})
+    # One run at a time uses the Claude+GPT team; extra parallel runs go to the GPT provider alone, so they
+    # spend ChatGPT-plan capacity instead of Claude's.
+    team_active = any(not (r.limits or {}).get("provider") or (r.limits or {}).get("provider") == "team"
+                      for r in db.scalars(select(ResearchRun).where(ResearchRun.status.in_(["queued", "running"]))))
+    if team_active and not lim.get("provider"):
+        from app.llm.registry import available_providers
+        gpt = next((p for p in ("codex", "openai") if p in available_providers()), None)
+        if gpt:
+            lim["provider"] = gpt
     run = ResearchRun(conjecture_id=cid, status="queued", limits=lim, checkpoint={"phase": "queued", "launched_by": "autopilot"})
     db.add(run)
     db.flush()
@@ -416,19 +440,28 @@ def _launch(db, cid: str, st: dict) -> None:
 
 def _tick(st: dict) -> None:
     from app.jobs.queue import enqueue
+    from app.llm.registry import next_available_at
+    parallel = max(1, get_settings().autopilot_parallel_runs)
     with session_scope() as db:
-        active = db.scalar(select(ResearchRun).where(ResearchRun.status.in_(["queued", "running", "cancelling"])))
-        if active:
-            st["current"] = {"research_run_id": active.id, "conjecture_id": active.conjecture_id}
+        actives = db.scalars(select(ResearchRun).where(ResearchRun.status.in_(["queued", "running", "cancelling"]))
+                             .order_by(ResearchRun.created_at)).all()
+        if actives:
+            st["current"] = {"research_run_id": actives[0].id, "conjecture_id": actives[0].conjecture_id,
+                             "active_runs": [r.id for r in actives]}
+        else:
+            st.pop("current", None)
+        if len(actives) >= parallel:
             return
-        # resume a run that stopped on a usage limit
-        last = db.scalars(select(ResearchRun).order_by(ResearchRun.created_at.desc()).limit(1)).first()
-        if last and last.status == "failed" and is_rate_limit(last.error):
-            if not st.get("cooldown_for") == last.id:
-                st["cooldown_for"] = last.id
-                t = reset_time(last.error)
-                st["cooldown_until"] = t.isoformat()
-                note(st, f"run {last.id[:8]} hit the usage limit; resuming at {t.astimezone().strftime('%H:%M %Z')}")
+        # resume a run that stopped on a usage limit, as soon as any provider has capacity
+        last = db.scalars(select(ResearchRun).where(ResearchRun.status == "failed")
+                          .order_by(ResearchRun.created_at.desc()).limit(10)).all()
+        last = next((r for r in last if is_rate_limit(r.error)
+                     and (r.checkpoint or {}).get("autopilot_resumes", 0) < 20), None)
+        if last:
+            t = next_available_at()
+            if t is not None:
+                st["cooldown_until"], st["cooldown_kind"] = t.isoformat(), "usage"
+                note(st, f"run {last.id[:8]} hit the usage limit on every provider; resuming at {t.astimezone().strftime('%H:%M %Z')}")
                 return
             last.status, last.error, last.finished_at = "queued", None, None
             # restart the runtime clock: time spent waiting for a usage-limit reset doesn't count
@@ -440,9 +473,8 @@ def _tick(st: dict) -> None:
             last.checkpoint = {**cp, "phase": "resuming", "job_id": job.id,
                                "autopilot_resumes": cp.get("autopilot_resumes", 0) + 1}
             st.pop("cooldown_for", None)
-            note(st, f"resumed run {last.id[:8]} after usage-limit cooldown")
+            note(st, f"resumed run {last.id[:8]} after a usage limit")
             return
-        st.pop("current", None)
 
         researched = set(db.scalars(select(ResearchRun.conjecture_id)))
         cands = [c for c in db.scalars(select(Conjecture).where(Conjecture.status.in_(ELIGIBLE))
@@ -503,6 +535,7 @@ def _tick(st: dict) -> None:
     with session_scope() as db:
         _launch(db, target, st)
         note(st, f"launched research on '{title[:80]}' (pre-check: {pc['verdict']})", conjecture_id=target)
+        save_state(st)
 
 
 def _request_export(db) -> None:

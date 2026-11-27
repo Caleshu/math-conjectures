@@ -28,7 +28,9 @@ async def lifespan(app: FastAPI):
 
         # One worker takes any job; a second never takes long research runs, so paper ingestion and
         # experiments are not blocked while a research run is in progress.
+        # Extra research workers let the autopilot keep AUTOPILOT_PARALLEL_RUNS research runs going at once.
         workers = [Worker("embedded"), Worker("embedded-light", [t for t in HANDLERS if t != "research_run"])]
+        workers += [Worker(f"embedded-research{i}", ["research_run"]) for i in range(2, s.autopilot_parallel_runs + 1)]
         for w in workers:
             w.start_background()
         log.info("embedded job workers started")
