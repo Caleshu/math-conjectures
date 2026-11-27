@@ -47,3 +47,4 @@ Unproven conjectures use `sorry`, which Lean reports as a warning, not an error.
 - [Inscribed squares in hypercube Hamiltonian cycles (Sagols–Morales-Luna)](Conjectures/HypercubeSquares/) — **False**; Lean-verified square-free Hamiltonian cycle of Q_8 (also Q_9, Q_10); true for n ≤ 6
 - [Parity vectors of Hamiltonian cycles of the hypercube are exactly the balanced vectors](Conjectures/ParityVectors/) — **False** (MathResearchLab)
 - [Tightness of the lower bound $\alpha_=(Q_n)\ge 2^{n-2}$ for even $n$](Conjectures/TightnessLowerBoundAlphaQNGe2N2EvenN/) — Open per source; openness not yet verified (MathResearchLab)
+- [Characterize the chromatic-segments vectors $\delta_i(h)$ of Hamiltonian cycles of $Q_n$](Conjectures/CharacterizeChromaticSegmentsVectorsDeltaIHHamil/) — Open per source; openness not yet verified (MathResearchLab)
