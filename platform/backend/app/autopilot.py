@@ -52,7 +52,20 @@ def load_state() -> dict:
 
 
 def save_state(st: dict) -> None:
+    """Write state. A manual control change (start/pause/clear cooldown) made while this copy was held by a
+    long-running step always wins over the stale copy."""
     with _state_lock:
+        try:
+            disk = json.loads(state_path().read_text())
+        except (OSError, json.JSONDecodeError):
+            disk = {}
+        if disk.get("control_at", "") > st.get("control_at", ""):
+            st["enabled"] = disk.get("enabled")
+            st["control_at"] = disk["control_at"]
+            if "cooldown_until" not in disk:
+                st.pop("cooldown_until", None)
+        if disk.get("last_export", {}).get("at", "") > (st.get("last_export") or {}).get("at", ""):
+            st["last_export"] = disk["last_export"]
         st["log"] = st.get("log", [])[-80:]
         state_path().write_text(json.dumps(st, indent=1, default=str))
 

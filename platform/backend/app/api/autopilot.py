@@ -49,7 +49,9 @@ class ToggleIn(BaseModel):
 def toggle(body: ToggleIn, _: dict = Depends(current_user)):
     st = load_state()
     if body.enabled is not None:
+        from datetime import datetime, timezone
         st["enabled"] = body.enabled
+        st["control_at"] = datetime.now(timezone.utc).isoformat()
         st.pop("cooldown_until", None)
         note(st, "autopilot enabled" if body.enabled else "autopilot paused (the current run, if any, continues)")
     if body.limits is not None:
