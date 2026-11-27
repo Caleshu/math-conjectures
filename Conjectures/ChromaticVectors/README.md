@@ -30,6 +30,13 @@ Source: Feliú Sagols, Guillermo Morales-Luna, *Parity balance of the $i$-th dim
 
 Verdict: **likely_open**. Not in the repo: HypercubeSquares uses the same source paper but is about inscribed squares, not chromatic-vector characterization. The disproved results already recorded in the app for this paper (inscribed squares, parity vectors) do not answer this question. Apart from the source paper R1, the search results are unrelated (chromatic digraphs, unit graphs, general Hamiltonicity), and one search source (Semantic Scholar) failed with HTTP 429. The easy necessary conditions (c_i even, 2 <= c_i <= 2^{n-1}, sum = 2^n) seem to settle n=3, but whether they suffice for every n is a genuine question that extends the existence of balanced Gray codes. Absence of evidence is not proof that it is open: later work on Gray codes with prescribed transition counts may already answer it and was not checked.
 
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Exact chromatic-vector images for n<=4 (enumeration) and n=4,5 (CP-SAT), tested against the projection condition (P)/(P+)** [succeeded, finite computation]: enum counts ok: True | unconstrained Q5: OPTIMAL | Q2 image: [(2, 2)] | Q3 image: [(2, 2, 4)] | Q4 image: [(2, 2, 4, 8), (2, 2, 6, 6), (2, 4, 4, 6), (4, 4, 4, 4)] | n=4: 4 candidates, feasible=[[2, 2, 4, 8], [2, 2, 6, 6], [2, 4, 4, 6], [4, 4, 4, 4]], infeasible=[], unknown=[], infeasible_though_P=[], infeasible_though_P+=[], BUGS=[]/[], match_enum=True | n=5: 30 candidates, feasible=[[2, 2, 4, 8, 16], [2, 2, 4, 10, 14], [2, 2, 4, 12, 12], [2, 2, 6, 6, 16], [2, 2, 6, 8, 14], [2, 2, 6, 10, 12], [2, 2, 8, 8, 12], [2, 2, 8, 10, 10], [2, 4, 4, 6, 16], [2, 4, 4, 8, 14], [2, 4, 4, 10, 12], [2, 4, 6, 6, 14], [2, 4, 6, 8, 12], [2, 4, 6, 10, 10], [2, 4, 8, 8, 10], [2, 6, 6, 6, 12], [2, 6, 6, 8, 10], [2, 6, 8, 8, 8], [4, 4, 4, 4, 16], [4, 4, 4, 6, 14], [4, 4, 4, 8, 12], [4, 4, 4, 10, 10], [4, 4, 6, 6, 12], [4, 4, 6, 8, 10], [4, 4, 8, 8, 8], [4, 6, 6, 6, 10], [4, 6, 6, 8, 8], [6, 6, 6, 6, 8]], infeasible=[[2, 2, 2, 10, 16], [2, 2, 2, 12, 14]], unknown=[], infeasible_though_P=[], infeasible_though_P+=[], BUGS=[]/[], match_enum=None ([code](computations/mrl_a0c34953.py), [result](computations/mrl_a0c34953.result.json))
+- **Q6: CP-SAT realisation of vectors satisfying the projection condition (P+), tight-boundary cases first** [running, finite computation] ([code](computations/mrl_56436f80.py), [result](computations/mrl_56436f80.result.json))
+
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
