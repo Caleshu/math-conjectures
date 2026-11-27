@@ -1,0 +1,23 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.412,
+ "result": {
+  "summary": "The supplied historical rows do not decide membership.",
+  "registry": "E-5eebf3",
+  "target": [
+   4,
+   4,
+   4,
+   8,
+   16,
+   32,
+   60
+  ],
+  "status": "unresolved",
+  "historical_rows_supplied": 0,
+  "evidence": {
+   "distinct_keys_examined": 0,
+   "ranked_keys_examined": 0
+  }
+ }
+}

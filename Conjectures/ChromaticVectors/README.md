@@ -52,6 +52,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run exhaustively enumerated the $28{,}456$ nondecreasing even septuples of total $128$ whose first $k$ entries sum to at least $2^k$ for every $1\le k\le7$. The word checker passed both square sanity checks and validated the single $Q_7$ word below. The fixed audit identities were absent, so the run returned before any solver call or residual membership test. Both `remaining` and `coverage_equal` were null.
 - **Look up one histogram in the fixed E-5eebf3 register** [succeeded, finite computation]: No fixed registration keys supplied. Membership is undecided. ([code](computations/mrl_6b0a2eef.py), [result](computations/mrl_6b0a2eef.result.json))
   - [Computational Mathematician] The run succeeded and its sanity checks passed. For the single target $s$, it verified admissibility and returned MISSING_INPUT for the historical lookup. It examined zero historical keys. The synthetic hit, complete miss, and incomplete miss tested the lookup logic only.
+- **Exact lookup from historical registry rows** [succeeded, finite computation]: The supplied historical rows do not decide membership. ([code](computations/mrl_dba32a57.py), [result](computations/mrl_dba32a57.result.json))
+  - [Computational Mathematician] The run exited successfully and passed all three synthetic checks. They exercised a matching key, a bracket with consecutive ranks, and a bracket with a rank gap. The historical input contained exactly $0$ rows, so the lookup correctly returned unresolved.
 
 ## AI research runs
 
@@ -63,5 +65,5 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-27 run 8edc085b](research/2026-11-27-run-8edc085b.md): completed. focused round complete
 - [2026-11-27 run f9dea480](research/2026-11-27-run-f9dea480.md): completed. focused round complete
 - [2026-11-27 run 7305dc75](research/2026-11-27-run-7305dc75.md): completed. focused round complete
-- [2026-11-27 run a903634b](research/2026-11-27-run-a903634b.md): running. 
+- [2026-11-27 run a903634b](research/2026-11-27-run-a903634b.md): completed. focused round complete
 
