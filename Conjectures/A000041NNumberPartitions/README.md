@@ -23,6 +23,15 @@ Conjecture: starting with offset 1 represents the numbers of ordered composition
 
 Verdict: **unclear**. The entry bundles three claims. The supplied statement identifies the signed-composition identity as a consequence of the pentagonal number theorem. The perfect-power claim and the representation by pairwise nondividing summands of the form p(k) + 2 are separate research questions. The reported check through 7140 applies only to the representation claim. No supplied record settles either remaining question, and that absence does not establish openness.
 
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Exact perfect-power census for partition numbers** [succeeded, finite computation]: Exact tests completed for 0 <= n <= 20000, with 0 indices admitting a perfect power. ([code](computations/mrl_ec6f87e3.py), [result](computations/mrl_ec6f87e3.result.json))
+  - [Computational Mathematician] The run completed every index $0\le n\le 20000$ and returned an empty witness list. Every perfect power with base greater than $1$ has a prime-exponent witness. The modular filters reject only impossible witnesses, and the remaining candidates received exact integer-root tests. The witness routine agreed with direct power enumeration for $1\le v\le512$, and the partition recurrence agreed with an independent calculation through $n=100$. The conclusion is exhaustive over the stated index range.
+- **All sums of pairwise nondividing shifted partition numbers** [succeeded, finite computation]: Completed 4 of 4 exact coverage checks. Largest completed bound: 250000. ([code](computations/mrl_d0ae1b47.py), [result](computations/mrl_d0ae1b47.result.json))
+  - [Computational Mathematician] For each $B\in\{40,7140,50000,250000\}$, the run found exactly one missing sum in $3\le n\le B$, namely $6$. At $B=250000$ it included all $51$ eligible values. Its recurrence covers every legal subset, and direct subset enumeration agreed on every sum through $40$. The run also recovered and checked explicit witnesses, including $7141=137+178+299+1960+4567$. The largest check extends the supplied verification through $250000$.
+
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.

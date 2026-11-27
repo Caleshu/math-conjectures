@@ -1,0 +1,13 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 1.386,
+ "result": {
+  "summary": "Exact tests completed for 0 <= n <= 20000, with 0 indices admitting a perfect power.",
+  "requested_through": 20000,
+  "completed_through": 20000,
+  "complete": true,
+  "hits": [],
+  "small_power_check_through": 512,
+  "independent_partition_check_through": 100
+ }
+}

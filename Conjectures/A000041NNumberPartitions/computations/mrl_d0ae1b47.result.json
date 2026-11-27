@@ -1,0 +1,200 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.352,
+ "result": {
+  "summary": "Completed 4 of 4 exact coverage checks. Largest completed bound: 250000.",
+  "requested_bounds": [
+   40,
+   7140,
+   50000,
+   250000
+  ],
+  "complete": true,
+  "checks": [
+   {
+    "bound": 40,
+    "candidate_count": 9,
+    "missing": [
+     6
+    ],
+    "direct_subset_check_through": 40,
+    "witnesses": {
+     "40": [
+      {
+       "k": 4,
+       "value": 7
+      },
+      {
+       "k": 5,
+       "value": 9
+      },
+      {
+       "k": 8,
+       "value": 24
+      }
+     ]
+    }
+   },
+   {
+    "bound": 7140,
+    "candidate_count": 31,
+    "missing": [
+     6
+    ],
+    "direct_subset_check_through": 40,
+    "witnesses": {
+     "7140": [
+      {
+       "k": 15,
+       "value": 178
+      },
+      {
+       "k": 17,
+       "value": 299
+      },
+      {
+       "k": 18,
+       "value": 387
+      },
+      {
+       "k": 22,
+       "value": 1004
+      },
+      {
+       "k": 23,
+       "value": 1257
+      },
+      {
+       "k": 24,
+       "value": 1577
+      },
+      {
+       "k": 26,
+       "value": 2438
+      }
+     ]
+    }
+   },
+   {
+    "bound": 50000,
+    "candidate_count": 41,
+    "missing": [
+     6
+    ],
+    "direct_subset_check_through": 40,
+    "witnesses": {
+     "7141": [
+      {
+       "k": 14,
+       "value": 137
+      },
+      {
+       "k": 15,
+       "value": 178
+      },
+      {
+       "k": 17,
+       "value": 299
+      },
+      {
+       "k": 25,
+       "value": 1960
+      },
+      {
+       "k": 29,
+       "value": 4567
+      }
+     ],
+     "50000": [
+      {
+       "k": 22,
+       "value": 1004
+      },
+      {
+       "k": 23,
+       "value": 1257
+      },
+      {
+       "k": 25,
+       "value": 1960
+      },
+      {
+       "k": 29,
+       "value": 4567
+      },
+      {
+       "k": 31,
+       "value": 6844
+      },
+      {
+       "k": 32,
+       "value": 8351
+      },
+      {
+       "k": 38,
+       "value": 26017
+      }
+     ]
+    }
+   },
+   {
+    "bound": 250000,
+    "candidate_count": 51,
+    "missing": [
+     6
+    ],
+    "direct_subset_check_through": 40,
+    "witnesses": {
+     "7141": [
+      {
+       "k": 14,
+       "value": 137
+      },
+      {
+       "k": 15,
+       "value": 178
+      },
+      {
+       "k": 17,
+       "value": 299
+      },
+      {
+       "k": 25,
+       "value": 1960
+      },
+      {
+       "k": 29,
+       "value": 4567
+      }
+     ],
+     "250000": [
+      {
+       "k": 34,
+       "value": 12312
+      },
+      {
+       "k": 35,
+       "value": 14885
+      },
+      {
+       "k": 39,
+       "value": 31187
+      },
+      {
+       "k": 42,
+       "value": 53176
+      },
+      {
+       "k": 43,
+       "value": 63263
+      },
+      {
+       "k": 44,
+       "value": 75177
+      }
+     ]
+    }
+   }
+  ]
+ }
+}

@@ -37,7 +37,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 |---|---|---|
 | [A000032: Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.](Conjectures/A000032LucasNumbersBeginning/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A000041: a(n) is the number of partitions of n (the partition numbers).](Conjectures/A000041NNumberPartitions/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
-| [A000122: Expansion of Jacobi theta function theta3(x) = Sum{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n).](Conjectures/A000122ExpansionJacobiTheta/) 🤖 | Recorded from the literature; not yet researched. | AI research (not human-reviewed) |
+| [A000122: Expansion of Jacobi theta function theta3(x) = Sum{m =-oo..oo} x^(m^2) (number of integer solutions to k^2 = n).](Conjectures/A000122ExpansionJacobiTheta/) 🤖 | Novelty pre-check: likely resolved. | AI research (not human-reviewed) |
 | [A000166: Subfactorial or rencontres numbers, or derangements: number of permutations of n elements with no fixed points.](Conjectures/A000166SubfactorialOrRencontres/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A000188: (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d](Conjectures/A0001881NumberSolutions/) 🤖 | Novelty pre-check: trivial or ill posed. | AI research (not human-reviewed) |
 | [Additive colouring of bipartite graphs](Conjectures/AdditiveColouring/) | η ≤ 2 for all connected bipartite graphs on ≤ 15 vertices (exhaustive) | Computational evidence |
