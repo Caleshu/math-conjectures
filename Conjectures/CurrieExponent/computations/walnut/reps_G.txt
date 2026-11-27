@@ -1,0 +1,2 @@
+def GAMfm "?msd_gam m>=i & ~$GAMeq(p,m) & Au (u>=i & u<m) => $GAMeq(p,u)":
+def GAMrep2 "?msd_gam p>=1 & n>=2*p & Ei,m $GAMfm(i,m,p) & i+n=m+p":
