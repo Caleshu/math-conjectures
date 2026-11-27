@@ -43,5 +43,5 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 5f997de2](research/2026-11-27-run-5f997de2.md): running. 
+- [2026-11-27 run 5f997de2](research/2026-11-27-run-5f997de2.md): completed. orchestrator: Both authorized iterations and all four experiments are complete. The outstanding gap is to exclude every index beyond the finite search. The reviews identify no pending local calculation that would close that gap.
 
