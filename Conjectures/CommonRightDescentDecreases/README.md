@@ -29,3 +29,20 @@ Source: Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, Emily Xia Meng, Henry Kv
 - Equation (B.17) expresses the difference exactly as $[q^5]P_{x,ws}$ minus a sum of products of $\mu$-coefficients. Proposition B.4.6 shows that a hypothetical failure of length-thirteen invariance would force a difference of at least five in the specified class. *(Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, PatternMiner: Automated Mathematical Discovery Through LLM-Guided Training and Interpretation of Small Models, arXiv:2611.33966 (B.4.4, pp. 36–37))*
 - A coefficient search found a connected length-ten interval in $S_{10}$ with $G=0$ and $[q^4]P_{x,v}=8$. This rules out bounding the uncorrected top-degree term by four from connectedness and $G=0$ alone. *(Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, PatternMiner: Automated Mathematical Discovery Through LLM-Guided Training and Interpretation of Small Models, arXiv:2611.33966 (B.4.4, Table 20, p. 37); computational; reproduced: None)*
 
+## Novelty pre-check
+
+Verdict: **likely_open**. The supplied repository index has no matching problem. None of the returned records indicates a proof or counterexample for the bound of four on the drop in the q⁶ coefficient under a common right descent. This is a precise, finite research question. Two bibliographic searches were rate-limited, so the absence of a reported resolution does not establish openness.
+
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Exact coefficient drops for pairs with common descents inside four triples** [succeeded, heuristic search]: family_exhausted. Evaluated 0 common-descent drops for positive pairs. Complete for the four-triple family: False. ([code](computations/mrl_31b15f25.py), [result](computations/mrl_31b15f25.result.json))
+  - [Computational Mathematician] The run exhausted the endpoint scan over all 2,008 permutations in the specified family. It visited 75,324 ordered pairs of length difference thirteen. All 923 pairs passing the endpoint filters exceeded the cap before the program tested connectedness or computed the base coefficient. The reported $S_4$ sanity checks passed, including the known drop of one for $(1324,3412)$. The empty drop histogram leaves open both the existence of a qualifying pair in this family and the proposed bound.
+
+## AI research runs
+
+Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
+
+- [2026-11-27 run 5fa55f38](research/2026-11-27-run-5fa55f38.md): running. 
+

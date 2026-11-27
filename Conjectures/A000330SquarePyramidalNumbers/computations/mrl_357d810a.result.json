@@ -1,0 +1,69 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 9.075,
+ "result": {
+  "summary": "r=27 has no triple for -20000 <= c <= 20000, inclusive, with unrestricted a,b. r=52 has no triple for -20000 <= c <= 20000, inclusive, with unrestricted a,b. r=77 has no triple for -20000 <= c <= 20000, inclusive, with unrestricted a,b. r=102 has no triple for -20000 <= c <= 20000, inclusive, with unrestricted a,b.",
+  "findings": [
+   {
+    "r": 27,
+    "z": -2,
+    "outcome": "miss_in_exhausted_interval",
+    "third_index_interval_inclusive": [
+     -20000,
+     20000
+    ],
+    "third_indices_exhausted": 40001,
+    "stop_reason": "index_limit"
+   },
+   {
+    "r": 52,
+    "z": -2,
+    "outcome": "miss_in_exhausted_interval",
+    "third_index_interval_inclusive": [
+     -20000,
+     20000
+    ],
+    "third_indices_exhausted": 40001,
+    "stop_reason": "index_limit"
+   },
+   {
+    "r": 77,
+    "z": -2,
+    "outcome": "miss_in_exhausted_interval",
+    "third_index_interval_inclusive": [
+     -20000,
+     20000
+    ],
+    "third_indices_exhausted": 40001,
+    "stop_reason": "index_limit"
+   },
+   {
+    "r": 102,
+    "z": -2,
+    "outcome": "miss_in_exhausted_interval",
+    "third_index_interval_inclusive": [
+     -20000,
+     20000
+    ],
+    "third_indices_exhausted": 40001,
+    "stop_reason": "index_limit"
+   }
+  ],
+  "sanity": {
+   "passed": true,
+   "bounded_pair_set_comparisons_by_r": {
+    "27": 137,
+    "52": 137,
+    "77": 137,
+    "102": 137
+   },
+   "known_triple": [
+    1,
+    1,
+    -4
+   ]
+  },
+  "author_support": "proved_here",
+  "justification": "Let $k=r-2$, $g=k^2-3k+3$, and $f(X)=X^3-gX$. Expansion gives $f(kn+1)=6k^2P_r(n)+1-g$. Thus for fixed $c$, the required equation is $f(X)+f(Y)=D$ with $X=ka+1$, $Y=kb+1$ and $D$ as in the code. Since $D$ is congruent to $-4$ modulo $k$ and $k$ is one of $25,50,75,100$, $D$ is nonzero. Put $s=X+Y$ and $d=Y-X$. Expansion gives $4D=s(s^2+3d^2-4g)$. Also $s$ divides $D$ because $f(X)+f(Y)=(X+Y)(X^2-XY+Y^2-g)$. If $D/s<0$, then $s^2<4g$. If $D/s>0$ and $t=|s|$ exceeds $\\sqrt{4g}+\\sqrt[3]{4|D|}$, then $t(t^2-4g)\\ge(t-\\sqrt{4g})^3>4|D|$, contradicting the identity. The scanned interval therefore includes every possible $s$, and $s$ must be congruent to $2$ modulo $k$. For each retained divisor the square test and the two congruences recover exactly the integral indices via $a=(s-d-2)/(2k)$ and $b=(s+d-2)/(2k)$. Taking $d\\ge0$ orders the pair. Third indices are visited in contiguous prefixes, and a miss counts a third index only after its entire divisor test finishes."
+ }
+}

@@ -38,5 +38,5 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 6f322b0e](research/2026-11-27-run-6f322b0e.md): running. 
+- [2026-11-27 run 6f322b0e](research/2026-11-27-run-6f322b0e.md): completed. orchestrator: The reviewed witness and independent recurrence check settle the original question. Another research round on tail periods, the full modulus classification, or literature attribution would not change that verdict.
 

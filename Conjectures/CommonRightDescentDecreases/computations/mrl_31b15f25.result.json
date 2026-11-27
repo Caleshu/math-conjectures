@@ -1,0 +1,62 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 9.013,
+ "result": {
+  "summary": "family_exhausted. Evaluated 0 common-descent drops for positive pairs. Complete for the four-triple family: False.",
+  "status": "family_exhausted",
+  "complete_for_selected_family": false,
+  "family_size": 2008,
+  "parameters": {
+   "interval_cap": 4500,
+   "seconds": 90,
+   "seed": 130412
+  },
+  "sanity": {
+   "endpoint_generator_matches_brute_force_S4": true,
+   "full_S4_interval_size": 24,
+   "common_descent_drop_for_1324_3412": 1
+  },
+  "counts": {
+   "length_matched_pairs_visited": 75324,
+   "upper_endpoints_finished": 2008,
+   "pairs_passing_endpoint_filters": 923,
+   "base_intervals_over_cap": 923
+  },
+  "base_mu_histogram_for_connected_pairs_evaluated": {},
+  "drop_histogram": {},
+  "largest_evaluated_drop": null,
+  "counterexample": null,
+  "first_interval_over_cap": {
+   "x": [
+    9,
+    3,
+    2,
+    8,
+    7,
+    1,
+    12,
+    11,
+    6,
+    10,
+    5,
+    4
+   ],
+   "w": [
+    12,
+    6,
+    5,
+    9,
+    8,
+    3,
+    11,
+    10,
+    4,
+    7,
+    2,
+    1
+   ],
+   "stage": "base"
+  },
+  "seconds_elapsed": 8.521
+ }
+}
