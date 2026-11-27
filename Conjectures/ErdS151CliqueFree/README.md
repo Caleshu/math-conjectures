@@ -45,6 +45,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The wrapper exited with code 0 after finding no Lean executable in its workspace search. It reported empty source and import-artifact lists. The `lean_input` field contains the proposed probe. Lean checked zero instances of the single intended case $n=1$, $G=\bot$, $s=\varnothing$.  (marked UNTRUSTWORTHY by the agent)
 - **Extract and certify the empty candidate on the singleton graph** [succeeded, finite computation]: No certified polarity. Inspect the blocker, imported body, or Lean diagnostic. ([code](computations/mrl_c11752fd.py), [result](computations/mrl_c11752fd.result.json))
   - [Computational Mathematician] The intended scope was exactly $n=1$, $G=(\bot : \mathrm{SimpleGraph}\,(\mathrm{Fin}\,1))$, and $s=\varnothing$. The wrapper caught the missing-executable error and exited with code 0 after recording `UNRESOLVED`. It emitted no source excerpt. Neither the singleton controls nor the declaration `verdict` reached Lean. The number of kernel-checked instances was zero.  (marked UNTRUSTWORTHY by the agent)
+- **Extract the candidate before specializing to the singleton graph** [succeeded, finite computation]: Kernel check unavailable. Any source excerpt is raw evidence only. ([code](computations/mrl_1173f0eb.py), [result](computations/mrl_1173f0eb.result.json))
+  - [Computational Mathematician] The wrapper exited with code 0 after reporting `UNCHECKED`. It found neither a staged Lean executable nor the imported `151.olean` and emitted no definition excerpt. Lean never ran, so the number of candidate instances checked was zero.  (marked UNTRUSTWORTHY by the agent)
 
 ## AI research runs
 
@@ -56,5 +58,5 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-27 run f7450353](research/2026-11-27-run-f7450353.md): completed. focused round complete
 - [2026-11-27 run 686326ed](research/2026-11-27-run-686326ed.md): completed. focused round complete
 - [2026-11-27 run cdbd3205](research/2026-11-27-run-cdbd3205.md): completed. focused round complete
-- [2026-11-27 run 5c40d3b9](research/2026-11-27-run-5c40d3b9.md): running. 
+- [2026-11-27 run 5c40d3b9](research/2026-11-27-run-5c40d3b9.md): completed. focused round complete
 

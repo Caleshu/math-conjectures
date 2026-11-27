@@ -1,0 +1,17 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 1.033,
+ "result": {
+  "scope": {
+   "n": 1,
+   "graph": "bottom",
+   "candidate": "empty"
+  },
+  "status": "UNCHECKED",
+  "missing": [
+   "staged Lean executable",
+   "imported 151.olean"
+  ],
+  "summary": "Kernel check unavailable. Any source excerpt is raw evidence only."
+ }
+}
