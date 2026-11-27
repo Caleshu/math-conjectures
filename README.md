@@ -9,7 +9,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 
 | ✅ Proved (true) | ❌ Disproved (false) | ⏳ Open |
 |:-:|:-:|:-:|
-| **2** | **6** | **29** |
+| **2** | **6** | **30** |
 
 *Verification* says how a result is known. **Lean-verified**: checked by the Lean kernel. **Computer-assisted / computer-checked**: an exact computation, reproducible from the folder. **AI research**: produced by MathResearchLab's AI agents and not yet checked by a human. Treat it as a lead, not a theorem. Problems marked 🤖 were found and researched by MathResearchLab (`platform/`). New folders are picked up automatically. To change a problem's category or summary, edit `problems.toml`.
 
@@ -35,6 +35,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 
 | Problem | Progress so far | Verification |
 |---|---|---|
+| [A combinatorial interpretation of Kazhdan–Lusztig coefficients](Conjectures/CombinatorialInterpretationKazhdanLuszti/) 🤖 | Recorded from the literature; not yet researched. | AI research (not human-reviewed) |
 | [A combinatorial interpretation of Kronecker coefficients](Conjectures/CombinatorialInterpretationKroneckerCoef/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A combinatorial interpretation of ordinary Schubert structure constants](Conjectures/CombinatorialInterpretationOrdinarySchub/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
 | [A combinatorial interpretation of symmetric-group character-table row sums](Conjectures/CombinatorialInterpretationSymmetricGrou/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
