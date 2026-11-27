@@ -27,6 +27,13 @@ def _claim(c: Claim) -> dict:
             "reviews": c.reviews, "experiment_id": c.experiment_id, "related": c.related_claim_ids}
 
 
+def _macros(src) -> dict:
+    if not src or not src.latex_source:
+        return {}
+    from app.extraction.latex_macros import extract_macros
+    return extract_macros(src.latex_source)
+
+
 def build_report(db, run: ResearchRun) -> dict:
     c: Conjecture = db.get(Conjecture, run.conjecture_id)
     src = db.get(Paper, c.source_paper_id) if c.source_paper_id else None
@@ -53,7 +60,7 @@ def build_report(db, run: ResearchRun) -> dict:
             requests.append({**r, "agent": t.agent_role})
         if t.agent_role == "literature" and o.get("relevant_works"):
             lit.append({"works": o["relevant_works"], "novelty": o.get("novelty_assessment")})
-        if t.agent_role == "orchestrator":
+        if t.agent_role == "orchestrator" and t.status == "completed" and o:
             syntheses.append({"iteration": t.iteration, **o})
         if o.get("summary") and t.agent_role != "orchestrator":
             approaches.append({"agent": t.agent_role, "iteration": t.iteration,
@@ -87,6 +94,7 @@ def build_report(db, run: ResearchRun) -> dict:
         "conjecture": {"id": c.id, "slug": c.slug, "title": c.title, "status": c.status,
                        "original_statement": c.original_statement, "normalized_statement": c.normalized_statement,
                        "definitions": c.definitions},
+        "macros": _macros(src),
         "source": {"title": src.title if src else None, "authors": src.authors if src else [],
                    "arxiv_id": src.arxiv_id if src else None, "doi": src.doi if src else None,
                    "year": src.published_date.year if src and src.published_date else None},

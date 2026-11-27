@@ -41,7 +41,7 @@ export default function ReportPage() {
       </div>
 
       <H>Original conjecture</H>
-      <div className="statement rounded border border-rule bg-surface px-4 py-3"><MathText text={c.original_statement} /></div>
+      <div className="statement rounded border border-rule bg-surface px-4 py-3"><MathText text={c.original_statement} macros={r.macros} /></div>
       {c.normalized_statement && <p className="mt-2"><strong>Normalized statement.</strong> <MathText text={c.normalized_statement} /></p>}
       <p className="mt-2 text-[13px] text-ink-2">Recorded status: <StatusBadge status={c.status} /></p>
 
