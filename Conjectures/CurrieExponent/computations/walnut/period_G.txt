@@ -1,0 +1,6 @@
+def GAMeq "?msd_gam GAM[u]=GAM[u+p]":
+def GAMper "?msd_gam Au (u>=i & u+p<i+n) => $GAMeq(p,u)":
+eval b4 "?msd_gam $GAMper(2,4,2)":
+eval b6 "?msd_gam $GAMper(2,5,2)":
+eval b7 "?msd_gam $GAMper(8,6,3)":
+def GAMrep "?msd_gam p>=1 & n>=2*p & Ei $GAMper(i,n,p) & ~$GAMper(i,n+1,p)":

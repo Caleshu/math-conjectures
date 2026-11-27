@@ -1,0 +1,8 @@
+eval tot "?msd_gam Ax,y Ez x+y=z":
+eval uniq "?msd_gam Ax,y,z,w (x+y=z & x+y=w) => z=w":
+eval comm "?msd_gam Ax,y,z x+y=z => y+x=z":
+eval assoc "?msd_gam Ax,y,z,u,v,w (x+y=u & u+z=v & y+z=w) => x+w=v":
+eval succ "?msd_gam Ax,y (x<y) <=> (Ez z>=1 & x+z=y)":
+eval t8 "?msd_gam 3+5=8":
+eval t28 "?msd_gam 9+16=25 & 16+12=28":
+def gpre "?msd_gam GAM[0]=@0 & GAM[1]=@1 & GAM[2]=@2 & GAM[3]=@0 & GAM[4]=@2 & GAM[5]=@0 & GAM[6]=@1":

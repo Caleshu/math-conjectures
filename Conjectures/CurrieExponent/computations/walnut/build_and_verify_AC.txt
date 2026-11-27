@@ -1,0 +1,16 @@
+eval Ab0 "?msd_gam $BLKA(0,0)":
+eval Abf "?msd_gam Am Es $BLKA(m,s)":
+eval Abu "?msd_gam Am,s,t ($BLKA(m,s) & $BLKA(m,t)) => s=t":
+eval Abs "?msd_gam Am,s $BLKA(m,s) => ((GAM[m]=@0 => $BLKA(m+1,s+7)) & (GAM[m]=@1 => $BLKA(m+1,s+5)) & (GAM[m]=@2 => $BLKA(m+1,s+10)))":
+def AL1 "?msd_gam Em,s $BLKA(m,s) & ((GAM[m]=@0 & (n=s+0 | n=s+2)) | (GAM[m]=@1 & (n=s+0 | n=s+2)) | (GAM[m]=@2 & (n=s+0 | n=s+2 | n=s+7)))":
+def AL2 "?msd_gam Em,s $BLKA(m,s) & ((GAM[m]=@0 & (n=s+1 | n=s+4 | n=s+6)) | (GAM[m]=@1 & (n=s+1 | n=s+4)) | (GAM[m]=@2 & (n=s+1 | n=s+4 | n=s+6 | n=s+9)))":
+combine WA AL1=1 AL2=2:
+eval Apre "?msd_gam WA[0]=@1 & WA[1]=@2 & WA[2]=@1 & WA[3]=@0 & WA[4]=@2 & WA[5]=@0 & WA[6]=@2 & WA[7]=@1 & WA[8]=@2 & WA[9]=@1 & WA[10]=@0 & WA[11]=@2 & WA[12]=@1 & WA[13]=@2 & WA[14]=@1 & WA[15]=@0 & WA[16]=@2 & WA[17]=@0 & WA[18]=@2 & WA[19]=@1 & WA[20]=@0 & WA[21]=@2 & WA[22]=@1 & WA[23]=@2 & WA[24]=@1 & WA[25]=@0 & WA[26]=@2 & WA[27]=@0 & WA[28]=@2 & WA[29]=@1 & WA[30]=@2 & WA[31]=@1 & WA[32]=@0 & WA[33]=@2 & WA[34]=@0 & WA[35]=@2 & WA[36]=@1 & WA[37]=@0 & WA[38]=@2 & WA[39]=@1":
+eval Cb0 "?msd_gam $BLKC(0,0)":
+eval Cbf "?msd_gam Am Es $BLKC(m,s)":
+eval Cbu "?msd_gam Am,s,t ($BLKC(m,s) & $BLKC(m,t)) => s=t":
+eval Cbs "?msd_gam Am,s $BLKC(m,s) => ((GAM[m]=@0 => $BLKC(m+1,s+17)) & (GAM[m]=@1 => $BLKC(m+1,s+13)) & (GAM[m]=@2 => $BLKC(m+1,s+22)))":
+def CL1 "?msd_gam Em,s $BLKC(m,s) & ((GAM[m]=@0 & (n=s+1 | n=s+4 | n=s+5 | n=s+9 | n=s+10 | n=s+13 | n=s+14)) | (GAM[m]=@1 & (n=s+1 | n=s+4 | n=s+5 | n=s+9 | n=s+10)) | (GAM[m]=@2 & (n=s+1 | n=s+4 | n=s+5 | n=s+9 | n=s+10 | n=s+13 | n=s+14 | n=s+18 | n=s+19)))":
+def CL2 "?msd_gam Em,s $BLKC(m,s) & ((GAM[m]=@0 & (n=s+0 | n=s+3 | n=s+7 | n=s+8 | n=s+12 | n=s+16)) | (GAM[m]=@1 & (n=s+0 | n=s+3 | n=s+7 | n=s+8 | n=s+12)) | (GAM[m]=@2 & (n=s+0 | n=s+3 | n=s+7 | n=s+8 | n=s+12 | n=s+16 | n=s+17 | n=s+21)))":
+combine WC CL1=1 CL2=2:
+eval Cpre "?msd_gam WC[0]=@2 & WC[1]=@1 & WC[2]=@0 & WC[3]=@2 & WC[4]=@1 & WC[5]=@1 & WC[6]=@0 & WC[7]=@2 & WC[8]=@2 & WC[9]=@1 & WC[10]=@1 & WC[11]=@0 & WC[12]=@2 & WC[13]=@1 & WC[14]=@1 & WC[15]=@0 & WC[16]=@2 & WC[17]=@2 & WC[18]=@1 & WC[19]=@0 & WC[20]=@2 & WC[21]=@1 & WC[22]=@1 & WC[23]=@0 & WC[24]=@2 & WC[25]=@2 & WC[26]=@1 & WC[27]=@1 & WC[28]=@0 & WC[29]=@2 & WC[30]=@2 & WC[31]=@1 & WC[32]=@0 & WC[33]=@2 & WC[34]=@1 & WC[35]=@1 & WC[36]=@0 & WC[37]=@2 & WC[38]=@2 & WC[39]=@1":

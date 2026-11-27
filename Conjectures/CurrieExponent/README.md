@@ -1,6 +1,6 @@
 # Critical exponents of morphic images (Currie's Conjecture 1)
 
-**Status:** Open. **Partial progress:**
+**Status:** Open. **Partial progress** (a Walnut pipeline is built and calibrated on G; see item 4):
 - Proved for 4 of the 10 morphisms by a short argument.
 - The 10 words fall into 3 equivalence classes, so only 2 words are left.
 - Numerically, all 10 behave as conjectured.
@@ -50,10 +50,46 @@ shortcut from item 1 cannot work.
 largest exponent seen among periods below 1500, in prefixes of length 30,000, is 2.4797–2.4803 for every word. This
 approaches μ from below, as expected.
 
+**4. Walnut pipeline** (`computations/walnut/`). It is built and checked, but it has not decided A or C yet.
+
+- **Numeration `msd_gam`** (`automata/msd_gam.txt`). G's Dumont–Thomas system, with weights 1, 2, 3, 5, 9, 16, 28, …
+  satisfying Uₙ = 2Uₙ₋₁ − Uₙ₋₂ + Uₙ₋₃.
+  - `linaut.py` builds the 153-state addition automaton exactly. A state tracks the language state and the pending
+    linear form, so the automaton is sound by construction.
+  - Walnut then proves it total, unique, commutative, associative and consistent with `<` (`verify_numeration.txt`,
+    8/8 TRUE).
+- **Words.** `GAM` is G as a DFAO. `BLKA` and `BLKC` (165 and 224 states) give the start of block m of h(G).
+  - Walnut proves them correct by induction: the start value, existence, uniqueness, and the step
+    BLK(m+1, s + |h(G[m])|).
+  - `WA` and `WC` are A and C as DFAOs in `msd_gam` (`build_and_verify_AC.txt`, all TRUE; both match the first 40
+    letters).
+- **Calibration on G** (`period_G.txt`, `reps_G.txt`):
+  - The period predicate has 664 states. The set of (length, period) pairs of maximal repetitions with exponent ≥ 2
+    is a 22-state automaton (`automata/GAMrep.txt`).
+  - Decoded with `reps.py`, the periods are exactly the numbers written 10…0 or 1010…0. For p = Uₖ, the longest
+    repetition has n − 2p = Uₖ₋₂ + Uₖ₋₄ + ⋯, so n/p increases to 2 + 1/(λ² − 1) = μ from below.
+  - This agrees with Shallit–Shur. Turning the closed form into a written proof is still to do.
+  - Walnut takes a definition's free variables in alphabetical order: `GAMeq` is called as `$GAMeq(p,u)`.
+- **Blocked on memory.** The comparison automata for A and C are much larger: `WA[u]=WA[u+p]` has 22,502 states, and
+  `WC[u]=WC[u+p]` has 37,707. G's has 101.
+  - With the A comparison, the "for all u" step builds a 350,605-state product and runs out of memory at a 6 GB heap,
+    on an 8 GB machine. The C product (574,081 states) ran out at 4 GB and was not retried with more.
+  - The formulation in `reps_A.txt`/`reps_C.txt`, which uses the first mismatch, is the cheapest found so far. It is
+    10× faster than the direct one on G.
+
 ## Next step
 
-The plan is to use Walnut, which is installed locally. Walnut's `image` command needs uniform morphisms, so the work is:
-1. Add G's Dumont–Thomas numeration system, based on 1, 2, 3, 5, 9, 16, 28, …, which satisfies
-   Uₙ = 2Uₙ₋₁ − Uₙ₋₂ + Uₙ₋₃. This needs an addition automaton, which is regular because λ is a Pisot number.
-2. Express A and C through the synchronized letter counts of prefixes of G.
-3. Decide complexity and critical exponent in Walnut.
+- **More memory.** Run `reps_A.txt`/`reps_C.txt` on a machine with ≳ 16 GB.
+- **Or work in G's coordinates**, where the automata are small. Write h = [XY, X, XYZ] with X = 12102, Y = 02 and
+  Z = 102. A maximal repetition of G with period p should lift to one of A with period |h(G[j..j+p))|, extended by
+  boundary terms:
+
+  | Mismatched letters | L (left) | R (right) |
+  |---|---|---|
+  | {0,1} | 2 | 5 |
+  | {0,2} | 2 | 8 |
+  | {1,2} | 4 | 5 |
+
+  These terms depend only on the mismatched pair. Two pieces are still needed: a synchronization-delay argument to
+  make the lift rigorous, and a numerical check of the formula (not yet done).
+- Then do factor complexity the same way.

@@ -1,0 +1,3 @@
+def WCeq "?msd_gam WC[u]=WC[u+p]":
+def WCfm "?msd_gam m>=i & ~$WCeq(p,m) & Au (u>=i & u<m) => $WCeq(p,u)":
+def WCrep "?msd_gam p>=1 & n>=2*p & Ei,m $WCfm(i,m,p) & i+n=m+p":
