@@ -494,12 +494,16 @@ def _tick(st: dict) -> None:
                 db.flush()
                 _request_export(db)
                 return
-            if st.get("lefttosolve", True):
+            lts_wait = st.get("lts_backoff_until")
+            if st.get("lefttosolve", True) and not (lts_wait and datetime.fromisoformat(lts_wait) > _now()):
                 try:
                     new = import_lefttosolve(st)
+                    st.pop("lts_backoff_until", None)
                 except Exception as e:  # noqa: BLE001 - the site being down must not stop the autopilot
                     new = None
-                    note(st, f"lefttosolve import failed: {type(e).__name__}: {str(e)[:150]}")
+                    st["lts_backoff_until"] = (_now() + timedelta(minutes=30)).isoformat()
+                    note(st, f"lefttosolve import failed (retrying in 30 min; using other sources meanwhile): "
+                             f"{type(e).__name__}: {str(e)[:150]}")
                 if new:
                     note(st, "imported an open problem from lefttosolve.com", conjecture_id=new)
                     return
