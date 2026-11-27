@@ -27,3 +27,13 @@ Source: Feliú Sagols, Guillermo Morales-Luna, *Parity balance of the $i$-th dim
 - The entries of $\delta_i(h)$ at even positions sum to $2^{n-1}$, and so do the entries at odd positions. *(Feliú Sagols, Guillermo Morales-Luna, Parity balance of the $i$-th dimension edges in Hamiltonian cycles of the hypercube, arXiv:1009.3304 (Corollary 4.2, p. 5))*
 - A proof of the parity-vector conjecture would immediately give necessary conditions for chromatic-segments vectors, though far from a full characterization. *(Feliú Sagols, Guillermo Morales-Luna, Parity balance of the $i$-th dimension edges in Hamiltonian cycles of the hypercube, arXiv:1009.3304 (p. 8))*
 
+## Novelty pre-check
+
+Verdict: **likely_open**. This is not in the repository: HypercubeSquares and AltitudeQ4 are about different questions. No search result is relevant (R1–R15 are off-topic, and Semantic Scholar returned HTTP 429), so this verdict rests on absence of evidence, which does not prove the question is open. Two results already recorded in this app are related but do not settle it. First, the disproof of 'parity vectors = balanced vectors' shows that δ_i must satisfy parity constraints beyond 'gaps sum to 2^n'. Second, the chromatic-vector characterization (number of segments per dimension) is still unverified, with unresolved n=6 cases. Easy necessary conditions exist: each gap is at least 2, the gaps sum to 2^n, and every gap is 2 when there are 2^{n-1} segments. A full characterization is a genuine but broad research question. A run should target the exact images for small n (n ≤ 5) and test conjectured necessary-and-sufficient conditions.
+
+## AI research runs
+
+Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
+
+- [2026-11-27 run 301fac8a](research/2026-11-27-run-301fac8a.md): completed. runtime limit reached (5400s)
+
