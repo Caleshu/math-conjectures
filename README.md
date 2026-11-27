@@ -46,4 +46,3 @@ Unproven conjectures use `sorry`, which Lean reports as a warning, not an error.
 - [Handoff from a parallel session](Conjectures/Handoff2026-11/) — Kuca/Finch V(a,b), U(a,b) cases, Litt's game, knight sequence; unverified here
 - [Inscribed squares in hypercube Hamiltonian cycles (Sagols–Morales-Luna)](Conjectures/HypercubeSquares/) — **False**; Lean-verified square-free Hamiltonian cycle of Q_8 (also Q_9, Q_10); true for n ≤ 6
 - [Parity vectors of Hamiltonian cycles of the hypercube are exactly the balanced vectors](Conjectures/ParityVectors/) — **False** (MathResearchLab)
-- [Inscribed square conjecture for Hamiltonian cycles of the hypercube](Conjectures/InscribedSquareConjectureHamiltonianCyclesHyperc/) — Open per source; openness not yet verified (MathResearchLab)
