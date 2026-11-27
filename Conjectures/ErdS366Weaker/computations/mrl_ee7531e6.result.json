@@ -1,0 +1,135 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 4.467,
+ "result": {
+  "parameters": {
+   "limit": 1000000000000000000,
+   "sanity_limit": 5000
+  },
+  "status": "complete",
+  "findings": {
+   "pairs": [],
+   "prefix": [
+    1,
+    8,
+    16,
+    27,
+    32,
+    64,
+    81,
+    125,
+    128,
+    216,
+    243,
+    256,
+    343,
+    432,
+    512,
+    625,
+    648,
+    729,
+    864,
+    1000,
+    1024,
+    1296,
+    1331,
+    1728,
+    1944,
+    2000,
+    2048,
+    2187,
+    2197,
+    2401,
+    2592,
+    2744,
+    3125,
+    3375,
+    3456,
+    3888,
+    4000,
+    4096,
+    4913,
+    5000
+   ],
+   "first": 1,
+   "count": 4480253,
+   "last": 1000000000000000000,
+   "adjacent_comparisons": 4480252,
+   "streams_remaining": 0
+  },
+  "sanity": {
+   "positive_control": {
+    "pairs": [
+     [
+      7,
+      8
+     ]
+    ],
+    "prefix": [
+     1,
+     7,
+     8
+    ],
+    "first": 1,
+    "count": 3,
+    "last": 8,
+    "adjacent_comparisons": 2,
+    "streams_remaining": 0
+   },
+   "trial_division_prefix": [
+    1,
+    8,
+    16,
+    27,
+    32,
+    64,
+    81,
+    125,
+    128,
+    216,
+    243,
+    256,
+    343,
+    432,
+    512,
+    625,
+    648,
+    729,
+    864,
+    1000,
+    1024,
+    1296,
+    1331,
+    1728,
+    1944,
+    2000,
+    2048,
+    2187,
+    2197,
+    2401,
+    2592,
+    2744,
+    3125,
+    3375,
+    3456,
+    3888,
+    4000,
+    4096,
+    4913,
+    5000
+   ],
+   "prefix_agrees": true
+  },
+  "coverage_argument": {
+   "author_support": "proved_here",
+   "justification": "For each prime exponent $e$ in a 3-full integer, choose $r=0,4,5$ according as $e$ is $0,1,2$ modulo $3$. Then $e-r$ is a nonnegative multiple of $3$. Assign primes with $r=4$ to $b$ and primes with $r=5$ to $c$. This gives exactly one representation $a^3 b^4 c^5$ with $b,c$ coprime and squarefree, including $1$ from $a=b=c=1$. Conversely each such product is 3-full. The coefficient loops include exactly the $b^4c^5$ within the bound. Each heap entry is the least unconsumed member of its increasing stream. Replacing or retiring the least entry therefore visits the union in increasing order until the heap is empty. Two integers differing by one must be adjacent in that order."
+  },
+  "initial_stream_count": 50547,
+  "smaller_endpoint_range": [
+   1,
+   999999999999999999
+  ],
+  "summary": "Exhausted all streams through 1000000000000000000. Found 4480253 positive 3-full integers and 0 consecutive pairs.",
+  "program": "body = r'''import json, os\nimport heapq\nimport math\nimport time\n\nparams = json.load(open(os.environ['MRL_PARAMS']))\nlimit = int(params['limit'])\nsanity_limit = min(limit, int(params['sanity_limit']))\ndeadline = time.monotonic() + 95\n\n\ndef check_time():\n    if time.monotonic() >= deadline:\n        raise TimeoutError('soft time limit reached')\n\n\ndef coefficient_heap(bound):\n    fourth_root = math.isqrt(math.isqrt(bound))\n    squarefree = bytearray([1]) * (fourth_root + 1)\n    for d in range(2, math.isqrt(fourth_root) + 1):\n        step = d * d\n        for multiple in range(step, fourth_root + 1, step):\n            squarefree[multiple] = 0\n    heap = []\n    for c in range(1, fourth_root + 1):\n        c5 = c ** 5\n        if c5 > bound:\n            break\n        check_time()\n        if squarefree[c]:\n            max_b = math.isqrt(math.isqrt(bound // c5))\n            for b in range(1, max_b + 1):\n                if squarefree[b] and math.gcd(b, c) == 1:\n                    coefficient = b ** 4 * c5\n                    heap.append((coefficient, coefficient, 1))\n    heapq.heapify(heap)\n    return heap\n\n\ndef scan(heap, bound, prefix_limit, state):\n    previous = None\n    count = 0\n    try:\n        while heap:\n            if count % 8192 == 0:\n                check_time()\n            value, coefficient, a = heap[0]\n            if previous is None:\n                state['first'] = value\n            else:\n                if value <= previous:\n                    raise ArithmeticError('duplicate or out-of-order value')\n                if value == previous + 1:\n                    state['pairs'].append([previous, value])\n            if value <= prefix_limit:\n                state['prefix'].append(value)\n            previous = value\n            count += 1\n            next_value = coefficient * (a + 1) ** 3\n            if next_value <= bound:\n                heapq.heapreplace(heap, (next_value, coefficient, a + 1))\n            else:\n                heapq.heappop(heap)\n    finally:\n        state.update(count=count, last=previous, adjacent_comparisons=max(0, count - 1), streams_remaining=len(heap))\n\n\ndef trial_full(value):\n    d = 2\n    while d * d <= value:\n        exponent = 0\n        while value % d == 0:\n            value //= d\n            exponent += 1\n        if exponent in (1, 2):\n            return False\n        d += 1\n    return value == 1\n\n\nstate = {'pairs': [], 'prefix': []}\nrecord = {'parameters': params, 'status': 'started', 'findings': state, 'sanity': {}, 'coverage_argument': {'author_support': 'proved_here', 'justification': 'For each prime exponent $e$ in a 3-full integer, choose $r=0,4,5$ according as $e$ is $0,1,2$ modulo $3$. Then $e-r$ is a nonnegative multiple of $3$. Assign primes with $r=4$ to $b$ and primes with $r=5$ to $c$. This gives exactly one representation $a^3 b^4 c^5$ with $b,c$ coprime and squarefree, including $1$ from $a=b=c=1$. Conversely each such product is 3-full. The coefficient loops include exactly the $b^4c^5$ within the bound. Each heap entry is the least unconsumed member of its increasing stream. Replacing or retiring the least entry therefore visits the union in increasing order until the heap is empty. Two integers differing by one must be adjacent in that order.'}}\ntry:\n    if not 1 <= sanity_limit <= limit:\n        raise ValueError('invalid bounds')\n    control = {'pairs': [], 'prefix': []}\n    scan([(1, 1, 1), (7, 7, 1)], 8, 8, control)\n    record['sanity']['positive_control'] = control\n    if control['prefix'] != [1, 7, 8] or control['pairs'] != [[7, 8]]:\n        raise ArithmeticError('adjacency control failed')\n    expected_prefix = [v for v in range(1, sanity_limit + 1) if trial_full(v)]\n    record['sanity']['trial_division_prefix'] = expected_prefix\n    heap = coefficient_heap(limit)\n    record['initial_stream_count'] = len(heap)\n    scan(heap, limit, sanity_limit, state)\n    record['sanity']['prefix_agrees'] = state['prefix'] == expected_prefix\n    if not record['sanity']['prefix_agrees'] or state['first'] != 1 or state['streams_remaining'] != 0:\n        raise ArithmeticError('enumeration completion check failed')\n    record['status'] = 'complete'\n    record['smaller_endpoint_range'] = [1, limit - 1]\n    record['summary'] = 'Exhausted all streams through %d. Found %d positive 3-full integers and %d consecutive pairs.' % (limit, state['count'], len(state['pairs']))\nexcept TimeoutError as error:\n    record.update(status='partial', summary=str(error) + '. Only the emitted prefix has been scanned.')\nexcept Exception as error:\n    record.update(status='failed', summary=type(error).__name__ + ': ' + str(error))\nrecord['program'] = 'body = r' + chr(39) * 3 + body + chr(39) * 3 + '\\nexec(body)\\n'\nwith open('result.json', 'w') as output:\n    json.dump(record, output)\n'''\nexec(body)\n"
+ }
+}
