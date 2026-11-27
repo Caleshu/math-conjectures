@@ -72,10 +72,13 @@ The run found $L_m(k)=H_m(k)$ for every $k\in[0,2^m]$ and every $m=1,\dots,12$ (
 At the critical points: in $Q_7$, $L=H=84$ at $k=44$ and $87$ at $k=45$. Since $45+87=132>128$, $\alpha_=(Q_8)\le88$. In $Q_8$, $L=H=163$ at $k=93$ and $167$ at $k=94$. Since $94+167=261>256$, $\alpha_=(Q_9)\le186$.
 
 Limitations: the JSON was truncated for $m\ge9$, but the summary line reports gaps=0 and exactness through $n=13$. It is a single implementation and has not been independently re-run. It is a finite check only; nothing is shown for $n\ge14$.
+- **Check the first excluded size in simplicial order** [succeeded, finite computation]: All checks passed for m=0 through 14. ([code](computations/mrl_17be1b44.py), [result](computations/mrl_17be1b44.result.json))
+  - [Computational Mathematician] For $0\le m\le14$ ($1\le n\le15$), the program measured the closed neighborhood of the first $k+1$ vertices in simplicial order and found excess $\lfloor m/2\rfloor+1$ in every row. For $0\le m\le4$, exhaustive enumeration of every $(k+1)$-vertex set independently gave the same minima, respectively $1,2,4,7,13$. For $5\le m\le14$, the program evaluated one initial segment per dimension. Harper’s theorem identifies each measured size as the minimum.
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
 - [2026-11-27 run bf46b0d7](research/2026-11-27-run-bf46b0d7.md): completed. orchestrator: This was the final allowed iteration. The main question is answered with an exact closed form. The reduction, constructions and monotonicity are reviewed; the upper bound uses only the standard Harper theorem, and the $n\le7$ values are confirmed independently. The remaining gaps are bibliographic (Harper, the source definition, Barber) or a code re-check, and another round of model 
+- [2026-11-27 run d4ef53fa](research/2026-11-27-run-d4ef53fa.md): completed. focused round complete
 

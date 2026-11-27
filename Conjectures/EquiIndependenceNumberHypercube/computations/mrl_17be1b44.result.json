@@ -1,0 +1,155 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.298,
+ "result": {
+  "summary": "All checks passed for m=0 through 14.",
+  "passed": true,
+  "rows": [
+   {
+    "n": 1,
+    "m": 0,
+    "k": 0,
+    "tested_size": 1,
+    "closed_size": 1,
+    "threshold": 0,
+    "excess": 1,
+    "exhaustive_minimum": 1,
+    "sanity_passed": true
+   },
+   {
+    "n": 2,
+    "m": 1,
+    "k": 0,
+    "tested_size": 1,
+    "closed_size": 2,
+    "threshold": 1,
+    "excess": 1,
+    "exhaustive_minimum": 2,
+    "sanity_passed": true
+   },
+   {
+    "n": 3,
+    "m": 2,
+    "k": 1,
+    "tested_size": 2,
+    "closed_size": 4,
+    "threshold": 2,
+    "excess": 2,
+    "exhaustive_minimum": 4,
+    "sanity_passed": true
+   },
+   {
+    "n": 4,
+    "m": 3,
+    "k": 2,
+    "tested_size": 3,
+    "closed_size": 7,
+    "threshold": 5,
+    "excess": 2,
+    "exhaustive_minimum": 7,
+    "sanity_passed": true
+   },
+   {
+    "n": 5,
+    "m": 4,
+    "k": 5,
+    "tested_size": 6,
+    "closed_size": 13,
+    "threshold": 10,
+    "excess": 3,
+    "exhaustive_minimum": 13,
+    "sanity_passed": true
+   },
+   {
+    "n": 6,
+    "m": 5,
+    "k": 10,
+    "tested_size": 11,
+    "closed_size": 24,
+    "threshold": 21,
+    "excess": 3
+   },
+   {
+    "n": 7,
+    "m": 6,
+    "k": 22,
+    "tested_size": 23,
+    "closed_size": 45,
+    "threshold": 41,
+    "excess": 4
+   },
+   {
+    "n": 8,
+    "m": 7,
+    "k": 44,
+    "tested_size": 45,
+    "closed_size": 87,
+    "threshold": 83,
+    "excess": 4
+   },
+   {
+    "n": 9,
+    "m": 8,
+    "k": 93,
+    "tested_size": 94,
+    "closed_size": 167,
+    "threshold": 162,
+    "excess": 5
+   },
+   {
+    "n": 10,
+    "m": 9,
+    "k": 186,
+    "tested_size": 187,
+    "closed_size": 330,
+    "threshold": 325,
+    "excess": 5
+   },
+   {
+    "n": 11,
+    "m": 10,
+    "k": 386,
+    "tested_size": 387,
+    "closed_size": 643,
+    "threshold": 637,
+    "excess": 6
+   },
+   {
+    "n": 12,
+    "m": 11,
+    "k": 772,
+    "tested_size": 773,
+    "closed_size": 1281,
+    "threshold": 1275,
+    "excess": 6
+   },
+   {
+    "n": 13,
+    "m": 12,
+    "k": 1586,
+    "tested_size": 1587,
+    "closed_size": 2516,
+    "threshold": 2509,
+    "excess": 7
+   },
+   {
+    "n": 14,
+    "m": 13,
+    "k": 3172,
+    "tested_size": 3173,
+    "closed_size": 5026,
+    "threshold": 5019,
+    "excess": 7
+   },
+   {
+    "n": 15,
+    "m": 14,
+    "k": 6476,
+    "tested_size": 6477,
+    "closed_size": 9915,
+    "threshold": 9907,
+    "excess": 8
+   }
+  ]
+ }
+}
