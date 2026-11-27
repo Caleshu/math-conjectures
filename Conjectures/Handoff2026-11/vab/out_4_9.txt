@@ -1,0 +1,4 @@
+V(4,9): 4 even terms <= 1000000: 4 18 40 104 (max 104)
+  odd register: period P=150774, periodic from u0=1000001
+  PROVED: V(4,9) has exactly 4 even terms; odd part periodic with period 150774 (25979 odd terms per period)
+exit=0

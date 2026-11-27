@@ -1,0 +1,4 @@
+U(8,19): 6 even terms <= 600000: 8 46 84 122 160 380
+  odd register: period P=6080, periodic from u0=724800065
+  PROVED: U(8,19) has exactly 6 even terms; odd part periodic with period 6080 (824 odd terms/period; 0 residue classes needed the exact count)
+exit=0

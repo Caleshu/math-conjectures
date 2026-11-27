@@ -1,0 +1,26 @@
+k=2 anomaly: x=18 y=4 B=6
+k=2 anomaly: x=1323 y=36 B=42
+k=2 anomaly: x=20808 y=144 B=204
+k=2 anomaly: x=50700 y=225 B=390
+k=2 anomaly: x=3112725 y=1764 B=2310
+k=2 anomaly: x=5145000 y=2268 B=3150
+k=2 anomaly: x=1119456 y=1058 B=3588
+k=2 anomaly: x=25709400 y=5070 B=5382
+k=2 anomaly: x=24012450 y=4900 B=6930
+k=2 anomaly: x=17911296 y=4232 B=7176
+k=2 anomaly: x=49792428 y=7056 B=8148
+k=2 anomaly: x=12960500 y=3600 B=9660
+k=2 anomaly: x=49790223 y=7056 B=10668
+k=2 anomaly: x=90675936 y=9522 B=10764
+k=2 anomaly: x=207368000 y=14400 B=19320
+k=2 anomaly: x=292412888 y=17100 B=41610
+k=2 anomaly: x=2662609923 y=51600 B=52460
+k=2 anomaly: x=1944840870 y=44100 B=52710
+k=2 anomaly: x=4678606208 y=68400 B=83220
+k=2 anomaly: x=1536960150 y=39204 B=96030
+k=2 anomaly: x=1731896658 y=41616 B=117708
+k=2 anomaly: x=1993805496 y=44652 B=142374
+k=2 anomaly: x=956418848 y=30926 B=146828
+k=2 anomaly: x=31117114350 y=176400 B=188580
+k=2 anomaly: x=24591362400 y=156816 B=192060
+k=2: searched B <= 200000, found 25

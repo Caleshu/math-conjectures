@@ -1,0 +1,4 @@
+Q_8: 1024 edge vars, 1792 squares, 19968 base clauses, mode=ham
+SAT: 1 cycle(s), lengths [256], after 10 cuts, 3.1s
+wrote q8_ham_final.cnf
+re-check OK. squares by #H-edges: {0: 256, 1: 1280, 2: 256}

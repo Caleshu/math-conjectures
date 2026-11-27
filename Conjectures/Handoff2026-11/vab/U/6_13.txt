@@ -1,0 +1,4 @@
+U(6,13): 5 even terms <= 600000: 6 32 58 84 208
+  odd register: period P=1664, periodic from u0=31803235
+  PROVED: U(6,13) has exactly 5 even terms; odd part periodic with period 1664 (252 odd terms/period; 0 residue classes needed the exact count)
+exit=0

@@ -1,0 +1,4 @@
+V(4,19): 4 even terms <= 1000000: 4 38 80 224 (max 224)
+  odd register: period P=1064, periodic from u0=242426489
+  PROVED: V(4,19) has exactly 4 even terms; odd part periodic with period 1064 (180 odd terms per period)
+exit=0

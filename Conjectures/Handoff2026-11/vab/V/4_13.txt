@@ -1,0 +1,4 @@
+V(4,13): 4 even terms <= 600000: 4 26 56 152
+  odd register: period P=1644748, periodic from u0=852483
+  PROVED: V(4,13) has exactly 4 even terms; odd part periodic with period 1644748 (283432 odd terms/period; 0 residue classes needed the exact count)
+exit=0

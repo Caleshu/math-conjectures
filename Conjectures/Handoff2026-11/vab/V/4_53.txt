@@ -1,0 +1,3 @@
+V(4,53): 4 even terms <= 600000: 4 106 216 632
+  inconclusive: no cycle with period <= 2e+09 odd-steps
+exit=5

@@ -1,0 +1,4 @@
+V(4,17): 4 even terms <= 1000000: 4 34 72 200 (max 200)
+  odd register: period P=816, periodic from u0=31027733
+  PROVED: V(4,17) has exactly 4 even terms; odd part periodic with period 816 (178 odd terms per period)
+exit=0

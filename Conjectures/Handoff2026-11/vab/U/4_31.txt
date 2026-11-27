@@ -1,0 +1,3 @@
+U(4,31): 4 even terms <= 600000: 4 66 128 3902
+  inconclusive: no cycle with period <= 2e+09 odd-steps
+exit=5
