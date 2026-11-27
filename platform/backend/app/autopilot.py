@@ -127,8 +127,14 @@ Verdicts:
 - likely_resolved: a returned record's title or abstract indicates that it was proved, disproved or settled. Cite the R-ref.
 - likely_resolved also applies when results ALREADY RECORDED IN THIS APP (listed separately) settle it,
   for example a computed value that contradicts the claim. Say which.
+- likely_resolved also applies when the conjecture's OWN TEXT says it is settled, for example an OEIS comment
+  like "this is true by ...", "conjectures above are true (see ... link)", "proved by ...", "a proof is given in
+  ...", or a later note giving a counterexample. Quote that phrase in the reason. When the text bundles several
+  conjectures, use likely_resolved only if every one of them is marked settled or follows from a cited theorem.
+  Otherwise use likely_open, and in the reason say which parts are already settled and which remain open.
 - trivial_or_ill_posed: it is false or true by a one-line argument from its own definitions, or it is too
-  vague to investigate.
+  vague to investigate. This includes a statement cut off mid-sentence, so that the claim cannot be
+  reconstructed.
 - likely_open: no evidence of resolution, and it is a genuine research question.
 - unclear: the evidence is mixed.
 Never cite anything that is not an R-ref. Absence of evidence is not proof of openness; say so in the reason."""
