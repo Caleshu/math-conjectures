@@ -11,6 +11,7 @@ os.environ["RUN_EMBEDDED_WORKER"] = "false"
 os.environ["ANTHROPIC_API_KEY"] = ""
 os.environ["OPENAI_API_KEY"] = ""
 os.environ["CLAUDE_CODE_ENABLED"] = "false"  # tests must never call a real model
+os.environ["CODEX_ENABLED"] = "false"  # likewise for the Codex CLI
 os.environ["REPO_EXPORT_ENABLED"] = "false"  # tests must never push to a real repository
 os.environ["REQUIRE_AUTH"] = "false"
 

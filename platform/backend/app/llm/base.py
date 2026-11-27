@@ -58,12 +58,14 @@ PRICING: dict[str, tuple[float, float, float]] = {
     "claude-sonnet-5-5": (2.0, 10.0, 0.10),
     "claude-sonnet-5": (2.0, 10.0, 0.20),
     "claude-haiku-5-5": (0.10, 0.50, 0.01),
+    "gpt-6.2-astra": (8.0, 40.0, 0.40),
 }
 
 
 def price(model: str, input_tokens: int, output_tokens: int, cache_read: int = 0) -> tuple[float, bool]:
     """Return (cost_usd, known_price)."""
-    p = PRICING.get(model)
+    p = PRICING.get(model) or next((v for k, v in sorted(PRICING.items(), key=lambda kv: -len(kv[0]))
+                                    if model.startswith(k + "-")), None)  # dated snapshots, e.g. gpt-6.2-astra-2026-11-17
     if not p:
         return 0.0, False
     return (input_tokens * p[0] + output_tokens * p[1] + cache_read * p[2]) / 1_000_000, True

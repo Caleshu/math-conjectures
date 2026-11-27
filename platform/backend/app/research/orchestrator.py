@@ -27,7 +27,7 @@ from sqlalchemy import func, select
 from app.config import get_settings
 from app.db import session_scope
 from app.llm.base import LLMBudgetExceeded, LLMError, LLMUnavailable
-from app.llm.registry import tracked_json_call
+from app.llm.registry import available_providers, tracked_json_call
 from app.models import (AgentTask, Claim, Conjecture, ConjectureEvent, Experiment, LLMUsage, ProofAttempt,
                         ResearchRun, ValidationLevel, utcnow)
 from app.research import agents as A
@@ -50,6 +50,7 @@ LIMIT_BOUNDS = {"max_iterations": (1, 5), "max_model_calls": (6, 80), "max_token
                 "max_runtime_s": (300, 6 * 3600), "max_experiments": (0, 12), "experiment_timeout_s": (10, 1800),
                 "experiment_memory_mb": (256, 16384), "concurrency": (1, 5)}
 REASONING = ("strategist", "extremal", "construction")
+TEAM_ROLES = ("strategist", "extremal", "construction", "computational", "literature")
 REVIEW_CLAIM_CAP = 14
 
 
@@ -192,12 +193,46 @@ class Orchestrator:
         if u["tokens"] >= self.limits["max_tokens"]:
             raise LimitReached(f"token limit reached ({self.limits['max_tokens']})")
 
-    def call(self, role: str, system: str, prompt: str, schema: dict) -> dict:
+    # ---- model team ----------------------------------------------------------------------------
+    def _team(self) -> list[str] | None:
+        """Two-model team (a Claude provider + a GPT provider) when provider is "team", or unset and both are available."""
+        want = self.limits.get("provider")
+        if want not in (None, "team"):
+            return None
+        avail = available_providers()
+        claude = next((p for p in ("claude_code", "anthropic") if p in avail), None)
+        gpt = next((p for p in ("codex", "openai") if p in avail), None)  # prefer the ChatGPT subscription
+        return [claude, gpt] if claude and gpt else None
+
+    def provider_for(self, role: str, iteration: int) -> str | None:
+        """Split roles across the two models and swap the split each iteration, so both models attempt every role.
+        The reviewer is the model that wrote less of the iteration's work, so most claims get a cross-model review."""
+        team = self._team()
+        if not team:
+            return None if self.limits.get("provider") == "team" else self.limits.get("provider")
+        shift = (iteration - 1) % 2
+        if role == "reviewer":
+            return team[1 - shift]
+        if role == "orchestrator":
+            return team[shift]
+        i = TEAM_ROLES.index(role) if role in TEAM_ROLES else 0
+        return team[(i + shift) % 2]
+
+    def call(self, role: str, iteration: int, system: str, prompt: str, schema: dict) -> dict:
         self.check()
-        res = tracked_json_call(purpose=f"research:{role}", system=system, prompt=prompt, schema=schema,
-                                provider=self.limits.get("provider"), job_id=self.job_id, subject_id=self.run_id,
-                                max_tokens=32000, effort=self.limits.get("effort", "high"))
-        return res.data
+        provider = self.provider_for(role, iteration)
+        kw = dict(purpose=f"research:{role}", system=system, prompt=prompt, schema=schema, job_id=self.job_id,
+                  subject_id=self.run_id, max_tokens=32000, effort=self.limits.get("effort", "high"))
+        try:
+            return tracked_json_call(provider=provider, **kw).data
+        except (LLMError, LLMUnavailable) as e:
+            team = self._team()
+            if not team or not re.search(r"429|usage limit|hit your .*limit|rate.?limit|unavailable|not found", str(e), re.I):
+                raise
+            other = team[1] if provider == team[0] else team[0]
+            log.warning("%s on %s failed (%s); falling back to %s", role, provider, e, other)
+            self.check()
+            return tracked_json_call(provider=other, **kw).data
 
     def checkpoint(self, **kw) -> None:
         with session_scope() as db:
@@ -217,7 +252,8 @@ class Orchestrator:
                 return t.id, t.output
             if not t:
                 t = AgentTask(research_run_id=self.run_id, agent_role=role, iteration=iteration,
-                              input={"phase": phase, "focus": current, **(inp or {})})
+                              input={"phase": phase, "focus": current, "provider": self.provider_for(role, iteration),
+                                     **(inp or {})})
                 db.add(t)
                 db.flush()
             t.status, t.current_task, t.error = "running", current, None
@@ -296,7 +332,7 @@ class Orchestrator:
         if done is not None:
             return done
         try:
-            data = self.call(role, A.AGENTS[role]["system"], self.base_prompt(iteration, focus), A.REASONING_SCHEMA)
+            data = self.call(role, iteration, A.AGENTS[role]["system"], self.base_prompt(iteration, focus), A.REASONING_SCHEMA)
         except (LLMError, LimitReached) as e:
             self.finish_task(tid, {}, status="failed", error=str(e))
             raise
@@ -317,7 +353,7 @@ class Orchestrator:
                           A.SANDBOX_CONTRACT.format(timeout=self.limits["experiment_timeout_s"]) +
                           f"\nWrite at most {min(2, remaining)} programs. Each must be complete and runnable as is.\n")
                 try:
-                    plan = self.call(role, A.AGENTS[role]["system"], prompt, A.COMPUTE_PLAN_SCHEMA)
+                    plan = self.call(role, iteration, A.AGENTS[role]["system"], prompt, A.COMPUTE_PLAN_SCHEMA)
                 except (LLMError, LimitReached) as e:
                     self.finish_task(tid, {}, status="failed", error=str(e))
                     raise
@@ -380,7 +416,7 @@ class Orchestrator:
                   "must state the exact finite range checked. If a run failed or its sanity check did not pass, "
                   "mark it untrustworthy and make no claim from it.\n")
         try:
-            interp = self.call(role, A.AGENTS[role]["system"], prompt, A.COMPUTE_INTERPRET_SCHEMA)
+            interp = self.call(role, iteration, A.AGENTS[role]["system"], prompt, A.COMPUTE_INTERPRET_SCHEMA)
         except (LLMError, LimitReached) as e:
             self.finish_task(tid2, {}, status="failed", error=str(e))
             raise
@@ -416,7 +452,7 @@ class Orchestrator:
         if done is None:
             prompt = self.base_prompt(iteration, focus) + "\nPropose 3 to 5 focused keyword queries.\n"
             try:
-                q = self.call(role, A.AGENTS[role]["system"], prompt, A.LIT_QUERY_SCHEMA)
+                q = self.call(role, iteration, A.AGENTS[role]["system"], prompt, A.LIT_QUERY_SCHEMA)
             except (LLMError, LimitReached) as e:
                 self.finish_task(tid, {}, status="failed", error=str(e))
                 raise
@@ -458,7 +494,7 @@ class Orchestrator:
                   (f"\n\nSource errors (these sources may be incomplete):\n{errs}" if errs else "") +
                   "\n\nAssess these records. Cite them only by L-ref.\n")
         try:
-            data = self.call(role, A.AGENTS[role]["system"], prompt, A.LIT_ASSESS_SCHEMA)
+            data = self.call(role, iteration, A.AGENTS[role]["system"], prompt, A.LIT_ASSESS_SCHEMA)
         except (LLMError, LimitReached) as e:
             self.finish_task(tid2, {}, status="failed", error=str(e))
             raise
@@ -519,7 +555,7 @@ class Orchestrator:
                                 f"  code (head): {e.code[:1500]}")
         prompt = ctx + "\n" + "\n\n".join(body) + "\nReview EVERY item listed.\n"
         try:
-            data = self.call(role, A.AGENTS[role]["system"], prompt, A.REVIEW_SCHEMA)
+            data = self.call(role, iteration, A.AGENTS[role]["system"], prompt, A.REVIEW_SCHEMA)
         except (LLMError, LimitReached) as e:
             self.finish_task(tid, {}, status="failed", error=str(e))
             raise
@@ -562,7 +598,7 @@ class Orchestrator:
                       f"\nThis was iteration {iteration} of at most {self.limits['max_iterations']}. "
                       f"Usage so far: {self.usage()} against limits {self.limits}.\n")
         try:
-            data = self.call("orchestrator", A.ORCHESTRATOR_SYSTEM, prompt, A.SYNTHESIS_SCHEMA)
+            data = self.call("orchestrator", iteration, A.ORCHESTRATOR_SYSTEM, prompt, A.SYNTHESIS_SCHEMA)
         except (LLMError, LimitReached) as e:
             self.finish_task(tid, {}, status="failed", error=str(e))
             raise

@@ -17,6 +17,9 @@ def available_providers() -> list[str]:
     from app.config import _claude_code_path
     if _claude_code_path():
         out.append("claude_code")
+    from app.config import _codex_path
+    if _codex_path():
+        out.append("codex")
     if s.openai_api_key:
         out.append("openai")
     return out
@@ -47,6 +50,13 @@ def get_provider(name: str | None = None) -> LLMProvider:
             raise LLMUnavailable("Claude Code CLI not found (or CLAUDE_CODE_ENABLED=false)")
         from app.llm.claude_code import ClaudeCodeProvider
         return ClaudeCodeProvider(path, s.claude_code_model, s.claude_code_timeout_s)
+    if name == "codex":
+        from app.config import _codex_path
+        path = _codex_path()
+        if not path:
+            raise LLMUnavailable("Codex CLI not found or not logged in (run `codex login`, or CODEX_ENABLED=false)")
+        from app.llm.codex import CodexProvider
+        return CodexProvider(path, s.codex_model, s.codex_timeout_s)
     if name == "openai":
         if not s.openai_api_key:
             raise LLMUnavailable("OpenAI is not configured: set OPENAI_API_KEY in .env")

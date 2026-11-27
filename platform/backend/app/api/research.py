@@ -38,11 +38,20 @@ def _brief(db, r: ResearchRun) -> dict:
     return d
 
 
+def _run_provider_label() -> str | None:
+    avail = available_providers()
+    claude = next((p for p in ("claude_code", "anthropic") if p in avail), None)
+    gpt = next((p for p in ("codex", "openai") if p in avail), None)
+    if claude and gpt:
+        return f"team ({claude} + {gpt})"
+    return default_provider()
+
+
 @router.get("/meta")
 def meta(_: dict = Depends(current_user)):
     return {"agents": [{"role": k, "name": v["name"], "description": v["short"]} for k, v in AGENTS.items()],
             "default_limits": DEFAULT_LIMITS, "limit_bounds": LIMIT_BOUNDS,
-            "providers": available_providers(), "default_provider": default_provider()}
+            "providers": available_providers(), "default_provider": _run_provider_label()}
 
 
 @router.get("/runs")
@@ -67,7 +76,7 @@ def launch(body: LaunchIn, db: Session = Depends(get_db), user: dict = Depends(c
     if not available_providers():
         raise HTTPException(409, "No AI provider available. Install and log in to Claude Code, or set ANTHROPIC_API_KEY.")
     limits = normalize_limits(body.limits)
-    if limits.get("provider") and limits["provider"] not in available_providers():
+    if limits.get("provider") and limits["provider"] != "team" and limits["provider"] not in available_providers():
         raise HTTPException(409, f"provider {limits['provider']} is not configured")
     active = db.scalar(select(ResearchRun).where(ResearchRun.conjecture_id == c.id,
                                                  ResearchRun.status.in_(["queued", "running", "cancelling"])))

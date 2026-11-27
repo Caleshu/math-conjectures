@@ -132,7 +132,8 @@ function Launch({ meta, onLaunched }: { meta: Meta; onLaunched: () => void }) {
         </div>
         <div className="text-xs leading-relaxed text-ink-3">
           Provider: <strong className="text-ink-2">{meta.default_provider ?? "none"}</strong>
-          {meta.default_provider === "claude_code" && <> (your Claude subscription: no per-call billing, but it counts against your plan&apos;s usage limits)</>}.
+          {meta.default_provider === "claude_code" && <> (your Claude subscription: no per-call billing, but it counts against your plan&apos;s usage limits)</>}
+          {meta.default_provider?.startsWith("team") && <> (Claude and GPT split the agent roles, swap them each iteration and review each other&apos;s work; if one hits a usage limit the other takes over. GPT through Codex uses your ChatGPT plan, with no per-call billing)</>}.
           With the defaults, a run takes roughly 10–40 minutes and uses about 10–20 model calls.
         </div>
         <ErrorBox error={err} />

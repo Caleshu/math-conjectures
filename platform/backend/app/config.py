@@ -5,6 +5,8 @@ as unavailable through `integration_status()` instead of failing silently.
 """
 from __future__ import annotations
 
+import os
+
 from functools import lru_cache
 from pathlib import Path
 
@@ -43,6 +45,12 @@ class Settings(BaseSettings):
     claude_code_path: str = "claude"
     claude_code_model: str = "opus"
     claude_code_timeout_s: int = 1800
+    # OpenAI Codex CLI (`codex exec`) under your own ChatGPT login: no API key, no per-call billing;
+    # calls count against your ChatGPT plan's usage limits. Run `codex login` once. Personal/local use only.
+    codex_enabled: bool = True
+    codex_path: str = "codex"
+    codex_model: str = "gpt-6.2-astra"
+    codex_timeout_s: int = 1800
     # "auto" = anthropic if a key is set, else claude_code if the CLI is installed, else openai.
     default_llm_provider: str = "auto"  # "auto" | "anthropic" | "claude_code" | "openai"
     # Hard ceiling on total LLM spend (USD) recorded in llm_usage. Calls are refused past it.
@@ -114,6 +122,18 @@ def _claude_code_path() -> str | None:
     return shutil.which(s.claude_code_path) if s.claude_code_enabled else None
 
 
+def _codex_path() -> str | None:
+    """The Codex CLI, only when installed, enabled, and logged in (it writes ~/.codex/auth.json on login)."""
+    import shutil
+    from pathlib import Path
+    s = get_settings()
+    if not s.codex_enabled:
+        return None
+    home = Path(os.environ.get("CODEX_HOME") or Path.home() / ".codex")
+    path = shutil.which(s.codex_path)
+    return path if path and (home / "auth.json").exists() else None
+
+
 def integration_status() -> list[dict]:
     """Honest report of which integrations are usable right now."""
     s = get_settings()
@@ -132,6 +152,11 @@ def integration_status() -> list[dict]:
                     if _claude_code_path() else
                     "Claude Code CLI not found (install it and log in, or set CLAUDE_CODE_PATH)"
                     if s.claude_code_enabled else "disabled (CLAUDE_CODE_ENABLED=false)")},
+        {"name": "Codex (ChatGPT subscription)", "key": "codex", "available": bool(_codex_path()),
+         "detail": (f"{_codex_path()} · model {s.codex_model} · uses your ChatGPT plan login, no API billing"
+                    if _codex_path() else
+                    "Codex CLI not found or not logged in (npm i -g @openai/codex, then codex login)"
+                    if s.codex_enabled else "disabled (CODEX_ENABLED=false)")},
         {"name": "OpenAI", "key": "openai", "available": bool(s.openai_api_key),
          "detail": f"model {s.openai_model}" if s.openai_api_key else "OPENAI_API_KEY not set"},
         {"name": "arXiv", "key": "arxiv", "available": True, "detail": "public API, no key required"},
