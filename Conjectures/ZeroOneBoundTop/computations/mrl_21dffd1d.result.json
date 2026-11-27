@@ -1,0 +1,107 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 23.357,
+ "result": {
+  "summary": "Evaluated 60 distinct candidates. Counterexample found: False.",
+  "seed": 7319,
+  "sanity_passed": true,
+  "counts": {
+   "chains_started": 120000,
+   "distinct_candidates": 118,
+   "exact_polynomials": 60,
+   "skipped_node_cap": 58
+  },
+  "histogram": {
+   "m=10,d=9,c=1,coefficient=0": 22,
+   "m=10,d=11,c=3,coefficient=0": 25,
+   "m=11,d=11,c=2,coefficient=0": 13
+  },
+  "strongest_example": {
+   "x": [
+    2,
+    7,
+    5,
+    1,
+    10,
+    9,
+    4,
+    6,
+    8,
+    3
+   ],
+   "w": [
+    7,
+    10,
+    2,
+    8,
+    9,
+    4,
+    3,
+    5,
+    6,
+    1
+   ],
+   "d": 9,
+   "c": 1,
+   "chain_position_swaps_one_based": [
+    [
+     3,
+     6
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     4,
+     9
+    ]
+   ],
+   "interval_size": 1024,
+   "P_low_to_high": [
+    1,
+    3,
+    2,
+    0,
+    0
+   ],
+   "coefficient": 0
+  },
+  "search_support": {
+   "author_support": "heuristic",
+   "justification": "Starting permutations, chain choices, endpoint filters, and resource caps restrict coverage."
+  },
+  "chain_invariant": {
+   "author_support": "proved_here",
+   "justification": "Initially d=0 and both component count k and cycle count c equal m. A cover joining components increases d by one and decreases both k and c by one, since distinct components contain distinct product cycles. A cover inside one product cycle increases both d and c by one and preserves k. Both moves preserve d-m-c+2k=0. The generator checks the endpoint equality again when k=1."
+  },
+  "R_formula": {
+   "author_support": "recalled_literature",
+   "justification": "The second KL implementation uses Dyer's reflection-order formula for R-polynomials, with lexicographic order on type-A transpositions. The formula has not been checked against a source here."
+  }
+ }
+}

@@ -27,3 +27,20 @@ Source: Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, Emily Xia Meng, Henry Kv
 - A direct baseline gave a matching rule when one index is a two-row partition. Testing membership can require constructing large lists. *(Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, PatternMiner: Automated Mathematical Discovery Through LLM-Guided Training and Interpretation of Small Models, arXiv:2611.33966 (Appendix C, Table 22, p. 46))*
 - Positivity requires $n-\lambda_1,n-\mu_1,n-\nu_1$ to satisfy the triangle inequalities. The coefficient is at most two when two indices are hooks and at most three when two indices are a hook and a two-row partition. *(Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, PatternMiner: Automated Mathematical Discovery Through LLM-Guided Training and Interpretation of Small Models, arXiv:2611.33966 (B.2.3, Theorems B.2.1–B.2.2, p. 29))*
 
+## Novelty pre-check
+
+Verdict: **likely_open**. R12 describes a positive combinatorial rule for all Kronecker coefficients as open and identifies a known rule when one partition is a hook. R9 covers a two-row special case. R6 proves equivalence with the interpretation problem for reduced Kronecker coefficients, and R10 makes its proposed bitableau interpretation conditional on a further result. No supplied record gives a counting rule for every triple of partitions. That absence is not proof of openness.
+
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Can adjacent-slice moves cancel the negative contingency tables?** [succeeded, finite computation]: Checked 154 triples. Prescribed failures: 42. All-transfer failures: 0. Requested range complete: True. ([code](computations/mrl_2a1c8f0c.py), [result](computations/mrl_2a1c8f0c.result.json))
+  - [Computational Mathematician] The run completed an exact, exhaustive check of all $154$ lexicographically ordered triples $\lambda\le\mu\le\nu$ for $1\le n\le6$ with each partition having at most three parts. The signed table count agreed with the independent character calculation for every triple. The prescribed graph failed to cover the negative side in $42$ triples. In the other $112$, its matching also certified coverage in the broader graph, since the code checked that every prescribed edge was an allowed transfer. The broader graph was solved directly in the $42$ failures and covered every negative table in each. The coordinate order matters for the prescribed rule. For the broader rule, permuting axes gives a graph isomorphism.
+
+## AI research runs
+
+Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
+
+- [2026-11-27 run 78d70693](research/2026-11-27-run-78d70693.md): running. 
+

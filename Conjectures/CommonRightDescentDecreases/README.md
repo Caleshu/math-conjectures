@@ -39,10 +39,12 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 - **Exact coefficient drops for pairs with common descents inside four triples** [succeeded, heuristic search]: family_exhausted. Evaluated 0 common-descent drops for positive pairs. Complete for the four-triple family: False. ([code](computations/mrl_31b15f25.py), [result](computations/mrl_31b15f25.result.json))
   - [Computational Mathematician] The run exhausted the endpoint scan over all 2,008 permutations in the specified family. It visited 75,324 ordered pairs of length difference thirteen. All 923 pairs passing the endpoint filters exceeded the cap before the program tested connectedness or computed the base coefficient. The reported $S_4$ sanity checks passed, including the known drop of one for $(1324,3412)$. The empty drop histogram leaves open both the existence of a qualifying pair in this family and the proposed bound.
+- **Search connected length-eleven chains and verify the first lift** [succeeded, heuristic search]: No hit among 350 distinct eligible seeds with exact coefficient evaluations. Stopped at seed evaluation cap. ([code](computations/mrl_7232bcf5.py), [result](computations/mrl_7232bcf5.result.json))
+  - [Computational Mathematician] The run sampled lower endpoints formed from direct sums of decreasing blocks of sizes $(5,5)$, $(4,6)$, $(4,2,4)$, $(3,4,3)$, or $(4,3,3)$, followed by zero to three adjacent position or value swaps. It generated upper endpoints by eleven random ascending Bruhat covers, allowing component joins and at most two cycle splits. It retained pairs whose upper endpoint's left and right descent sets were contained in the corresponding lower endpoint sets. With random seed $182731$, there were $8{,}875$ draws and $8{,}222$ completed chains. The run stopped at $350$ distinct eligible evaluations, before the $40{,}000$-draw cap. The $16{,}000$-element seed interval cap skipped no evaluations, and none was interrupted. The reported $S_4$ and $S_6$ sanity checks passed. The coefficient calculations were exact for the sampled pairs. The endpoint search was heuristic and did not exhaust even the stated family.
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 5fa55f38](research/2026-11-27-run-5fa55f38.md): running. 
+- [2026-11-27 run 5fa55f38](research/2026-11-27-run-5fa55f38.md): completed. orchestrator: Iteration two exhausted the two-iteration limit. The reviewed reductions narrow the question, and neither experiment settles it.
 

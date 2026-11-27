@@ -1,0 +1,171 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 44.272,
+ "result": {
+  "parameters": {
+   "draw_cap": 40000,
+   "evaluation_cap": 350,
+   "lift_interval_cap": 60000,
+   "random_seed": 182731,
+   "search_seconds": 58,
+   "seed_interval_cap": 16000,
+   "total_seconds": 111
+  },
+  "family": "Lower endpoint is a direct sum of decreasing blocks of sizes (5,5), (4,6), (4,2,4), (3,4,3), or (4,3,3), followed by zero to three adjacent position or value swaps. Upper endpoint comes from an eleven-cover random ascent allowing only component joins or at most two cycle splits. Retain pairs for which both upper descent sets are contained in the corresponding lower descent sets.",
+  "sampling": "Heuristic, with deduplication. Permutations and chain positions in the output are one-based.",
+  "polynomial_method": "Exact integer increasing-path R-polynomial transform and triangular Kazhdan\u2013Lusztig inversion. Coefficients are listed from constant term upwards.",
+  "formula_attribution": {
+   "name": "Dyer increasing-path formula for R-polynomials",
+   "author_support": "recalled_literature"
+  },
+  "sanity": {
+   "S4_polynomials": [
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "S6_lift_polynomials": [
+    [
+     1,
+     2,
+     1
+    ],
+    [
+     1,
+     1,
+     0
+    ]
+   ]
+  },
+  "hit": null,
+  "best": {
+   "q5": 1,
+   "polynomial": [
+    1,
+    5,
+    10,
+    10,
+    5,
+    1
+   ],
+   "interval_size": 4580,
+   "verification": {
+    "lower": [
+     5,
+     4,
+     3,
+     2,
+     1,
+     10,
+     9,
+     8,
+     7,
+     6
+    ],
+    "upper": [
+     8,
+     5,
+     10,
+     6,
+     2,
+     9,
+     3,
+     7,
+     4,
+     1
+    ],
+    "lengths": [
+     20,
+     31
+    ],
+    "bruhat": true,
+    "chain_position_transpositions": [
+     [
+      3,
+      9
+     ],
+     [
+      2,
+      10
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      6,
+      7
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      4,
+      5
+     ],
+     [
+      1,
+      8
+     ]
+    ],
+    "graph_components": 1,
+    "relative_cycles": [
+     [
+      1,
+      8,
+      9,
+      2
+     ],
+     [
+      3,
+      6,
+      7
+     ],
+     [
+      4,
+      10,
+      5
+     ]
+    ],
+    "deletable_positions": []
+   }
+  },
+  "counts": {
+   "draws": 8875,
+   "completed_chains": 8222,
+   "distinct_after_descent_filters": 350,
+   "eligible_evaluated": 350,
+   "seed_interval_cap_skips": 0,
+   "interrupted_seed_evaluations": 0
+  },
+  "q5_histogram": {
+   "0": 319,
+   "1": 31
+  },
+  "stopping_condition": "seed evaluation cap",
+  "elapsed_seconds": 42.365,
+  "summary": "No hit among 350 distinct eligible seeds with exact coefficient evaluations. Stopped at seed evaluation cap."
+ }
+}

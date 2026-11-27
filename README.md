@@ -9,7 +9,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 
 | ✅ Proved (true) | ❌ Disproved (false) | ⏳ Open |
 |:-:|:-:|:-:|
-| **2** | **6** | **27** |
+| **2** | **6** | **28** |
 
 *Verification* says how a result is known. **Lean-verified**: checked by the Lean kernel. **Computer-assisted / computer-checked**: an exact computation, reproducible from the folder. **AI research**: produced by MathResearchLab's AI agents and not yet checked by a human. Treat it as a lead, not a theorem. Problems marked 🤖 were found and researched by MathResearchLab (`platform/`). New folders are picked up automatically. To change a problem's category or summary, edit `problems.toml`.
 
@@ -35,8 +35,9 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 
 | Problem | Progress so far | Verification |
 |---|---|---|
-| [A combinatorial interpretation of Kronecker coefficients](Conjectures/CombinatorialInterpretationKroneckerCoef/) 🤖 | Recorded from the literature; not yet researched. | AI research (not human-reviewed) |
-| [A common right descent decreases the length-thirteen Kazhdan–Lusztig coefficient by at most four](Conjectures/CommonRightDescentDecreases/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
+| [A combinatorial interpretation of Kronecker coefficients](Conjectures/CombinatorialInterpretationKroneckerCoef/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
+| [A combinatorial interpretation of ordinary Schubert structure constants](Conjectures/CombinatorialInterpretationOrdinarySchub/) 🤖 | Recorded from the literature; not yet researched. | AI research (not human-reviewed) |
+| [A common right descent decreases the length-thirteen Kazhdan–Lusztig coefficient by at most four](Conjectures/CommonRightDescentDecreases/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A zero–one bound for the top permitted Kazhdan–Lusztig coefficient when $G=0$](Conjectures/ZeroOneBoundTop/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
 | [A000032: Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.](Conjectures/A000032LucasNumbersBeginning/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A000041: a(n) is the number of partitions of n (the partition numbers).](Conjectures/A000041NNumberPartitions/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |

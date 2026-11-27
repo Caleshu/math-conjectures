@@ -1,0 +1,96 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.373,
+ "result": {
+  "summary": "Complete ranks [1, 2, 3, 4, 5, 6]. Counterexample among processed intervals: False.",
+  "ranks": [
+   {
+    "m": 1,
+    "upper_endpoints_total": 1,
+    "upper_endpoints_finished": 1,
+    "histogram": {},
+    "counterexamples": [],
+    "complete": true
+   },
+   {
+    "m": 2,
+    "upper_endpoints_total": 2,
+    "upper_endpoints_finished": 2,
+    "histogram": {
+     "d=1,c=1": {
+      "1": 1
+     }
+    },
+    "counterexamples": [],
+    "complete": true
+   },
+   {
+    "m": 3,
+    "upper_endpoints_total": 6,
+    "upper_endpoints_finished": 6,
+    "histogram": {
+     "d=3,c=2": {
+      "0": 1
+     }
+    },
+    "counterexamples": [],
+    "complete": true
+   },
+   {
+    "m": 4,
+    "upper_endpoints_total": 24,
+    "upper_endpoints_finished": 24,
+    "histogram": {
+     "d=3,c=1": {
+      "0": 28,
+      "1": 2
+     },
+     "d=5,c=3": {
+      "0": 2
+     }
+    },
+    "counterexamples": [],
+    "complete": true
+   },
+   {
+    "m": 5,
+    "upper_endpoints_total": 120,
+    "upper_endpoints_finished": 120,
+    "histogram": {
+     "d=5,c=2": {
+      "0": 360,
+      "1": 2
+     },
+     "d=7,c=4": {
+      "0": 6
+     }
+    },
+    "counterexamples": [],
+    "complete": true
+   },
+   {
+    "m": 6,
+    "upper_endpoints_total": 720,
+    "upper_endpoints_finished": 720,
+    "histogram": {
+     "d=5,c=1": {
+      "0": 5248,
+      "1": 28
+     },
+     "d=7,c=3": {
+      "0": 3220,
+      "1": 2
+     },
+     "d=9,c=5": {
+      "0": 24
+     }
+    },
+    "counterexamples": [],
+    "complete": true
+   }
+  ],
+  "sanity_S4_passed": true,
+  "author_support": "proved_here",
+  "justification": "Within each finished upper endpoint, downward closure under all inversion-difference-one transpositions enumerates every lower endpoint. Induction on upper length computes each column by the ordinary right-descent KL recurrence, starting with diagonal entries 1 and incomparable entries 0. The filters use the endpoint definitions and the edge components of one saturated chain. The supplied chain-independence property makes this connectivity test sufficient. Each qualifying pair contributes once."
+ }
+}

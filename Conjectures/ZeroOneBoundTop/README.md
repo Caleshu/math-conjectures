@@ -37,6 +37,15 @@ Source: Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, Emily Xia Meng, Henry Kv
 
 Verdict: **likely_open**. The recorded G=0 example has coefficient 8 at even length d=10, so it falls outside the odd-length hypothesis. The common-descent results concern coefficient differences and do not settle this bound. No listed repository problem matches, and no returned record reports a proof or counterexample. The search was incomplete, so this absence of evidence does not establish openness.
 
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Exhaustive census through $S_6$** [succeeded, finite computation]: Complete ranks [1, 2, 3, 4, 5, 6]. Counterexample among processed intervals: False. ([code](computations/mrl_c6c41e8a.py), [result](computations/mrl_c6c41e8a.result.json))
+  - [Computational Mathematician] This is an exact, exhaustive finite verification for $1\leq m\leq6$. Every upper endpoint finished, and the $S_4$ checks passed, including a qualifying interval with polynomial $1+q$. In order of increasing $m$, the counts of qualifying intervals are $(0,1,1,32,368,8522)$, and the counts attaining coefficient $1$ are $(0,1,0,2,2,30)$. The census gives no coverage for $m\geq7$.
+- **Targeted search along genus-zero chains in $S_{10}$ and $S_{11}$** [succeeded, heuristic search]: Evaluated 60 distinct candidates. Counterexample found: False. ([code](computations/mrl_21dffd1d.py), [result](computations/mrl_21dffd1d.result.json))
+  - [Computational Mathematician] The two polynomial sanity checks passed. The run started $120{,}000$ chains and retained $118$ distinct candidates after applying the endpoint filters, including both descent-containment conditions. Exact polynomial evaluations gave top coefficient $0$ for $22$ pairs with $(m,d,c)=(10,9,1)$, $25$ with $(10,11,3)$, and $13$ with $(11,11,2)$. The displayed length-nine example has polynomial $1+3q+2q^2$, so its permitted $q^4$ coefficient vanishes. The node cap excluded the other $58$ candidates. The sampling and cap make the negative search result heuristic beyond those $60$ pairs.
+
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
