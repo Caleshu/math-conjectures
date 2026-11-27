@@ -9,7 +9,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 
 | ✅ Proved (true) | ❌ Disproved (false) | ⏳ Open |
 |:-:|:-:|:-:|
-| **2** | **6** | **23** |
+| **2** | **6** | **24** |
 
 *Verification* says how a result is known. **Lean-verified**: checked by the Lean kernel. **Computer-assisted / computer-checked**: an exact computation, reproducible from the folder. **AI research**: produced by MathResearchLab's AI agents and not yet checked by a human. Treat it as a lead, not a theorem. Problems marked 🤖 were found and researched by MathResearchLab (`platform/`). New folders are picked up automatically. To change a problem's category or summary, edit `problems.toml`.
 
@@ -45,6 +45,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 | [A000254: Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) = (n+1)*a(n) + n!.](Conjectures/A000254UnsignedStirlingNumbers/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A000330: Square pyramidal numbers: a(n) = 0^2 + 1^2 + 2^2 + ... + n^2 = n*(n+1)*(2*n+1)/6.](Conjectures/A000330SquarePyramidalNumbers/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
 | [A000332: Binomial coefficient binomial(n,4) = n*(n-1)*(n-2)*(n-3)/24.](Conjectures/A000332BinomialCoefficientBinomial/) 🤖 | Novelty pre-check: trivial or ill posed. | AI research (not human-reviewed) |
+| [A000364: Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).](Conjectures/A000364EulerOrSecant/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
 | [Additive colouring of bipartite graphs](Conjectures/AdditiveColouring/) | η ≤ 2 for all connected bipartite graphs on ≤ 15 vertices (exhaustive) | Computational evidence |
 | [Chromatic vectors of Hamiltonian cycles of Qₙ (Sagols–Morales-Luna)](Conjectures/ChromaticVectors/) 🤖 | New necessary condition $\sum_{i\in S}c_i\ge 2^{\lvert S\rvert}$; with evenness it characterises chromatic vectors for $n\le 4$ (exhaustive) and $n=5$ (CP-SAT). Open for $n\ge 6$ | AI research + computation (not human-reviewed) |
 | [Chromatic-segment vectors δᵢ(h) of Hamiltonian cycles of Qₙ (Sagols–Morales-Luna)](Conjectures/ChromaticSegmentsVectors/) 🤖 | First AI research run stopped at its runtime limit before review (31 unreviewed claims); being re-run | AI research (not human-reviewed) |
