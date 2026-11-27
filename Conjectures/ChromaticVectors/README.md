@@ -28,7 +28,7 @@ Source: Feliú Sagols, Guillermo Morales-Luna, *Parity balance of the $i$-th dim
 
 ## Novelty pre-check
 
-Verdict: **likely_open**. Not in the repo: HypercubeSquares uses the same source paper but is about inscribed squares, not chromatic-vector characterization. The disproved results already recorded in the app for this paper (inscribed squares, parity vectors) do not answer this question. Apart from the source paper R1, the search results are unrelated (chromatic digraphs, unit graphs, general Hamiltonicity), and one search source (Semantic Scholar) failed with HTTP 429. The easy necessary conditions (c_i even, 2 <= c_i <= 2^{n-1}, sum = 2^n) seem to settle n=3, but whether they suffice for every n is a genuine question that extends the existence of balanced Gray codes. Absence of evidence is not proof that it is open: later work on Gray codes with prescribed transition counts may already answer it and was not checked.
+Verdict: **likely_open**. No supplied record gives an exact characterization, and no listed repository problem contains this one. The earlier assessment reports realizations through n=5 for every even vector with total 2^n satisfying the projection bounds. Sufficiency in higher dimensions remains unverified. The incomplete search is not proof of openness.
 
 ## Computations
 

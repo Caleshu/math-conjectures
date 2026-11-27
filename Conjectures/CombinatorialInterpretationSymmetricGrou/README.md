@@ -44,5 +44,5 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 7e0dcdf9](research/2026-11-27-run-7e0dcdf9.md): running. 
+- [2026-11-27 run 7e0dcdf9](research/2026-11-27-run-7e0dcdf9.md): completed. orchestrator: The membership rule is finite and explicit, which meets the stated requirement. C-f0c992 concerns cancellation within a single cycle type. The reviewed construction pools cycle types before cancellation, so the two claims are compatible. The conclusion requires neither the unreviewed two-row matching claim nor an efficiency assumption.
 
