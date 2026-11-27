@@ -1,0 +1,14 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.847,
+ "result": {
+  "scope": {
+   "n": 1,
+   "graph": "bottom",
+   "candidate": "empty"
+  },
+  "status": "UNRESOLVED",
+  "blocker": "Lean executable was not staged",
+  "summary": "No certified polarity. Inspect the blocker, imported body, or Lean diagnostic."
+ }
+}
