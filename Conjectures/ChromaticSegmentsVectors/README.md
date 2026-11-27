@@ -43,6 +43,28 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 For $n=5$, the run stopped at the time budget after 5714 of 6609 canonical C1–C4 lists. Tested by length: $c=2$: 1/1, $c=4$: 40/40, $c=6$: 441/519, $c=8$: 1944/2252, $c=10$: 2441/2835, $c=12$: 796/911, $c=14$: 50/50, $c=16$: 1/1. Results: 5685 feasible, with each witness checked as a Hamiltonian cycle with the right $\delta$ (bugs=0). 29 were proved INFEASIBLE by the solver, 0 unknown. The infeasible ones are 2 lists with $c=14$, which are one dihedral class, and 27 with $c=12$. All 30 sampled C4-violators were infeasible.
 
 Caveats: infeasibility rests on CP-SAT being correct, with no independently checked certificate. 895 lists, all with $c\in\{6,8,10,12\}$, were not tested. So the absence of failures for $c\le10$ is partial evidence only.
+- **Exact DFS certification of n=5 obstructions: validation, full-dihedral classes, explicit witnesses, c=14 table, c=12 sweep** [succeeded, finite computation]: validation_ok=True; n4 counts=[2, 16, 5376] (expect 2,16,5376); C4 invariant under full dihedral=True; full C1-4 classes n=5: 3397, old classes: 6609; explicit: [((3, 2, 3, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2), 'FEASIBLE', True), ((4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2), 'FEASIBLE', True)]; per-c: {14: {'FEASIBLE': 29, 'INFEASIBLE': 1, 'total_full_classes_C1_4': 30}, 16: {'FEASIBLE': 1, 'total_full_classes_C1_4': 1}, 12: {'FEASIBLE': 454, 'INFEASIBLE': 17, 'total_full_classes_C1_4': 471}}; infeasible full classes: [((2, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 2, 2, 4), 'INFEASIBLE', 'INFEASIBLE'), ((2, 2, 2, 2, 3, 2, 3, 2, 3, 2, 3, 6), 'INFEASIBLE', None), ((2, 2, 2, 3, 2, 2, 6, 3, 2, 3, 2, 3), 'INFEASIBLE', None), ((2, 2, 2, 3, 2, 3, 2, 2, 6, 3, 2, 3), 'INFEASIBLE', None), ((2, 2, 2, 3, 2, 3, 2, 3, 2, 2, 6, 3), 'INFEASIBLE', None), ((2, 2, 3, 2, 2, 3, 2, 3, 2, 2, 5, 4), 'INFEASIBLE', None), ((2, 2, 3, 2, 2, 3, 2, 3, 5, 2, 2, 4), 'INFEASIBLE', None), ((2, 2, 3, 2, 2, 4, 2, 2, 4, 2, 3, 4), 'INFEASIBLE', None), ((2, 2, 3, 2, 3, 2, 2, 4, 3, 2, 3, 4), 'INFEASIBLE', None), ((2, 2, 3, 2, 3, 2, 3, 2, 3, 2, 2, 6), 'INFEASIBLE', None), ((2, 2, 3, 2, 3, 2, 3, 2, 3, 3, 2, 5), 'INFEASIBLE', None), ((2, 2, 3, 2, 3, 2, 3, 3, 2, 3, 3, 4), 'INFEASIBLE', None), ((2, 2, 3, 2, 3, 2, 3, 4, 2, 2, 3, 4), 'INFEASIBLE', None), ((2, 2, 3, 2, 3, 3, 2, 3, 3, 2, 3, 4), 'INFEASIBLE', None), ((2, 2, 3, 2, 3, 3, 3, 2, 3, 2, 2, 5), 'INFEASIBLE', None), ((2, 2, 3, 2, 3, 3, 3, 2, 3, 3, 2, 4), 'INFEASIBLE', None), ((2, 2, 3, 2, 3, 4, 2, 2, 4, 2, 2, 4), 'INFEASIBLE', None), ((2, 3, 2, 3, 2, 3, 3, 2, 3, 2, 4, 3), 'INFEASIBLE', None)]; old classes covered: 36; neg controls all infeasible: True; unknown/untested: 0; bugs: 0 ([code](computations/mrl_4cbba947.py), [result](computations/mrl_4cbba947.result.json))
+  - [Computational Mathematician] Validation passed for $n=2,3,4$:
+- The DFS counts of normalised cycles (2, 16, 5376) match $1,6,1344$ undirected cycles. Each directed cycle contributes $\sum_i c_i/2=2^{n-1}$ normalisations, so for $n=4$: $2688\cdot8/4=5376$.
+- The symmetry-breaking factors $N$ and $m$ hold exactly.
+- All witnesses check out, and $R_4=S_4\setminus$ the orbit of $(2,2,3,2,3,4)$.
+
+Since the run validates, its $n=5$ results are trustworthy as an exact search, modulo code correctness:
+- 3397 full-dihedral C1–C4 classes.
+- $c=14$: 29 feasible and 1 infeasible, $(2^6,3,2,3,2^4,4)$, also infeasible without symmetry breaking.
+- $c=16$: feasible.
+- $c=12$: 454 feasible and 17 infeasible; each infeasible case was re-checked with only translations fixed.
+- Both explicit lists are feasible, with cycles verified from the definition.
+- Negative controls (lists violating C4) are infeasible.
+
+Limitations:
+- The pruning rules (every unused vertex keeps a usable neighbour; colour-balance bounds from future odd segments; distance and parity to the closing vertex) are all valid necessary conditions, but there is no independent certificate.
+- The full $c=14$ table is truncated in the displayed output.
+- The 'old classes covered: 36' statistic does not by itself show that each of the 29 CP-SAT lists is contained in these classes.
+
+This is a finite, exact verification for $n=5$, $c\in\{12,14,16\}$ only.
+- **Exact DFS sweep of n=5 C1-C4 classes with c=10,8,6,4,2,16, plus a no-symmetry recheck of the c=12 example** [succeeded, finite computation]: validation_ok=True; counts=[2, 16, 5376] (expect 2,16,5376); C4 invariant=True; per-c: {10: {'FEASIBLE': 1453, 'total_full_classes_C1_4': 1453}, 8: {'FEASIBLE': 1145, 'total_full_classes_C1_4': 1145}, 6: {'FEASIBLE': 274, 'total_full_classes_C1_4': 274}, 4: {'FEASIBLE': 22, 'total_full_classes_C1_4': 22}, 2: {'FEASIBLE': 1, 'total_full_classes_C1_4': 1}, 16: {'FEASIBLE': 1, 'total_full_classes_C1_4': 1}}; infeasible full classes: []; unknown: 0; untested: 0; sym0 lists: [((2, 2, 3, 2, 3, 2, 2, 3, 2, 2, 4, 5), 'INFEASIBLE')]; bugs: 0 ([code](computations/mrl_c8b3810a.py), [result](computations/mrl_c8b3810a.result.json))
+  - [Computational Mathematician] This run uses the same validated solver, and validation again passed. It is an exhaustive sweep of every full-dihedral C1–C4 class at $n=5$ with $c\in\{2,4,6,8,10,16\}$: 1, 22, 274, 1145, 1453 and 1 classes, all FEASIBLE, with 0 unknown, 0 untested and 0 bugs. It also re-checked the $c=12$ list $(2,2,3,2,3,2,2,3,2,2,4,5)$ with no symmetry breaking (all 16 start vertices, about 1.28M nodes): INFEASIBLE. Combined with E-4cbba9, every $n=5$ C1–C4 class is now decided. This is a finite exact computation for $n=5$ only.
 
 ## AI research runs
 
