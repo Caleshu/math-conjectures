@@ -36,3 +36,7 @@ Source: Feliú Sagols, Guillermo Morales-Luna, *Parity balance of the $i$-th dim
 - The conjecture holds for $2\le n\le 7$. The proof uses computed values of $\alpha_=(Q_m)$ for $m\le 6$ together with the fact that the entries of $c(h)$ sum to $2^n$. *(Feliú Sagols, Guillermo Morales-Luna, Parity balance of the $i$-th dimension edges in Hamiltonian cycles of the hypercube, arXiv:1009.3304 (Theorem 5.4, p. 7 (relies on Table 1)); computational; reproduced: None)*
 - Computer experimentation suggests the conjecture is true for every $n$. *(Feliú Sagols, Guillermo Morales-Luna, Parity balance of the $i$-th dimension edges in Hamiltonian cycles of the hypercube, arXiv:1009.3304 (p. 7); computational; reproduced: None)*
 
+## Novelty pre-check
+
+Verdict: **already_in_repo**. This is the Sagols–Morales-Luna inscribed-square conjecture from R1. The repository already has it in Conjectures/HypercubeSquares, marked False: a Lean-verified Hamiltonian cycle of Q_8 with no inscribed square, plus square-free cycles for Q_9 and Q_10, and the conjecture holds for n ≤ 6. The app's records for this source paper also list it as DISPROVED. The folder InscribedSquareConjectureHamiltonianCyclesHyperc is a duplicate whose 'open' label is out of date. None of the search results reports the disproof; it comes from the user's own repository. A new run is not warranted.
+
