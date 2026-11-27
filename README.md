@@ -49,3 +49,4 @@ Unproven conjectures use `sorry`, which Lean reports as a warning, not an error.
 - [Tightness of the lower bound $\alpha_=(Q_n)\ge 2^{n-2}$ for even $n$](Conjectures/AlphaEqLowerBoundTightness/) — Likely already resolved (novelty pre-check); not researched (MathResearchLab)
 - [Characterize the chromatic vectors of Hamiltonian cycles of $Q_n$](Conjectures/ChromaticVectors/) — Open per source; openness not yet verified (MathResearchLab)
 - [Characterize the chromatic-segments vectors $\delta_i(h)$ of Hamiltonian cycles of $Q_n$](Conjectures/ChromaticSegmentsVectors/) — Open per source; openness not yet verified (MathResearchLab)
+- [Compute the equi-independence number of the hypercube](Conjectures/EquiIndependenceNumberHypercube/) — Open per source; openness not yet verified (MathResearchLab)
