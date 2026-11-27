@@ -5,6 +5,28 @@ $f(Q_d) \le d - \lfloor d/4 \rfloor$, **Lean-verified for all $d$** (`Product.le
 theorems `altitude_le` and `altitude_lt`; standard axioms only). Small values:
 $f(Q_2) = 2$, $f(Q_3) = 3$, $f(Q_4) = 3$.
 
+## Counterexample
+
+An edge-ordering of $Q_4$ whose **longest increasing path has 3 edges**, so $f(Q_4) \le 3 < 4$. Each entry is
+*label: edge*, with vertices written as 4-bit strings:
+
+| | | | |
+|---|---|---|---|
+| 1: 0000–1000 | 2: 0100–0110 | 3: 0000–0100 | 4: 1001–1011 |
+| 5: 0001–0011 | 6: 0010–1010 | 7: 0010–0011 | 8: 0000–0010 |
+| 9: 1000–1001 | 10: 1100–1110 | 11: 0101–1101 | 12: 1100–1101 |
+| 13: 0111–1111 | 14: 0110–0111 | 15: 1011–1111 | 16: 1010–1110 |
+| 17: 0001–0101 | 18: 0101–0111 | 19: 0110–1110 | 20: 0010–0110 |
+| 21: 1000–1010 | 22: 0001–1001 | 23: 0000–0001 | 24: 0011–1011 |
+| 25: 0011–0111 | 26: 0100–1100 | 27: 0100–0101 | 28: 1000–1100 |
+| 29: 1101–1111 | 30: 1001–1101 | 31: 1010–1011 | 32: 1110–1111 |
+
+**Why it disproves $f(Q_d) = d$.** The 32 labels are exactly $1, \dots, 32$, one per edge of $Q_4$. Exhaustive search
+over every path of distinct vertices shows that none has 4 edges with strictly increasing labels. The best is 3, for
+example 0000 → 0100 → 1100 → 1000 with labels 3, 26, 28. This is checked in Lean (`no_increasing_path_4`, by
+`decide`) and by an independent script, so $f(Q_4) \le 3 \neq 4$. The product bound below extends this to every
+$d \ge 4$.
+
 ## Statement
 
 An *edge-ordering* of a graph $G$ labels its edges $1, \dots, |E|$ bijectively. An
