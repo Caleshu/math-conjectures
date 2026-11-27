@@ -2,7 +2,7 @@
 # Q6 chromatic vectors: independent replicate (seed 12345, longer walks, more CP-SAT time)
 # sha256(code) = 08a3823942d893ddcc9d6ce3c0fdd9e044d00fe49e255853f76f48fbad47df45
 # parameters: {"seed": 12345, "ls_time": 60, "total_time": 108, "maxsteps": 800, "cp_max_per_vector": 15}
-# environment: {}
+# environment: {"python": "3.13.5", "platform": "macOS-27.0-arm64-arm-64bit-Mach-O", "networkx": "3.7", "sympy": "1.14.0", "ortools": "9.15.6755", "numpy": "2.5.5", "pysat": null, "isolation": "macos-sandbox-exec(no-network,write-confined)+rlimits", "limits": {"wall_timeout_s": 120, "memory_mb": 2048, "memory_enforced": false, "cpu_seconds": 965, "max_file_mb": 200, "max_open_files": 256}, "interpreter": "/Users/andrewcaleshu/Documents/myProjects/math-conjectures/platform/backend/.venv/bin/python", "host": "local", "cwd_isolated": true}
 
 import json, os, time, random, itertools
 from collections import defaultdict
