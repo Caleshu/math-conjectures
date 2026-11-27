@@ -34,7 +34,7 @@ Source: José Luis Palacios, Shunya Tamura, Jason Wiberg, Aleksandar Petojević,
 
 ## Novelty pre-check
 
-Verdict: **likely_open**. Nothing in the search results settles this. The HT index is a recent molecular descriptor built from expected hitting times [R17]. The follow-up papers we found give closed-form values for particular families such as broom graphs [R9, R12, R21], plus a general paper [R22] whose abstract is missing. None of them claims to find the global maximizer over all connected n-vertex graphs. R1 says the lollipop maximizes the plain maximum hitting time, which is the classical Brightwell–Winkler-type result. That doesn't carry over to the HT index, because the index sums over all vertex pairs. The source paper itself checked the claim by exhaustive search only up to n=10, so it is a real extremal question. Proving it for all n (or all large n), and pinning down the optimal ratio k≈0.558n, would take serious work. It doesn't overlap with anything in the user's repository. Some evidence is missing: Semantic Scholar returned an error (HTTP 429), so citing works were not fully checked, and not finding a resolution here doesn't show the problem is open.
+Verdict: **likely_open**. The source reports global verification through n=10. R1, R4 and R9 give formulas for broom graphs. The earlier unverified assessment reports matching leading terms for the global maximum and the best lollipop value, but those estimates allow a strict gap. No supplied record settles exact attainment, either for every n≥6 or for all sufficiently large n. Absence of such evidence does not prove openness.
 
 ## Computations
 
