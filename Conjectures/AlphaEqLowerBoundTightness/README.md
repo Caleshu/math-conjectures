@@ -4,6 +4,14 @@
 
 **Status:** **False**
 
+## Counterexample
+
+The set
+$$S = \{0, 7, 11, 13, 14, 19, 21, 22, 24, 31, 33, 34, 36, 40, 47, 48, 55, 57, 58, 60\} \subseteq V(Q_6),$$
+where vertex $k$ is the 6-bit binary string of $k$, is a balanced independent set of size $20$.
+
+**Why it disproves the conjecture.** No two elements of $S$ differ in exactly one bit, so $S$ is independent in $Q_6$. It has $10$ vertices of even weight and $10$ of odd weight, so it is balanced between the two bipartition classes. Hence $\alpha_=(Q_6) \ge 20 > 16 = 2^{6-2}$. The lower bound $\alpha_=(Q_n) \ge 2^{n-2}$ is therefore **not attained at the even value $n = 6$**, contradicting the claim that it is reached for all even $n$. This needs only the explicit set, not trust in a solver. See `computations/`.
+
 ## Statement
 
 Original wording (verbatim from the source):
