@@ -39,6 +39,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The Python sanity check passed for $n=1$, covering one graph and two vertex subsets. Requiring the singleton clique to be met gave transversal number $1$. Requiring only maximal cliques of size at least two to be met gave $0$. The Lean executable was absent at the specified path and `attempts` was empty. The run therefore supplies no kernel verdict and does not identify the imported convention.
 - **Check the empty witness against the imported definition** [succeeded, finite computation]: Missing staged Lean executable at toolchain/bin/lean ([code](computations/mrl_fe7af131.py), [result](computations/mrl_fe7af131.result.json))
   - [Computational Mathematician] The intended scope was one graph, the edgeless graph on $\mathrm{Fin}\,1$, and one candidate, $\varnothing$. The wrapper exited with code 0 after detecting that `toolchain/bin/lean` was missing. It checked zero instances. The import, definition lookup, sanity check, and proof attempts never ran.  (marked UNTRUSTWORTHY by the agent)
+- **Kernel check of the empty candidate on the singleton graph** [succeeded, finite computation]: No kernel verdict. Missing from the working tree: an executable lean, FormalConjectures/ErdosProblems/151.olean. ([code](computations/mrl_72752b63.py), [result](computations/mrl_72752b63.result.json))
+  - [Computational Mathematician] The wrapper exited with code 0 after reporting `missing_dependency`. Its working-tree search found neither a Lean executable nor `FormalConjectures/ErdosProblems/151.olean`. It stopped before inspecting `cliqueTransversalNumber`, running the sanity checks, or submitting either polarity to the kernel.  (marked UNTRUSTWORTHY by the agent)
 
 ## AI research runs
 
@@ -47,5 +49,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-27 run c28f698d](research/2026-11-27-run-c28f698d.md): completed. orchestrator: Iteration $2$ of $2$ is complete. The record supports partial bounds, and the outstanding classification check would settle only which eight-vertex neighborhoods can obstruct extension of a given coloring.
 - [2026-11-27 run 1e1b30e5](research/2026-11-27-run-1e1b30e5.md): completed. focused round complete
 - [2026-11-27 run 8bae3789](research/2026-11-27-run-8bae3789.md): completed. focused round complete
-- [2026-11-27 run f7450353](research/2026-11-27-run-f7450353.md): running. 
+- [2026-11-27 run f7450353](research/2026-11-27-run-f7450353.md): completed. focused round complete
+- [2026-11-27 run 686326ed](research/2026-11-27-run-686326ed.md): running. 
 
