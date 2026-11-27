@@ -1,0 +1,202 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 41.135,
+ "result": {
+  "summary": "CP-SAT balanced independent set in Q_n: n=3: OPTIMAL value=2 bound=2.0; n=4: OPTIMAL value=4 bound=4.0; n=5: OPTIMAL value=10 bound=10.0; n=6: OPTIMAL value=20 bound=20.0; n=7: OPTIMAL value=44 bound=44.0; n=8: FEASIBLE value=88 bound=112.0. Sanity (unbalanced = 2^(n-1), n=3..5): True. Recorded values: {3: 2, 4: 4, 5: 10, 6: 16, 7: 40}",
+  "sanity": {
+   "3": {
+    "unbalanced": {
+     "status": "OPTIMAL",
+     "wall": 0.051913,
+     "value": 4,
+     "bound": 4.0,
+     "check_independent": true,
+     "check_even_odd": [
+      0,
+      4
+     ],
+     "weight_profile": {
+      "0": 0,
+      "1": 3,
+      "2": 0,
+      "3": 1
+     }
+    },
+    "expected": 4,
+    "ok": true
+   },
+   "4": {
+    "unbalanced": {
+     "status": "OPTIMAL",
+     "wall": 0.009411000000000001,
+     "value": 8,
+     "bound": 8.0,
+     "check_independent": true,
+     "check_even_odd": [
+      8,
+      0
+     ],
+     "weight_profile": {
+      "0": 1,
+      "1": 0,
+      "2": 6,
+      "3": 0,
+      "4": 1
+     }
+    },
+    "expected": 8,
+    "ok": true
+   },
+   "5": {
+    "unbalanced": {
+     "status": "OPTIMAL",
+     "wall": 0.00831,
+     "value": 16,
+     "bound": 16.0,
+     "check_independent": true,
+     "check_even_odd": [
+      0,
+      16
+     ],
+     "weight_profile": {
+      "0": 0,
+      "1": 5,
+      "2": 0,
+      "3": 10,
+      "4": 0,
+      "5": 1
+     }
+    },
+    "expected": 16,
+    "ok": true
+   }
+  },
+  "results": {
+   "3": {
+    "status": "OPTIMAL",
+    "wall": 0.003608,
+    "value": 2,
+    "bound": 2.0,
+    "check_independent": true,
+    "check_even_odd": [
+     1,
+     1
+    ],
+    "weight_profile": {
+     "0": 1,
+     "1": 0,
+     "2": 0,
+     "3": 1
+    }
+   },
+   "4": {
+    "status": "OPTIMAL",
+    "wall": 0.003954,
+    "value": 4,
+    "bound": 4.0,
+    "check_independent": true,
+    "check_even_odd": [
+     2,
+     2
+    ],
+    "weight_profile": {
+     "0": 1,
+     "1": 0,
+     "2": 1,
+     "3": 2,
+     "4": 0
+    }
+   },
+   "5": {
+    "status": "OPTIMAL",
+    "wall": 0.006635,
+    "value": 10,
+    "bound": 10.0,
+    "check_independent": true,
+    "check_even_odd": [
+     5,
+     5
+    ],
+    "weight_profile": {
+     "0": 1,
+     "1": 0,
+     "2": 4,
+     "3": 4,
+     "4": 0,
+     "5": 1
+    }
+   },
+   "6": {
+    "status": "OPTIMAL",
+    "wall": 0.11522900000000001,
+    "value": 20,
+    "bound": 20.0,
+    "check_independent": true,
+    "check_even_odd": [
+     10,
+     10
+    ],
+    "weight_profile": {
+     "0": 1,
+     "1": 0,
+     "2": 9,
+     "3": 4,
+     "4": 0,
+     "5": 6,
+     "6": 0
+    }
+   },
+   "7": {
+    "status": "OPTIMAL",
+    "wall": 7.033799,
+    "value": 44,
+    "bound": 44.0,
+    "check_independent": true,
+    "check_even_odd": [
+     22,
+     22
+    ],
+    "weight_profile": {
+     "0": 1,
+     "1": 0,
+     "2": 21,
+     "3": 0,
+     "4": 0,
+     "5": 21,
+     "6": 0,
+     "7": 1
+    }
+   },
+   "8": {
+    "status": "FEASIBLE",
+    "wall": 30.013732,
+    "value": 88,
+    "bound": 112.0,
+    "check_independent": true,
+    "check_even_odd": [
+     44,
+     44
+    ],
+    "weight_profile": {
+     "0": 1,
+     "1": 0,
+     "2": 28,
+     "3": 0,
+     "4": 15,
+     "5": 36,
+     "6": 0,
+     "7": 8,
+     "8": 0
+    }
+   }
+  },
+  "recorded": {
+   "3": 2,
+   "4": 4,
+   "5": 10,
+   "6": 16,
+   "7": 40
+  },
+  "elapsed_s": 37.28394174575806
+ }
+}
