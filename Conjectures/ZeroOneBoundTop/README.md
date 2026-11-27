@@ -33,3 +33,13 @@ Source: Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, Emily Xia Meng, Henry Kv
 - For a transposition word of length $L$ on $m$ positions with $k$ graph components and $c$ product cycles, $(L-m-c+2k)/2$ is a nonnegative integer. For intervals this quantity cannot increase on passing to a subinterval. *(Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, PatternMiner: Automated Mathematical Discovery Through LLM-Guided Training and Interpretation of Small Models, arXiv:2611.33966 (B.4.3, Equation (B.16), p. 36))*
 - The $S_{10}$ interval in Table 20 has $G=0$ and top permitted coefficient eight at length ten. It illustrates why the odd-length hypothesis matters. *(Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, PatternMiner: Automated Mathematical Discovery Through LLM-Guided Training and Interpretation of Small Models, arXiv:2611.33966 (B.4.4, Table 20, p. 37, and B.6.2, p. 42); computational; reproduced: None)*
 
+## Novelty pre-check
+
+Verdict: **likely_open**. The recorded G=0 example has coefficient 8 at even length d=10, so it falls outside the odd-length hypothesis. The common-descent results concern coefficient differences and do not settle this bound. No listed repository problem matches, and no returned record reports a proof or counterexample. The search was incomplete, so this absence of evidence does not establish openness.
+
+## AI research runs
+
+Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
+
+- [2026-11-27 run 0ad80265](research/2026-11-27-run-0ad80265.md): running. 
+
