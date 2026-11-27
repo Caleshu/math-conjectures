@@ -1,0 +1,31 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.345,
+ "result": {
+  "target": [
+   4,
+   4,
+   4,
+   8,
+   16,
+   32,
+   60
+  ],
+  "prefix_sums": [
+   4,
+   8,
+   12,
+   20,
+   36,
+   68,
+   128
+  ],
+  "target_in_U": true,
+  "reported_register_size": 28387,
+  "target_in_fixed_residual": null,
+  "remaining_after_adding_target_given_reported_counts": null,
+  "sanity_checks_passed": true,
+  "status": "MISSING_INPUT",
+  "summary": "No fixed registration keys supplied. Membership is undecided."
+ }
+}
