@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="font-sans text-ink" suppressHydrationWarning>
         <div className="flex min-h-screen">
           <Sidebar />
-          <main className="min-w-0 flex-1 px-10 pb-16 pt-8">
+          <main className="min-w-0 flex-1 px-10 pb-16 pt-8 print:p-0">
             <div className="mx-auto max-w-[1180px]">{children}</div>
           </main>
         </div>

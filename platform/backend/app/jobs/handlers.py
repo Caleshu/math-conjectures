@@ -95,7 +95,21 @@ def run_experiment(job_id: str, payload: dict, progress: Callable) -> dict:
     return {"experiment_id": eid, "status": res.status, "runtime_seconds": res.runtime_seconds}
 
 
+def research_run(job_id: str, payload: dict, progress: Callable) -> dict:
+    from app.research.orchestrator import Orchestrator
+    rid = payload["research_run_id"]
+    with session_scope() as db:
+        from app.models import ResearchRun
+        r = db.get(ResearchRun, rid)
+        if r is None:
+            raise NonRetryable("research run no longer exists")
+        if r.status in ("completed", "cancelled"):
+            return {"research_run_id": rid, "status": r.status, "note": "already finished"}
+    return {"research_run_id": rid, **Orchestrator(rid, job_id, progress).run()}
+
+
 HANDLERS: dict[str, Callable] = {
+    "research_run": research_run,
     "ingest_identifier": ingest_identifier,
     "process_paper": process_paper,
     "llm_extract": llm_extract,

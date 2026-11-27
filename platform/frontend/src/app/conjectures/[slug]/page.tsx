@@ -4,6 +4,7 @@ import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
 import { CandidateCard } from "@/components/CandidateReview";
 import { MathText } from "@/components/Math";
+import { ClaimItem, ProofItem } from "@/components/Research";
 import { A, Badge, Button, Card, Empty, ErrorBox, KV, Label, Loading, Notice, PageHeader, StatusBadge, Tabs, fieldLabel, fmtDate, inputCls } from "@/components/ui";
 import { api } from "@/lib/api";
 import { useApi } from "@/lib/hooks";
@@ -88,7 +89,7 @@ function Overview({ c, macros, reload }: { c: Conjecture; macros?: Record<string
           )}
         </Card>
         <Card title="Potential approaches">
-          {c.potential_approaches.length === 0 ? <p className="text-sm text-ink-3">None recorded. Strategy generation is part of the research agents (Milestone 4).</p> : (
+          {c.potential_approaches.length === 0 ? <p className="text-sm text-ink-3">None recorded. Research runs propose strategies; see the Research Agents tab.</p> : (
             <ul className="list-disc space-y-1 pl-5 text-[14px] text-ink-2">{c.potential_approaches.map((a, i) => <li key={i}><MathText text={a} macros={macros} /></li>)}</ul>
           )}
         </Card>
@@ -357,21 +358,35 @@ function Known({ c, macros, reload }: { c: Conjecture; macros?: Record<string, s
 }
 
 function Agents({ c }: { c: Conjecture }) {
+  const runs = c.research_runs ?? [];
+  const claims = c.claims ?? [];
   return (
     <div className="space-y-4">
-      <Notice>The multi-agent research team (Strategist, Extremal Mathematician, Counterexample Agent, Computational Mathematician, Literature Specialist, Adversarial Reviewer) is Milestone 4 and has not been built. No agent outputs are shown because none have been produced. The database tables for research runs and agent tasks exist.</Notice>
-      {(c.research_runs ?? []).length === 0 ? <Empty title="No research runs" /> : (
-        <ul>{c.research_runs!.map((r) => <li key={r.id}>{r.status} — {fmtDate(r.created_at)}</li>)}</ul>
+      <div className="flex items-center justify-between gap-3">
+        <p className="text-[13px] text-ink-2">Six AI agents investigate this conjecture under hard limits. Their output is unverified until reviewed or reproduced.</p>
+        <Link href={`/research?conjecture=${c.slug}`}><Button variant="primary">Launch research run</Button></Link>
+      </div>
+      {runs.length === 0 ? <Empty title="No research runs yet" /> : (
+        <Card pad={false} title="Research runs"><ul className="divide-y divide-rule">{runs.map((r: any) => (
+          <li key={r.id} className="flex items-center justify-between gap-3 px-4 py-2.5 text-[13px]">
+            <Link className="text-accent" href={`/research/${r.id}`}>Run {r.id.slice(0, 8)}, {fmtDate(r.created_at, true)}</Link>
+            <span className="flex items-center gap-2 text-xs text-ink-3">iteration {r.iteration}{r.checkpoint?.stop_reason ? ` · ${r.checkpoint.stop_reason}` : ""} <StatusBadge status={r.status} /></span>
+          </li>))}</ul></Card>
       )}
-      <p className="text-[13px] text-ink-2">Computational investigation is available now under <Link className="text-accent" href={`/conjectures/${c.slug}?tab=experiments`}>Computational Experiments</Link>.</p>
+      {claims.length > 0 && (
+        <Card pad={false} title={`Claims from research runs (${claims.length})`}>
+          <ul className="divide-y divide-rule px-4">{claims.map((x: any) => <ClaimItem key={x.id} c={x} />)}</ul>
+        </Card>
+      )}
     </div>
   );
 }
 
 function Proofs({ c }: { c: Conjecture }) {
-  return (c.proof_attempts ?? []).length === 0
-    ? <Empty title="No proof attempts">Proof attempts are produced by the research agents (Milestone 4) and reviewed by the adversarial reviewer. Validation levels range from idea to formally verified; nothing is labelled formally verified unless Lean accepts it.</Empty>
-    : <ul>{c.proof_attempts!.map((p) => <li key={p.id}>{p.strategy}</li>)}</ul>;
+  const ps = c.proof_attempts ?? [];
+  return ps.length === 0
+    ? <Empty title="No proof attempts">Research agents write proof attempts, and the adversarial reviewer reviews them. Validation levels run from idea to formally verified. Nothing is labelled formally verified unless Lean accepts it.</Empty>
+    : <Card pad={false}><ul className="divide-y divide-rule px-4">{ps.map((p: any) => <ProofItem key={p.id} p={p} />)}</ul></Card>;
 }
 
 // ------------------------------------------------------------------------------------------

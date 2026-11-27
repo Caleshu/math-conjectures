@@ -105,7 +105,7 @@ def requeue_interrupted_on_startup(worker_id_prefix: str) -> int:
     """When a single embedded worker restarts, its previous 'running' jobs are definitely dead."""
     with session_scope() as db:
         rows = db.scalars(select(Job).where(Job.status == "running",
-                                            Job.locked_by.like(f"{worker_id_prefix}%"))).all()
+                                            Job.locked_by.like(f"{worker_id_prefix}:%"))).all()
         for j in rows:
             j.status = "queued"
             j.locked_by = None

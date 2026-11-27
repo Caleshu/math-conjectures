@@ -4,6 +4,7 @@ import { useState } from "react";
 import { A, Button, Card, ErrorBox, KV, Loading, Notice, PageHeader, StatusBadge, Tabs, fmtDate, inputCls } from "@/components/ui";
 import { api } from "@/lib/api";
 import { useApi } from "@/lib/hooks";
+import { MathText } from "@/components/Math";
 import type { Experiment } from "@/lib/types";
 
 type TabKey = "result" | "code" | "logs" | "env";
@@ -40,7 +41,8 @@ export default function ExperimentPage() {
           {tab === "result" && (
             <div className="space-y-4">
               {(e.status === "queued" || e.status === "running") && <Notice>Running in the sandbox… this page updates automatically.</Notice>}
-              {summary && (
+              {typeof summary === "string" && <Card title="Summary"><MathText text={summary} /></Card>}
+              {summary && typeof summary === "object" && (
                 <Card title="Summary">
                   <dl>{Object.entries(summary).map(([k, v]) => <KV key={k} k={k.replace(/_/g, " ")}>{typeof v === "object" ? JSON.stringify(v) : String(v)}</KV>)}</dl>
                 </Card>

@@ -121,11 +121,3 @@ def usage(db: Session = Depends(get_db), _: dict = Depends(current_user)):
                  "cost_usd": round(float(c or 0), 4)} for p, m, pu, n, i, o, c in by_model],
         "sources": [{"source": s, "requests": n, "errors": int(e or 0)} for s, n, e in sources],
     }
-
-
-@router.get("/research/runs")
-def research_runs(db: Session = Depends(get_db), _: dict = Depends(current_user)):
-    runs = db.scalars(select(ResearchRun).order_by(ResearchRun.created_at.desc())).all()
-    return {"items": [row(r, exclude={"checkpoint", "report_markdown"}) for r in runs],
-            "orchestrator_available": False,
-            "note": "The multi-agent research orchestrator is Milestone 4 and is not implemented yet."}

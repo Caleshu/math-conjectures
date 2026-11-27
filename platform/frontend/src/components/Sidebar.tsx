@@ -19,7 +19,7 @@ export function Sidebar() {
   const path = usePathname();
   const { data, error } = useApi<Health>("/health", { pollMs: 15000, shouldPoll: () => true });
   return (
-    <aside className="sticky top-0 flex h-screen w-60 shrink-0 flex-col border-r border-rule bg-[#f6f4ef]">
+    <aside className="print:hidden sticky top-0 flex h-screen w-60 shrink-0 flex-col border-r border-rule bg-[#f6f4ef]">
       <div className="px-5 pb-5 pt-6">
         <Link href="/" className="block">
           <div className="font-serif text-[1.3rem] leading-none tracking-tight text-ink">MathResearchLab</div>

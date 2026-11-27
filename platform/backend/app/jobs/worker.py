@@ -20,14 +20,15 @@ log = logging.getLogger("mrl.worker")
 
 
 class Worker:
-    def __init__(self, name: str | None = None):
+    def __init__(self, name: str | None = None, job_types: list[str] | None = None):
+        self.job_types = job_types
         self.prefix = f"{socket.gethostname()}:{name or 'worker'}"
         self.worker_id = f"{self.prefix}:{os.getpid()}"
         self._stop = threading.Event()
         self._thread: threading.Thread | None = None
 
     def run_one(self) -> bool:
-        jid = queue.claim_next(self.worker_id, list(HANDLERS))
+        jid = queue.claim_next(self.worker_id, self.job_types or list(HANDLERS))
         if not jid:
             return False
         from app.db import session_scope

@@ -5,8 +5,8 @@ traceable provenance, checking whether they are still open, and investigating th
 reproducible computation and (later) a team of AI research agents. It starts with graph theory and
 combinatorics.
 
-> **Status: Milestones 1 and 2 are complete. Milestone 5's sandboxed experiment system is partly built.
-> Milestones 3, 4 and 6 are not started.** Nothing in the UI simulates work that has not happened:
+> **Status: Milestones 1, 2 and 4 are complete. Milestone 5 is mostly built (sandboxed experiments and adversarial
+> review). Milestones 3 and 6 are not started.** Nothing in the UI simulates work that has not happened:
 > features that are not built say so and offer no buttons.
 
 | Milestone | State |
@@ -14,8 +14,8 @@ combinatorics.
 | 1. App, database, paper search/retrieval, manual submission, PDF text extraction | **Done** |
 | 2. Candidate detection, source-passage storage, conjecture library, search & filters | **Done** (heuristic detector plus LLM extraction agent, run via Claude Code on your subscription or via an API key) |
 | 3. Four verification agents and status classification | Not started. Manual status override with evidence works now, and a citing-works lookup (OpenAlex + Semantic Scholar) is available |
-| 4. Six research agents and orchestrator | Not started. DB tables (`research_runs`, `agent_tasks`, `claims`, `proof_attempts`) and the LLM layer exist |
-| 5. Computation and validation | **Partly done**: sandboxed Python with NetworkX/SymPy/OR-Tools, full reproducibility records, re-run, library experiments. Adversarial review not started |
+| 4. Six research agents and orchestrator | **Done**: Research Lab with the six agents, orchestrator, limits, resumable checkpoints, live UI, reports (Markdown + print/PDF) |
+| 5. Computation and validation | **Mostly done**: sandboxed experiments with full reproducibility records, validation levels 1–5, adversarial proof review. Lean (level 6) is Milestone 6 |
 | 6. Lean, knowledge graph, collaboration, export | Not started (`relationships` table already models graph edges) |
 
 ## Demonstration: inscribed squares in Hamiltonian cycles of Q_n
@@ -51,6 +51,35 @@ What the platform did with arXiv:1009.3304 (Sagols & Morales-Luna, 2010), runnin
    the conjecture holds exactly for 2 ≤ n ≤ 7.
 
 Re-create the demonstration on an empty database: `cd backend && .venv/bin/python -m scripts.seed_demo`.
+
+## Research Lab (Milestone 4)
+
+Launch from **Research Lab** or from a conjecture's *Research Agents* tab. A run:
+
+1. **Independent first pass.** The Mathematical Strategist, Extremal Mathematician, Construction & Counterexample
+   Agent, Computational Mathematician and Literature Specialist work in parallel. Each sees the conjecture with its
+   sourced context (verbatim statement, definitions, cited known results, earlier experiments, earlier runs' claims
+   marked unverified), never another agent's output from this run.
+2. **Real tools.** The Computational Mathematician writes programs that run in the sandbox, then interprets their
+   *actual* output. Claims backed by a trusted exact computation get validation level 3, never "proof". The Literature
+   Specialist's queries run against arXiv, OpenAlex, Crossref and Semantic Scholar. Its assessment may cite only
+   returned records, and references that don't match a real result are discarded.
+3. **Adversarial review.** The reviewer receives every proof attempt and the strongest claims, without their authors,
+   and returns per-item verdicts (`no_issues_found`, `needs_work`, `unsupported`, `flawed`, `false`) with the issues
+   found and a counterexample attempt. "No issues found" is shown as exactly that, never as "verified".
+4. **Orchestration.** The orchestrator identifies conflicts and assigns at most one focused follow-up per agent.
+   It stops when another iteration is unlikely to help. In follow-ups, agents see the team's claims labelled
+   UNVERIFIED with author and review status.
+5. **Limits.** These cover iterations, model calls, tokens, wall-clock runtime, experiment count, experiment timeout
+   and memory, and parallelism. Hitting a limit ends the run cleanly, and a report is still produced. Every step is an
+   `agent_tasks` checkpoint, so a restart resumes without repeating finished calls or duplicating claims.
+   *Stop run* takes effect at the next checkpoint.
+6. **Report.** This is built from the database. It keeps established facts (cited results, trusted finite
+   computations) separate from claims grouped by review verdict, and from speculative ideas. Download it as Markdown,
+   or print or save it as PDF from the report page.
+
+Every claim keeps its authoring agent, the author's own rating of its support (`proved_here`, `sketch`, `heuristic`,
+`speculative`, `recalled_literature`), its stated confidence, its evidence, related claims, and its reviews.
 
 ## Architecture
 
@@ -143,8 +172,9 @@ page, and the backend verifies tokens via the project's JWKS (or `SUPABASE_JWT_S
 
 ```bash
 cd backend
-.venv/bin/python -m pytest -m "not network"   # 24 offline tests: identifiers, dedupe, detector, API rules,
-                                              # job claiming/resume, sandbox limits & isolation, experiment correctness
+.venv/bin/python -m pytest -m "not network"   # 30 offline tests: identifiers, dedupe, detector, API rules, job
+                                              # claiming/resume, sandbox, experiments, orchestrator (scripted model:
+                                              # attribution, independence, limits, resume, cancel, report)
 .venv/bin/python -m pytest -m network         # live arXiv / OpenAlex checks
 cd ../frontend && npm run typecheck && npm run build
 ```
@@ -161,6 +191,5 @@ cd ../frontend && npm run typecheck && npm run build
 - Verified live: AI extraction on arXiv:1009.3304 found Conjecture 5.1 and 6 further problems, quoted the original
   wording verbatim (all verified against the source), and rejected the Kreweras background passage.
 - Memory limits for experiments are not enforced on macOS.
-- Export of research reports (Markdown/PDF) comes with the research runs (Milestone 4).
 
 API reference: [`docs/API.md`](docs/API.md), plus interactive OpenAPI at `/docs`.

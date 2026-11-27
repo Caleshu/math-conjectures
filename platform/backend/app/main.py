@@ -8,7 +8,7 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from app.api import conjectures, experiments, papers, system
+from app.api import conjectures, experiments, papers, research, system
 from app.config import get_settings
 from app.sources.base import SourceError
 
@@ -21,16 +21,20 @@ async def lifespan(app: FastAPI):
     s = get_settings()
     if s.require_auth and not (s.supabase_jwt_secret or s.supabase_url):
         raise RuntimeError("REQUIRE_AUTH=true but neither SUPABASE_JWT_SECRET nor SUPABASE_URL is set")
-    worker = None
+    workers = []
     if s.run_embedded_worker:
+        from app.jobs.handlers import HANDLERS
         from app.jobs.worker import Worker
 
-        worker = Worker("embedded")
-        worker.start_background()
-        log.info("embedded job worker started")
+        # One worker takes any job; a second never takes long research runs, so paper ingestion and
+        # experiments are not blocked while a research run is in progress.
+        workers = [Worker("embedded"), Worker("embedded-light", [t for t in HANDLERS if t != "research_run"])]
+        for w in workers:
+            w.start_background()
+        log.info("embedded job workers started")
     yield
-    if worker:
-        worker.stop()
+    for w in workers:
+        w.stop()
 
 
 app = FastAPI(title="MathResearchLab API", version="0.1.0", lifespan=lifespan,
@@ -55,5 +59,5 @@ def health():
     return {"ok": True}
 
 
-for r in (system.router, papers.router, conjectures.router, experiments.router):
+for r in (system.router, papers.router, conjectures.router, experiments.router, research.router):
     app.include_router(r)

@@ -249,6 +249,10 @@ class Claim(TimestampMixin, Base):
     source_paper_id: Mapped[str | None] = mapped_column(ForeignKey("papers.id", ondelete="SET NULL"))
     experiment_id: Mapped[str | None] = mapped_column(ForeignKey("experiments.id", ondelete="SET NULL"))
     created_by: Mapped[str] = mapped_column(String(128), nullable=False)
+    # author's justification, stated confidence, how the author rates its own support, iteration, agent task
+    details: Mapped[dict] = mapped_column(JSONType, default=dict, nullable=False, server_default="{}")
+    related_claim_ids: Mapped[list] = mapped_column(JSONType, default=list, nullable=False, server_default="[]")
+    reviews: Mapped[list] = mapped_column(JSONType, default=list, nullable=False, server_default="[]")
 
 
 class ProofAttempt(TimestampMixin, Base):

@@ -14,7 +14,6 @@ When `REQUIRE_AUTH=true`, send `Authorization: Bearer <Supabase access token>`. 
 | GET | `/api/jobs?status=&subject_id=` | job list |
 | GET | `/api/jobs/{id}` | job status, `progress.stage`, result, error |
 | POST | `/api/jobs/{id}/cancel` · `/retry` | cancel a queued job / retry a failed one |
-| GET | `/api/research/runs` | research runs (orchestrator not yet implemented; says so) |
 
 ## Discovery & papers
 | Method | Path | Body / query | Purpose |
@@ -66,3 +65,13 @@ location, evidence_passage, is_computational, reproduced, reproduction_experimen
 
 Experiment script contract: read parameters from `$MRL_PARAMS` (`params.json`), write a JSON object to
 `result.json` in the working directory. No network; writes confined to the working directory.
+
+## Research Lab
+| Method | Path | Purpose |
+|---|---|---|
+| GET | `/api/research/meta` | agents, default limits and bounds, available providers |
+| GET | `/api/research/runs?conjecture_id=` | runs with usage (model calls, tokens, experiments) |
+| POST | `/api/research/runs` | `{conjecture_id (id or slug), limits{max_iterations, max_model_calls, max_tokens, max_runtime_s, max_experiments, experiment_timeout_s, experiment_memory_mb, concurrency, provider, effort}}` → queued run; `409` without a provider or if a run is already active |
+| GET | `/api/research/runs/{id}` | run, agent tasks (status, current task, full output), claims, proof attempts, experiments |
+| POST | `/api/research/runs/{id}/cancel` · `/resume` | stop at the next checkpoint / resume a failed or cancelled run from its checkpoints |
+| GET | `/api/research/runs/{id}/report` · `/report.md` | structured report (JSON) / Markdown download |
