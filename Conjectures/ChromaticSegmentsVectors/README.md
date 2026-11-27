@@ -29,7 +29,7 @@ Source: Feliú Sagols, Guillermo Morales-Luna, *Parity balance of the $i$-th dim
 
 ## Novelty pre-check
 
-Verdict: **likely_open**. This is not in the repository: HypercubeSquares and AltitudeQ4 are about different questions. No search result is relevant (R1–R15 are off-topic, and Semantic Scholar returned HTTP 429), so this verdict rests on absence of evidence, which does not prove the question is open. Two results already recorded in this app are related but do not settle it. First, the disproof of 'parity vectors = balanced vectors' shows that δ_i must satisfy parity constraints beyond 'gaps sum to 2^n'. Second, the chromatic-vector characterization (number of segments per dimension) is still unverified, with unresolved n=6 cases. Easy necessary conditions exist: each gap is at least 2, the gaps sum to 2^n, and every gap is 2 when there are 2^{n-1} segments. A full characterization is a genuine but broad research question. A run should target the exact images for small n (n ≤ 5) and test conjectured necessary-and-sufficient conditions.
+Verdict: **likely_open**. R6 concerns cycles in hypercube subgraphs. Its title gives no indication that it characterizes ordered gaps between crossings of a fixed coordinate. The repository's HypercubeSquares problem concerns inscribed squares, and the recorded chromatic and parity vectors omit the exact gap lengths. Earlier enumeration found a gap list in Q₄ that satisfies all four proposed necessary conditions yet is unrealizable. The general characterization remains unresolved on the supplied evidence. The incomplete search does not prove openness.
 
 ## Computations
 
