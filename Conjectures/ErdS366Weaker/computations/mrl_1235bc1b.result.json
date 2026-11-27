@@ -1,0 +1,50 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.13,
+ "result": {
+  "summary": "Checked 253 of 253 distinct coefficient pairs and found 0 witnesses.",
+  "complete": true,
+  "core_bound": 100000,
+  "root_bound": 1000000000000000000000000000000000000000000000000000000000000,
+  "cores": [
+   1,
+   16,
+   32,
+   81,
+   243,
+   625,
+   1296,
+   2401,
+   2592,
+   3125,
+   3888,
+   7776,
+   10000,
+   14641,
+   16807,
+   20000,
+   28561,
+   38416,
+   50000,
+   50625,
+   76832,
+   83521,
+   100000
+  ],
+  "coefficient_pairs_checked_in_lexicographic_order": 253,
+  "last_checked": [
+   83521,
+   100000
+  ],
+  "coprime_pairs_checked_by_convergents": 152,
+  "witnesses": [],
+  "sanity_check": {
+   "coefficient_range": [
+    1,
+    45
+   ],
+   "brute_force_root_bound": 12,
+   "passed": true
+  }
+ }
+}

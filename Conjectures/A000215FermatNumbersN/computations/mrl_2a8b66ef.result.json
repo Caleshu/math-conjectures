@@ -1,0 +1,650 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 4.09,
+ "result": {
+  "summary": "Decided primality for 14 indices and certified the strict bound for 22 indices. See per-index coverage.",
+  "requested_work_complete": true,
+  "sanity_checks_passed": true,
+  "primality": [
+   {
+    "n": 0,
+    "prime": true,
+    "pepin_residue_hex": null
+   },
+   {
+    "n": 1,
+    "prime": true,
+    "pepin_residue_hex": "0x4"
+   },
+   {
+    "n": 2,
+    "prime": true,
+    "pepin_residue_hex": "0x10"
+   },
+   {
+    "n": 3,
+    "prime": true,
+    "pepin_residue_hex": "0x100"
+   },
+   {
+    "n": 4,
+    "prime": true,
+    "pepin_residue_hex": "0x10000"
+   },
+   {
+    "n": 5,
+    "prime": false,
+    "pepin_residue_hex": "0x9d894f"
+   },
+   {
+    "n": 6,
+    "prime": false,
+    "pepin_residue_hex": "0xa497f7120f395e35"
+   },
+   {
+    "n": 7,
+    "prime": false,
+    "pepin_residue_hex": "0x5357a2bf73903a6b95984e80e902c504"
+   },
+   {
+    "n": 8,
+    "prime": false,
+    "pepin_residue_hex": "0xcf7370ead55fcaae366cd8abfd4ff82c782baa2dbec639b6507e50ac84d66b3"
+   },
+   {
+    "n": 9,
+    "prime": false,
+    "pepin_residue_hex": "0x429837aeb26a64fc3c2077dd1f3fd6c1c409b73329b3c4b6a6c5185fed172be73715899bd41540d637d6bef0152acad691d20613fa3496b7b8e74a7493eecd76"
+   },
+   {
+    "n": 10,
+    "prime": false,
+    "pepin_residue_hex": "0x8d4f258da89ac71e6c359f1bee4a5498b2b7b755e9ce98b6ed3ee0d400a07877c2866316fa85ce925583e201d7d004c1fb076ea292cdd40502b7567226047037308a12f32887beda4d51c50169f6815c50a10ce653448b953de0c68ab4492f2b1a564ad9494d25cb7cad26aabc4c5d12730622e6f4355de035dd28798e8098"
+   },
+   {
+    "n": 11,
+    "prime": false,
+    "pepin_residue_hex": "0x28040d0095bb893ef5acc6eb8c9206726a74656d900f057c10e3d8e946629a43656df27a34393dac91af99ce7332b6336c1c4d7557b06fab744c96fa7d54cad65ccdc6a58ad2435c44ee7dfa6255792a0257f6a7349cf2369bb4348b9146a1d5d6017dbbc363d9787d0002a30b943179cd33748b23902307ff4b9aa0043819233d002bb250832bb906ce101dfe5918ceac8beb8dbaa6b9071f1250cab83dd5182aabd66f93befa9a491d9488cf7c67b0adc3083b1617401e0c888e87e80b4baa0d27fa9d3c7faf160f2f4f8127497c38804b9623bb87d424233c99a2058f9a05e76a2ca57bcef2d6266007059ac4342346db532f28c1c95838ad5bcf85a1dd28"
+   },
+   {
+    "n": 12,
+    "prime": false,
+    "pepin_residue_hex": "0x2e791997043472be430ddeb2057ea2dd1cfd1e9bc05fcec84c93f01edfb5c9b0a37aeb5e373d4b7414f0f66d90863efa0115604a4e362f168315603f4355c7dc9cd144f7954d059bd057efae42fbf607004382afc21c42fe27435e24e7a1e859729f70c3e37d1899775e79be631d604a03ff22ef0efe00be32025482b3d7cce51b767299a1ff0ad8c7f7036e7e444724fd57620683f701f6b55048df32590c9c986fce7a00548140c40f6cf91755ad57779d00b652347eac1522bf65fb7dc0bda7ba6f4d30e88bceb71bb652f659c8dbfee40b07755756b7a7099138bd4c1b572c4ddf0deacc5075f731650b8a0e550fd96a56de9884c836784313928e20ab2d93c19c376645e2beb4c97c921cba81999f3e9bb55800be06e2b4da53265f30ac3b758f802fe3ef71ed542f94aa5dcc482203aac7bef963f2bd584753898f08f8eedfa11cb8b9a1d65cf927691875212297e4266f2b09958ab9e399abc73e5442e844012937de2d0aaec0a85fb9f757869f678b162ad8eda7fe9670bcf8cee8a6bde57b4ed49a0819acf9da256ff76a241ee07ec426283ae1fef2e5c567071f59d857f74149c5b7a15df99d1293762b6d6abd11a537a0172d1b508f33cae4e5d73defd9e116ce6c0f3aa41ae66be47fb6ec33b640abb39bbb89a59cf102cadeb4abccd46627d0af2fe0e8e9b11041143008ba601285ddd77b06c3171f0746a313"
+   },
+   {
+    "n": 13,
+    "prime": false,
+    "pepin_residue_hex": "0x2130d9d8a7f35c6e1a64f678bdb4e311ad68ddf5c3c3bcf534706b1ad2f81161d568ea3356fb5554f3909201aa13506f4b01f0c35f6754aa0d5f8e7eb0e9fb14e4d88f16e36e67a6f183d7a623a0ba97ff21c535df8cc211a28b99c2f1836dff6892f45c6d0073da212efe5b1883b8e5cee3a4c4743f2d462382ba3b4663987b8e9d9dfa777f75f992ff8f0f78d5de89c394e55935c2e490131090786aff0d2e6b82085d81dbb90afe21b465cb94bb68d8d5eb5b1932f03ef13612527f7b73d38ebae0913d5ec0bd0a12abf32da114c0b334e8868f89d7a97b0b8b526044dad5c91439964da8c888ab47049ec8394bfe96fd878aad4f4bfb579aec69fda7e6cae5493ffcc87e8fee3ebfc3f0e0071dc3dd87a8056a17161ec24e5c748b4b0510ad781ee4e88d4842ea40f4fe1ed3c90f8f68b2b43517b92916eb6e8325a44af24898fddd3d666122f668c8a35558e3d5381ebfe9db3a71d3d22c68a17e0f9fcdec0b4b8e62c63f5008a0c9308de2394d57ca98801c56e6fbc66513ebe6a7df21b024ff643fda2fca462822f3dd3b01ade9c5aa7b35d08e51bb6acfacfc3704c9426c6804ae5bc8db80158f31a1a4dd5b73869dd13dbf9dd078c757203ccf9d163b197fa2a3064258ae8b1f07c66fceb5c7c6d2333647af5ba925e55e196ccfcbac38785e0cbc742950cb21783ab008c0a99f9517ef79b35b005beb807c4e5340540532a11221f3558b16d907dbe829f444d4c9c0ab27e7566555db4d78f8dbe0f094149337893afb4c900206740c41a976c46187f4f2b07f5638ab20d01042c93b433c584e78c918f8d4bea454fd2372e36bcfffbb7e7650c4efe661f9a9805a4eb6933d7643faf4f67fd8e2d9c0f084aae446e3d6858dd6ee0d91058ee9aff529a1f525116f5dc611c2a35f3d402f16c99ac8422ddeabd6af5a6db37c548bcd3adb1dee93d10605c9d4abac9e947d857aa3bbb6b7473ecf931db5e1b7441a39860b0b74a51acbc001baf5710316b192accbef806a4cf28daede3e904ce127f93b61fc52dd67bd41ae861763760e85839bded1ec6f8deb467cd32dea14be883250ff3932167716172333babd3eed277903161683e99f53c5ac31aaadaa9f297fc900a1cb3693f5cf971be10840c8b219a180d7ab6efac82fe9a48b77e08d1e0b36e95f876936bb4171f0d28c8612db31d74a177bb0e9826ce82eb35898bebb125571ab00aea7a007d07deb496f953a3a6748c8bc02fd3c18418c8482f456e229184d802b9cdfe4ee3d51fe8ddb8145b1602e9320ebbdc3cff51882e26a8883409e9a0b57dcddabdfed0305d6df7509996afd02f555957878c336171bd9e86c50005873e89343d8b971182938803841c0181fffc9cba225c8c78872fd97ff3a15723181db1a98f4ada4981185e6182627d384376041f3a716d79356ec3b040b5e"
+   }
+  ],
+  "factors": [
+   {
+    "n": 5,
+    "consecutive_k_checked": 5,
+    "min_prime_factor_if_proved": 641,
+    "checked_hints": [],
+    "divisor_below_bound": 641,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 6,
+    "consecutive_k_checked": 1071,
+    "min_prime_factor_if_proved": 274177,
+    "checked_hints": [],
+    "divisor_below_bound": 274177,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 7,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [
+     {
+      "q": 59649589127497217,
+      "proper_divisor": true
+     }
+    ],
+    "divisor_below_bound": 59649589127497217,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 8,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [
+     {
+      "q": 1238926361552897,
+      "proper_divisor": true
+     }
+    ],
+    "divisor_below_bound": 1238926361552897,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 9,
+    "consecutive_k_checked": 1184,
+    "min_prime_factor_if_proved": 2424833,
+    "checked_hints": [],
+    "divisor_below_bound": 2424833,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 10,
+    "consecutive_k_checked": 11131,
+    "min_prime_factor_if_proved": 45592577,
+    "checked_hints": [],
+    "divisor_below_bound": 45592577,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 11,
+    "consecutive_k_checked": 39,
+    "min_prime_factor_if_proved": 319489,
+    "checked_hints": [],
+    "divisor_below_bound": 319489,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 12,
+    "consecutive_k_checked": 7,
+    "min_prime_factor_if_proved": 114689,
+    "checked_hints": [],
+    "divisor_below_bound": 114689,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 13,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [
+     {
+      "q": 2710954639361,
+      "proper_divisor": true
+     }
+    ],
+    "divisor_below_bound": 2710954639361,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 14,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 15,
+    "consecutive_k_checked": 9264,
+    "min_prime_factor_if_proved": 1214251009,
+    "checked_hints": [],
+    "divisor_below_bound": 1214251009,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 16,
+    "consecutive_k_checked": 3150,
+    "min_prime_factor_if_proved": 825753601,
+    "checked_hints": [],
+    "divisor_below_bound": 825753601,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 17,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 18,
+    "consecutive_k_checked": 13,
+    "min_prime_factor_if_proved": 13631489,
+    "checked_hints": [],
+    "divisor_below_bound": 13631489,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 19,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 20,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 21,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 22,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 23,
+    "consecutive_k_checked": 5,
+    "min_prime_factor_if_proved": 167772161,
+    "checked_hints": [],
+    "divisor_below_bound": 167772161,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 24,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 25,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 26,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 27,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 28,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 29,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 30,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 31,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 32,
+    "consecutive_k_checked": 1479,
+    "min_prime_factor_if_proved": 25409026523137,
+    "checked_hints": [],
+    "divisor_below_bound": 25409026523137,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 33,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 34,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 35,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 36,
+    "consecutive_k_checked": 10,
+    "min_prime_factor_if_proved": 2748779069441,
+    "checked_hints": [],
+    "divisor_below_bound": 2748779069441,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 37,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 38,
+    "consecutive_k_checked": 6,
+    "min_prime_factor_if_proved": 6597069766657,
+    "checked_hints": [],
+    "divisor_below_bound": 6597069766657,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 39,
+    "consecutive_k_checked": 21,
+    "min_prime_factor_if_proved": 46179488366593,
+    "checked_hints": [],
+    "divisor_below_bound": 46179488366593,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 40,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 41,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 42,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 43,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 44,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 45,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 46,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 47,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 48,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 49,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 50,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 51,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 52,
+    "consecutive_k_checked": 4119,
+    "min_prime_factor_if_proved": 74201307460556292097,
+    "checked_hints": [],
+    "divisor_below_bound": 74201307460556292097,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 53,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 54,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 55,
+    "consecutive_k_checked": 29,
+    "min_prime_factor_if_proved": 4179340454199820289,
+    "checked_hints": [],
+    "divisor_below_bound": 4179340454199820289,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 56,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 57,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 58,
+    "consecutive_k_checked": 190,
+    "min_prime_factor_if_proved": 219055085875300925441,
+    "checked_hints": [],
+    "divisor_below_bound": 219055085875300925441,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 59,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 60,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 61,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   },
+   {
+    "n": 62,
+    "consecutive_k_checked": 697,
+    "min_prime_factor_if_proved": 12857380619375557476353,
+    "checked_hints": [],
+    "divisor_below_bound": 12857380619375557476353,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 63,
+    "consecutive_k_checked": 36,
+    "min_prime_factor_if_proved": 1328165573307087716353,
+    "checked_hints": [],
+    "divisor_below_bound": 1328165573307087716353,
+    "bound_status": "verified",
+    "scan_finished": true
+   },
+   {
+    "n": 64,
+    "consecutive_k_checked": 16384,
+    "min_prime_factor_if_proved": null,
+    "checked_hints": [],
+    "divisor_below_bound": null,
+    "bound_status": "unresolved",
+    "scan_finished": true
+   }
+  ],
+  "method_claims": [
+   {
+    "claim": "The Pepin decision is exact.",
+    "author_support": "proved_here",
+    "justification": "For $n=0$, $F_0=3$. For $n\\ge1$, $F_n\\equiv5\\pmod{12}$. If prime, quadratic reciprocity gives $(3/F_n)=-1$, so Euler\u2019s criterion gives residue $-1$. Conversely, that residue implies for each prime $p\\mid F_n$ that the order of $3$ modulo $p$ divides $F_n-1$ and does not divide $(F_n-1)/2$. Since $F_n-1$ is a power of two, this order is $F_n-1$, forcing $p\\ge F_n$."
+   },
+   {
+    "claim": "The first proper divisor in the consecutive scan is the least prime factor.",
+    "author_support": "proved_here",
+    "justification": "For $n\\ge2$ and prime $p\\mid F_n$, $2^{2^n}\\equiv-1\\pmod p$, so the order of $2$ is $2^{n+1}$. Hence $p\\equiv1\\pmod8$. The supplementary law for $2$ and Euler\u2019s criterion then imply that the order divides $(p-1)/2$. Thus $2^{n+2}\\mid p-1$, so the scan includes the least prime factor before any larger divisor. Any separately verified proper divisor below the bound also bounds the least prime factor from above."
+   }
+  ]
+ }
+}

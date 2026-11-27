@@ -1,0 +1,2378 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.161,
+ "result": {
+  "parameters": {
+   "coefficient_limit": 100000,
+   "height": 1000000000000000000000000000000000000000000000000000000000000
+  },
+  "status": "complete",
+  "distinct_pair_records": [
+   {
+    "A": 1,
+    "B": 16,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 109,
+    "substitutions": 109,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1475314495996931147492247976476826599004545391085980663512299
+   },
+   {
+    "A": 1,
+    "B": 32,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 124,
+    "substitutions": 122,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 11288350521743478699822446301248426194464993802990512858194681
+   },
+   {
+    "A": 1,
+    "B": 81,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 118,
+    "substitutions": 118,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2885839131992387934562801717411248055885257615398131228400745
+   },
+   {
+    "A": 1,
+    "B": 243,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 97,
+    "substitutions": 97,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1396470691638862866096328252347327137548292587318443611023287
+   },
+   {
+    "A": 1,
+    "B": 625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 125,
+    "substitutions": 124,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1224673189212843347662531157265975688431709134632338176520596
+   },
+   {
+    "A": 1,
+    "B": 1296,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 117,
+    "substitutions": 112,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1465415777753438189480743505788961806596715779677006603131021
+   },
+   {
+    "A": 1,
+    "B": 2401,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 114,
+    "substitutions": 111,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 73934456184817923152214012666550475594107627687272175268640728
+   },
+   {
+    "A": 1,
+    "B": 2592,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 120,
+    "substitutions": 120,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 5971688901986027926689769621540306577069030670528008633092865
+   },
+   {
+    "A": 1,
+    "B": 3125,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 118,
+    "substitutions": 115,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1719589888456740313399479933936655194581451027188672496727435
+   },
+   {
+    "A": 1,
+    "B": 3888,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 112,
+    "substitutions": 110,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 7242548279700907873985787582739308397519172478255170534213783
+   },
+   {
+    "A": 1,
+    "B": 7776,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 115,
+    "substitutions": 113,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 15530058556848120096320163468908165495986809147804534525079371
+   },
+   {
+    "A": 1,
+    "B": 10000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 108,
+    "substitutions": 106,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2840725217453966941325485546251464738246188768513363406737414
+   },
+   {
+    "A": 1,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 111,
+    "substitutions": 111,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1658036652994284513740916406072167739614339115045057932012338
+   },
+   {
+    "A": 1,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 125,
+    "substitutions": 122,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1380775064100425426256819375645453851185710969965312704072172
+   },
+   {
+    "A": 1,
+    "B": 20000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 111,
+    "substitutions": 109,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2263203459036243896980908528638355259800354020344085032631321
+   },
+   {
+    "A": 1,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 122,
+    "substitutions": 120,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 112041819273484674415498201897285030266655714099146823815007542
+   },
+   {
+    "A": 1,
+    "B": 38416,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 130,
+    "substitutions": 126,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2318608536261737906802405442259670391782974524288556009181621
+   },
+   {
+    "A": 1,
+    "B": 50000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 132,
+    "substitutions": 128,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 15311003111673349991621676828835962583563405239028279061011260
+   },
+   {
+    "A": 1,
+    "B": 50625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 109,
+    "substitutions": 105,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 3284751163694836275233449967645144038654319698744388384445953
+   },
+   {
+    "A": 1,
+    "B": 76832,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 111,
+    "substitutions": 108,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1401681027322082159375510881773664045128185653530937441852895
+   },
+   {
+    "A": 1,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 118,
+    "substitutions": 113,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 5788035347808079621958546551162154283397669972793902416476744
+   },
+   {
+    "A": 1,
+    "B": 100000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 111,
+    "substitutions": 108,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 13423700394272081082093421250838328923198044347937960110229527
+   },
+   {
+    "A": 16,
+    "B": 32,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 16,
+    "B": 81,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 110,
+    "substitutions": 110,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 5936015272649406114857473324799561996947976963964413431311899
+   },
+   {
+    "A": 16,
+    "B": 243,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 109,
+    "substitutions": 107,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2215872622763627004629150247911371040287946589202817134669171
+   },
+   {
+    "A": 16,
+    "B": 625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 114,
+    "substitutions": 113,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2529626003166575571048678251426901562468475542727975516466227
+   },
+   {
+    "A": 16,
+    "B": 1296,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 16,
+    "B": 2401,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 115,
+    "substitutions": 112,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1336694257750314145443590964075433508068805958330800199241311
+   },
+   {
+    "A": 16,
+    "B": 2592,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 16,
+    "B": 3125,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 111,
+    "substitutions": 110,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 14035796853380544315314778825995795302395851511541208817642721
+   },
+   {
+    "A": 16,
+    "B": 3888,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 16,
+    "B": 7776,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 16,
+    "B": 10000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 16,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 132,
+    "substitutions": 131,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2395337021042861847408050740794423066743609136407420352742461
+   },
+   {
+    "A": 16,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 115,
+    "substitutions": 113,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 8322143050524172958819821422374109445147944277961256424842313
+   },
+   {
+    "A": 16,
+    "B": 20000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 16,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 136,
+    "substitutions": 131,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 49159587381881367824457392057210466682984940898594779575304629
+   },
+   {
+    "A": 16,
+    "B": 38416,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 16,
+    "B": 50000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 16,
+    "B": 50625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 122,
+    "substitutions": 117,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 8555062992583101426475247207429507679223152465908760498941841
+   },
+   {
+    "A": 16,
+    "B": 76832,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 16,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 116,
+    "substitutions": 115,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2768755788527873379178322455181896655859302605949092379982273
+   },
+   {
+    "A": 16,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 32,
+    "B": 81,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 117,
+    "substitutions": 116,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1465415777753438189480743505788961806596715779677006603131021
+   },
+   {
+    "A": 32,
+    "B": 243,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 125,
+    "substitutions": 125,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 3020018322940388742520621488012348261400460951397617774105952
+   },
+   {
+    "A": 32,
+    "B": 625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 126,
+    "substitutions": 124,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 18937668286709383704774628865759867107925007964020306986569540
+   },
+   {
+    "A": 32,
+    "B": 1296,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 32,
+    "B": 2401,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 143,
+    "substitutions": 143,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1117842016827106933685867662991333739382795500088171803273227
+   },
+   {
+    "A": 32,
+    "B": 2592,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 32,
+    "B": 3125,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 114,
+    "substitutions": 112,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1068802204947423831593468130006920295443172553009141040681707
+   },
+   {
+    "A": 32,
+    "B": 3888,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 32,
+    "B": 7776,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 32,
+    "B": 10000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 32,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 118,
+    "substitutions": 116,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2838591462247890124086793191178939769034736841240336223402449
+   },
+   {
+    "A": 32,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 104,
+    "substitutions": 101,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 3119044350447553240514159588273287609882130329728823716409495
+   },
+   {
+    "A": 32,
+    "B": 20000,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 32,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 121,
+    "substitutions": 119,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2458656078057321662153605150743281990034771813152479217890631
+   },
+   {
+    "A": 32,
+    "B": 38416,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 32,
+    "B": 50000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 32,
+    "B": 50625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 116,
+    "substitutions": 112,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 14151271124927289380088327271987923676432091960008760421192285
+   },
+   {
+    "A": 32,
+    "B": 76832,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 32,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 123,
+    "substitutions": 122,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1112026422656838140358427881436726233219200114099475848643351
+   },
+   {
+    "A": 32,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 81,
+    "B": 243,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 81,
+    "B": 625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 110,
+    "substitutions": 110,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1183609802580798474400142288766572582276682094884411683497619
+   },
+   {
+    "A": 81,
+    "B": 1296,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 81,
+    "B": 2401,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 124,
+    "substitutions": 121,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 12022129125746972910863129019454886201196257441935235957601689
+   },
+   {
+    "A": 81,
+    "B": 2592,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 81,
+    "B": 3125,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 114,
+    "substitutions": 112,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 4330934405445427878261248234517935985067225049158893173474735
+   },
+   {
+    "A": 81,
+    "B": 3888,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 81,
+    "B": 7776,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 81,
+    "B": 10000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 115,
+    "substitutions": 113,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1356079670813876158036822920937762889974454015055492549201059
+   },
+   {
+    "A": 81,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 125,
+    "substitutions": 124,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1478019637734488330580967903648801355934956825601944473671955
+   },
+   {
+    "A": 81,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 113,
+    "substitutions": 112,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2523049106058901568095834906938124046538770568569550090783416
+   },
+   {
+    "A": 81,
+    "B": 20000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 125,
+    "substitutions": 124,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2311854623697625029545586197858831375757302538359886769773824
+   },
+   {
+    "A": 81,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 112,
+    "substitutions": 112,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2999634628553805893954654699801173557081104100502731295764918
+   },
+   {
+    "A": 81,
+    "B": 38416,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 115,
+    "substitutions": 114,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 3842412966806873942943448639457389512996201508712900070201451
+   },
+   {
+    "A": 81,
+    "B": 50000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 112,
+    "substitutions": 111,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 11237675151065537586998835976382803188544249414553807643014639
+   },
+   {
+    "A": 81,
+    "B": 50625,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 81,
+    "B": 76832,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 108,
+    "substitutions": 105,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1648590879955897824248112110162825554952318107559266346742547
+   },
+   {
+    "A": 81,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 106,
+    "substitutions": 104,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 11417323797092755667932131864379415827738178677131617605269065
+   },
+   {
+    "A": 81,
+    "B": 100000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 111,
+    "substitutions": 109,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1469107366146357355014899199497815164220499950159510133522045
+   },
+   {
+    "A": 243,
+    "B": 625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 114,
+    "substitutions": 113,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 20331409266707777564784929836819611065833924446976904913588637
+   },
+   {
+    "A": 243,
+    "B": 1296,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 243,
+    "B": 2401,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 113,
+    "substitutions": 113,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1637607682664952800821004189845816133467131677457398096817984
+   },
+   {
+    "A": 243,
+    "B": 2592,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 243,
+    "B": 3125,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 120,
+    "substitutions": 118,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 5127849552824041555505369411514956657100112681627655379372377
+   },
+   {
+    "A": 243,
+    "B": 3888,
+    "method": "common_divisor",
+    "divisor": 243,
+    "witnesses": []
+   },
+   {
+    "A": 243,
+    "B": 7776,
+    "method": "common_divisor",
+    "divisor": 243,
+    "witnesses": []
+   },
+   {
+    "A": 243,
+    "B": 10000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 111,
+    "substitutions": 110,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 6416347539915942162426450973966986600412324798410510828769696
+   },
+   {
+    "A": 243,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 111,
+    "substitutions": 111,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1653096593143845660871400003915628429250633523041820878053387
+   },
+   {
+    "A": 243,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 116,
+    "substitutions": 113,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1434687894417761578160527334112523544047647890102163982299697
+   },
+   {
+    "A": 243,
+    "B": 20000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 133,
+    "substitutions": 133,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 5476443959021491136009229217716223500613229274616927215902512
+   },
+   {
+    "A": 243,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 124,
+    "substitutions": 122,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1702725508292612236525755715377052281091364410534873744644683
+   },
+   {
+    "A": 243,
+    "B": 38416,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 106,
+    "substitutions": 104,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2183562296867256893823490247772145625783115798864861819163069
+   },
+   {
+    "A": 243,
+    "B": 50000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 129,
+    "substitutions": 127,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1458994438418907999566485116677098584324634882994518115807855
+   },
+   {
+    "A": 243,
+    "B": 50625,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 243,
+    "B": 76832,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 112,
+    "substitutions": 111,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 6558986518976570914307646601735099124181287579940334565107618
+   },
+   {
+    "A": 243,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 110,
+    "substitutions": 108,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1063403270805974335381128281075819256325366389865422665345225
+   },
+   {
+    "A": 243,
+    "B": 100000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 112,
+    "substitutions": 109,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2639347978935882989273492567419148608894207214831319364125389
+   },
+   {
+    "A": 625,
+    "B": 1296,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 117,
+    "substitutions": 116,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 5144289445539575345603187079514006945679469947022617551538475
+   },
+   {
+    "A": 625,
+    "B": 2401,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 131,
+    "substitutions": 131,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1496669895271921668038697749598573822203987756561073315127153
+   },
+   {
+    "A": 625,
+    "B": 2592,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 100,
+    "substitutions": 99,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1509131088813632533365433114799109790084829227671503020194187
+   },
+   {
+    "A": 625,
+    "B": 3125,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 625,
+    "B": 3888,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 134,
+    "substitutions": 133,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1959140022525706207121609272072444721192162281573543565745580
+   },
+   {
+    "A": 625,
+    "B": 7776,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 109,
+    "substitutions": 109,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1053746757122747363584059656980745036426050067860722341046654
+   },
+   {
+    "A": 625,
+    "B": 10000,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 625,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 117,
+    "substitutions": 117,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1082265000120710202360538892457535171317418923302062443984993
+   },
+   {
+    "A": 625,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 105,
+    "substitutions": 105,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 16766065859458013466837226988198674977719317149542179210023244
+   },
+   {
+    "A": 625,
+    "B": 20000,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 625,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 110,
+    "substitutions": 109,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1444648011136048878889534073316827560143518393296575899984645
+   },
+   {
+    "A": 625,
+    "B": 38416,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 115,
+    "substitutions": 113,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 4435579477178532608813838033393273818039643902501773882762663
+   },
+   {
+    "A": 625,
+    "B": 50000,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 625,
+    "B": 50625,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 625,
+    "B": 76832,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 119,
+    "substitutions": 118,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 19119806498259714019593757740721323175025328964872652464945293
+   },
+   {
+    "A": 625,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 130,
+    "substitutions": 128,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1020669496961875440013916622026293123088145713132874620798471
+   },
+   {
+    "A": 625,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 1296,
+    "B": 2401,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 103,
+    "substitutions": 103,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1551947372479250834453616807972750291387288456460084088341261
+   },
+   {
+    "A": 1296,
+    "B": 2592,
+    "method": "common_divisor",
+    "divisor": 1296,
+    "witnesses": []
+   },
+   {
+    "A": 1296,
+    "B": 3125,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 108,
+    "substitutions": 108,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 5151852914947230900866742746058312959901865262432813289075843
+   },
+   {
+    "A": 1296,
+    "B": 3888,
+    "method": "common_divisor",
+    "divisor": 1296,
+    "witnesses": []
+   },
+   {
+    "A": 1296,
+    "B": 7776,
+    "method": "common_divisor",
+    "divisor": 1296,
+    "witnesses": []
+   },
+   {
+    "A": 1296,
+    "B": 10000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 1296,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 120,
+    "substitutions": 119,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1289757589142155835440863997059017705199691303203217103990928
+   },
+   {
+    "A": 1296,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 119,
+    "substitutions": 118,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1621479827585708009091300105341946468070113719967289802292860
+   },
+   {
+    "A": 1296,
+    "B": 20000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 1296,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 119,
+    "substitutions": 118,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 9868356708520930850131185095939158054740460766142500448911561
+   },
+   {
+    "A": 1296,
+    "B": 38416,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 1296,
+    "B": 50000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 1296,
+    "B": 50625,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 1296,
+    "B": 76832,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 1296,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 105,
+    "substitutions": 104,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1908848323743742371329181442971030389410183716791645861031633
+   },
+   {
+    "A": 1296,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 2401,
+    "B": 2592,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 118,
+    "substitutions": 118,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2095058827371901285675155338771902777826142684305962024719815
+   },
+   {
+    "A": 2401,
+    "B": 3125,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 107,
+    "substitutions": 106,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 32618003172353926901021826892656202894942962279834281512003477
+   },
+   {
+    "A": 2401,
+    "B": 3888,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 107,
+    "substitutions": 107,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1521227774793930509041065084052317904095333386546477369685612
+   },
+   {
+    "A": 2401,
+    "B": 7776,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 130,
+    "substitutions": 130,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2074677062156115930940475717403923267979825441525002986285927
+   },
+   {
+    "A": 2401,
+    "B": 10000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 130,
+    "substitutions": 130,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1623028220922936549676201669420134925660622030470437598608608
+   },
+   {
+    "A": 2401,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 125,
+    "substitutions": 125,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1398165472108430187941288946776836989295997968835540074360879
+   },
+   {
+    "A": 2401,
+    "B": 16807,
+    "method": "common_divisor",
+    "divisor": 2401,
+    "witnesses": []
+   },
+   {
+    "A": 2401,
+    "B": 20000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 108,
+    "substitutions": 107,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 7052375330517803380335781178847320000751188447533221621074497
+   },
+   {
+    "A": 2401,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 120,
+    "substitutions": 120,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 4989978699471709850332697352590702779969809470889015228085904
+   },
+   {
+    "A": 2401,
+    "B": 38416,
+    "method": "common_divisor",
+    "divisor": 2401,
+    "witnesses": []
+   },
+   {
+    "A": 2401,
+    "B": 50000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 119,
+    "substitutions": 118,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 7531837292629279867555654030591475224809905695600618852289189
+   },
+   {
+    "A": 2401,
+    "B": 50625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 104,
+    "substitutions": 102,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 7704108458380516667988823950962309062638264944350099586229964
+   },
+   {
+    "A": 2401,
+    "B": 76832,
+    "method": "common_divisor",
+    "divisor": 2401,
+    "witnesses": []
+   },
+   {
+    "A": 2401,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 121,
+    "substitutions": 121,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 8196904997206819606748156869104544086939534069092505203203599
+   },
+   {
+    "A": 2401,
+    "B": 100000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 108,
+    "substitutions": 107,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2096845558360779929478062229397489154766378293096087695772769
+   },
+   {
+    "A": 2592,
+    "B": 3125,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 128,
+    "substitutions": 128,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1983937991350313646749225207812780691782341964808925328472321
+   },
+   {
+    "A": 2592,
+    "B": 3888,
+    "method": "common_divisor",
+    "divisor": 1296,
+    "witnesses": []
+   },
+   {
+    "A": 2592,
+    "B": 7776,
+    "method": "common_divisor",
+    "divisor": 2592,
+    "witnesses": []
+   },
+   {
+    "A": 2592,
+    "B": 10000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 2592,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 113,
+    "substitutions": 111,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2372341305231274162965579723833849135871255216314557645306859
+   },
+   {
+    "A": 2592,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 114,
+    "substitutions": 114,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 61785343707228634540766200918254388863214889982635386284100379
+   },
+   {
+    "A": 2592,
+    "B": 20000,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 2592,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 118,
+    "substitutions": 118,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 6780491577602008748299634141796711612449135406087488695309564
+   },
+   {
+    "A": 2592,
+    "B": 38416,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 2592,
+    "B": 50000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 2592,
+    "B": 50625,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 2592,
+    "B": 76832,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 2592,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 102,
+    "substitutions": 102,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 3256117726088007842784543892789793825898417790251093923764822
+   },
+   {
+    "A": 2592,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 3125,
+    "B": 3888,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 115,
+    "substitutions": 115,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1230024323902226620655686505251674548213866636322469149000782
+   },
+   {
+    "A": 3125,
+    "B": 7776,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 110,
+    "substitutions": 110,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1076675654427516616055123246820706602233797342084905061277522
+   },
+   {
+    "A": 3125,
+    "B": 10000,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 3125,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 103,
+    "substitutions": 103,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 23006873789605837560025109350093790831145187190084810012060035
+   },
+   {
+    "A": 3125,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 113,
+    "substitutions": 113,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1973203172765112038940030610954548372712233416155013372167232
+   },
+   {
+    "A": 3125,
+    "B": 20000,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 3125,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 116,
+    "substitutions": 116,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1067809029763703666003261681413187657580608465108321160447651
+   },
+   {
+    "A": 3125,
+    "B": 38416,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 124,
+    "substitutions": 123,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2163332089301918299519231588941511390415408365787000278556933
+   },
+   {
+    "A": 3125,
+    "B": 50000,
+    "method": "common_divisor",
+    "divisor": 3125,
+    "witnesses": []
+   },
+   {
+    "A": 3125,
+    "B": 50625,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 3125,
+    "B": 76832,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 109,
+    "substitutions": 107,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2410961926417176827475421631435595760038663721956096218288468
+   },
+   {
+    "A": 3125,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 110,
+    "substitutions": 109,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1923752479520046390881923863108555008823907939869745188461435
+   },
+   {
+    "A": 3125,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 3125,
+    "witnesses": []
+   },
+   {
+    "A": 3888,
+    "B": 7776,
+    "method": "common_divisor",
+    "divisor": 3888,
+    "witnesses": []
+   },
+   {
+    "A": 3888,
+    "B": 10000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 3888,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 103,
+    "substitutions": 103,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1285611858149972600771845360821731130997221579251546321596728
+   },
+   {
+    "A": 3888,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 114,
+    "substitutions": 114,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 3284508946271928879066718120712448958078167040550745288659373
+   },
+   {
+    "A": 3888,
+    "B": 20000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 3888,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 116,
+    "substitutions": 115,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1257928513112853295349350607708872960660827148155099393702224
+   },
+   {
+    "A": 3888,
+    "B": 38416,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 3888,
+    "B": 50000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 3888,
+    "B": 50625,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 3888,
+    "B": 76832,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 3888,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 122,
+    "substitutions": 122,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 3126506642282570923745312021701608070763744418475823638121471
+   },
+   {
+    "A": 3888,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 7776,
+    "B": 10000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 7776,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 123,
+    "substitutions": 123,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2367505123486452391327731743002335777937051409814485156064511
+   },
+   {
+    "A": 7776,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 121,
+    "substitutions": 121,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2955790485681352400674227771117462587908120732584287227971920
+   },
+   {
+    "A": 7776,
+    "B": 20000,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 7776,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 112,
+    "substitutions": 112,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 5374837935671516967396180155998167086826572181566253795949039
+   },
+   {
+    "A": 7776,
+    "B": 38416,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 7776,
+    "B": 50000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 7776,
+    "B": 50625,
+    "method": "common_divisor",
+    "divisor": 81,
+    "witnesses": []
+   },
+   {
+    "A": 7776,
+    "B": 76832,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 7776,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 108,
+    "substitutions": 108,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1636137950549329235992820162234307947284302171430724838396393
+   },
+   {
+    "A": 7776,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 10000,
+    "B": 14641,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 128,
+    "substitutions": 128,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2937206054815088132410731025415771445517523277528476602639988
+   },
+   {
+    "A": 10000,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 128,
+    "substitutions": 128,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 6451437413801723932235587829214661463170983095060267149269933
+   },
+   {
+    "A": 10000,
+    "B": 20000,
+    "method": "common_divisor",
+    "divisor": 10000,
+    "witnesses": []
+   },
+   {
+    "A": 10000,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 123,
+    "substitutions": 123,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1672218303226505697375087775180231707046306707773592983944859
+   },
+   {
+    "A": 10000,
+    "B": 38416,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 10000,
+    "B": 50000,
+    "method": "common_divisor",
+    "divisor": 10000,
+    "witnesses": []
+   },
+   {
+    "A": 10000,
+    "B": 50625,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 10000,
+    "B": 76832,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 10000,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 102,
+    "substitutions": 101,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 6493894736889116568148109646035090720755373709041316829772687
+   },
+   {
+    "A": 10000,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 10000,
+    "witnesses": []
+   },
+   {
+    "A": 14641,
+    "B": 16807,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 122,
+    "substitutions": 122,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 62752539882233761618455053264855597911172634458615951248893351
+   },
+   {
+    "A": 14641,
+    "B": 20000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 116,
+    "substitutions": 116,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2389770699676920920386769839594993034845641845561881136267723
+   },
+   {
+    "A": 14641,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 129,
+    "substitutions": 129,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1136988129004551774191346241208905291312212341744583889846510
+   },
+   {
+    "A": 14641,
+    "B": 38416,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 112,
+    "substitutions": 111,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 10891692463193987032326222043932325049462126126951526959390246
+   },
+   {
+    "A": 14641,
+    "B": 50000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 124,
+    "substitutions": 124,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1989667074934374701510684254339448519663376080455650379829956
+   },
+   {
+    "A": 14641,
+    "B": 50625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 108,
+    "substitutions": 108,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1375402939981859363161580901823643187692877942567472440989318
+   },
+   {
+    "A": 14641,
+    "B": 76832,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 114,
+    "substitutions": 114,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 27720923797444771103043277820490897198007754070841198797199315
+   },
+   {
+    "A": 14641,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 123,
+    "substitutions": 123,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 3348213688865178280614479072067062869053837749221552950947327
+   },
+   {
+    "A": 14641,
+    "B": 100000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 120,
+    "substitutions": 119,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1341569855002068170141717602025045233706614282728330756522968
+   },
+   {
+    "A": 16807,
+    "B": 20000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 108,
+    "substitutions": 108,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 7609695815099454180201775329046922806360065824803066572922730
+   },
+   {
+    "A": 16807,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 112,
+    "substitutions": 112,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 12247302905249530091107596306867170923658316831176765890381466
+   },
+   {
+    "A": 16807,
+    "B": 38416,
+    "method": "common_divisor",
+    "divisor": 2401,
+    "witnesses": []
+   },
+   {
+    "A": 16807,
+    "B": 50000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 106,
+    "substitutions": 106,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2619059287557961594077867593702341053994486712549729925286117
+   },
+   {
+    "A": 16807,
+    "B": 50625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 124,
+    "substitutions": 124,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1524976809167426179206864620791432128043402755634463149384340
+   },
+   {
+    "A": 16807,
+    "B": 76832,
+    "method": "common_divisor",
+    "divisor": 2401,
+    "witnesses": []
+   },
+   {
+    "A": 16807,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 123,
+    "substitutions": 123,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1296884808725606389744929674283170775252027435198406393534373
+   },
+   {
+    "A": 16807,
+    "B": 100000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 108,
+    "substitutions": 107,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1030567791005218594943667413218007382604001504038444296086099
+   },
+   {
+    "A": 20000,
+    "B": 28561,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 131,
+    "substitutions": 130,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1877019599292333046354090870998443618302254050000541436667579
+   },
+   {
+    "A": 20000,
+    "B": 38416,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 20000,
+    "B": 50000,
+    "method": "common_divisor",
+    "divisor": 10000,
+    "witnesses": []
+   },
+   {
+    "A": 20000,
+    "B": 50625,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 20000,
+    "B": 76832,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 20000,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 112,
+    "substitutions": 112,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 14739814156592176520273585672717933510365956266661283048802241
+   },
+   {
+    "A": 20000,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 20000,
+    "witnesses": []
+   },
+   {
+    "A": 28561,
+    "B": 38416,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 105,
+    "substitutions": 105,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1480310548685189375501589741224418035703894050588944130686739
+   },
+   {
+    "A": 28561,
+    "B": 50000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 115,
+    "substitutions": 115,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2448007207205686300602662676425416679874083213684816339401912
+   },
+   {
+    "A": 28561,
+    "B": 50625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 106,
+    "substitutions": 106,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1663919091632289477749212291248678529978144614189921756049063
+   },
+   {
+    "A": 28561,
+    "B": 76832,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 122,
+    "substitutions": 121,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 11756150075536792948407340320753056463637645234211026496781517
+   },
+   {
+    "A": 28561,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 121,
+    "substitutions": 121,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 6854249974193820961725068580394292285496837318931920698178611
+   },
+   {
+    "A": 28561,
+    "B": 100000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 116,
+    "substitutions": 115,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1147290849397311050284864382142886777261714109783070214373974
+   },
+   {
+    "A": 38416,
+    "B": 50000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 38416,
+    "B": 50625,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 131,
+    "substitutions": 131,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1689389051806191507269563142800509950636955665984961496398833
+   },
+   {
+    "A": 38416,
+    "B": 76832,
+    "method": "common_divisor",
+    "divisor": 38416,
+    "witnesses": []
+   },
+   {
+    "A": 38416,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 119,
+    "substitutions": 119,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 7861251382848863124395747242046042367057475495062107806743011
+   },
+   {
+    "A": 38416,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 50000,
+    "B": 50625,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 50000,
+    "B": 76832,
+    "method": "common_divisor",
+    "divisor": 16,
+    "witnesses": []
+   },
+   {
+    "A": 50000,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 111,
+    "substitutions": 110,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1157844524652399503369100776941551373925839612605162539219077
+   },
+   {
+    "A": 50000,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 50000,
+    "witnesses": []
+   },
+   {
+    "A": 50625,
+    "B": 76832,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 124,
+    "substitutions": 124,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 2467377340022490585837816908103973051904455588463863473908179
+   },
+   {
+    "A": 50625,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 108,
+    "substitutions": 108,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1130469474617567672900899875849273974557984082902884649261834
+   },
+   {
+    "A": 50625,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 625,
+    "witnesses": []
+   },
+   {
+    "A": 76832,
+    "B": 83521,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 120,
+    "substitutions": 120,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 1642640438996447623319653320415770651340561807300911697339605
+   },
+   {
+    "A": 76832,
+    "B": 100000,
+    "method": "common_divisor",
+    "divisor": 32,
+    "witnesses": []
+   },
+   {
+    "A": 83521,
+    "B": 100000,
+    "method": "continued_fraction",
+    "convergents_within_denominator_bound": 103,
+    "substitutions": 103,
+    "witnesses": [],
+    "termination": "denominator_exceeds_height",
+    "first_excluded_denominator": 5286028586693349854228837834437867533300201299065015279390378
+   }
+  ],
+  "sanity": {
+   "brute_force_pairs_matched": 990,
+   "max_coefficient": 45,
+   "height": 15,
+   "signs_seen": [
+    -1,
+    1
+   ]
+  },
+  "coverage_argument": {
+   "author_support": "proved_here",
+   "justification": "Equal coefficients cannot work because distinct positive cubes differ by at least $7$. A common factor of the coefficients divides the difference. For $A<B$, any solution has $x/y$ reduced, since a common divisor of $x,y$ has its cube dividing $1$. It also has $x\u2265 y$: if $x<y$ then $By^3-Ax^3\u2265 y^3-x^3>1$. Put $t=x/y$ and $u=(B/A)^{1/3}>1$. Factoring the difference of cubes gives $|t-u|=1/[Ay^3(t^2+tu+u^2)]<1/(3y^3)$. For $Q=16H^2$ and $z=\u230a Qu\u230b$, the rational $z/Q$ is within $1/Q$ of $u$. Thus $|t-z/Q|<(1/3+1/16)/y^2<1/(2y^2)$ whenever $y\u2264 H$. By Legendre\u2019s continued fraction criterion, the reduced fraction $t$ is a convergent of $z/Q$, including the case of equality $t=z/Q$. The Euclidean algorithm enumerates these convergents exactly with nondecreasing positive denominators. Substitution checks both signs, and swapping the two coefficients just swaps the multipliers and reverses the sign."
+  },
+  "coefficients": [
+   1,
+   16,
+   32,
+   81,
+   243,
+   625,
+   1296,
+   2401,
+   2592,
+   3125,
+   3888,
+   7776,
+   10000,
+   14641,
+   16807,
+   20000,
+   28561,
+   38416,
+   50000,
+   50625,
+   76832,
+   83521,
+   100000
+  ],
+  "equal_pairs_excluded_by_cube_gap": [
+   [
+    1,
+    1
+   ],
+   [
+    16,
+    16
+   ],
+   [
+    32,
+    32
+   ],
+   [
+    81,
+    81
+   ],
+   [
+    243,
+    243
+   ],
+   [
+    625,
+    625
+   ],
+   [
+    1296,
+    1296
+   ],
+   [
+    2401,
+    2401
+   ],
+   [
+    2592,
+    2592
+   ],
+   [
+    3125,
+    3125
+   ],
+   [
+    3888,
+    3888
+   ],
+   [
+    7776,
+    7776
+   ],
+   [
+    10000,
+    10000
+   ],
+   [
+    14641,
+    14641
+   ],
+   [
+    16807,
+    16807
+   ],
+   [
+    20000,
+    20000
+   ],
+   [
+    28561,
+    28561
+   ],
+   [
+    38416,
+    38416
+   ],
+   [
+    50000,
+    50000
+   ],
+   [
+    50625,
+    50625
+   ],
+   [
+    76832,
+    76832
+   ],
+   [
+    83521,
+    83521
+   ],
+   [
+    100000,
+    100000
+   ]
+  ],
+  "expected_distinct_pairs": 253,
+  "summary": "Covered 23 equal pairs and all 253 distinct pairs through multiplier height 1000000000000000000000000000000000000000000000000000000000000. Found 0 witnesses.",
+  "finished_distinct_pairs": 253,
+  "continued_fraction_pairs": 152,
+  "common_divisor_pairs": 101,
+  "program": "body = r'''import json, os\nimport math\nimport time\n\nparams = json.load(open(os.environ['MRL_PARAMS']))\nlimit = int(params['coefficient_limit'])\nheight = int(params['height'])\ndeadline = time.monotonic() + 95\n\n\ndef check_time():\n    if time.monotonic() >= deadline:\n        raise TimeoutError('soft time limit reached')\n\n\ndef squarefree(n):\n    return all(n % (d * d) for d in range(2, math.isqrt(n) + 1))\n\n\ndef coefficients(bound):\n    values = []\n    for b in range(1, math.isqrt(math.isqrt(bound)) + 1):\n        if squarefree(b):\n            c = 1\n            while b ** 4 * c ** 5 <= bound:\n                if squarefree(c) and math.gcd(b, c) == 1:\n                    values.append(b ** 4 * c ** 5)\n                c += 1\n    if len(values) != len(set(values)):\n        raise ArithmeticError('duplicate coefficient')\n    return sorted(values)\n\n\ndef cube_root_floor(n):\n    low = 0\n    high = 1 << ((n.bit_length() + 2) // 3)\n    while low + 1 < high:\n        mid = (low + high) // 2\n        if mid ** 3 <= n:\n            low = mid\n        else:\n            high = mid\n    return low\n\n\ndef search_pair(a, b, h):\n    scale = 16 * h * h\n    target = b * scale ** 3\n    z = cube_root_floor(target // a)\n    if not a * z ** 3 <= target < a * (z + 1) ** 3:\n        raise ArithmeticError('cube-root bracket failed')\n    numerator, denominator = z, scale\n    p_old, p = 0, 1\n    q_old, q = 1, 0\n    row = {'A': a, 'B': b, 'method': 'continued_fraction', 'convergents_within_denominator_bound': 0, 'substitutions': 0, 'witnesses': []}\n    while denominator:\n        quotient, remainder = divmod(numerator, denominator)\n        numerator, denominator = denominator, remainder\n        p_old, p = p, quotient * p + p_old\n        q_old, q = q, quotient * q + q_old\n        if q > h:\n            row.update(termination='denominator_exceeds_height', first_excluded_denominator=q)\n            return row\n        row['convergents_within_denominator_bound'] += 1\n        if 1 <= p <= h:\n            difference = a * p ** 3 - b * q ** 3\n            row['substitutions'] += 1\n            if abs(difference) == 1:\n                row['witnesses'].append([p, q, difference])\n    row['termination'] = 'rational_expansion_exhausted'\n    return row\n\n\nrows = []\nrecord = {'parameters': params, 'status': 'started', 'distinct_pair_records': rows, 'sanity': {}, 'coverage_argument': {'author_support': 'proved_here', 'justification': 'Equal coefficients cannot work because distinct positive cubes differ by at least $7$. A common factor of the coefficients divides the difference. For $A<B$, any solution has $x/y$ reduced, since a common divisor of $x,y$ has its cube dividing $1$. It also has $x\\u2265 y$: if $x<y$ then $By^3-Ax^3\\u2265 y^3-x^3>1$. Put $t=x/y$ and $u=(B/A)^{1/3}>1$. Factoring the difference of cubes gives $|t-u|=1/[Ay^3(t^2+tu+u^2)]<1/(3y^3)$. For $Q=16H^2$ and $z=\\u230a Qu\\u230b$, the rational $z/Q$ is within $1/Q$ of $u$. Thus $|t-z/Q|<(1/3+1/16)/y^2<1/(2y^2)$ whenever $y\\u2264 H$. By Legendre\\u2019s continued fraction criterion, the reduced fraction $t$ is a convergent of $z/Q$, including the case of equality $t=z/Q$. The Euclidean algorithm enumerates these convergents exactly with nondecreasing positive denominators. Substitution checks both signs, and swapping the two coefficients just swaps the multipliers and reverses the sign.'}}\ntry:\n    if limit < 1 or height < 1:\n        raise ValueError('invalid bounds')\n    sanity_height = 15\n    sanity_pairs = 0\n    signs_seen = set()\n    for a in range(1, 45):\n        check_time()\n        for b in range(a + 1, 46):\n            brute = {(x, y, a * x ** 3 - b * y ** 3) for x in range(1, sanity_height + 1) for y in range(1, sanity_height + 1) if abs(a * x ** 3 - b * y ** 3) == 1}\n            actual = search_pair(a, b, sanity_height)['witnesses']\n            if sorted(brute) != sorted(map(tuple, actual)):\n                raise ArithmeticError('brute-force mismatch at %d,%d' % (a, b))\n            signs_seen.update(w[2] for w in brute)\n            sanity_pairs += 1\n    if signs_seen != {-1, 1}:\n        raise ArithmeticError('both signs required in positive controls')\n    record['sanity'] = {'brute_force_pairs_matched': sanity_pairs, 'max_coefficient': 45, 'height': sanity_height, 'signs_seen': sorted(signs_seen)}\n    values = coefficients(limit)\n    record['coefficients'] = values\n    record['equal_pairs_excluded_by_cube_gap'] = [[v, v] for v in values]\n    expected = len(values) * (len(values) - 1) // 2\n    record['expected_distinct_pairs'] = expected\n    for i, a in enumerate(values):\n        for b in values[i + 1:]:\n            check_time()\n            divisor = math.gcd(a, b)\n            if divisor > 1:\n                rows.append({'A': a, 'B': b, 'method': 'common_divisor', 'divisor': divisor, 'witnesses': []})\n            else:\n                rows.append(search_pair(a, b, height))\n    if [(r['A'], r['B']) for r in rows] != [(a, b) for a in values for b in values if a < b] or len(rows) != expected:\n        raise ArithmeticError('production pair coverage mismatch')\n    record['status'] = 'complete'\n    record['summary'] = 'Covered %d equal pairs and all %d distinct pairs through multiplier height %d. Found %d witnesses.' % (len(values), expected, height, sum(len(r['witnesses']) for r in rows))\nexcept TimeoutError as error:\n    record.update(status='partial', summary=str(error) + '. Only finished pair records count toward coverage.')\nexcept Exception as error:\n    record.update(status='failed', summary=type(error).__name__ + ': ' + str(error))\nrecord['finished_distinct_pairs'] = len(rows)\nrecord['continued_fraction_pairs'] = sum(r['method'] == 'continued_fraction' for r in rows)\nrecord['common_divisor_pairs'] = sum(r['method'] == 'common_divisor' for r in rows)\nrecord['program'] = 'body = r' + chr(39) * 3 + body + chr(39) * 3 + '\\nexec(body)\\n'\nwith open('result.json', 'w') as output:\n    json.dump(record, output)\n'''\nexec(body)\n"
+ }
+}

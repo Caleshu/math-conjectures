@@ -1,0 +1,4156 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.289,
+ "result": {
+  "summary": "Completed exact parity-aware cycles for 239 of 239 primes through 1500.",
+  "complete": true,
+  "absent_primes": [
+   5,
+   13,
+   17,
+   37,
+   53,
+   61,
+   73,
+   89,
+   97,
+   109,
+   113,
+   137,
+   149,
+   157,
+   173,
+   193,
+   197,
+   233,
+   257,
+   269,
+   277,
+   293,
+   313,
+   317,
+   337,
+   353,
+   373,
+   389,
+   397,
+   421,
+   433,
+   457,
+   557,
+   577,
+   593,
+   613,
+   617,
+   653,
+   661,
+   673,
+   677,
+   701,
+   733,
+   757,
+   761,
+   773,
+   797,
+   821,
+   829,
+   853,
+   857,
+   877,
+   937,
+   953,
+   977,
+   997,
+   1013,
+   1033,
+   1069,
+   1093,
+   1097,
+   1117,
+   1153,
+   1181,
+   1193,
+   1213,
+   1217,
+   1237,
+   1277,
+   1297,
+   1301,
+   1373,
+   1381,
+   1429,
+   1433,
+   1453,
+   1493
+  ],
+  "quoted_list_symmetric_difference_on_checked_primes": [],
+  "counterexamples": {
+   "odd_index_equivalence_for_odd_p": [],
+   "maximal_k": [],
+   "any_k": [
+    29,
+    41,
+    101,
+    181,
+    229,
+    241,
+    281,
+    349,
+    401,
+    409,
+    449,
+    461,
+    509,
+    521,
+    541,
+    569,
+    601,
+    641,
+    709,
+    769,
+    809,
+    881,
+    929,
+    941,
+    1009,
+    1021,
+    1049,
+    1061,
+    1109,
+    1129,
+    1201,
+    1229,
+    1249,
+    1289,
+    1321,
+    1361,
+    1409,
+    1481,
+    1489
+   ]
+  },
+  "rows": [
+   {
+    "p": 2,
+    "cycle_with_parity": 6,
+    "rank": 3,
+    "first_odd_fib_zero": 3,
+    "first_lucas_zero": 0
+   },
+   {
+    "p": 3,
+    "cycle_with_parity": 8,
+    "rank": 4,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 2
+   },
+   {
+    "p": 5,
+    "cycle_with_parity": 20,
+    "rank": 5,
+    "first_odd_fib_zero": 5,
+    "first_lucas_zero": null
+   },
+   {
+    "p": 7,
+    "cycle_with_parity": 16,
+    "rank": 8,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 4,
+    "indices": [
+     8,
+     4
+    ],
+    "fib_residues": [
+     0,
+     3
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 11,
+    "cycle_with_parity": 10,
+    "rank": 10,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 5,
+    "indices": [
+     5
+    ],
+    "fib_residues": [
+     5
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 13,
+    "cycle_with_parity": 28,
+    "rank": 7,
+    "first_odd_fib_zero": 7,
+    "first_lucas_zero": null,
+    "indices": [
+     14,
+     7
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 17,
+    "cycle_with_parity": 36,
+    "rank": 9,
+    "first_odd_fib_zero": 9,
+    "first_lucas_zero": null,
+    "indices": [
+     18,
+     9
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 19,
+    "cycle_with_parity": 18,
+    "rank": 18,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 9,
+    "indices": [
+     9
+    ],
+    "fib_residues": [
+     15
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 23,
+    "cycle_with_parity": 48,
+    "rank": 24,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 12,
+    "indices": [
+     24,
+     12
+    ],
+    "fib_residues": [
+     0,
+     6
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 29,
+    "cycle_with_parity": 14,
+    "rank": 14,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 7,
+    "indices": [
+     14,
+     7
+    ],
+    "fib_residues": [
+     0,
+     13
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 31,
+    "cycle_with_parity": 30,
+    "rank": 30,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 15,
+    "indices": [
+     15
+    ],
+    "fib_residues": [
+     21
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 37,
+    "cycle_with_parity": 76,
+    "rank": 19,
+    "first_odd_fib_zero": 19,
+    "first_lucas_zero": null,
+    "indices": [
+     38,
+     19
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 41,
+    "cycle_with_parity": 40,
+    "rank": 20,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 10,
+    "indices": [
+     20,
+     10,
+     5
+    ],
+    "fib_residues": [
+     0,
+     14,
+     5
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 43,
+    "cycle_with_parity": 88,
+    "rank": 44,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 22,
+    "indices": [
+     44,
+     22
+    ],
+    "fib_residues": [
+     0,
+     38
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 47,
+    "cycle_with_parity": 32,
+    "rank": 16,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 8,
+    "indices": [
+     48,
+     24
+    ],
+    "fib_residues": [
+     0,
+     26
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 53,
+    "cycle_with_parity": 108,
+    "rank": 27,
+    "first_odd_fib_zero": 27,
+    "first_lucas_zero": null,
+    "indices": [
+     54,
+     27
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 59,
+    "cycle_with_parity": 58,
+    "rank": 58,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 29,
+    "indices": [
+     29
+    ],
+    "fib_residues": [
+     44
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 61,
+    "cycle_with_parity": 60,
+    "rank": 15,
+    "first_odd_fib_zero": 15,
+    "first_lucas_zero": null,
+    "indices": [
+     30,
+     15
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 67,
+    "cycle_with_parity": 136,
+    "rank": 68,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 34,
+    "indices": [
+     68,
+     34
+    ],
+    "fib_residues": [
+     0,
+     48
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 71,
+    "cycle_with_parity": 70,
+    "rank": 70,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 35,
+    "indices": [
+     35
+    ],
+    "fib_residues": [
+     21
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 73,
+    "cycle_with_parity": 148,
+    "rank": 37,
+    "first_odd_fib_zero": 37,
+    "first_lucas_zero": null,
+    "indices": [
+     74,
+     37
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 79,
+    "cycle_with_parity": 78,
+    "rank": 78,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 39,
+    "indices": [
+     39
+    ],
+    "fib_residues": [
+     8
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 83,
+    "cycle_with_parity": 168,
+    "rank": 84,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 42,
+    "indices": [
+     84,
+     42
+    ],
+    "fib_residues": [
+     0,
+     7
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 89,
+    "cycle_with_parity": 44,
+    "rank": 11,
+    "first_odd_fib_zero": 11,
+    "first_lucas_zero": null,
+    "indices": [
+     44,
+     22,
+     11
+    ],
+    "fib_residues": [
+     0,
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 97,
+    "cycle_with_parity": 196,
+    "rank": 49,
+    "first_odd_fib_zero": 49,
+    "first_lucas_zero": null,
+    "indices": [
+     98,
+     49
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 101,
+    "cycle_with_parity": 50,
+    "rank": 50,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 25,
+    "indices": [
+     50,
+     25
+    ],
+    "fib_residues": [
+     0,
+     83
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 103,
+    "cycle_with_parity": 208,
+    "rank": 104,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 52,
+    "indices": [
+     104,
+     52
+    ],
+    "fib_residues": [
+     0,
+     79
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 107,
+    "cycle_with_parity": 72,
+    "rank": 36,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 18,
+    "indices": [
+     108,
+     54
+    ],
+    "fib_residues": [
+     0,
+     91
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 109,
+    "cycle_with_parity": 108,
+    "rank": 27,
+    "first_odd_fib_zero": 27,
+    "first_lucas_zero": null,
+    "indices": [
+     54,
+     27
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 113,
+    "cycle_with_parity": 76,
+    "rank": 19,
+    "first_odd_fib_zero": 19,
+    "first_lucas_zero": null,
+    "indices": [
+     114,
+     57
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 127,
+    "cycle_with_parity": 256,
+    "rank": 128,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 64,
+    "indices": [
+     128,
+     64
+    ],
+    "fib_residues": [
+     0,
+     80
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 131,
+    "cycle_with_parity": 130,
+    "rank": 130,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 65,
+    "indices": [
+     65
+    ],
+    "fib_residues": [
+     114
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 137,
+    "cycle_with_parity": 276,
+    "rank": 69,
+    "first_odd_fib_zero": 69,
+    "first_lucas_zero": null,
+    "indices": [
+     138,
+     69
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 139,
+    "cycle_with_parity": 46,
+    "rank": 46,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 23,
+    "indices": [
+     69
+    ],
+    "fib_residues": [
+     23
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 149,
+    "cycle_with_parity": 148,
+    "rank": 37,
+    "first_odd_fib_zero": 37,
+    "first_lucas_zero": null,
+    "indices": [
+     74,
+     37
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 151,
+    "cycle_with_parity": 50,
+    "rank": 50,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 25,
+    "indices": [
+     75
+    ],
+    "fib_residues": [
+     129
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 157,
+    "cycle_with_parity": 316,
+    "rank": 79,
+    "first_odd_fib_zero": 79,
+    "first_lucas_zero": null,
+    "indices": [
+     158,
+     79
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 163,
+    "cycle_with_parity": 328,
+    "rank": 164,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 82,
+    "indices": [
+     164,
+     82
+    ],
+    "fib_residues": [
+     0,
+     74
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 167,
+    "cycle_with_parity": 336,
+    "rank": 168,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 84,
+    "indices": [
+     168,
+     84
+    ],
+    "fib_residues": [
+     0,
+     20
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 173,
+    "cycle_with_parity": 348,
+    "rank": 87,
+    "first_odd_fib_zero": 87,
+    "first_lucas_zero": null,
+    "indices": [
+     174,
+     87
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 179,
+    "cycle_with_parity": 178,
+    "rank": 178,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 89,
+    "indices": [
+     89
+    ],
+    "fib_residues": [
+     167
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 181,
+    "cycle_with_parity": 90,
+    "rank": 90,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 45,
+    "indices": [
+     90,
+     45
+    ],
+    "fib_residues": [
+     0,
+     47
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 191,
+    "cycle_with_parity": 190,
+    "rank": 190,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 95,
+    "indices": [
+     95
+    ],
+    "fib_residues": [
+     82
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 193,
+    "cycle_with_parity": 388,
+    "rank": 97,
+    "first_odd_fib_zero": 97,
+    "first_lucas_zero": null,
+    "indices": [
+     194,
+     97
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 197,
+    "cycle_with_parity": 396,
+    "rank": 99,
+    "first_odd_fib_zero": 99,
+    "first_lucas_zero": null,
+    "indices": [
+     198,
+     99
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 199,
+    "cycle_with_parity": 22,
+    "rank": 22,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 11,
+    "indices": [
+     99
+    ],
+    "fib_residues": [
+     89
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 211,
+    "cycle_with_parity": 42,
+    "rank": 42,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 21,
+    "indices": [
+     105
+    ],
+    "fib_residues": [
+     185
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 223,
+    "cycle_with_parity": 448,
+    "rank": 224,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 112,
+    "indices": [
+     224,
+     112
+    ],
+    "fib_residues": [
+     0,
+     53
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 227,
+    "cycle_with_parity": 456,
+    "rank": 228,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 114,
+    "indices": [
+     228,
+     114
+    ],
+    "fib_residues": [
+     0,
+     35
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 229,
+    "cycle_with_parity": 114,
+    "rank": 114,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 57,
+    "indices": [
+     114,
+     57
+    ],
+    "fib_residues": [
+     0,
+     111
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 233,
+    "cycle_with_parity": 52,
+    "rank": 13,
+    "first_odd_fib_zero": 13,
+    "first_lucas_zero": null,
+    "indices": [
+     234,
+     117
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 239,
+    "cycle_with_parity": 238,
+    "rank": 238,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 119,
+    "indices": [
+     119
+    ],
+    "fib_residues": [
+     108
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 241,
+    "cycle_with_parity": 240,
+    "rank": 120,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 60,
+    "indices": [
+     120,
+     60,
+     30,
+     15
+    ],
+    "fib_residues": [
+     0,
+     34,
+     108,
+     128
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 251,
+    "cycle_with_parity": 250,
+    "rank": 250,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 125,
+    "indices": [
+     125
+    ],
+    "fib_residues": [
+     94
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 257,
+    "cycle_with_parity": 516,
+    "rank": 129,
+    "first_odd_fib_zero": 129,
+    "first_lucas_zero": null,
+    "indices": [
+     258,
+     129
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 263,
+    "cycle_with_parity": 176,
+    "rank": 88,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 44,
+    "indices": [
+     264,
+     132
+    ],
+    "fib_residues": [
+     0,
+     169
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 269,
+    "cycle_with_parity": 268,
+    "rank": 67,
+    "first_odd_fib_zero": 67,
+    "first_lucas_zero": null,
+    "indices": [
+     134,
+     67
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 271,
+    "cycle_with_parity": 270,
+    "rank": 270,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 135,
+    "indices": [
+     135
+    ],
+    "fib_residues": [
+     230
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 277,
+    "cycle_with_parity": 556,
+    "rank": 139,
+    "first_odd_fib_zero": 139,
+    "first_lucas_zero": null,
+    "indices": [
+     278,
+     139
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 281,
+    "cycle_with_parity": 56,
+    "rank": 28,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 14,
+    "indices": [
+     140,
+     70,
+     35
+    ],
+    "fib_residues": [
+     0,
+     96,
+     268
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 283,
+    "cycle_with_parity": 568,
+    "rank": 284,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 142,
+    "indices": [
+     284,
+     142
+    ],
+    "fib_residues": [
+     0,
+     13
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 293,
+    "cycle_with_parity": 588,
+    "rank": 147,
+    "first_odd_fib_zero": 147,
+    "first_lucas_zero": null,
+    "indices": [
+     294,
+     147
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 307,
+    "cycle_with_parity": 88,
+    "rank": 44,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 22,
+    "indices": [
+     308,
+     154
+    ],
+    "fib_residues": [
+     0,
+     95
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 311,
+    "cycle_with_parity": 310,
+    "rank": 310,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 155,
+    "indices": [
+     155
+    ],
+    "fib_residues": [
+     202
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 313,
+    "cycle_with_parity": 628,
+    "rank": 157,
+    "first_odd_fib_zero": 157,
+    "first_lucas_zero": null,
+    "indices": [
+     314,
+     157
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 317,
+    "cycle_with_parity": 636,
+    "rank": 159,
+    "first_odd_fib_zero": 159,
+    "first_lucas_zero": null,
+    "indices": [
+     318,
+     159
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 331,
+    "cycle_with_parity": 110,
+    "rank": 110,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 55,
+    "indices": [
+     165
+    ],
+    "fib_residues": [
+     304
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 337,
+    "cycle_with_parity": 676,
+    "rank": 169,
+    "first_odd_fib_zero": 169,
+    "first_lucas_zero": null,
+    "indices": [
+     338,
+     169
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 347,
+    "cycle_with_parity": 232,
+    "rank": 116,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 58,
+    "indices": [
+     348,
+     174
+    ],
+    "fib_residues": [
+     0,
+     101
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 349,
+    "cycle_with_parity": 174,
+    "rank": 174,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 87,
+    "indices": [
+     174,
+     87
+    ],
+    "fib_residues": [
+     0,
+     45
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 353,
+    "cycle_with_parity": 236,
+    "rank": 59,
+    "first_odd_fib_zero": 59,
+    "first_lucas_zero": null,
+    "indices": [
+     354,
+     177
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 359,
+    "cycle_with_parity": 358,
+    "rank": 358,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 179,
+    "indices": [
+     179
+    ],
+    "fib_residues": [
+     131
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 367,
+    "cycle_with_parity": 736,
+    "rank": 368,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 184,
+    "indices": [
+     368,
+     184
+    ],
+    "fib_residues": [
+     0,
+     136
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 373,
+    "cycle_with_parity": 748,
+    "rank": 187,
+    "first_odd_fib_zero": 187,
+    "first_lucas_zero": null,
+    "indices": [
+     374,
+     187
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 379,
+    "cycle_with_parity": 378,
+    "rank": 378,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 189,
+    "indices": [
+     189
+    ],
+    "fib_residues": [
+     243
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 383,
+    "cycle_with_parity": 768,
+    "rank": 384,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 192,
+    "indices": [
+     384,
+     192
+    ],
+    "fib_residues": [
+     0,
+     263
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 389,
+    "cycle_with_parity": 388,
+    "rank": 97,
+    "first_odd_fib_zero": 97,
+    "first_lucas_zero": null,
+    "indices": [
+     194,
+     97
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 397,
+    "cycle_with_parity": 796,
+    "rank": 199,
+    "first_odd_fib_zero": 199,
+    "first_lucas_zero": null,
+    "indices": [
+     398,
+     199
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 401,
+    "cycle_with_parity": 200,
+    "rank": 100,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 50,
+    "indices": [
+     200,
+     100,
+     50,
+     25
+    ],
+    "fib_residues": [
+     0,
+     0,
+     221,
+     38
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 409,
+    "cycle_with_parity": 408,
+    "rank": 204,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 102,
+    "indices": [
+     204,
+     102,
+     51
+    ],
+    "fib_residues": [
+     0,
+     400,
+     47
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 419,
+    "cycle_with_parity": 418,
+    "rank": 418,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 209,
+    "indices": [
+     209
+    ],
+    "fib_residues": [
+     184
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 421,
+    "cycle_with_parity": 84,
+    "rank": 21,
+    "first_odd_fib_zero": 21,
+    "first_lucas_zero": null,
+    "indices": [
+     210,
+     105
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 431,
+    "cycle_with_parity": 430,
+    "rank": 430,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 215,
+    "indices": [
+     215
+    ],
+    "fib_residues": [
+     331
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 433,
+    "cycle_with_parity": 868,
+    "rank": 217,
+    "first_odd_fib_zero": 217,
+    "first_lucas_zero": null,
+    "indices": [
+     434,
+     217
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 439,
+    "cycle_with_parity": 438,
+    "rank": 438,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 219,
+    "indices": [
+     219
+    ],
+    "fib_residues": [
+     319
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 443,
+    "cycle_with_parity": 888,
+    "rank": 444,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 222,
+    "indices": [
+     444,
+     222
+    ],
+    "fib_residues": [
+     0,
+     321
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 449,
+    "cycle_with_parity": 448,
+    "rank": 224,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 112,
+    "indices": [
+     224,
+     112,
+     56,
+     28,
+     14,
+     7
+    ],
+    "fib_residues": [
+     0,
+     199,
+     291,
+     368,
+     377,
+     13
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 457,
+    "cycle_with_parity": 916,
+    "rank": 229,
+    "first_odd_fib_zero": 229,
+    "first_lucas_zero": null,
+    "indices": [
+     458,
+     229
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 461,
+    "cycle_with_parity": 46,
+    "rank": 46,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 23,
+    "indices": [
+     230,
+     115
+    ],
+    "fib_residues": [
+     0,
+     75
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 463,
+    "cycle_with_parity": 928,
+    "rank": 464,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 232,
+    "indices": [
+     464,
+     232
+    ],
+    "fib_residues": [
+     0,
+     100
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 467,
+    "cycle_with_parity": 936,
+    "rank": 468,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 234,
+    "indices": [
+     468,
+     234
+    ],
+    "fib_residues": [
+     0,
+     82
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 479,
+    "cycle_with_parity": 478,
+    "rank": 478,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 239,
+    "indices": [
+     239
+    ],
+    "fib_residues": [
+     392
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 487,
+    "cycle_with_parity": 976,
+    "rank": 488,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 244,
+    "indices": [
+     488,
+     244
+    ],
+    "fib_residues": [
+     0,
+     252
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 491,
+    "cycle_with_parity": 490,
+    "rank": 490,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 245,
+    "indices": [
+     245
+    ],
+    "fib_residues": [
+     334
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 499,
+    "cycle_with_parity": 498,
+    "rank": 498,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 249,
+    "indices": [
+     249
+    ],
+    "fib_residues": [
+     479
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 503,
+    "cycle_with_parity": 1008,
+    "rank": 504,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 252,
+    "indices": [
+     504,
+     252
+    ],
+    "fib_residues": [
+     0,
+     373
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 509,
+    "cycle_with_parity": 254,
+    "rank": 254,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 127,
+    "indices": [
+     254,
+     127
+    ],
+    "fib_residues": [
+     0,
+     199
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 521,
+    "cycle_with_parity": 26,
+    "rank": 26,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 13,
+    "indices": [
+     260,
+     130,
+     65
+    ],
+    "fib_residues": [
+     0,
+     0,
+     233
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 523,
+    "cycle_with_parity": 1048,
+    "rank": 524,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 262,
+    "indices": [
+     524,
+     262
+    ],
+    "fib_residues": [
+     0,
+     275
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 541,
+    "cycle_with_parity": 90,
+    "rank": 90,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 45,
+    "indices": [
+     270,
+     135
+    ],
+    "fib_residues": [
+     0,
+     403
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 547,
+    "cycle_with_parity": 1096,
+    "rank": 548,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 274,
+    "indices": [
+     548,
+     274
+    ],
+    "fib_residues": [
+     0,
+     232
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 557,
+    "cycle_with_parity": 124,
+    "rank": 31,
+    "first_odd_fib_zero": 31,
+    "first_lucas_zero": null,
+    "indices": [
+     558,
+     279
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 563,
+    "cycle_with_parity": 376,
+    "rank": 188,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 94,
+    "indices": [
+     564,
+     282
+    ],
+    "fib_residues": [
+     0,
+     30
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 569,
+    "cycle_with_parity": 568,
+    "rank": 284,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 142,
+    "indices": [
+     284,
+     142,
+     71
+    ],
+    "fib_residues": [
+     0,
+     64,
+     84
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 571,
+    "cycle_with_parity": 570,
+    "rank": 570,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 285,
+    "indices": [
+     285
+    ],
+    "fib_residues": [
+     333
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 577,
+    "cycle_with_parity": 1156,
+    "rank": 289,
+    "first_odd_fib_zero": 289,
+    "first_lucas_zero": null,
+    "indices": [
+     578,
+     289
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 587,
+    "cycle_with_parity": 1176,
+    "rank": 588,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 294,
+    "indices": [
+     588,
+     294
+    ],
+    "fib_residues": [
+     0,
+     415
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 593,
+    "cycle_with_parity": 1188,
+    "rank": 297,
+    "first_odd_fib_zero": 297,
+    "first_lucas_zero": null,
+    "indices": [
+     594,
+     297
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 599,
+    "cycle_with_parity": 598,
+    "rank": 598,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 299,
+    "indices": [
+     299
+    ],
+    "fib_residues": [
+     379
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 601,
+    "cycle_with_parity": 600,
+    "rank": 300,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 150,
+    "indices": [
+     300,
+     150,
+     75
+    ],
+    "fib_residues": [
+     0,
+     428,
+     19
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 607,
+    "cycle_with_parity": 1216,
+    "rank": 608,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 304,
+    "indices": [
+     608,
+     304
+    ],
+    "fib_residues": [
+     0,
+     294
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 613,
+    "cycle_with_parity": 1228,
+    "rank": 307,
+    "first_odd_fib_zero": 307,
+    "first_lucas_zero": null,
+    "indices": [
+     614,
+     307
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 617,
+    "cycle_with_parity": 1236,
+    "rank": 309,
+    "first_odd_fib_zero": 309,
+    "first_lucas_zero": null,
+    "indices": [
+     618,
+     309
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 619,
+    "cycle_with_parity": 206,
+    "rank": 206,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 103,
+    "indices": [
+     309
+    ],
+    "fib_residues": [
+     425
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 631,
+    "cycle_with_parity": 630,
+    "rank": 630,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 315,
+    "indices": [
+     315
+    ],
+    "fib_residues": [
+     291
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 641,
+    "cycle_with_parity": 640,
+    "rank": 320,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 160,
+    "indices": [
+     320,
+     160,
+     80,
+     40,
+     20,
+     10,
+     5
+    ],
+    "fib_residues": [
+     0,
+     210,
+     16,
+     428,
+     355,
+     55,
+     5
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 643,
+    "cycle_with_parity": 1288,
+    "rank": 644,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 322,
+    "indices": [
+     644,
+     322
+    ],
+    "fib_residues": [
+     0,
+     60
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 647,
+    "cycle_with_parity": 1296,
+    "rank": 648,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 324,
+    "indices": [
+     648,
+     324
+    ],
+    "fib_residues": [
+     0,
+     500
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 653,
+    "cycle_with_parity": 1308,
+    "rank": 327,
+    "first_odd_fib_zero": 327,
+    "first_lucas_zero": null,
+    "indices": [
+     654,
+     327
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 659,
+    "cycle_with_parity": 658,
+    "rank": 658,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 329,
+    "indices": [
+     329
+    ],
+    "fib_residues": [
+     235
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 661,
+    "cycle_with_parity": 220,
+    "rank": 55,
+    "first_odd_fib_zero": 55,
+    "first_lucas_zero": null,
+    "indices": [
+     330,
+     165
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 673,
+    "cycle_with_parity": 1348,
+    "rank": 337,
+    "first_odd_fib_zero": 337,
+    "first_lucas_zero": null,
+    "indices": [
+     674,
+     337
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 677,
+    "cycle_with_parity": 452,
+    "rank": 113,
+    "first_odd_fib_zero": 113,
+    "first_lucas_zero": null,
+    "indices": [
+     678,
+     339
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 683,
+    "cycle_with_parity": 1368,
+    "rank": 684,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 342,
+    "indices": [
+     684,
+     342
+    ],
+    "fib_residues": [
+     0,
+     287
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 691,
+    "cycle_with_parity": 138,
+    "rank": 138,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 69,
+    "indices": [
+     345
+    ],
+    "fib_residues": [
+     39
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 701,
+    "cycle_with_parity": 700,
+    "rank": 175,
+    "first_odd_fib_zero": 175,
+    "first_lucas_zero": null,
+    "indices": [
+     350,
+     175
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 709,
+    "cycle_with_parity": 118,
+    "rank": 118,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 59,
+    "indices": [
+     354,
+     177
+    ],
+    "fib_residues": [
+     0,
+     420
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 719,
+    "cycle_with_parity": 718,
+    "rank": 718,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 359,
+    "indices": [
+     359
+    ],
+    "fib_residues": [
+     24
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 727,
+    "cycle_with_parity": 1456,
+    "rank": 728,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 364,
+    "indices": [
+     728,
+     364
+    ],
+    "fib_residues": [
+     0,
+     496
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 733,
+    "cycle_with_parity": 1468,
+    "rank": 367,
+    "first_odd_fib_zero": 367,
+    "first_lucas_zero": null,
+    "indices": [
+     734,
+     367
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 739,
+    "cycle_with_parity": 738,
+    "rank": 738,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 369,
+    "indices": [
+     369
+    ],
+    "fib_residues": [
+     53
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 743,
+    "cycle_with_parity": 496,
+    "rank": 248,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 124,
+    "indices": [
+     744,
+     372
+    ],
+    "fib_residues": [
+     0,
+     585
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 751,
+    "cycle_with_parity": 750,
+    "rank": 750,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 375,
+    "indices": [
+     375
+    ],
+    "fib_residues": [
+     619
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 757,
+    "cycle_with_parity": 1516,
+    "rank": 379,
+    "first_odd_fib_zero": 379,
+    "first_lucas_zero": null,
+    "indices": [
+     758,
+     379
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 761,
+    "cycle_with_parity": 380,
+    "rank": 95,
+    "first_odd_fib_zero": 95,
+    "first_lucas_zero": null,
+    "indices": [
+     380,
+     190,
+     95
+    ],
+    "fib_residues": [
+     0,
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 769,
+    "cycle_with_parity": 192,
+    "rank": 96,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 48,
+    "indices": [
+     384,
+     192,
+     96,
+     48,
+     24,
+     12,
+     6,
+     3
+    ],
+    "fib_residues": [
+     0,
+     0,
+     0,
+     436,
+     228,
+     144,
+     8,
+     2
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 773,
+    "cycle_with_parity": 1548,
+    "rank": 387,
+    "first_odd_fib_zero": 387,
+    "first_lucas_zero": null,
+    "indices": [
+     774,
+     387
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 787,
+    "cycle_with_parity": 1576,
+    "rank": 788,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 394,
+    "indices": [
+     788,
+     394
+    ],
+    "fib_residues": [
+     0,
+     205
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 797,
+    "cycle_with_parity": 228,
+    "rank": 57,
+    "first_odd_fib_zero": 57,
+    "first_lucas_zero": null,
+    "indices": [
+     798,
+     399
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 809,
+    "cycle_with_parity": 202,
+    "rank": 202,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 101,
+    "indices": [
+     404,
+     202,
+     101
+    ],
+    "fib_residues": [
+     0,
+     0,
+     274
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 811,
+    "cycle_with_parity": 270,
+    "rank": 270,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 135,
+    "indices": [
+     405
+    ],
+    "fib_residues": [
+     185
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 821,
+    "cycle_with_parity": 820,
+    "rank": 205,
+    "first_odd_fib_zero": 205,
+    "first_lucas_zero": null,
+    "indices": [
+     410,
+     205
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 823,
+    "cycle_with_parity": 1648,
+    "rank": 824,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 412,
+    "indices": [
+     824,
+     412
+    ],
+    "fib_residues": [
+     0,
+     359
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 827,
+    "cycle_with_parity": 1656,
+    "rank": 828,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 414,
+    "indices": [
+     828,
+     414
+    ],
+    "fib_residues": [
+     0,
+     574
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 829,
+    "cycle_with_parity": 276,
+    "rank": 69,
+    "first_odd_fib_zero": 69,
+    "first_lucas_zero": null,
+    "indices": [
+     414,
+     207
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 839,
+    "cycle_with_parity": 838,
+    "rank": 838,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 419,
+    "indices": [
+     419
+    ],
+    "fib_residues": [
+     441
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 853,
+    "cycle_with_parity": 1708,
+    "rank": 427,
+    "first_odd_fib_zero": 427,
+    "first_lucas_zero": null,
+    "indices": [
+     854,
+     427
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 857,
+    "cycle_with_parity": 1716,
+    "rank": 429,
+    "first_odd_fib_zero": 429,
+    "first_lucas_zero": null,
+    "indices": [
+     858,
+     429
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 859,
+    "cycle_with_parity": 78,
+    "rank": 78,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 39,
+    "indices": [
+     429
+    ],
+    "fib_residues": [
+     393
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 863,
+    "cycle_with_parity": 1728,
+    "rank": 864,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 432,
+    "indices": [
+     864,
+     432
+    ],
+    "fib_residues": [
+     0,
+     800
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 877,
+    "cycle_with_parity": 1756,
+    "rank": 439,
+    "first_odd_fib_zero": 439,
+    "first_lucas_zero": null,
+    "indices": [
+     878,
+     439
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 881,
+    "cycle_with_parity": 176,
+    "rank": 88,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 44,
+    "indices": [
+     440,
+     220,
+     110,
+     55
+    ],
+    "fib_residues": [
+     0,
+     583,
+     790,
+     303
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 883,
+    "cycle_with_parity": 1768,
+    "rank": 884,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 442,
+    "indices": [
+     884,
+     442
+    ],
+    "fib_residues": [
+     0,
+     860
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 887,
+    "cycle_with_parity": 1776,
+    "rank": 888,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 444,
+    "indices": [
+     888,
+     444
+    ],
+    "fib_residues": [
+     0,
+     455
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 907,
+    "cycle_with_parity": 1816,
+    "rank": 908,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 454,
+    "indices": [
+     908,
+     454
+    ],
+    "fib_residues": [
+     0,
+     592
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 911,
+    "cycle_with_parity": 70,
+    "rank": 70,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 35,
+    "indices": [
+     455
+    ],
+    "fib_residues": [
+     857
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 919,
+    "cycle_with_parity": 102,
+    "rank": 102,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 51,
+    "indices": [
+     459
+    ],
+    "fib_residues": [
+     482
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 929,
+    "cycle_with_parity": 928,
+    "rank": 464,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 232,
+    "indices": [
+     464,
+     232,
+     116,
+     58,
+     29
+    ],
+    "fib_residues": [
+     0,
+     827,
+     163,
+     65,
+     492
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 937,
+    "cycle_with_parity": 1876,
+    "rank": 469,
+    "first_odd_fib_zero": 469,
+    "first_lucas_zero": null,
+    "indices": [
+     938,
+     469
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 941,
+    "cycle_with_parity": 470,
+    "rank": 470,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 235,
+    "indices": [
+     470,
+     235
+    ],
+    "fib_residues": [
+     0,
+     759
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 947,
+    "cycle_with_parity": 1896,
+    "rank": 948,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 474,
+    "indices": [
+     948,
+     474
+    ],
+    "fib_residues": [
+     0,
+     132
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 953,
+    "cycle_with_parity": 212,
+    "rank": 53,
+    "first_odd_fib_zero": 53,
+    "first_lucas_zero": null,
+    "indices": [
+     954,
+     477
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 967,
+    "cycle_with_parity": 176,
+    "rank": 88,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 44,
+    "indices": [
+     968,
+     484
+    ],
+    "fib_residues": [
+     0,
+     849
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 971,
+    "cycle_with_parity": 970,
+    "rank": 970,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 485,
+    "indices": [
+     485
+    ],
+    "fib_residues": [
+     333
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 977,
+    "cycle_with_parity": 652,
+    "rank": 163,
+    "first_odd_fib_zero": 163,
+    "first_lucas_zero": null,
+    "indices": [
+     978,
+     489
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 983,
+    "cycle_with_parity": 1968,
+    "rank": 984,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 492,
+    "indices": [
+     984,
+     492
+    ],
+    "fib_residues": [
+     0,
+     340
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 991,
+    "cycle_with_parity": 198,
+    "rank": 198,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 99,
+    "indices": [
+     495
+    ],
+    "fib_residues": [
+     818
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 997,
+    "cycle_with_parity": 1996,
+    "rank": 499,
+    "first_odd_fib_zero": 499,
+    "first_lucas_zero": null,
+    "indices": [
+     998,
+     499
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1009,
+    "cycle_with_parity": 126,
+    "rank": 126,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 63,
+    "indices": [
+     504,
+     252,
+     126,
+     63
+    ],
+    "fib_residues": [
+     0,
+     0,
+     0,
+     306
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1013,
+    "cycle_with_parity": 2028,
+    "rank": 507,
+    "first_odd_fib_zero": 507,
+    "first_lucas_zero": null,
+    "indices": [
+     1014,
+     507
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1019,
+    "cycle_with_parity": 1018,
+    "rank": 1018,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 509,
+    "indices": [
+     509
+    ],
+    "fib_residues": [
+     191
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1021,
+    "cycle_with_parity": 510,
+    "rank": 510,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 255,
+    "indices": [
+     510,
+     255
+    ],
+    "fib_residues": [
+     0,
+     655
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1031,
+    "cycle_with_parity": 206,
+    "rank": 206,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 103,
+    "indices": [
+     515
+    ],
+    "fib_residues": [
+     910
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1033,
+    "cycle_with_parity": 2068,
+    "rank": 517,
+    "first_odd_fib_zero": 517,
+    "first_lucas_zero": null,
+    "indices": [
+     1034,
+     517
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1039,
+    "cycle_with_parity": 1038,
+    "rank": 1038,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 519,
+    "indices": [
+     519
+    ],
+    "fib_residues": [
+     602
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1049,
+    "cycle_with_parity": 262,
+    "rank": 262,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 131,
+    "indices": [
+     524,
+     262,
+     131
+    ],
+    "fib_residues": [
+     0,
+     0,
+     680
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1051,
+    "cycle_with_parity": 1050,
+    "rank": 1050,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 525,
+    "indices": [
+     525
+    ],
+    "fib_residues": [
+     993
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1061,
+    "cycle_with_parity": 530,
+    "rank": 530,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 265,
+    "indices": [
+     530,
+     265
+    ],
+    "fib_residues": [
+     0,
+     792
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1063,
+    "cycle_with_parity": 2128,
+    "rank": 1064,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 532,
+    "indices": [
+     1064,
+     532
+    ],
+    "fib_residues": [
+     0,
+     272
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1069,
+    "cycle_with_parity": 356,
+    "rank": 89,
+    "first_odd_fib_zero": 89,
+    "first_lucas_zero": null,
+    "indices": [
+     534,
+     267
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1087,
+    "cycle_with_parity": 128,
+    "rank": 64,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 32,
+    "indices": [
+     1088,
+     544
+    ],
+    "fib_residues": [
+     0,
+     1048
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1091,
+    "cycle_with_parity": 1090,
+    "rank": 1090,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 545,
+    "indices": [
+     545
+    ],
+    "fib_residues": [
+     49
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1093,
+    "cycle_with_parity": 2188,
+    "rank": 547,
+    "first_odd_fib_zero": 547,
+    "first_lucas_zero": null,
+    "indices": [
+     1094,
+     547
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1097,
+    "cycle_with_parity": 732,
+    "rank": 183,
+    "first_odd_fib_zero": 183,
+    "first_lucas_zero": null,
+    "indices": [
+     1098,
+     549
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1103,
+    "cycle_with_parity": 96,
+    "rank": 48,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 24,
+    "indices": [
+     1104,
+     552
+    ],
+    "fib_residues": [
+     0,
+     1061
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1109,
+    "cycle_with_parity": 554,
+    "rank": 554,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 277,
+    "indices": [
+     554,
+     277
+    ],
+    "fib_residues": [
+     0,
+     547
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1117,
+    "cycle_with_parity": 2236,
+    "rank": 559,
+    "first_odd_fib_zero": 559,
+    "first_lucas_zero": null,
+    "indices": [
+     1118,
+     559
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1123,
+    "cycle_with_parity": 2248,
+    "rank": 1124,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 562,
+    "indices": [
+     1124,
+     562
+    ],
+    "fib_residues": [
+     0,
+     697
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1129,
+    "cycle_with_parity": 1128,
+    "rank": 564,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 282,
+    "indices": [
+     564,
+     282,
+     141
+    ],
+    "fib_residues": [
+     0,
+     15,
+     1006
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1151,
+    "cycle_with_parity": 230,
+    "rank": 230,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 115,
+    "indices": [
+     575
+    ],
+    "fib_residues": [
+     474
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1153,
+    "cycle_with_parity": 2308,
+    "rank": 577,
+    "first_odd_fib_zero": 577,
+    "first_lucas_zero": null,
+    "indices": [
+     1154,
+     577
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1163,
+    "cycle_with_parity": 2328,
+    "rank": 1164,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 582,
+    "indices": [
+     1164,
+     582
+    ],
+    "fib_residues": [
+     0,
+     321
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1171,
+    "cycle_with_parity": 1170,
+    "rank": 1170,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 585,
+    "indices": [
+     585
+    ],
+    "fib_residues": [
+     325
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1181,
+    "cycle_with_parity": 1180,
+    "rank": 295,
+    "first_odd_fib_zero": 295,
+    "first_lucas_zero": null,
+    "indices": [
+     590,
+     295
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1187,
+    "cycle_with_parity": 2376,
+    "rank": 1188,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 594,
+    "indices": [
+     1188,
+     594
+    ],
+    "fib_residues": [
+     0,
+     362
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1193,
+    "cycle_with_parity": 2388,
+    "rank": 597,
+    "first_odd_fib_zero": 597,
+    "first_lucas_zero": null,
+    "indices": [
+     1194,
+     597
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1201,
+    "cycle_with_parity": 1200,
+    "rank": 600,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 300,
+    "indices": [
+     600,
+     300,
+     150,
+     75
+    ],
+    "fib_residues": [
+     0,
+     565,
+     1160,
+     1111
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1213,
+    "cycle_with_parity": 2428,
+    "rank": 607,
+    "first_odd_fib_zero": 607,
+    "first_lucas_zero": null,
+    "indices": [
+     1214,
+     607
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1217,
+    "cycle_with_parity": 812,
+    "rank": 203,
+    "first_odd_fib_zero": 203,
+    "first_lucas_zero": null,
+    "indices": [
+     1218,
+     609
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1223,
+    "cycle_with_parity": 816,
+    "rank": 408,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 204,
+    "indices": [
+     1224,
+     612
+    ],
+    "fib_residues": [
+     0,
+     75
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1229,
+    "cycle_with_parity": 614,
+    "rank": 614,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 307,
+    "indices": [
+     614,
+     307
+    ],
+    "fib_residues": [
+     0,
+     1125
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1231,
+    "cycle_with_parity": 410,
+    "rank": 410,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 205,
+    "indices": [
+     615
+    ],
+    "fib_residues": [
+     523
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1237,
+    "cycle_with_parity": 2476,
+    "rank": 619,
+    "first_odd_fib_zero": 619,
+    "first_lucas_zero": null,
+    "indices": [
+     1238,
+     619
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1249,
+    "cycle_with_parity": 624,
+    "rank": 312,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 156,
+    "indices": [
+     624,
+     312,
+     156,
+     78,
+     39
+    ],
+    "fib_residues": [
+     0,
+     0,
+     707,
+     1060,
+     373
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1259,
+    "cycle_with_parity": 1258,
+    "rank": 1258,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 629,
+    "indices": [
+     629
+    ],
+    "fib_residues": [
+     532
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1277,
+    "cycle_with_parity": 852,
+    "rank": 213,
+    "first_odd_fib_zero": 213,
+    "first_lucas_zero": null,
+    "indices": [
+     1278,
+     639
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1279,
+    "cycle_with_parity": 426,
+    "rank": 426,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 213,
+    "indices": [
+     639
+    ],
+    "fib_residues": [
+     32
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1283,
+    "cycle_with_parity": 2568,
+    "rank": 1284,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 642,
+    "indices": [
+     1284,
+     642
+    ],
+    "fib_residues": [
+     0,
+     745
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1289,
+    "cycle_with_parity": 322,
+    "rank": 322,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 161,
+    "indices": [
+     644,
+     322,
+     161
+    ],
+    "fib_residues": [
+     0,
+     0,
+     906
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1291,
+    "cycle_with_parity": 430,
+    "rank": 430,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 215,
+    "indices": [
+     645
+    ],
+    "fib_residues": [
+     502
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1297,
+    "cycle_with_parity": 2596,
+    "rank": 649,
+    "first_odd_fib_zero": 649,
+    "first_lucas_zero": null,
+    "indices": [
+     1298,
+     649
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1301,
+    "cycle_with_parity": 1300,
+    "rank": 325,
+    "first_odd_fib_zero": 325,
+    "first_lucas_zero": null,
+    "indices": [
+     650,
+     325
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1303,
+    "cycle_with_parity": 2608,
+    "rank": 1304,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 652,
+    "indices": [
+     1304,
+     652
+    ],
+    "fib_residues": [
+     0,
+     1022
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1307,
+    "cycle_with_parity": 872,
+    "rank": 436,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 218,
+    "indices": [
+     1308,
+     654
+    ],
+    "fib_residues": [
+     0,
+     56
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1319,
+    "cycle_with_parity": 1318,
+    "rank": 1318,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 659,
+    "indices": [
+     659
+    ],
+    "fib_residues": [
+     1111
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1321,
+    "cycle_with_parity": 1320,
+    "rank": 660,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 330,
+    "indices": [
+     660,
+     330,
+     165
+    ],
+    "fib_residues": [
+     0,
+     564,
+     483
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1327,
+    "cycle_with_parity": 2656,
+    "rank": 1328,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 664,
+    "indices": [
+     1328,
+     664
+    ],
+    "fib_residues": [
+     0,
+     427
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1361,
+    "cycle_with_parity": 680,
+    "rank": 340,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 170,
+    "indices": [
+     680,
+     340,
+     170,
+     85
+    ],
+    "fib_residues": [
+     0,
+     0,
+     306,
+     1291
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1367,
+    "cycle_with_parity": 2736,
+    "rank": 1368,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 684,
+    "indices": [
+     1368,
+     684
+    ],
+    "fib_residues": [
+     0,
+     299
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1373,
+    "cycle_with_parity": 2748,
+    "rank": 687,
+    "first_odd_fib_zero": 687,
+    "first_lucas_zero": null,
+    "indices": [
+     1374,
+     687
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1381,
+    "cycle_with_parity": 460,
+    "rank": 115,
+    "first_odd_fib_zero": 115,
+    "first_lucas_zero": null,
+    "indices": [
+     690,
+     345
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1399,
+    "cycle_with_parity": 1398,
+    "rank": 1398,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 699,
+    "indices": [
+     699
+    ],
+    "fib_residues": [
+     368
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1409,
+    "cycle_with_parity": 704,
+    "rank": 352,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 176,
+    "indices": [
+     704,
+     352,
+     176,
+     88,
+     44,
+     22,
+     11
+    ],
+    "fib_residues": [
+     0,
+     0,
+     213,
+     419,
+     79,
+     803,
+     89
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1423,
+    "cycle_with_parity": 2848,
+    "rank": 1424,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 712,
+    "indices": [
+     1424,
+     712
+    ],
+    "fib_residues": [
+     0,
+     1060
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1427,
+    "cycle_with_parity": 168,
+    "rank": 84,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 42,
+    "indices": [
+     1428,
+     714
+    ],
+    "fib_residues": [
+     0,
+     754
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1429,
+    "cycle_with_parity": 1428,
+    "rank": 357,
+    "first_odd_fib_zero": 357,
+    "first_lucas_zero": null,
+    "indices": [
+     714,
+     357
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1433,
+    "cycle_with_parity": 2868,
+    "rank": 717,
+    "first_odd_fib_zero": 717,
+    "first_lucas_zero": null,
+    "indices": [
+     1434,
+     717
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1439,
+    "cycle_with_parity": 1438,
+    "rank": 1438,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 719,
+    "indices": [
+     719
+    ],
+    "fib_residues": [
+     303
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1447,
+    "cycle_with_parity": 2896,
+    "rank": 1448,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 724,
+    "indices": [
+     1448,
+     724
+    ],
+    "fib_residues": [
+     0,
+     45
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1451,
+    "cycle_with_parity": 1450,
+    "rank": 1450,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 725,
+    "indices": [
+     725
+    ],
+    "fib_residues": [
+     1225
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1453,
+    "cycle_with_parity": 2908,
+    "rank": 727,
+    "first_odd_fib_zero": 727,
+    "first_lucas_zero": null,
+    "indices": [
+     1454,
+     727
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1459,
+    "cycle_with_parity": 1458,
+    "rank": 1458,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 729,
+    "indices": [
+     729
+    ],
+    "fib_residues": [
+     425
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1471,
+    "cycle_with_parity": 490,
+    "rank": 490,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 245,
+    "indices": [
+     735
+    ],
+    "fib_residues": [
+     382
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1481,
+    "cycle_with_parity": 1480,
+    "rank": 740,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 370,
+    "indices": [
+     740,
+     370,
+     185
+    ],
+    "fib_residues": [
+     0,
+     488,
+     152
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1483,
+    "cycle_with_parity": 424,
+    "rank": 212,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 106,
+    "indices": [
+     1484,
+     742
+    ],
+    "fib_residues": [
+     0,
+     191
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1487,
+    "cycle_with_parity": 2976,
+    "rank": 1488,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 744,
+    "indices": [
+     1488,
+     744
+    ],
+    "fib_residues": [
+     0,
+     933
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   },
+   {
+    "p": 1489,
+    "cycle_with_parity": 1488,
+    "rank": 744,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 372,
+    "indices": [
+     744,
+     372,
+     186,
+     93
+    ],
+    "fib_residues": [
+     0,
+     1097,
+     1067,
+     785
+    ],
+    "maximal_k_test": false,
+    "any_k_test": true
+   },
+   {
+    "p": 1493,
+    "cycle_with_parity": 2988,
+    "rank": 747,
+    "first_odd_fib_zero": 747,
+    "first_lucas_zero": null,
+    "indices": [
+     1494,
+     747
+    ],
+    "fib_residues": [
+     0,
+     0
+    ],
+    "maximal_k_test": true,
+    "any_k_test": true
+   },
+   {
+    "p": 1499,
+    "cycle_with_parity": 1498,
+    "rank": 1498,
+    "first_odd_fib_zero": null,
+    "first_lucas_zero": 749,
+    "indices": [
+     749
+    ],
+    "fib_residues": [
+     1366
+    ],
+    "maximal_k_test": false,
+    "any_k_test": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 4.566,
+ "result": {
+  "summary": "Found 0 consecutive pairs with both endpoints in [1, 1000000000000000000].",
+  "complete": true,
+  "requested_bound": 1000000000000000000,
+  "verified_through": 1000000000000000000,
+  "full_integer_count_in_verified_interval": 4480253,
+  "pairs": [],
+  "sanity_check": {
+   "trial_division_verified_through": 5000,
+   "full_count": 40
+  }
+ }
+}

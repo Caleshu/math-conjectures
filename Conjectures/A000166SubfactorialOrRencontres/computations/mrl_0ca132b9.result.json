@@ -1,0 +1,26 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 3.022,
+ "result": {
+  "summary": "Exhaustively classified 3 <= n <= 20000 and found 1 prime-exponent representations.",
+  "requested_through": 20000,
+  "checked_through": 20000,
+  "complete": true,
+  "representations": [
+   {
+    "n": 4,
+    "prime_exponent": 2,
+    "base_hex": "0x3"
+   }
+  ],
+  "index_counts": {
+   "valuation_gcd_one": 19744,
+   "perfect_power": 1,
+   "excluded_by_residues": 245,
+   "excluded_after_root_test": 8
+  },
+  "sanity_checks_passed": true,
+  "author_support": "proved_here",
+  "justification": "Each possible prime exponent divides the gcd of the inspected valuations. Each candidate was excluded by a necessary modular condition or decided by an exact integer root."
+ }
+}

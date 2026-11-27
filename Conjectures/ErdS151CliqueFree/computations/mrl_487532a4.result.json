@@ -1,0 +1,77 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 2.249,
+ "result": {
+  "summary": "Sanity passed: True. Orders verified by infeasibility: [9, 10]. Orders with checked counterexamples: []. Unresolved orders: [].",
+  "sanity": [
+   {
+    "n": 9,
+    "subset_size": 6,
+    "status": "OPTIMAL",
+    "solver_seconds": 0.041612,
+    "edges": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      7,
+      8
+     ]
+    ],
+    "b": 5,
+    "largest_admissible_set": [
+     0,
+     1,
+     3,
+     5,
+     7
+    ],
+    "minimum_transversal": [
+     2,
+     4,
+     6,
+     8
+    ]
+   },
+   {
+    "n": 9,
+    "subset_size": 5,
+    "status": "INFEASIBLE",
+    "solver_seconds": 0.000942
+   }
+  ],
+  "sanity_ok": true,
+  "searches": [
+   {
+    "n": 9,
+    "subset_size": 4,
+    "status": "INFEASIBLE",
+    "solver_seconds": 0.024023000000000003
+   },
+   {
+    "n": 10,
+    "subset_size": 4,
+    "status": "INFEASIBLE",
+    "solver_seconds": 0.013460000000000001
+   }
+  ],
+  "unresolved": []
+ }
+}
