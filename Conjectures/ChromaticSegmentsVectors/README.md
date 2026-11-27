@@ -35,5 +35,5 @@ Verdict: **likely_open**. This is not in the repository: HypercubeSquares and Al
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 301fac8a](research/2026-11-27-run-301fac8a.md): running. 
+- [2026-11-27 run 301fac8a](research/2026-11-27-run-301fac8a.md): failed. Claude Code call failed: API error 429: You've hit your 5-hour limit · resets 4:10am (America/New_York)
 
