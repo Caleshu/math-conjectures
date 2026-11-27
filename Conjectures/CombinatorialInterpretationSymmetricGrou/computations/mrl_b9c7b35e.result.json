@@ -1,0 +1,2460 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.463,
+ "result": {
+  "complete": true,
+  "completed_n": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "rows": [
+   {
+    "n": 1,
+    "shape": [
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 1,
+      "centralizer_order": 1
+     }
+    ],
+    "character_row_sum": 1,
+    "total_selected": 1
+   },
+   {
+    "n": 2,
+    "shape": [
+     2
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 2,
+      "centralizer_order": 2
+     },
+     {
+      "rho": [
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 2,
+      "centralizer_order": 2
+     }
+    ],
+    "character_row_sum": 2,
+    "total_selected": 2
+   },
+   {
+    "n": 2,
+    "shape": [
+     1,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 2
+     },
+     {
+      "rho": [
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 2
+     }
+    ],
+    "character_row_sum": 0,
+    "total_selected": 0
+   },
+   {
+    "n": 3,
+    "shape": [
+     3
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       3
+      ],
+      "rank": 1,
+      "trace_sum": 3,
+      "centralizer_order": 3
+     },
+     {
+      "rho": [
+       2,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 2,
+      "centralizer_order": 2
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     }
+    ],
+    "character_row_sum": 3,
+    "total_selected": 3
+   },
+   {
+    "n": 3,
+    "shape": [
+     2,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       3
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 3
+     },
+     {
+      "rho": [
+       2,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 2,
+      "centralizer_order": 2
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 6
+     }
+    ],
+    "character_row_sum": 1,
+    "total_selected": 1
+   },
+   {
+    "n": 3,
+    "shape": [
+     1,
+     1,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       3
+      ],
+      "rank": 1,
+      "trace_sum": 3,
+      "centralizer_order": 3
+     },
+     {
+      "rho": [
+       2,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 2
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 6
+     }
+    ],
+    "character_row_sum": 1,
+    "total_selected": 1
+   },
+   {
+    "n": 4,
+    "shape": [
+     4
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       4
+      ],
+      "rank": 1,
+      "trace_sum": 4,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       3,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 3,
+      "centralizer_order": 3
+     },
+     {
+      "rho": [
+       2,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 4,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 24,
+      "centralizer_order": 24
+     }
+    ],
+    "character_row_sum": 5,
+    "total_selected": 5
+   },
+   {
+    "n": 4,
+    "shape": [
+     3,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       4
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       3,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 3,
+      "centralizer_order": 3
+     },
+     {
+      "rho": [
+       2,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 4,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 24
+     }
+    ],
+    "character_row_sum": 2,
+    "total_selected": 2
+   },
+   {
+    "n": 4,
+    "shape": [
+     2,
+     2
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       4
+      ],
+      "rank": 1,
+      "trace_sum": 4,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       3,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 3
+     },
+     {
+      "rho": [
+       2,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 4,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 24
+     }
+    ],
+    "character_row_sum": 3,
+    "total_selected": 3
+   },
+   {
+    "n": 4,
+    "shape": [
+     2,
+     1,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       4
+      ],
+      "rank": 1,
+      "trace_sum": 4,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       3,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 3,
+      "centralizer_order": 3
+     },
+     {
+      "rho": [
+       2,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 24
+     }
+    ],
+    "character_row_sum": 2,
+    "total_selected": 2
+   },
+   {
+    "n": 4,
+    "shape": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       4
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       3,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 3,
+      "centralizer_order": 3
+     },
+     {
+      "rho": [
+       2,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 24
+     }
+    ],
+    "character_row_sum": 1,
+    "total_selected": 1
+   },
+   {
+    "n": 5,
+    "shape": [
+     5
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       5
+      ],
+      "rank": 1,
+      "trace_sum": 5,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 4,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       3,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 12,
+      "centralizer_order": 12
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 120,
+      "centralizer_order": 120
+     }
+    ],
+    "character_row_sum": 7,
+    "total_selected": 7
+   },
+   {
+    "n": 5,
+    "shape": [
+     4,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       5
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 4,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       3,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 12,
+      "centralizer_order": 12
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 120
+     }
+    ],
+    "character_row_sum": 5,
+    "total_selected": 5
+   },
+   {
+    "n": 5,
+    "shape": [
+     3,
+     2
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       5
+      ],
+      "rank": 1,
+      "trace_sum": 5,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 4,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       3,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 12,
+      "centralizer_order": 12
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 120
+     }
+    ],
+    "character_row_sum": 6,
+    "total_selected": 6
+   },
+   {
+    "n": 5,
+    "shape": [
+     3,
+     1,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       5
+      ],
+      "rank": 2,
+      "trace_sum": 10,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 4,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       3,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 12
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 120
+     }
+    ],
+    "character_row_sum": 5,
+    "total_selected": 5
+   },
+   {
+    "n": 5,
+    "shape": [
+     2,
+     2,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       5
+      ],
+      "rank": 1,
+      "trace_sum": 5,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       1
+      ],
+      "rank": 2,
+      "trace_sum": 8,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       3,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 12
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 120
+     }
+    ],
+    "character_row_sum": 4,
+    "total_selected": 4
+   },
+   {
+    "n": 5,
+    "shape": [
+     2,
+     1,
+     1,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       5
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 4,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       3,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 12
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 120
+     }
+    ],
+    "character_row_sum": 3,
+    "total_selected": 3
+   },
+   {
+    "n": 5,
+    "shape": [
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       5
+      ],
+      "rank": 1,
+      "trace_sum": 5,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 4
+     },
+     {
+      "rho": [
+       3,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 12
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 120
+     }
+    ],
+    "character_row_sum": 1,
+    "total_selected": 1
+   },
+   {
+    "n": 6,
+    "shape": [
+     6
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       6
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       5,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 5,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       4,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       3,
+       3
+      ],
+      "rank": 1,
+      "trace_sum": 18,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       3,
+       2,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 18,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       2,
+       2,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 48,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 16,
+      "centralizer_order": 16
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 48,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 720,
+      "centralizer_order": 720
+     }
+    ],
+    "character_row_sum": 11,
+    "total_selected": 11
+   },
+   {
+    "n": 6,
+    "shape": [
+     5,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       6
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       5,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 5,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       4,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       3,
+       3
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       3,
+       2,
+       1
+      ],
+      "rank": 2,
+      "trace_sum": 12,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 18,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       2,
+       2,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 16,
+      "centralizer_order": 16
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 48,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 720
+     }
+    ],
+    "character_row_sum": 8,
+    "total_selected": 8
+   },
+   {
+    "n": 6,
+    "shape": [
+     4,
+     2
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       6
+      ],
+      "rank": 2,
+      "trace_sum": 12,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       5,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 5,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       2
+      ],
+      "rank": 2,
+      "trace_sum": 16,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       4,
+       1,
+       1
+      ],
+      "rank": 2,
+      "trace_sum": 16,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       3,
+       3
+      ],
+      "rank": 1,
+      "trace_sum": 18,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       3,
+       2,
+       1
+      ],
+      "rank": 2,
+      "trace_sum": 12,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 18,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       2,
+       2,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 48,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1,
+       1
+      ],
+      "rank": 2,
+      "trace_sum": 32,
+      "centralizer_order": 16
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 48,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 720
+     }
+    ],
+    "character_row_sum": 15,
+    "total_selected": 15
+   },
+   {
+    "n": 6,
+    "shape": [
+     4,
+     1,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       6
+      ],
+      "rank": 2,
+      "trace_sum": 12,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       5,
+       1
+      ],
+      "rank": 2,
+      "trace_sum": 10,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       4,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       3,
+       3
+      ],
+      "rank": 1,
+      "trace_sum": 18,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       3,
+       2,
+       1
+      ],
+      "rank": 2,
+      "trace_sum": 12,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 18,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       2,
+       2,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 16
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 720
+     }
+    ],
+    "character_row_sum": 10,
+    "total_selected": 10
+   },
+   {
+    "n": 6,
+    "shape": [
+     3,
+     3
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       6
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       5,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 5,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       4,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       3,
+       3
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       3,
+       2,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 18,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       2,
+       2,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 16
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 720
+     }
+    ],
+    "character_row_sum": 4,
+    "total_selected": 4
+   },
+   {
+    "n": 6,
+    "shape": [
+     3,
+     2,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       6
+      ],
+      "rank": 2,
+      "trace_sum": 12,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       5,
+       1
+      ],
+      "rank": 4,
+      "trace_sum": 20,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       2
+      ],
+      "rank": 2,
+      "trace_sum": 16,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       4,
+       1,
+       1
+      ],
+      "rank": 2,
+      "trace_sum": 16,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       3,
+       3
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       3,
+       2,
+       1
+      ],
+      "rank": 2,
+      "trace_sum": 12,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       2,
+       2,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 16,
+      "centralizer_order": 16
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 720
+     }
+    ],
+    "character_row_sum": 13,
+    "total_selected": 13
+   },
+   {
+    "n": 6,
+    "shape": [
+     3,
+     1,
+     1,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       6
+      ],
+      "rank": 2,
+      "trace_sum": 12,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       5,
+       1
+      ],
+      "rank": 2,
+      "trace_sum": 10,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       4,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       3,
+       3
+      ],
+      "rank": 1,
+      "trace_sum": 18,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       3,
+       2,
+       1
+      ],
+      "rank": 2,
+      "trace_sum": 12,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 18,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       2,
+       2,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 16
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 720
+     }
+    ],
+    "character_row_sum": 10,
+    "total_selected": 10
+   },
+   {
+    "n": 6,
+    "shape": [
+     2,
+     2,
+     2
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       6
+      ],
+      "rank": 2,
+      "trace_sum": 12,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       5,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 5,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       4,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       3,
+       3
+      ],
+      "rank": 1,
+      "trace_sum": 18,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       3,
+       2,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       2,
+       2,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 48,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 16,
+      "centralizer_order": 16
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 720
+     }
+    ],
+    "character_row_sum": 8,
+    "total_selected": 8
+   },
+   {
+    "n": 6,
+    "shape": [
+     2,
+     2,
+     1,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       6
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       5,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 5,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       2
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       4,
+       1,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 8,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       3,
+       3
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       3,
+       2,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       2,
+       2,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 16
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 720
+     }
+    ],
+    "character_row_sum": 5,
+    "total_selected": 5
+   },
+   {
+    "n": 6,
+    "shape": [
+     2,
+     1,
+     1,
+     1,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       6
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       5,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 5,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       4,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       3,
+       3
+      ],
+      "rank": 1,
+      "trace_sum": 18,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       3,
+       2,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 6,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       2,
+       2,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 16
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 720
+     }
+    ],
+    "character_row_sum": 4,
+    "total_selected": 4
+   },
+   {
+    "n": 6,
+    "shape": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "by_cycle_type": [
+     {
+      "rho": [
+       6
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       5,
+       1
+      ],
+      "rank": 1,
+      "trace_sum": 5,
+      "centralizer_order": 5
+     },
+     {
+      "rho": [
+       4,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       4,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 8
+     },
+     {
+      "rho": [
+       3,
+       3
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       3,
+       2,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 6
+     },
+     {
+      "rho": [
+       3,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 18
+     },
+     {
+      "rho": [
+       2,
+       2,
+       2
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       2,
+       2,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 16
+     },
+     {
+      "rho": [
+       2,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 48
+     },
+     {
+      "rho": [
+       1,
+       1,
+       1,
+       1,
+       1,
+       1
+      ],
+      "rank": 0,
+      "trace_sum": 0,
+      "centralizer_order": 720
+     }
+    ],
+    "character_row_sum": 1,
+    "total_selected": 1
+   }
+  ],
+  "checked_pairs": 209,
+  "example": {
+   "shape": [
+    3,
+    2,
+    1
+   ],
+   "rho": [
+    3,
+    2,
+    1
+   ],
+   "selected_fillings_in_column_order": [
+    [
+     1,
+     2,
+     3,
+     4,
+     6,
+     5
+    ],
+    [
+     1,
+     4,
+     6,
+     2,
+     5,
+     3
+    ]
+   ]
+  },
+  "summary": "Exact agreement for all 209 ordered pairs of partitions of equal size through n=6."
+ }
+}

@@ -38,10 +38,12 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 - **Can two consecutive changes cancel every negative pipe-dream chain?** [succeeded, finite computation]: Checked 17444 degree-compatible triples. Width two failed on 502. Requested ranges complete: True. ([code](computations/mrl_72e0c49c.py), [result](computations/mrl_72e0c49c.result.json))
   - [Computational Mathematician] The run completed an exact matching test on every degree-compatible triple in $S_4$ and every degree-compatible triple in $S_5$ with $\ell(u),\ell(v)\le3$. In $S_4$, widths one and two failed on $125$ and $35$ of $1{,}115$ triples, respectively. In the stated $S_5$ range, they failed on $1{,}843$ and $467$ of $16{,}329$. The pipe-dream monomials agreed with the divided-difference Schubert polynomials, and the signed chain count agreed with independent coefficient extraction for every tested triple. The failures certify obstructions for this graph, whose edges compare steps at the same indices.
+- **Weighted Hall test for adjacent coordinate swaps in $S_4$** [succeeded, finite computation]: Checked 1115 of 1115 degree-compatible ordered triples in S_4. Hall failed on 0 tested triples. ([code](computations/mrl_a62eef1d.py), [result](computations/mrl_a62eef1d.result.json))
+  - [Computational Mathematician] The run completed all $1{,}115$ eligible triples and found zero violations of the weighted Hall inequalities. All $24$ factor polynomials agreed with divided differences, and all $1{,}115$ signed totals agreed with independent coefficient extraction. Both synthetic matching checks passed, including a case where moving one positive copy preserved the signed total but caused a Hall violation.
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run f140f6f1](research/2026-11-27-run-f140f6f1.md): running. 
+- [2026-11-27 run f140f6f1](research/2026-11-27-run-f140f6f1.md): completed. orchestrator: Iteration 2 exhausts the two-iteration limit. The existing reviews suffice to distinguish the algebraic cardinality result, the corrected local obstruction, and the open general matching proposal.
 

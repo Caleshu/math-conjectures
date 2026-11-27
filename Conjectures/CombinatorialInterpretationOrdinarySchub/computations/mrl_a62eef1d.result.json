@@ -1,0 +1,20 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.988,
+ "result": {
+  "summary": "Checked 1115 of 1115 degree-compatible ordered triples in S_4. Hall failed on 0 tested triples.",
+  "complete": true,
+  "tested": 1115,
+  "eligible": 1115,
+  "failures": 0,
+  "matching_method": "Exact integer enumeration of weighted Hall subsets with pruning.",
+  "author_support": "proved_here",
+  "justification": "All copies of one odd weight have the same neighbors. Enlarging any deficient vertex set to include every copy of its represented weights preserves its neighbors and increases or preserves its size. Thus a failure has a witness among the enumerated weight subsets. Every occupied weight has positive multiplicity, so pruning supersets of a deficient set or branches exceeding the best demand preserves the minimum witness size.",
+  "sanity_checks": {
+   "factor_polynomials_checked_against_divided_differences": 24,
+   "signed_totals_checked_by_coefficient_extraction": 1115,
+   "synthetic_matching_cases_passed": 2
+  },
+  "witness": null
+ }
+}

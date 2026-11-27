@@ -33,6 +33,13 @@ Source: Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, Emily Xia Meng, Henry Kv
 
 Verdict: **likely_open**. The problem asks for a combinatorial set that counts the unweighted sum across each irreducible character row. R9 studies column sums of normalized central characters, and R10 studies signed column sums. Neither gives the requested rule. No listed repository problem matches, and no recorded result settles the question. The absence of a resolution in the supplied evidence does not prove openness.
 
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Check every necklace-vector rank against a centralizer character average** [succeeded, finite computation]: Exact agreement for all 209 ordered pairs of partitions of equal size through n=6. ([code](computations/mrl_b9c7b35e.py), [result](computations/mrl_b9c7b35e.result.json))
+  - [Computational Mathematician] The run completed all $209$ ordered pairs $(\lambda,\rho)$ with $\lambda,\rho\vdash n$ and $1\leq n\leq 6$. For each pair, the number of selected fillings equaled the character average over the explicitly enumerated centralizer. For each of the $29$ shapes in that range, the total selected over all cycle types equaled the unweighted character row sum. The centralizer-order checks and the trivial- and sign-character checks passed. These are exact finite verifications. The argument below establishes the general identity.
+
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
