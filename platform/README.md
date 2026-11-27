@@ -12,7 +12,7 @@ combinatorics.
 | Milestone | State |
 |---|---|
 | 1. App, database, paper search/retrieval, manual submission, PDF text extraction | **Done** |
-| 2. Candidate detection, source-passage storage, conjecture library, search & filters | **Done** (heuristic detector; LLM extraction agent implemented but needs an API key to run) |
+| 2. Candidate detection, source-passage storage, conjecture library, search & filters | **Done** (heuristic detector plus LLM extraction agent, run via Claude Code on your subscription or via an API key) |
 | 3. Four verification agents and status classification | Not started. Manual status override with evidence works now, and a citing-works lookup (OpenAlex + Semantic Scholar) is available |
 | 4. Six research agents and orchestrator | Not started. DB tables (`research_runs`, `agent_tasks`, `claims`, `proof_attempts`) and the LLM layer exist |
 | 5. Computation and validation | **Partly done**: sandboxed Python with NetworkX/SymPy/OR-Tools, full reproducibility records, re-run, library experiments. Adversarial review not started |
@@ -151,8 +151,12 @@ cd ../frontend && npm run typecheck && npm run build
 - PDF text from pdfminer loses math layout. LaTeX is used when available, and GROBID adds section structure if configured.
 - Semantic Scholar without a key is often rate-limited (HTTP 429). This is reported per source, never hidden.
 - OpenAlex/Semantic Scholar citation coverage for mathematics is incomplete.
-- The LLM extraction agent and provider code are implemented and unit-tested only up to the API boundary. They have
-  not been run against a live model in this environment because no API key was available.
+- AI calls run through the Claude Code CLI on the user's Claude subscription by default (`claude -p`, no tools, no MCP,
+  empty working directory, API keys stripped from its environment). These calls are recorded at $0 billed and count
+  against the plan's usage limits. Set `ANTHROPIC_API_KEY` to use pay-per-use API billing instead. The Anthropic-SDK and
+  OpenAI providers have not been run live here.
+- Verified live: AI extraction on arXiv:1009.3304 found Conjecture 5.1 and 6 further problems, quoted the original
+  wording verbatim (all verified against the source), and rejected the Kreweras background passage.
 - Memory limits for experiments are not enforced on macOS.
 - Export of research reports (Markdown/PDF) comes with the research runs (Milestone 4).
 
