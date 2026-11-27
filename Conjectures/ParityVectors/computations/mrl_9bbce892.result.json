@@ -1,0 +1,223 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 1.64,
+ "result": {
+  "summary": "Exhaustive enumeration. n=2,k=2: bal=2 ach=2 missing=0 (up to rot 0) ach==ABC:True nonbal_ach=0 | n=3,k=2: bal=2 ach=2 missing=0 (up to rot 0) ach==ABC:True nonbal_ach=0 | n=3,k=4: bal=6 ach=2 missing=4 (up to rot 4) ach==ABC:True nonbal_ach=0 | n=4,k=2: bal=2 ach=2 missing=0 (up to rot 0) ach==ABC:True nonbal_ach=0 | n=4,k=4: bal=6 ach=6 missing=0 (up to rot 0) ach==ABC:True nonbal_ach=0 | n=4,k=6: bal=20 ach=20 missing=0 (up to rot 0) ach==ABC:True nonbal_ach=0 | n=4,k=8: bal=70 ach=2 missing=68 (up to rot 68) ach==ABC:True nonbal_ach=0 | time 0.6s",
+  "results": {
+   "2": {
+    "num_ham_cycles_undirected": 1,
+    "sanity_count_matches_known": true,
+    "every_even_k_occurs_as_c_i": true,
+    "c_i_values_seen": [
+     2
+    ],
+    "per_k": {
+     "2": {
+      "num_balanced": 2,
+      "num_achieved": 2,
+      "achieved_not_balanced": [],
+      "num_balanced_not_achieved": 0,
+      "examples_balanced_not_achieved": [],
+      "num_balanced_not_achieved_even_up_to_rotation": 0,
+      "num_satisfying_ABC": 2,
+      "achieved_equals_ABC": true,
+      "ABC_not_achieved": [],
+      "achieved_not_ABC": [],
+      "num_balanced_failing_B": 0,
+      "examples_failing_B": [],
+      "achieved_closed_under_rot2": true,
+      "achieved_closed_under_complement": true,
+      "achieved_list": [
+       "01",
+       "10"
+      ]
+     }
+    }
+   },
+   "3": {
+    "num_ham_cycles_undirected": 6,
+    "sanity_count_matches_known": true,
+    "every_even_k_occurs_as_c_i": true,
+    "c_i_values_seen": [
+     2,
+     4
+    ],
+    "per_k": {
+     "2": {
+      "num_balanced": 2,
+      "num_achieved": 2,
+      "achieved_not_balanced": [],
+      "num_balanced_not_achieved": 0,
+      "examples_balanced_not_achieved": [],
+      "num_balanced_not_achieved_even_up_to_rotation": 0,
+      "num_satisfying_ABC": 2,
+      "achieved_equals_ABC": true,
+      "ABC_not_achieved": [],
+      "achieved_not_ABC": [],
+      "num_balanced_failing_B": 0,
+      "examples_failing_B": [],
+      "achieved_closed_under_rot2": true,
+      "achieved_closed_under_complement": true,
+      "achieved_list": [
+       "01",
+       "10"
+      ]
+     },
+     "4": {
+      "num_balanced": 6,
+      "num_achieved": 2,
+      "achieved_not_balanced": [],
+      "num_balanced_not_achieved": 4,
+      "examples_balanced_not_achieved": [
+       "0011",
+       "0110",
+       "1001",
+       "1100"
+      ],
+      "num_balanced_not_achieved_even_up_to_rotation": 4,
+      "num_satisfying_ABC": 2,
+      "achieved_equals_ABC": true,
+      "ABC_not_achieved": [],
+      "achieved_not_ABC": [],
+      "num_balanced_failing_B": 0,
+      "examples_failing_B": [],
+      "achieved_closed_under_rot2": true,
+      "achieved_closed_under_complement": true,
+      "achieved_list": [
+       "0101",
+       "1010"
+      ]
+     }
+    }
+   },
+   "4": {
+    "num_ham_cycles_undirected": 1344,
+    "sanity_count_matches_known": true,
+    "every_even_k_occurs_as_c_i": true,
+    "c_i_values_seen": [
+     2,
+     4,
+     6,
+     8
+    ],
+    "per_k": {
+     "2": {
+      "num_balanced": 2,
+      "num_achieved": 2,
+      "achieved_not_balanced": [],
+      "num_balanced_not_achieved": 0,
+      "examples_balanced_not_achieved": [],
+      "num_balanced_not_achieved_even_up_to_rotation": 0,
+      "num_satisfying_ABC": 2,
+      "achieved_equals_ABC": true,
+      "ABC_not_achieved": [],
+      "achieved_not_ABC": [],
+      "num_balanced_failing_B": 0,
+      "examples_failing_B": [],
+      "achieved_closed_under_rot2": true,
+      "achieved_closed_under_complement": true,
+      "achieved_list": [
+       "01",
+       "10"
+      ]
+     },
+     "4": {
+      "num_balanced": 6,
+      "num_achieved": 6,
+      "achieved_not_balanced": [],
+      "num_balanced_not_achieved": 0,
+      "examples_balanced_not_achieved": [],
+      "num_balanced_not_achieved_even_up_to_rotation": 0,
+      "num_satisfying_ABC": 6,
+      "achieved_equals_ABC": true,
+      "ABC_not_achieved": [],
+      "achieved_not_ABC": [],
+      "num_balanced_failing_B": 0,
+      "examples_failing_B": [],
+      "achieved_closed_under_rot2": true,
+      "achieved_closed_under_complement": true,
+      "achieved_list": [
+       "0011",
+       "0101",
+       "0110",
+       "1001",
+       "1010",
+       "1100"
+      ]
+     },
+     "6": {
+      "num_balanced": 20,
+      "num_achieved": 20,
+      "achieved_not_balanced": [],
+      "num_balanced_not_achieved": 0,
+      "examples_balanced_not_achieved": [],
+      "num_balanced_not_achieved_even_up_to_rotation": 0,
+      "num_satisfying_ABC": 20,
+      "achieved_equals_ABC": true,
+      "ABC_not_achieved": [],
+      "achieved_not_ABC": [],
+      "num_balanced_failing_B": 0,
+      "examples_failing_B": [],
+      "achieved_closed_under_rot2": true,
+      "achieved_closed_under_complement": true,
+      "achieved_list": [
+       "000111",
+       "001011",
+       "001101",
+       "001110",
+       "010011",
+       "010101",
+       "010110",
+       "011001",
+       "011010",
+       "011100",
+       "100011",
+       "100101",
+       "100110",
+       "101001",
+       "101010",
+       "101100",
+       "110001",
+       "110010",
+       "110100",
+       "111000"
+      ]
+     },
+     "8": {
+      "num_balanced": 70,
+      "num_achieved": 2,
+      "achieved_not_balanced": [],
+      "num_balanced_not_achieved": 68,
+      "examples_balanced_not_achieved": [
+       "00001111",
+       "00010111",
+       "00011011",
+       "00011101",
+       "00011110",
+       "00100111",
+       "00101011",
+       "00101101",
+       "00101110",
+       "00110011",
+       "00110101",
+       "00110110"
+      ],
+      "num_balanced_not_achieved_even_up_to_rotation": 68,
+      "num_satisfying_ABC": 2,
+      "achieved_equals_ABC": true,
+      "ABC_not_achieved": [],
+      "achieved_not_ABC": [],
+      "num_balanced_failing_B": 0,
+      "examples_failing_B": [],
+      "achieved_closed_under_rot2": true,
+      "achieved_closed_under_complement": true,
+      "achieved_list": [
+       "01010101",
+       "10101010"
+      ]
+     }
+    }
+   }
+  }
+ }
+}
