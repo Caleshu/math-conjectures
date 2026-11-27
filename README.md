@@ -48,3 +48,4 @@ Unproven conjectures use `sorry`, which Lean reports as a warning, not an error.
 - [Parity vectors of Hamiltonian cycles of the hypercube are exactly the balanced vectors](Conjectures/ParityVectors/) — **False** (MathResearchLab)
 - [Tightness of the lower bound $\alpha_=(Q_n)\ge 2^{n-2}$ for even $n$](Conjectures/TightnessLowerBoundAlphaQNGe2N2EvenN/) — Open per source; openness not yet verified (MathResearchLab)
 - [Characterize the chromatic-segments vectors $\delta_i(h)$ of Hamiltonian cycles of $Q_n$](Conjectures/CharacterizeChromaticSegmentsVectorsDeltaIHHamil/) — Open per source; openness not yet verified (MathResearchLab)
+- [Characterize the chromatic vectors of Hamiltonian cycles of $Q_n$](Conjectures/CharacterizeChromaticVectorsHamiltonianCyclesQN/) — Open per source; openness not yet verified (MathResearchLab)
