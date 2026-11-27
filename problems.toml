@@ -1,0 +1,87 @@
+# Registry of problems in Conjectures/. Each table is keyed by the folder name.
+# category: open | proved | disproved | notes. The README tables are generated from this file
+# (plus MathResearchLab's own problems), so edit here, not in the README.
+
+[GonalityQ6]
+title = "Gonality of Q_6"
+category = "proved"
+result = "**gon(Q_6) = 32** (computer-assisted proof; computations re-run independently)"
+verification = "Computer-assisted; Lean formalization of the finite lemmas in progress"
+
+[KucaV25]
+title = "Kuca's conjecture, V(2,5)"
+category = "proved"
+result = "**Proved** for n = 5: even terms are 2, 10, 52 (period 694 from 2131)"
+verification = "Computer-assisted; Lean formalization in progress"
+
+[HypercubeSquares]
+title = "Inscribed squares in hypercube Hamiltonian cycles (Sagols–Morales-Luna)"
+category = "disproved"
+result = "**False**; square-free Hamiltonian cycle of Q_8 (also Q_9, Q_10); true for n ≤ 6"
+verification = "Lean-verified"
+
+[AltitudeQ4]
+title = "Altitude of the hypercube"
+category = "disproved"
+result = "**f(Q_d) = d fails for every d ≥ 4**: f(Q_d) ≤ d − ⌊d/4⌋ for all d (product bound + explicit Q_4 ordering); f(Q_3) = f(Q_4) = 3"
+verification = "Lean-verified"
+
+[DigitalAnomalies]
+title = "Digital anomalies (Seraj)"
+category = "disproved"
+result = "**Conjecture 4.6 false; infinitely many two-digit anomalies** (Pell family x = B²/2)"
+verification = "Lean-verified"
+
+[OrderSequenceSimple]
+title = "Order sequences of equal-order simple groups (Cameron–Dey Q8.5)"
+category = "disproved"
+result = "**Answered: no**; PSp(6,5) and Ω(7,5) (also PSp(8,3), Ω(9,3)) have incomparable order sequences"
+verification = "Computer-assisted (GAP, cross-checked)"
+
+[Erdos64]
+title = "Erdős Problem 64 (Erdős–Gyárfás conjecture)"
+category = "open"
+result = "Statement formalized"
+verification = "Statement formalized in Lean"
+
+[Erdos614]
+title = "Erdős Problem 614"
+category = "open"
+result = "Formula proved for k+2 ≤ n ≤ (3k+2)/2, extending Erdős–Reid–Schelp–Staton / Pikhurko–Thomason; fails for all n ≥ 2k+1"
+verification = "Partial result Lean-verified"
+
+[PCFColouring]
+title = "Proper conflict-free colouring, Δ = 4"
+category = "open"
+result = "No counterexample on ≤ 12 vertices (exhaustive)"
+verification = "Computational evidence"
+
+[LocalIrregularity]
+title = "Local Irregularity Conjecture, subcubic"
+category = "open"
+result = "Holds for all connected subcubic graphs on ≤ 16 vertices (exhaustive)"
+verification = "Computational evidence"
+
+[AdditiveColouring]
+title = "Additive colouring of bipartite graphs"
+category = "open"
+result = "η ≤ 2 for all connected bipartite graphs on ≤ 15 vertices (exhaustive)"
+verification = "Computational evidence"
+
+[DistantFaults]
+title = "Hypercubes with distant faulty vertices (Gregor–Škrekovski)"
+category = "open"
+result = "Holds for n ≤ 6 in both forms (exhaustive)"
+verification = "Computational evidence"
+
+[CurrieExponent]
+title = "Critical exponents of morphic images (Currie Conj. 1)"
+category = "open"
+result = "4 of 10 morphisms proved, the rest reduce to two words; numerics consistent"
+verification = "Partial proof"
+
+[Handoff2026-11]
+title = "Handoff from a parallel session"
+category = "notes"
+result = "Kuca/Finch V(a,b), U(a,b) cases, Litt's game, knight sequence; unverified here"
+verification = ""

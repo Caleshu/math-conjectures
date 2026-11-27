@@ -3,6 +3,55 @@
 Conjectures I'm working on, each with an informal write-up and a formal statement in
 [Lean 4](https://lean-lang.org) using [Mathlib](https://github.com/leanprover-community/mathlib4).
 
+<!-- problems:begin (generated from problems.toml and MathResearchLab; edit problems.toml, not this block) -->
+
+## Status at a glance
+
+| ✅ Proved (true) | ❌ Disproved (false) | ⏳ Open |
+|:-:|:-:|:-:|
+| **2** | **6** | **10** |
+
+*Verification* says how a result is known. **Lean-verified**: checked by the Lean kernel. **Computer-assisted / computer-checked**: an exact computation, reproducible from the folder. **AI research**: produced by MathResearchLab's AI agents and not yet checked by a human. Treat it as a lead, not a theorem. Problems marked 🤖 were found and researched by MathResearchLab (`platform/`). New folders are picked up automatically. To change a problem's category or summary, edit `problems.toml`.
+
+## ✅ Proved — true
+
+| Problem | Result | Verification |
+|---|---|---|
+| [Gonality of Q_6](Conjectures/GonalityQ6/) | **gon(Q_6) = 32** (computer-assisted proof; computations re-run independently) | Computer-assisted; Lean formalization of the finite lemmas in progress |
+| [Kuca's conjecture, V(2,5)](Conjectures/KucaV25/) | **Proved** for n = 5: even terms are 2, 10, 52 (period 694 from 2131) | Computer-assisted; Lean formalization in progress |
+
+## ❌ Disproved — false
+
+| Problem | Result | Verification |
+|---|---|---|
+| [Altitude of the hypercube](Conjectures/AltitudeQ4/) | **f(Q_d) = d fails for every d ≥ 4**: f(Q_d) ≤ d − ⌊d/4⌋ for all d (product bound + explicit Q_4 ordering); f(Q_3) = f(Q_4) = 3 | Lean-verified |
+| [Digital anomalies (Seraj)](Conjectures/DigitalAnomalies/) | **Conjecture 4.6 false; infinitely many two-digit anomalies** (Pell family x = B²/2) | Lean-verified |
+| [Inscribed squares in hypercube Hamiltonian cycles (Sagols–Morales-Luna)](Conjectures/HypercubeSquares/) | **False**; square-free Hamiltonian cycle of Q_8 (also Q_9, Q_10); true for n ≤ 6 | Lean-verified |
+| [Order sequences of equal-order simple groups (Cameron–Dey Q8.5)](Conjectures/OrderSequenceSimple/) | **Answered: no**; PSp(6,5) and Ω(7,5) (also PSp(8,3), Ω(9,3)) have incomparable order sequences | Computer-assisted (GAP, cross-checked) |
+| [Parity vectors of Hamiltonian cycles of Qₙ are the balanced vectors (Sagols–Morales-Luna)](Conjectures/ParityVectors/) 🤖 | The 'if' direction is false: in $Q_3$ with $k=4$ the balanced vector 0011 is never a parity vector (for $k=2^{n-1}$ every parity vector alternates) | Elementary proof + exhaustive computer check (n ≤ 4) |
+| [Tightness of the bound α₌(Qₙ) ≥ 2ⁿ⁻² for even n (Sagols–Morales-Luna)](Conjectures/AlphaEqLowerBoundTightness/) 🤖 | False at $n=6$: an explicit balanced independent set of size 20 in $Q_6$ gives $\alpha_=(Q_6)\ge 20>16$ | Explicit witness, computer-checked |
+
+## ⏳ Open
+
+| Problem | Progress so far | Verification |
+|---|---|---|
+| [Additive colouring of bipartite graphs](Conjectures/AdditiveColouring/) | η ≤ 2 for all connected bipartite graphs on ≤ 15 vertices (exhaustive) | Computational evidence |
+| [Chromatic vectors of Hamiltonian cycles of Qₙ (Sagols–Morales-Luna)](Conjectures/ChromaticVectors/) 🤖 | New necessary condition $\sum_{i\in S}c_i\ge 2^{\lvert S\rvert}$; with evenness it characterises chromatic vectors for $n\le 4$ (exhaustive) and $n=5$ (CP-SAT). Open for $n\ge 6$ | AI research + computation (not human-reviewed) |
+| [Chromatic-segment vectors δᵢ(h) of Hamiltonian cycles of Qₙ (Sagols–Morales-Luna)](Conjectures/ChromaticSegmentsVectors/) 🤖 | First AI research run stopped at its runtime limit before review (31 unreviewed claims); being re-run | AI research (not human-reviewed) |
+| [Critical exponents of morphic images (Currie Conj. 1)](Conjectures/CurrieExponent/) | 4 of 10 morphisms proved, the rest reduce to two words; numerics consistent | Partial proof |
+| [Equi-independence number α₌(Qₙ) of the hypercube (Sagols–Morales-Luna)](Conjectures/EquiIndependenceNumberHypercube/) 🤖 | Exact values for $m\le 7$: 0, 0, 2, 4, 10, 20, 44 (CP-SAT; $m\le 4$ also brute force). Open in general | Computational (solver-dependent for m ≥ 5) |
+| [Erdős Problem 614](Conjectures/Erdos614/) | Formula proved for k+2 ≤ n ≤ (3k+2)/2, extending Erdős–Reid–Schelp–Staton / Pikhurko–Thomason; fails for all n ≥ 2k+1 | Partial result Lean-verified |
+| [Erdős Problem 64 (Erdős–Gyárfás conjecture)](Conjectures/Erdos64/) | Statement formalized | Statement formalized in Lean |
+| [Hypercubes with distant faulty vertices (Gregor–Škrekovski)](Conjectures/DistantFaults/) | Holds for n ≤ 6 in both forms (exhaustive) | Computational evidence |
+| [Local Irregularity Conjecture, subcubic](Conjectures/LocalIrregularity/) | Holds for all connected subcubic graphs on ≤ 16 vertices (exhaustive) | Computational evidence |
+| [Proper conflict-free colouring, Δ = 4](Conjectures/PCFColouring/) | No counterexample on ≤ 12 vertices (exhaustive) | Computational evidence |
+
+## 📝 Notes and handoffs
+
+- [Handoff from a parallel session](Conjectures/Handoff2026-11/): Kuca/Finch V(a,b), U(a,b) cases, Litt's game, knight sequence; unverified here
+
+<!-- problems:end -->
+
 ## Layout
 
 ```
@@ -28,25 +77,3 @@ lake build
 ```
 
 Unproven conjectures use `sorry`, which Lean reports as a warning, not an error.
-
-## Conjectures
-
-- [Erdős Problem 64 (Erdős–Gyárfás conjecture)](Conjectures/Erdos64/) — Open; statement formalized
-- [Erdős Problem 614](Conjectures/Erdos614/) — Open; formula proved (Lean-verified) for k+2 ≤ n ≤ (3k+2)/2, extending Erdős–Reid–Schelp–Staton / Pikhurko–Thomason; fails for all n ≥ 2k+1
-- [Altitude of the hypercube](Conjectures/AltitudeQ4/) — **f(Q_d) = d fails for every d ≥ 4**: f(Q_d) ≤ d − ⌊d/4⌋, Lean-verified for all d (product bound + explicit Q_4 ordering); f(Q_3) = f(Q_4) = 3
-- [Digital anomalies (Seraj)](Conjectures/DigitalAnomalies/) — **Conjecture 4.6 false; infinitely many two-digit anomalies**, Lean-verified (Pell family x = B²/2)
-- [Proper conflict-free colouring, Δ = 4](Conjectures/PCFColouring/) — Open; no counterexample on ≤ 12 vertices (exhaustive)
-- [Local Irregularity Conjecture, subcubic](Conjectures/LocalIrregularity/) — Open; holds for all connected subcubic graphs on ≤ 16 vertices (exhaustive)
-- [Additive colouring of bipartite graphs](Conjectures/AdditiveColouring/) — Open; η ≤ 2 for all connected bipartite graphs on ≤ 15 vertices (exhaustive)
-- [Order sequences of equal-order simple groups (Cameron–Dey Q8.5)](Conjectures/OrderSequenceSimple/) — **Answered: no**; PSp(6,5) and Ω(7,5) (also PSp(8,3), Ω(9,3)) have incomparable order sequences (GAP, cross-checked)
-- [Gonality of Q_6](Conjectures/GonalityQ6/) — **gon(Q_6) = 32** (computer-assisted proof; computations re-run independently; Lean formalization of the finite lemmas in progress)
-- [Kuca's conjecture, V(2,5)](Conjectures/KucaV25/) — **Proved** for n = 5: even terms are 2, 10, 52 (period 694 from 2131; Lean formalization in progress)
-- [Hypercubes with distant faulty vertices (Gregor–Škrekovski)](Conjectures/DistantFaults/) — Open; holds for n ≤ 6 in both forms (exhaustive)
-- [Critical exponents of morphic images (Currie Conj. 1)](Conjectures/CurrieExponent/) — Open; 4 of 10 morphisms proved, the rest reduce to two words; numerics consistent
-- [Handoff from a parallel session](Conjectures/Handoff2026-11/) — Kuca/Finch V(a,b), U(a,b) cases, Litt's game, knight sequence; unverified here
-- [Inscribed squares in hypercube Hamiltonian cycles (Sagols–Morales-Luna)](Conjectures/HypercubeSquares/) — **False**; Lean-verified square-free Hamiltonian cycle of Q_8 (also Q_9, Q_10); true for n ≤ 6
-- [Parity vectors of Hamiltonian cycles of the hypercube are exactly the balanced vectors](Conjectures/ParityVectors/) — **False** (MathResearchLab)
-- [Tightness of the lower bound $\alpha_=(Q_n)\ge 2^{n-2}$ for even $n$](Conjectures/AlphaEqLowerBoundTightness/) — **False** (MathResearchLab)
-- [Characterize the chromatic vectors of Hamiltonian cycles of $Q_n$](Conjectures/ChromaticVectors/) — Open per source; openness not yet verified (MathResearchLab)
-- [Characterize the chromatic-segments vectors $\delta_i(h)$ of Hamiltonian cycles of $Q_n$](Conjectures/ChromaticSegmentsVectors/) — Open per source; openness not yet verified (MathResearchLab)
-- [Compute the equi-independence number of the hypercube](Conjectures/EquiIndependenceNumberHypercube/) — Open per source; openness not yet verified (MathResearchLab)
