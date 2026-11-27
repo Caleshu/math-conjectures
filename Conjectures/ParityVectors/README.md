@@ -4,6 +4,12 @@
 
 **Status:** **False**
 
+## Counterexample
+
+$n = 3$, $k = 4$, $v = 0011$. This is a balanced vector that is **never** a parity vector $\beta_i(h)$ of a Hamiltonian cycle of $Q_3$.
+
+**Why it disproves the conjecture.** If $c_i(h) = k = 2^{n-1}$, then half of the $2^n$ edges of $h$ are in direction $i$. Two consecutive edges of a cycle are never parallel, so the direction-$i$ edges alternate with the others and every gap $j_t - j_{t-1}$ equals $2$. The paper's recurrence $b_t = (b_{t-1} + j_t - j_{t-1} + 1) \bmod 2$ then gives $b_t = 1 - b_{t-1}$, so $\beta_i(h) \in \{0101,\ 1010\}$ when $k = 4$. The balanced vector $0011$ never occurs, which contradicts the 'if' direction. An exhaustive check over all 6 Hamiltonian cycles of $Q_3$, every direction and every normalisation confirms that only $0101$ and $1010$ occur. See `computations/`.
+
 ## Statement
 
 Original wording (verbatim from the source):

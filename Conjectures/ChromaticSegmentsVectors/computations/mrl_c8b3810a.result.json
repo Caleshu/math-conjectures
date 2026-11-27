@@ -1,0 +1,119 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 13.968,
+ "result": {
+  "validation": {
+   "2": {
+    "raw_C1_3": 1,
+    "raw_C1_4": 1,
+    "raw_realized": 1,
+    "total_count_sym0": 2,
+    "expected_sym0": 2,
+    "total_sym1": 1,
+    "total_sym2": 1,
+    "count_matches": true,
+    "per_list_sym_relations_ok": true,
+    "feasibility_agrees_with_counts": true,
+    "witnesses_verified": true,
+    "realized_subset_C1_4": true,
+    "R_equals_S": true
+   },
+   "3": {
+    "raw_C1_3": 2,
+    "raw_C1_4": 2,
+    "raw_realized": 2,
+    "total_count_sym0": 16,
+    "expected_sym0": 16,
+    "total_sym1": 4,
+    "total_sym2": 2,
+    "count_matches": true,
+    "per_list_sym_relations_ok": true,
+    "feasibility_agrees_with_counts": true,
+    "witnesses_verified": true,
+    "realized_subset_C1_4": true,
+    "R_equals_S": true
+   },
+   "4": {
+    "raw_C1_3": 63,
+    "raw_C1_4": 53,
+    "raw_realized": 41,
+    "total_count_sym0": 5376,
+    "expected_sym0": 5376,
+    "total_sym1": 672,
+    "total_sym2": 224,
+    "count_matches": true,
+    "per_list_sym_relations_ok": true,
+    "feasibility_agrees_with_counts": true,
+    "witnesses_verified": true,
+    "realized_subset_C1_4": true,
+    "R_equals_S4_minus_orbit_223234": true
+   }
+  },
+  "validation_all_ok": true,
+  "summary": "validation_ok=True; counts=[2, 16, 5376] (expect 2,16,5376); C4 invariant=True; per-c: {10: {'FEASIBLE': 1453, 'total_full_classes_C1_4': 1453}, 8: {'FEASIBLE': 1145, 'total_full_classes_C1_4': 1145}, 6: {'FEASIBLE': 274, 'total_full_classes_C1_4': 274}, 4: {'FEASIBLE': 22, 'total_full_classes_C1_4': 22}, 2: {'FEASIBLE': 1, 'total_full_classes_C1_4': 1}, 16: {'FEASIBLE': 1, 'total_full_classes_C1_4': 1}}; infeasible full classes: []; unknown: 0; untested: 0; sym0 lists: [((2, 2, 3, 2, 3, 2, 2, 3, 2, 2, 4, 5), 'INFEASIBLE')]; bugs: 0",
+  "elapsed": 13.08,
+  "n5_enumeration": {
+   "10": {
+    "full_classes_C1_3": 2293,
+    "full_classes_C1_4": 1453
+   },
+   "8": {
+    "full_classes_C1_3": 1776,
+    "full_classes_C1_4": 1145
+   },
+   "6": {
+    "full_classes_C1_3": 394,
+    "full_classes_C1_4": 274
+   },
+   "4": {
+    "full_classes_C1_3": 28,
+    "full_classes_C1_4": 22
+   },
+   "2": {
+    "full_classes_C1_3": 1,
+    "full_classes_C1_4": 1
+   },
+   "16": {
+    "full_classes_C1_3": 1,
+    "full_classes_C1_4": 1
+   }
+  },
+  "c4_invariant_under_full_dihedral": true,
+  "per_c_status_counts": {
+   "10": {
+    "FEASIBLE": 1453,
+    "total_full_classes_C1_4": 1453
+   },
+   "8": {
+    "FEASIBLE": 1145,
+    "total_full_classes_C1_4": 1145
+   },
+   "6": {
+    "FEASIBLE": 274,
+    "total_full_classes_C1_4": 274
+   },
+   "4": {
+    "FEASIBLE": 22,
+    "total_full_classes_C1_4": 22
+   },
+   "2": {
+    "FEASIBLE": 1,
+    "total_full_classes_C1_4": 1
+   },
+   "16": {
+    "FEASIBLE": 1,
+    "total_full_classes_C1_4": 1
+   }
+  },
+  "infeasible_full_classes": [],
+  "unknown_lists": [],
+  "num_untested": 0,
+  "sym0_lists_results": {
+   "(2, 2, 3, 2, 3, 2, 2, 3, 2, 2, 4, 5)": {
+    "status": "INFEASIBLE",
+    "nodes": 1281168
+   }
+  },
+  "bugs": []
+ }
+}

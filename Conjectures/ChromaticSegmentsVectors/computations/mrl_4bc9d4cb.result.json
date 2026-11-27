@@ -1,0 +1,237 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.445,
+ "result": {
+  "summary": "n=2: cycles=1 (known ok=True), |R|=1, |S(C1-4)|=1, |W(C1-3)|=1, R==S: True, R-S empty: True, closed: True, same all i: True, #canon S\\R=0 | n=3: cycles=6 (known ok=True), |R|=2, |S(C1-4)|=2, |W(C1-3)|=2, R==S: True, R-S empty: True, closed: True, same all i: True, #canon S\\R=0 | n=4: cycles=1344 (known ok=True), |R|=41, |S(C1-4)|=53, |W(C1-3)|=63, R==S: False, R-S empty: True, closed: True, same all i: True, #canon S\\R=2",
+  "sanity_counts_ok": true,
+  "results": {
+   "2": {
+    "num_undirected_ham_cycles": 1,
+    "count_matches_known": true,
+    "same_image_for_all_i": true,
+    "image_closed_under_normalization_group": true,
+    "num_realized_raw": 1,
+    "num_weak_raw": 1,
+    "num_C1to4_raw": 1,
+    "realized_satisfy": {
+     "C1": true,
+     "C2": true,
+     "C3": true,
+     "C4": true
+    },
+    "R_minus_S": [],
+    "S_minus_R_canonical": [],
+    "R_equals_S": true,
+    "canonical_realized": [
+     [
+      2,
+      2
+     ]
+    ],
+    "canonical_realized_count_by_c": {
+     "2": 1
+    },
+    "canonical_weak_but_not_C4": [],
+    "elapsed": 0.00019288063049316406
+   },
+   "3": {
+    "num_undirected_ham_cycles": 6,
+    "count_matches_known": true,
+    "same_image_for_all_i": true,
+    "image_closed_under_normalization_group": true,
+    "num_realized_raw": 2,
+    "num_weak_raw": 2,
+    "num_C1to4_raw": 2,
+    "realized_satisfy": {
+     "C1": true,
+     "C2": true,
+     "C3": true,
+     "C4": true
+    },
+    "R_minus_S": [],
+    "S_minus_R_canonical": [],
+    "R_equals_S": true,
+    "canonical_realized": [
+     [
+      2,
+      2,
+      2,
+      2
+     ],
+     [
+      4,
+      4
+     ]
+    ],
+    "canonical_realized_count_by_c": {
+     "4": 1,
+     "2": 1
+    },
+    "canonical_weak_but_not_C4": [],
+    "elapsed": 0.0003879070281982422
+   },
+   "4": {
+    "num_undirected_ham_cycles": 1344,
+    "count_matches_known": true,
+    "same_image_for_all_i": true,
+    "image_closed_under_normalization_group": true,
+    "num_realized_raw": 41,
+    "num_weak_raw": 63,
+    "num_C1to4_raw": 53,
+    "realized_satisfy": {
+     "C1": true,
+     "C2": true,
+     "C3": true,
+     "C4": true
+    },
+    "R_minus_S": [],
+    "S_minus_R_canonical": [
+     [
+      2,
+      2,
+      3,
+      2,
+      3,
+      4
+     ],
+     [
+      2,
+      2,
+      4,
+      3,
+      2,
+      3
+     ]
+    ],
+    "R_equals_S": false,
+    "canonical_realized": [
+     [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     [
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     [
+      2,
+      2,
+      2,
+      3,
+      4,
+      3
+     ],
+     [
+      2,
+      2,
+      3,
+      4,
+      3,
+      2
+     ],
+     [
+      2,
+      2,
+      4,
+      2,
+      2,
+      4
+     ],
+     [
+      2,
+      2,
+      6,
+      6
+     ],
+     [
+      2,
+      3,
+      3,
+      2,
+      3,
+      3
+     ],
+     [
+      2,
+      3,
+      6,
+      5
+     ],
+     [
+      2,
+      4,
+      6,
+      4
+     ],
+     [
+      3,
+      2,
+      5,
+      6
+     ],
+     [
+      3,
+      4,
+      5,
+      4
+     ],
+     [
+      4,
+      2,
+      4,
+      6
+     ],
+     [
+      4,
+      3,
+      4,
+      5
+     ],
+     [
+      4,
+      4,
+      4,
+      4
+     ],
+     [
+      8,
+      8
+     ]
+    ],
+    "canonical_realized_count_by_c": {
+     "8": 1,
+     "6": 5,
+     "4": 8,
+     "2": 1
+    },
+    "canonical_weak_but_not_C4": [
+     [
+      2,
+      2,
+      3,
+      3,
+      3,
+      3
+     ],
+     [
+      3,
+      3,
+      5,
+      5
+     ]
+    ],
+    "elapsed": 0.11002993583679199
+   }
+  }
+ }
+}

@@ -5,6 +5,21 @@ neither order sequence dominates the other. PSp(8,3) and Ω(9,3) are a second in
 (GAP character tables, cross-checked as described below). It is not in Lean. I found no earlier answer in the
 literature (checked November 2026).
 
+## Counterexample
+
+$G = \mathrm{PSp}(6,5)$ and $H = \Omega(7,5)$: non-isomorphic simple groups, both of order $228{,}501{,}000{,}000{,}000$,
+whose order sequences are **incomparable**.
+
+| number of elements of order | $\le 2$ | $\le 4$ |
+|---|---:|---:|
+| $\mathrm{PSp}(6,5)$ | **153,969,376** | 17,566,281,876 |
+| $\Omega(7,5)$ | 138,345,376 | **215,584,857,876** |
+
+**Why it answers Question 8.5 negatively.** os(G) dominates os(H) exactly when, for every $t$, G has at most as many
+elements of order $\le t$ as H. At $t = 2$, G has more, so os(G) does not dominate os(H). At $t = 4$, H has more, so
+os(H) does not dominate os(G). The counts come from the ATLAS character tables in GAP (`computations/q85_output.txt`).
+The involution counts are re-derived independently from classical formulas (`computations/invol.py`).
+
 ## Statement
 
 The *order sequence* os(G) of a group of order n lists the orders of its n elements in non-decreasing order. For

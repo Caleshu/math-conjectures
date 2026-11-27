@@ -1,0 +1,358 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 2.375,
+ "result": {
+  "summary": "Harper-based alpha_=(Q_n) for n=2..20: n=2:0, n=3:2, n=4:4, n=5:10, n=6:20, n=7:44, n=8:88, n=9:186, n=10:372, n=11:772, n=12:1544, n=13:3172, n=14:6344, n=15:12952, n=16:25904, n=17:52666, n=18:105332, n=19:213524, n=20:427048. Sanity (brute-force profile match for m<=4 and constructions verified): True. Comparison with recorded: {3: {'recorded': 2, 'computed': 2}, 4: {'recorded': 4, 'computed': 4}, 5: {'recorded': 10, 'computed': 10}, 6: {'recorded': 16, 'computed': 20}, 7: {'recorded': 40, 'computed': 44}}",
+  "sanity_ok": true,
+  "bruteforce_small": {
+   "1": {
+    "n": 2,
+    "bruteforce_minN": [
+     0,
+     2,
+     2
+    ],
+    "harper_f": [
+     0,
+     2,
+     2
+    ],
+    "profile_match": true,
+    "bruteforce_k": 0,
+    "harper_k": 0,
+    "alpha_eq_bruteforce": 0
+   },
+   "2": {
+    "n": 3,
+    "bruteforce_minN": [
+     0,
+     3,
+     4,
+     4,
+     4
+    ],
+    "harper_f": [
+     0,
+     3,
+     4,
+     4,
+     4
+    ],
+    "profile_match": true,
+    "bruteforce_k": 1,
+    "harper_k": 1,
+    "alpha_eq_bruteforce": 2
+   },
+   "3": {
+    "n": 4,
+    "bruteforce_minN": [
+     0,
+     4,
+     6,
+     7,
+     7,
+     8,
+     8,
+     8,
+     8
+    ],
+    "harper_f": [
+     0,
+     4,
+     6,
+     7,
+     7,
+     8,
+     8,
+     8,
+     8
+    ],
+    "profile_match": true,
+    "bruteforce_k": 2,
+    "harper_k": 2,
+    "alpha_eq_bruteforce": 4
+   },
+   "4": {
+    "n": 5,
+    "bruteforce_minN": [
+     0,
+     5,
+     8,
+     10,
+     11,
+     11,
+     13,
+     14,
+     14,
+     15,
+     15,
+     15,
+     16,
+     16,
+     16,
+     16,
+     16
+    ],
+    "harper_f": [
+     0,
+     5,
+     8,
+     10,
+     11,
+     11,
+     13,
+     14,
+     14,
+     15,
+     15,
+     15,
+     16,
+     16,
+     16,
+     16,
+     16
+    ],
+    "profile_match": true,
+    "bruteforce_k": 5,
+    "harper_k": 5,
+    "alpha_eq_bruteforce": 10
+   }
+  },
+  "results": {
+   "2": {
+    "K": 0,
+    "alpha_eq": 0,
+    "f_K": 0,
+    "2^(n-1)": 2,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 1,
+    "ratio_alpha_eq_over_2^(n-1)": 0.0,
+    "deficit_2^(n-1)-alpha_eq": 2,
+    "deficit_over_2^n/sqrt(n)": 0.7071067811865476,
+    "construction_verified": true
+   },
+   "3": {
+    "K": 1,
+    "alpha_eq": 2,
+    "f_K": 3,
+    "2^(n-1)": 4,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 2,
+    "ratio_alpha_eq_over_2^(n-1)": 0.5,
+    "deficit_2^(n-1)-alpha_eq": 2,
+    "deficit_over_2^n/sqrt(n)": 0.43301270189221924,
+    "construction_verified": true
+   },
+   "4": {
+    "K": 2,
+    "alpha_eq": 4,
+    "f_K": 6,
+    "2^(n-1)": 8,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 5,
+    "ratio_alpha_eq_over_2^(n-1)": 0.5,
+    "deficit_2^(n-1)-alpha_eq": 4,
+    "deficit_over_2^n/sqrt(n)": 0.5,
+    "construction_verified": true
+   },
+   "5": {
+    "K": 5,
+    "alpha_eq": 10,
+    "f_K": 11,
+    "2^(n-1)": 16,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 10,
+    "ratio_alpha_eq_over_2^(n-1)": 0.625,
+    "deficit_2^(n-1)-alpha_eq": 6,
+    "deficit_over_2^n/sqrt(n)": 0.4192627457812106,
+    "construction_verified": true
+   },
+   "6": {
+    "K": 10,
+    "alpha_eq": 20,
+    "f_K": 22,
+    "2^(n-1)": 32,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 22,
+    "ratio_alpha_eq_over_2^(n-1)": 0.625,
+    "deficit_2^(n-1)-alpha_eq": 12,
+    "deficit_over_2^n/sqrt(n)": 0.45927932677184585,
+    "construction_verified": true
+   },
+   "7": {
+    "K": 22,
+    "alpha_eq": 44,
+    "f_K": 42,
+    "2^(n-1)": 64,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 44,
+    "ratio_alpha_eq_over_2^(n-1)": 0.6875,
+    "deficit_2^(n-1)-alpha_eq": 20,
+    "deficit_over_2^n/sqrt(n)": 0.4133986423538423,
+    "construction_verified": true,
+    "layer_construction_Q7_size": 44,
+    "layer_construction_Q7_independent": true,
+    "layer_construction_Q7_even_odd": [
+     22,
+     22
+    ]
+   },
+   "8": {
+    "K": 44,
+    "alpha_eq": 88,
+    "f_K": 84,
+    "2^(n-1)": 128,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 93,
+    "ratio_alpha_eq_over_2^(n-1)": 0.6875,
+    "deficit_2^(n-1)-alpha_eq": 40,
+    "deficit_over_2^n/sqrt(n)": 0.4419417382415922,
+    "construction_verified": true
+   },
+   "9": {
+    "K": 93,
+    "alpha_eq": 186,
+    "f_K": 163,
+    "2^(n-1)": 256,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 186,
+    "ratio_alpha_eq_over_2^(n-1)": 0.7265625,
+    "deficit_2^(n-1)-alpha_eq": 70,
+    "deficit_over_2^n/sqrt(n)": 0.41015625,
+    "construction_verified": true
+   },
+   "10": {
+    "K": 186,
+    "alpha_eq": 372,
+    "f_K": 326,
+    "2^(n-1)": 512,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 386,
+    "ratio_alpha_eq_over_2^(n-1)": 0.7265625,
+    "deficit_2^(n-1)-alpha_eq": 140,
+    "deficit_over_2^n/sqrt(n)": 0.4323426488511456,
+    "construction_verified": true
+   },
+   "11": {
+    "K": 386,
+    "alpha_eq": 772,
+    "f_K": 638,
+    "2^(n-1)": 1024,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 772,
+    "ratio_alpha_eq_over_2^(n-1)": 0.75390625,
+    "deficit_2^(n-1)-alpha_eq": 252,
+    "deficit_over_2^n/sqrt(n)": 0.4081003160007621,
+    "construction_verified": true
+   },
+   "12": {
+    "K": 772,
+    "alpha_eq": 1544,
+    "f_K": 1276,
+    "2^(n-1)": 2048,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 1586,
+    "ratio_alpha_eq_over_2^(n-1)": 0.75390625,
+    "deficit_2^(n-1)-alpha_eq": 504,
+    "deficit_over_2^n/sqrt(n)": 0.42624687842515335,
+    "construction_verified": true
+   },
+   "13": {
+    "K": 1586,
+    "alpha_eq": 3172,
+    "f_K": 2510,
+    "2^(n-1)": 4096,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 3172,
+    "ratio_alpha_eq_over_2^(n-1)": 0.7744140625,
+    "deficit_2^(n-1)-alpha_eq": 924,
+    "deficit_over_2^n/sqrt(n)": 0.40668083233993235,
+    "construction_verified": true
+   },
+   "14": {
+    "K": 3172,
+    "alpha_eq": 6344,
+    "f_K": 5020,
+    "2^(n-1)": 8192,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 6476,
+    "ratio_alpha_eq_over_2^(n-1)": 0.7744140625,
+    "deficit_2^(n-1)-alpha_eq": 1848,
+    "deficit_over_2^n/sqrt(n)": 0.42203264469959983,
+    "construction_verified": true
+   },
+   "15": {
+    "K": 6476,
+    "alpha_eq": 12952,
+    "f_K": 9908,
+    "2^(n-1)": 16384,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 12952,
+    "ratio_alpha_eq_over_2^(n-1)": 0.79052734375,
+    "deficit_2^(n-1)-alpha_eq": 3432,
+    "deficit_over_2^n/sqrt(n)": 0.4056420545710405,
+    "construction_verified": true
+   },
+   "16": {
+    "K": 12952,
+    "alpha_eq": 25904,
+    "f_K": 19816,
+    "2^(n-1)": 32768,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 26333,
+    "ratio_alpha_eq_over_2^(n-1)": 0.79052734375,
+    "deficit_2^(n-1)-alpha_eq": 6864,
+    "deficit_over_2^n/sqrt(n)": 0.4189453125,
+    "construction_verified": true
+   },
+   "17": {
+    "K": 26333,
+    "alpha_eq": 52666,
+    "f_K": 39203,
+    "2^(n-1)": 65536,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 52666,
+    "ratio_alpha_eq_over_2^(n-1)": 0.803619384765625,
+    "deficit_2^(n-1)-alpha_eq": 12870,
+    "deficit_over_2^n/sqrt(n)": 0.40484900971755444
+   },
+   "18": {
+    "K": 52666,
+    "alpha_eq": 105332,
+    "f_K": 78406,
+    "2^(n-1)": 131072,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 106762,
+    "ratio_alpha_eq_over_2^(n-1)": 0.803619384765625,
+    "deficit_2^(n-1)-alpha_eq": 25740,
+    "deficit_over_2^n/sqrt(n)": 0.4165861941774383
+   },
+   "19": {
+    "K": 106762,
+    "alpha_eq": 213524,
+    "f_K": 155382,
+    "2^(n-1)": 262144,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 213524,
+    "ratio_alpha_eq_over_2^(n-1)": 0.8145294189453125,
+    "deficit_2^(n-1)-alpha_eq": 48620,
+    "deficit_over_2^n/sqrt(n)": 0.4042237599085761
+   },
+   "20": {
+    "K": 213524,
+    "alpha_eq": 427048,
+    "f_K": 310764,
+    "2^(n-1)": 524288,
+    "approx_2^(n-1)-binom(n-1,floor((n-1)/2))": 431910,
+    "ratio_alpha_eq_over_2^(n-1)": 0.8145294189453125,
+    "deficit_2^(n-1)-alpha_eq": 97240,
+    "deficit_over_2^n/sqrt(n)": 0.4147248270646659
+   }
+  },
+  "comparison_with_recorded": {
+   "3": {
+    "recorded": 2,
+    "computed": 2
+   },
+   "4": {
+    "recorded": 4,
+    "computed": 4
+   },
+   "5": {
+    "recorded": 10,
+    "computed": 10
+   },
+   "6": {
+    "recorded": 16,
+    "computed": 20
+   },
+   "7": {
+    "recorded": 40,
+    "computed": 44
+   }
+  },
+  "elapsed_s": 2.143543004989624
+ }
+}

@@ -28,3 +28,40 @@ Source: Feliú Sagols, Guillermo Morales-Luna, *Parity balance of the $i$-th dim
 - Computing $\alpha_=$ of a bipartite graph reduces in polynomial time to computing the independence number of an auxiliary graph. *(Feliú Sagols, Guillermo Morales-Luna, Parity balance of the $i$-th dimension edges in Hamiltonian cycles of the hypercube, arXiv:1009.3304 (Theorem 5.3, p. 7))*
 - Computed values: $\alpha_=(Q_3)=2$, $\alpha_=(Q_4)=4$, $\alpha_=(Q_5)=10$, $\alpha_=(Q_6)=16$, $\alpha_=(Q_7)=40$. The value for $n=8$ was not computed because the auxiliary graph is too large. *(Feliú Sagols, Guillermo Morales-Luna, Parity balance of the $i$-th dimension edges in Hamiltonian cycles of the hypercube, arXiv:1009.3304 (Table 1, p. 7); computational; reproduced: None)*
 
+## Novelty pre-check
+
+Verdict: **likely_open**. This is worth a full run, though the evidence for openness is thin. The only relevant search result is the source paper itself [R1]. It leaves the general value of α_=(Q_n) as an open calculation and only tabulates small cases. None of the other results is about this problem, and one search source (Semantic Scholar) failed with HTTP 429, so not finding a resolution does not show the problem is open.
+
+The repository does not already contain it. Conjectures/HypercubeSquares computed α_=(Q_m) for m ≤ 7 only as a tool for the inscribed-square question; it does not attempt a formula for all n.
+
+Results already recorded in this app don't settle it, but they help in two ways. First, CP-SAT computations give α_= = 0, 0, 2, 4, 10, 20, 44 for m = 1..7. The m = 5..7 values come from a solver, not brute force. Second, the paper's own table appears to be wrong at n = 6 (16 reported, 20 found and checked by an explicit witness) and probably at n = 7 (40 reported, 44 found). So reliable data exists only for very small n.
+
+The problem is a real question in hypercube isoperimetry. It asks for the largest k such that some set of k even vertices has at most 2^{n-1} − k odd neighbours. Known results on the even and odd halves of the hypercube (I have in mind Körner–Wei-type work, which is not among the search results) might give the asymptotics, or even exact values. Before investing heavily, a run should first check that literature.
+
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Exact alpha_=(Q_n) via reduction to Q_{n-1} and Harper's simplicial order, with brute-force check of the isoperimetric step for small n** [succeeded, finite computation]: Harper-based alpha_=(Q_n) for n=2..20: n=2:0, n=3:2, n=4:4, n=5:10, n=6:20, n=7:44, n=8:88, n=9:186, n=10:372, n=11:772, n=12:1544, n=13:3172, n=14:6344, n=15:12952, n=16:25904, n=17:52666, n=18:105332, n=19:213524, n=20:427048. Sanity (brute-force profile match for m<=4 and constructions verified): True. Comparison with recorded: {3: {'recorded': 2, 'computed': 2}, 4: {'recorded': 4, 'computed': 4}, 5: {'recorded': 10, 'computed': 10}, 6: {'recorded': 16, 'computed': 20}, 7: {'recorded': 40, 'computed': 44}} ([code](computations/mrl_97939b80.py), [result](computations/mrl_97939b80.result.json))
+  - [Computational Mathematician] The sanity check passed. For $m=n-1\le 4$ (so $n\le 5$), exhaustive enumeration confirmed that the Harper initial-segment profile equals the true minimum $|N[A]|$ for every $k$, and that the balanced optimum matches $K(n)$.
+
+For $5<n\le 20$ the values are exact only if Harper's vertex-isoperimetric theorem is assumed; that step was not brute-forced. The lower bounds don't need Harper. For $n\le 16$ the program built an explicit balanced independent set of size $2K(n)$ in $Q_n$ and checked it (independence and the even/odd counts). It also confirmed that the Q_7 weight-layer set $\{0,2,5,7\}$ has size 44, split 22/22, and is independent.
+
+The computation says nothing about $n>20$.
+- **Independent CP-SAT computation of alpha_=(Q_n) directly on Q_n, n=3..8** [succeeded, finite computation]: CP-SAT balanced independent set in Q_n: n=3: OPTIMAL value=2 bound=2.0; n=4: OPTIMAL value=4 bound=4.0; n=5: OPTIMAL value=10 bound=10.0; n=6: OPTIMAL value=20 bound=20.0; n=7: OPTIMAL value=44 bound=44.0; n=8: FEASIBLE value=88 bound=112.0. Sanity (unbalanced = 2^(n-1), n=3..5): True. Recorded values: {3: 2, 4: 4, 5: 10, 6: 16, 7: 40} ([code](computations/mrl_e456f51f.py), [result](computations/mrl_e456f51f.result.json))
+  - [Computational Mathematician] The sanity check passed: without the balance constraint, CP-SAT returned the optimum $2^{n-1}$ for $n=3,4,5$.
+
+With the balance constraint, CP-SAT proved optimality (status OPTIMAL, bound equals value) for $n=3..7$: 2, 4, 10, 20, 44. Every returned solution was re-checked for independence and balance. This run doesn't use Harper's theorem, so it independently confirms $\alpha_=(Q_6)=20$ and $\alpha_=(Q_7)=44$.
+
+Fixing $x_0=1$ loses no generality. Translating by an even vector preserves the parity classes. Translating by an odd vector swaps them, which keeps a set balanced.
+
+For $n=8$ the run only gives $88\le\alpha_=(Q_8)\le 112$, with the solver timing out at 30 s. It agrees with, but does not prove, the Harper-based value 88.
+- **CP-SAT without Harper: infeasibility of |A|=45 with |N[A]|<=83 in Q_7 (alpha_=(Q_8)<90), witness for 44, exact Phi_5 and critical Phi_6** [succeeded, finite computation]: sanity_ok=True; Q7 k=44 cap84: OPTIMAL lift_ok=True; Q7 k=45 cap83: UNKNOWN (wall 55.03s); Harper I44 nbhd=84; Q6 critical: [(22, 'FEASIBLE', 42, 33.0, 42), (23, 'FEASIBLE', 45, 37.0, 45)]; Q5 profile all_optimal=True matches_harper=True kappa5=10; elapsed=72.9s ([code](computations/mrl_765d1571.py), [result](computations/mrl_765d1571.result.json))
+- **Recursive (coordinate-split) lower bound for Phi_m vs simplicial upper profile: Harper-free bounds on alpha_=(Q_n) for n<=13** [succeeded, finite computation]: brute sanity (L<=Phi<=H, m<=4): True; n=2: 0..0 gaps=0; n=3: 2..2 gaps=0; n=4: 4..4 gaps=0; n=5: 10..10 gaps=0; n=6: 20..20 gaps=0; n=7: 44..44 gaps=0; n=8: 88..88 gaps=0; n=9: 186..186 gaps=0; n=10: 372..372 gaps=0; n=11: 772..772 gaps=0; n=12: 1544..1544 gaps=0; n=13: 3172..3172 gaps=0; formula matches constructive lower bound: True; seeding calls: 0; elapsed 0.1s ([code](computations/mrl_3b0ebddf.py), [result](computations/mrl_3b0ebddf.result.json))
+
+## AI research runs
+
+Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
+
+- [2026-11-27 run bf46b0d7](research/2026-11-27-run-bf46b0d7.md): failed. usage limit: computational: Claude Code call failed: API error 429: You've hit your 5-hour limit · resets 2:10pm (America/New_York)
+

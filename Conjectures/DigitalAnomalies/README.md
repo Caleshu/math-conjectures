@@ -4,6 +4,15 @@
 (`Main.lean`, `infinitely_many_two_digit`). This disproves the paper's Conjecture 4.6.
 Question (b) (any anomaly with $k \ge 3$ digits?) is open.
 
+## Counterexample
+
+$(x, y, B) = (20808,\ 144,\ 204)$ is a two-digit anomaly that Conjecture 4.6 does not list.
+
+**Why it disproves Conjecture 4.6.** $204 \le 20808 < 204^2 = 41616$, so $x$ has $k = 2$ base-204 digits. Then
+$$\frac{x}{y} = \frac{20808}{144} = 144.5 = 144 + \frac{20808}{41616} = y + \frac{x}{B^2}.$$
+Conjecture 4.6 says the only $k = 2$ solutions are $(18, 4, 6)$ and $(1323, 36, 42)$. This is a third solution: the
+case $(p, v) = (17, 6)$ of the infinite Pell family below.
+
 ## Statement
 
 Positive integers $(x, y, B)$ with $B \ge 2$ form a *digital anomaly* if
