@@ -9,7 +9,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 
 | ✅ Proved (true) | ❌ Disproved (false) | ⏳ Open |
 |:-:|:-:|:-:|
-| **2** | **6** | **10** |
+| **2** | **6** | **11** |
 
 *Verification* says how a result is known. **Lean-verified**: checked by the Lean kernel. **Computer-assisted / computer-checked**: an exact computation, reproducible from the folder. **AI research**: produced by MathResearchLab's AI agents and not yet checked by a human. Treat it as a lead, not a theorem. Problems marked 🤖 were found and researched by MathResearchLab (`platform/`). New folders are picked up automatically. To change a problem's category or summary, edit `problems.toml`.
 
@@ -35,6 +35,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 
 | Problem | Progress so far | Verification |
 |---|---|---|
+| [A000188: (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d](Conjectures/A0001881NumberSolutions/) 🤖 | Novelty pre-check: trivial or ill posed. | AI research (not human-reviewed) |
 | [Additive colouring of bipartite graphs](Conjectures/AdditiveColouring/) | η ≤ 2 for all connected bipartite graphs on ≤ 15 vertices (exhaustive) | Computational evidence |
 | [Chromatic vectors of Hamiltonian cycles of Qₙ (Sagols–Morales-Luna)](Conjectures/ChromaticVectors/) 🤖 | New necessary condition $\sum_{i\in S}c_i\ge 2^{\lvert S\rvert}$; with evenness it characterises chromatic vectors for $n\le 4$ (exhaustive) and $n=5$ (CP-SAT). Open for $n\ge 6$ | AI research + computation (not human-reviewed) |
 | [Chromatic-segment vectors δᵢ(h) of Hamiltonian cycles of Qₙ (Sagols–Morales-Luna)](Conjectures/ChromaticSegmentsVectors/) 🤖 | First AI research run stopped at its runtime limit before review (31 unreviewed claims); being re-run | AI research (not human-reviewed) |
