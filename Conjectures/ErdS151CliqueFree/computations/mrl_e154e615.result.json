@@ -1,0 +1,34 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.236,
+ "result": {
+  "scope": {
+   "n": 1,
+   "graphs": 1,
+   "vertex_subsets": 2
+  },
+  "sanity": {
+   "maximal_cliques": [
+    [
+     0
+    ]
+   ],
+   "transversals_if_singletons_count": [
+    [
+     0
+    ]
+   ],
+   "transversals_if_size_at_least_two": [
+    [],
+    [
+     0
+    ]
+   ]
+  },
+  "lean_template": "import FormalConjectures.ErdosProblems.\u00ab151\u00bb\nopen Erdos151 SimpleGraph\nnamespace Singleton151\nset_option autoImplicit false\nset_option maxHeartbeats 100000\n#print H\n#print cliqueTransversalNumber\n\nprivate theorem uniqueGraph (G : SimpleGraph (Fin 1)) : G = \u22a5 := by\n  ext u v\n  have h : u = v := Subsingleton.elim _ _\n  subst v\n  simp\n\n-- Try executable definitions before introducing classical decidability.\nmacro \"singleton_calc\" : tactic =>\n  `(tactic| first\n    | decide\n    | (classical; solve | simp | exact?)\n    | (classical; simp [H, cliqueTransversalNumber, SimpleGraph.CliqueFree] <;> first | decide | grind | exact?))\n\ntheorem certificate (G : SimpleGraph (Fin 1)) :\n    G.CliqueFree 4 \u2227 H 1 = 1 \u2227 cliqueTransversalNumber G = VALUE \u2227\n    ((cliqueTransversalNumber G \u2264 1 - H 1) \u2194 (VALUE : \u2115) = 0) := by\n  rw [uniqueGraph G]\n  have hf : (\u22a5 : SimpleGraph (Fin 1)).CliqueFree 4 := by singleton_calc\n  have hh : H 1 = 1 := by singleton_calc\n  have ht : cliqueTransversalNumber (\u22a5 : SimpleGraph (Fin 1)) = VALUE := by singleton_calc\n  exact \u27e8hf, hh, ht, by simp [hh, ht]\u27e9\n\n#print axioms Singleton151.certificate\nend Singleton151\n",
+  "attempts": [],
+  "status": "UNVERIFIED",
+  "summary": "The formal singleton inequality remains unchecked.",
+  "remaining_gap": "The Python sandbox has no bundled Lean executable at the specified path. The two convention checks do not identify the imported definition."
+ }
+}
