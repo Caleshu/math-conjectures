@@ -21,3 +21,20 @@ Normalized:
 
 Conjecture: Every integer can be represented as a sum of three generalized square pyramidal numbers. A related conjecture is given in A336205 corresponding to pentagonal case. A stronger version of these conjectures is that every integer can be expressed as a sum of three generalized r-gonal pyramidal numbers for all r >= 3. In here "generalized" means negative indices are included.
 
+## Novelty pre-check
+
+Verdict: **likely_open**. The three-summand claim is precise, and no listed repository problem appears to contain it. R1 studies recurrences and formulas, R3 concerns differences, and R4 imposes a pairwise condition on triples. None indicates a proof or counterexample for the square case or the stronger claim for all r ≥ 3. The search was incomplete, so this absence of evidence does not establish openness.
+
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Least index bound for signed integer targets** [succeeded, finite computation]: Completed exhaustive index boxes for 10 of 10 requested r values. Least-bound arrays run from -Z through Z. Null means the box contains no witness. ([code](computations/mrl_c8b4e4e9.py), [result](computations/mrl_c8b4e4e9.result.json))
+- **Congruence obstructions for every polygon parameter** [succeeded, finite computation]: Checked every parameter class for 99 consecutive moduli starting at 2. Found 0 obstructed modulus-parameter pairs. ([code](computations/mrl_270c59ed.py), [result](computations/mrl_270c59ed.result.json))
+
+## AI research runs
+
+Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
+
+- [2026-11-27 run 74796540](research/2026-11-27-run-74796540.md): running. 
+

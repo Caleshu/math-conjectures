@@ -1,0 +1,708 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.284,
+ "result": {
+  "summary": "Checked every parameter class for 99 consecutive moduli starting at 2. Found 0 obstructed modulus-parameter pairs.",
+  "parameters": {
+   "modulus_max": 100
+  },
+  "completed_all": true,
+  "sanity_checks": "Checked the cube obstruction modulo nine, the two coefficient recurrences against the closed forms, and bitset addition against explicit triples through modulus ten where tested.",
+  "by_modulus": [
+   {
+    "m": 2,
+    "parameter_classes_checked": 2,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 2,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 3,
+    "parameter_classes_checked": 3,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 3,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 4,
+    "parameter_classes_checked": 4,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 4,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 5,
+    "parameter_classes_checked": 5,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 5,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 6,
+    "parameter_classes_checked": 6,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 6,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 7,
+    "parameter_classes_checked": 7,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 7,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 8,
+    "parameter_classes_checked": 8,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 8,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 9,
+    "parameter_classes_checked": 9,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 9,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 10,
+    "parameter_classes_checked": 10,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 10,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 11,
+    "parameter_classes_checked": 11,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 11,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 12,
+    "parameter_classes_checked": 12,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 12,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 13,
+    "parameter_classes_checked": 13,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 13,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 14,
+    "parameter_classes_checked": 14,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 14,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 15,
+    "parameter_classes_checked": 15,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 15,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 16,
+    "parameter_classes_checked": 16,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 16,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 17,
+    "parameter_classes_checked": 17,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 17,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 18,
+    "parameter_classes_checked": 18,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 18,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 19,
+    "parameter_classes_checked": 19,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 19,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 20,
+    "parameter_classes_checked": 20,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 20,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 21,
+    "parameter_classes_checked": 21,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 21,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 22,
+    "parameter_classes_checked": 22,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 22,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 23,
+    "parameter_classes_checked": 23,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 23,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 24,
+    "parameter_classes_checked": 24,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 24,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 25,
+    "parameter_classes_checked": 25,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 25,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 26,
+    "parameter_classes_checked": 26,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 26,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 27,
+    "parameter_classes_checked": 27,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 27,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 28,
+    "parameter_classes_checked": 28,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 28,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 29,
+    "parameter_classes_checked": 29,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 29,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 30,
+    "parameter_classes_checked": 30,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 30,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 31,
+    "parameter_classes_checked": 31,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 31,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 32,
+    "parameter_classes_checked": 32,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 32,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 33,
+    "parameter_classes_checked": 33,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 33,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 34,
+    "parameter_classes_checked": 34,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 34,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 35,
+    "parameter_classes_checked": 35,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 35,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 36,
+    "parameter_classes_checked": 36,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 36,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 37,
+    "parameter_classes_checked": 37,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 37,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 38,
+    "parameter_classes_checked": 38,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 38,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 39,
+    "parameter_classes_checked": 39,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 39,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 40,
+    "parameter_classes_checked": 40,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 40,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 41,
+    "parameter_classes_checked": 41,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 41,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 42,
+    "parameter_classes_checked": 42,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 42,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 43,
+    "parameter_classes_checked": 43,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 43,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 44,
+    "parameter_classes_checked": 44,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 44,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 45,
+    "parameter_classes_checked": 45,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 45,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 46,
+    "parameter_classes_checked": 46,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 46,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 47,
+    "parameter_classes_checked": 47,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 47,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 48,
+    "parameter_classes_checked": 48,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 48,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 49,
+    "parameter_classes_checked": 49,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 49,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 50,
+    "parameter_classes_checked": 50,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 50,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 51,
+    "parameter_classes_checked": 51,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 51,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 52,
+    "parameter_classes_checked": 52,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 52,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 53,
+    "parameter_classes_checked": 53,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 53,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 54,
+    "parameter_classes_checked": 54,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 54,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 55,
+    "parameter_classes_checked": 55,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 55,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 56,
+    "parameter_classes_checked": 56,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 56,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 57,
+    "parameter_classes_checked": 57,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 57,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 58,
+    "parameter_classes_checked": 58,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 58,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 59,
+    "parameter_classes_checked": 59,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 59,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 60,
+    "parameter_classes_checked": 60,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 60,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 61,
+    "parameter_classes_checked": 61,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 61,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 62,
+    "parameter_classes_checked": 62,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 62,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 63,
+    "parameter_classes_checked": 63,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 63,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 64,
+    "parameter_classes_checked": 64,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 64,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 65,
+    "parameter_classes_checked": 65,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 65,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 66,
+    "parameter_classes_checked": 66,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 66,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 67,
+    "parameter_classes_checked": 67,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 67,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 68,
+    "parameter_classes_checked": 68,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 68,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 69,
+    "parameter_classes_checked": 69,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 69,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 70,
+    "parameter_classes_checked": 70,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 70,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 71,
+    "parameter_classes_checked": 71,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 71,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 72,
+    "parameter_classes_checked": 72,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 72,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 73,
+    "parameter_classes_checked": 73,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 73,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 74,
+    "parameter_classes_checked": 74,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 74,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 75,
+    "parameter_classes_checked": 75,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 75,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 76,
+    "parameter_classes_checked": 76,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 76,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 77,
+    "parameter_classes_checked": 77,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 77,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 78,
+    "parameter_classes_checked": 78,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 78,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 79,
+    "parameter_classes_checked": 79,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 79,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 80,
+    "parameter_classes_checked": 80,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 80,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 81,
+    "parameter_classes_checked": 81,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 81,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 82,
+    "parameter_classes_checked": 82,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 82,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 83,
+    "parameter_classes_checked": 83,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 83,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 84,
+    "parameter_classes_checked": 84,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 84,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 85,
+    "parameter_classes_checked": 85,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 85,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 86,
+    "parameter_classes_checked": 86,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 86,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 87,
+    "parameter_classes_checked": 87,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 87,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 88,
+    "parameter_classes_checked": 88,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 88,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 89,
+    "parameter_classes_checked": 89,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 89,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 90,
+    "parameter_classes_checked": 90,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 90,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 91,
+    "parameter_classes_checked": 91,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 91,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 92,
+    "parameter_classes_checked": 92,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 92,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 93,
+    "parameter_classes_checked": 93,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 93,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 94,
+    "parameter_classes_checked": 94,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 94,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 95,
+    "parameter_classes_checked": 95,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 95,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 96,
+    "parameter_classes_checked": 96,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 96,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 97,
+    "parameter_classes_checked": 97,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 97,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 98,
+    "parameter_classes_checked": 98,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 98,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 99,
+    "parameter_classes_checked": 99,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 99,
+    "attaining_r_minus_2_mod_m": 0
+   },
+   {
+    "m": 100,
+    "parameter_classes_checked": 100,
+    "obstructed_classes": 0,
+    "smallest_triple_image_size": 100,
+    "attaining_r_minus_2_mod_m": 0
+   }
+  ],
+  "obstructions": []
+ }
+}

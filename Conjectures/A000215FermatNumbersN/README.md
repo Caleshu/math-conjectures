@@ -38,11 +38,39 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 - **Exhaustive divisibility test on an interval and a family with bounded odd part** [succeeded, finite computation]: The consecutive search reached n=1000000. The additional family contributed 31116 tests. There were 0 mismatches in the cases examined. ([code](computations/mrl_e72d1fa3.py), [result](computations/mrl_e72d1fa3.result.json))
   - [Computational Mathematician] The exhaustive interval $6\le n\le10^6$ contains $999995$ inputs. Writing $m=n-1$, successive counts were $499997$ with $m$ even, $121$ also passing $m-1\mid2^m-1$, $35$ also passing $m+1\mid2^m-1$, and $3$ passing the final test. The solutions were $17,257,65537$. For $n>10^6$ with $m=2^a u$, $1\le a\le256$, and odd $1\le u\le255$, the run exhausted $31116$ additional inputs. Four passed the first modular test, and all four passed the remaining tests. They were $F_5,F_6,F_7,F_8$. These are exact finite classifications. Odd $m$ fails by parity. For even $m$, the three odd factors $m-1,m+1,m^2+1$ are pairwise coprime because a common prime of any pair would divide $2$. Their product is $m^4-1$, which makes the three modular tests jointly equivalent to the original divisibility.
 - **Sieved compiled exhaustive search for P3 reverse direction up to m ~ 4.29e9** [succeeded, finite computation]: compiled=True; exhaustive over even m in [6,4294968296] (n<= 4294968297). Strong pipeline counts even/f1/f2/s3/s4/s5 = 2147484146/1073742073/835132723/4437/956/4; final=[16, 256, 65536, 4294967296]. Unfiltered: stage3=4710, stage3&4=997, all=[16, 256, 65536, 4294967296]. Counterexamples=[]. sieve==brute on [6,2000000]: True. m^2+1|2^m-1 for m<= 10000000: [16, 256, 8208, 65536, 649800, 1382400]. ([code](computations/mrl_87586532.py), [result](computations/mrl_87586532.result.json))
+  - [Computational Mathematician] Trustworthy finite computation. The compiler printed a warning about a cache file but returned exit code 0, and the binary ran.
+
+**Sieve logic.** I checked the sieve. For each odd prime power $d\le262144$ with $o=\mathrm{ord}_d(2)>2$, it removes even $m$ with $m\equiv1\pmod d$ and $o\nmid m$. This is a valid necessary condition for stage 3: if $d\mid m-1\mid 2^m-1$ then $o\mid m$. Removing nothing when $o\le2$ only makes the sieve more conservative. Survivors were tested exactly by Montgomery exponentiation with modulus $m-1<2^{33}$, well under the $2^{62}$ limit.
+
+**Coverage.** All $86$ chunks completed, covering $m\in[6,4294968296]$ contiguously.
+
+**Cross-checks.**
+- On $[6,2\cdot10^6]$ the sieved and brute-force outputs were identical ($170$ hits each).
+- A random spot-check of $50000$ sieve-rejected $m$ found no false negatives.
+- The counts for $m\le999999$ ($121/35/\{16,256,65536\}$) match both E-e72d1f and E-4cd74a.
+- All four positive controls pass, including $m=2^{32}$.
+- The full direct condition and the conjunction of stages 3–5 give the same result.
+
+**What it establishes.** For every even $m$ in $[6,4294968296]$, $m^4-1\mid2^m-1$ holds iff $m\in\{16,256,65536,2^{32}\}$.
+
+The counts after filters 1 and 2 were computed by a period-180 counting formula, not by running a filter. That is fine for bookkeeping. The strong filter ($4\mid m$) is justified by the already-reviewed C-0a86bd. In any case the unfiltered pipeline gives the same fin
 - **Independent pure-Python cross-check of all P3 stages up to m = 1e7** [succeeded, finite computation]: Pure Python, even m in [6,10000000]: stage3=356, stage3&4=103, final=[16, 256, 65536], counterexamples=[]; m<=999999 counts [121, 35, [16, 256, 65536]]; strong pipeline [326, 98, [16, 256, 65536]]; filter counts {'even': 4999998, 'f1_strong': 2499999, 'f1_weak': 2999999, 'f12_strong': 1944443, 'f12_weak': 2333332}; m^2+1|2^m-1 even m<=10000000: [16, 256, 8208, 65536, 649800, 1382400]; odd m<=999999: []. ([code](computations/mrl_4cd74a62.py), [result](computations/mrl_4cd74a62.result.json))
+  - [Computational Mathematician] Trustworthy independent check written in pure Python with exact `pow`: no sieve and no filter formulas.
+
+For even $m\in[6,10^7]$ it found:
+- $356$ values with $m-1\mid2^m-1$;
+- $103$ values that also satisfy $m+1\mid2^m-1$; the full list is given;
+- only $16,256,65536$ that also satisfy $m^2+1\mid2^m-1$, and the direct $m^4-1$ test gives the same three.
+
+The filter counts are also consistent: even $m$: $4999998$; strong filters 1–2: $1944443$; strong pipeline after stages 3, 4, 5: $326/98/3$.
+
+For $m^2+1\mid2^m-1$, the even solutions up to $10^7$ are $16,256,8208,65536,649800,1382400$, all with $4\mid m$. There are no odd solutions up to $10^6$, which is trivial since $m^2+1$ is even and $2^m-1$ is odd. This list matches E-875865's compiled list, which was itself cross-checked against Python up to $2\cdot10^5$.
+
+This confirms E-875865 on $[6,10^7]$ by an independent method. It is still a finite check only.
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 17a5e61d](research/2026-11-27-run-17a5e61d.md): running. 
+- [2026-11-27 run 17a5e61d](research/2026-11-27-run-17a5e61d.md): completed. orchestrator: Iteration 2 of 2 and all four experiments are complete. The remaining mathematical gaps are a universal primality exclusion, a stronger estimate for semiprimes, and an exclusion of non-power-of-two solutions to P3. The supplied work identifies no lemma likely to close one of these gaps in another round.
 

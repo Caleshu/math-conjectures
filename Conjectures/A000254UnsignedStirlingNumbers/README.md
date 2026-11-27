@@ -45,5 +45,5 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-27 run 0a46495f](research/2026-11-27-run-0a46495f.md): running. 
+- [2026-11-27 run 0a46495f](research/2026-11-27-run-0a46495f.md): completed. orchestrator: The reviewed arguments agree on the reductions, the prime and composite cases, and the exceptional index. E-6231e reports zero failures through $n=1000$ on the applicable domains. Neither unreviewed observation is needed to conclude the research round.
 
