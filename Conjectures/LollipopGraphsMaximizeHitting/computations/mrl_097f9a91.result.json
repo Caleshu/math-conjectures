@@ -1,0 +1,359 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 4.383,
+ "result": {
+  "summary": "Exact comparisons over the indicated core and tree combinations. Only rows with class_exhausted=true certify a class maximum. Counts include duplicate unrooted graphs.",
+  "sanity": "Composition checked against first-step equations on branched and unbranched attachments. Both order-six benchmarks checked.",
+  "rows": [
+   {
+    "n": 11,
+    "class_exhausted": true,
+    "rooted_combinations_checked": 78133,
+    "best_seen": "11950/3",
+    "best_witness_identify_the_two_roots": {
+     "core_edges": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       4
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       4,
+       5
+      ]
+     ],
+     "core_root": 0,
+     "tree_edges": [
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       0,
+       4
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       4,
+       5
+      ]
+     ],
+     "tree_root": 3
+    },
+    "lollipop_max": "11950/3",
+    "lollipop_winning_k": [
+     6
+    ],
+    "strict_counterexample_found": false
+   },
+   {
+    "n": 12,
+    "class_exhausted": true,
+    "rooted_combinations_checked": 178613,
+    "best_seen": "42697/7",
+    "best_witness_identify_the_two_roots": {
+     "core_edges": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       4
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       1,
+       6
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       6
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       6
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "core_root": 0,
+     "tree_edges": [
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       0,
+       4
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       4,
+       5
+      ]
+     ],
+     "tree_root": 3
+    },
+    "lollipop_max": "42697/7",
+    "lollipop_winning_k": [
+     7
+    ],
+    "strict_counterexample_found": false
+   },
+   {
+    "n": 13,
+    "class_exhausted": true,
+    "rooted_combinations_checked": 431758,
+    "best_seen": "62400/7",
+    "best_witness_identify_the_two_roots": {
+     "core_edges": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       4
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       0,
+       6
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       1,
+       6
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       6
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       6
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "core_root": 0,
+     "tree_edges": [
+      [
+       1,
+       0
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       0,
+       4
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "tree_root": 3
+    },
+    "lollipop_max": "62400/7",
+    "lollipop_winning_k": [
+     7
+    ],
+    "strict_counterexample_found": false
+   }
+  ]
+ }
+}

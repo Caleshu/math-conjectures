@@ -32,3 +32,22 @@ Source: José Luis Palacios, Shunya Tamura, Jason Wiberg, Aleksandar Petojević,
 - For every $G$, $HT(G)\le |E|n(n^2-1)/3$, so $HT=O(n^5)$. *(José Luis Palacios, Shunya Tamura, Jason Wiberg, The hitting time index: bounds, a sharp threshold, the proof of a conjecture and the disproof of another conjecture, arXiv:2611.34295 (Proposition 2, p. 4))*
 - $HT(L(n,n/2))\ge (n^3/16-n^2/16+n/2-1)(n/2-1)(n/4)$ for $n$ divisible by 4, so the maximum is of order $n^5$. *(José Luis Palacios, Shunya Tamura, Jason Wiberg, The hitting time index: bounds, a sharp threshold, the proof of a conjecture and the disproof of another conjecture, arXiv:2611.34295 (End of Section 3, pp. 10-11))*
 
+## Novelty pre-check
+
+Verdict: **likely_open**. Nothing in the search results settles this. The HT index is a recent molecular descriptor built from expected hitting times [R17]. The follow-up papers we found give closed-form values for particular families such as broom graphs [R9, R12, R21], plus a general paper [R22] whose abstract is missing. None of them claims to find the global maximizer over all connected n-vertex graphs. R1 says the lollipop maximizes the plain maximum hitting time, which is the classical Brightwell–Winkler-type result. That doesn't carry over to the HT index, because the index sums over all vertex pairs. The source paper itself checked the claim by exhaustive search only up to n=10, so it is a real extremal question. Proving it for all n (or all large n), and pinning down the optimal ratio k≈0.558n, would take serious work. It doesn't overlap with anything in the user's repository. Some evidence is missing: Semantic Scholar returned an error (HTTP 429), so citing works were not fully checked, and not finding a resolution here doesn't show the problem is open.
+
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Exact lollipop maximizers and finite-size deviations** [succeeded, finite computation]: Exact scan of every clique size for each completed order. ([code](computations/mrl_c2afdb92.py), [result](computations/mrl_c2afdb92.result.json))
+  - [Computational Mathematician] The run compared every integer $2\le k\le n$ using exact rational arithmetic for $n\in\{6,7,8,9,10,11,12,13,14,15,20,25,50,100,250,500,1000\}$. In that order the unique maximizing clique sizes were $4,4,5,5,6,6,7,7,8,9,11,14,28,56,140,279,558$. Every reported gap is to the next distinct lollipop value at the same order. For example, at $n=6$ the maximum is $224$ with gap $1$, and at $n=1000$ it is $5991538214106368/279$ with gap $6272834234291/155961$. The formula agreed with independent first-step equations for every $2\le k\le n\le8$. The convergence assertion has a separate proof below.
+- **Counterexample search over every small connected core with an attached rooted tree** [succeeded, finite computation]: Exact comparisons over the indicated core and tree combinations. Only rows with class_exhausted=true certify a class maximum. Counts include duplicate unrooted graphs. ([code](computations/mrl_097f9a91.py), [result](computations/mrl_097f9a91.result.json))
+  - [Computational Mathematician] For each $n\in\{11,12,13\}$, the run exhausted every connected simple core of order $2\le c\le7$, every core attachment vertex, and every rooted tree of order $n-c+1$, identifying the two roots. The respective counts $78133,178613,431758$ include repeated representations. The exact maxima were $11950/3,42697/7,62400/7$, witnessed by $L(11,6),L(12,7),L(13,7)$. The composition formula passed the independent first-step checks. The program retained one maximizing witness per order, so uniqueness within this class and maximality over unrestricted graphs remain undecided.
+
+## AI research runs
+
+Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
+
+- [2026-11-27 run 00032b6d](research/2026-11-27-run-00032b6d.md): running. 
+

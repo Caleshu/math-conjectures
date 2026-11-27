@@ -1,0 +1,198 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 1.907,
+ "result": {
+  "summary": "Exact scan of every clique size for each completed order.",
+  "sanity": "All lollipops through order 8 matched independent absorbing-chain equations.",
+  "completed": [
+   {
+    "n": 6,
+    "max_ht": "224",
+    "maximizing_k": [
+     4
+    ],
+    "k_minus_n_xstar": [
+     0.6504545830264958
+    ],
+    "gap_to_next_distinct_ht": "1"
+   },
+   {
+    "n": 7,
+    "max_ht": "933/2",
+    "maximizing_k": [
+     4
+    ],
+    "k_minus_n_xstar": [
+     0.09219701353091203
+    ],
+    "gap_to_next_distinct_ht": "353/10"
+   },
+   {
+    "n": 8,
+    "max_ht": "4354/5",
+    "maximizing_k": [
+     5
+    ],
+    "k_minus_n_xstar": [
+     0.5339394440353278
+    ],
+    "gap_to_next_distinct_ht": "144/5"
+   },
+   {
+    "n": 9,
+    "max_ht": "7632/5",
+    "maximizing_k": [
+     5
+    ],
+    "k_minus_n_xstar": [
+     -0.024318125460256468
+    ],
+    "gap_to_next_distinct_ht": "282/5"
+   },
+   {
+    "n": 10,
+    "max_ht": "7595/3",
+    "maximizing_k": [
+     6
+    ],
+    "k_minus_n_xstar": [
+     0.4174243050441593
+    ],
+    "gap_to_next_distinct_ht": "266/3"
+   },
+   {
+    "n": 11,
+    "max_ht": "11950/3",
+    "maximizing_k": [
+     6
+    ],
+    "k_minus_n_xstar": [
+     -0.14083326445142408
+    ],
+    "gap_to_next_distinct_ht": "1312/21"
+   },
+   {
+    "n": 12,
+    "max_ht": "42697/7",
+    "maximizing_k": [
+     7
+    ],
+    "k_minus_n_xstar": [
+     0.3009091660529917
+    ],
+    "gap_to_next_distinct_ht": "1495/7"
+   },
+   {
+    "n": 13,
+    "max_ht": "62400/7",
+    "maximizing_k": [
+     7
+    ],
+    "k_minus_n_xstar": [
+     -0.2573484034425926
+    ],
+    "gap_to_next_distinct_ht": "827/28"
+   },
+   {
+    "n": 14,
+    "max_ht": "25767/2",
+    "maximizing_k": [
+     8
+    ],
+    "k_minus_n_xstar": [
+     0.18439402706182406
+    ],
+    "gap_to_next_distinct_ht": "879/2"
+   },
+   {
+    "n": 15,
+    "max_ht": "53768/3",
+    "maximizing_k": [
+     9
+    ],
+    "k_minus_n_xstar": [
+     0.6261364575662398
+    ],
+    "gap_to_next_distinct_ht": "893/12"
+   },
+   {
+    "n": 20,
+    "max_ht": "808955/11",
+    "maximizing_k": [
+     11
+    ],
+    "k_minus_n_xstar": [
+     -0.16515138991168143
+    ],
+    "gap_to_next_distinct_ht": "14147/33"
+   },
+   {
+    "n": 25,
+    "max_ht": "1547962/7",
+    "maximizing_k": [
+     14
+    ],
+    "k_minus_n_xstar": [
+     0.043560762610399095
+    ],
+    "gap_to_next_distinct_ht": "43234/21"
+   },
+   {
+    "n": 50,
+    "max_ht": "48077774/7",
+    "maximizing_k": [
+     28
+    ],
+    "k_minus_n_xstar": [
+     0.08712152522079819
+    ],
+    "gap_to_next_distinct_ht": "4024653/203"
+   },
+   {
+    "n": 100,
+    "max_ht": "1518747835/7",
+    "maximizing_k": [
+     56
+    ],
+    "k_minus_n_xstar": [
+     0.17424305044159638
+    ],
+    "gap_to_next_distinct_ht": "13335866/77"
+   },
+   {
+    "n": 250,
+    "max_ht": "147280416874/7",
+    "maximizing_k": [
+     140
+    ],
+    "k_minus_n_xstar": [
+     0.4356076261040016
+    ],
+    "gap_to_next_distinct_ht": "1151974618/973"
+   },
+   {
+    "n": 500,
+    "max_ht": "187435885346549/279",
+    "maximizing_k": [
+     279
+    ],
+    "k_minus_n_xstar": [
+     -0.12878474779199678
+    ],
+    "gap_to_next_distinct_ht": "21522292382/1953"
+   },
+   {
+    "n": 1000,
+    "max_ht": "5991538214106368/279",
+    "maximizing_k": [
+     558
+    ],
+    "k_minus_n_xstar": [
+     -0.25756949558399356
+    ],
+    "gap_to_next_distinct_ht": "6272834234291/155961"
+   }
+  ],
+  "interrupted_order": null
+ }
+}
