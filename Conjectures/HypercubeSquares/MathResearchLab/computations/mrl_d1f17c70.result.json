@@ -1,0 +1,71 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.738,
+ "result": {
+  "Q10": {
+   "n": 10,
+   "vertices": 1024,
+   "all_strings_length_n": true,
+   "length_is_2^n": true,
+   "all_distinct": true,
+   "consecutive_differ_in_one_bit": true,
+   "hamiltonian_cycle": true,
+   "inscribed_squares": 0,
+   "first_square": null,
+   "square_free_hamiltonian_cycle": true
+  },
+  "Q8": {
+   "n": 8,
+   "vertices": 256,
+   "all_strings_length_n": true,
+   "length_is_2^n": true,
+   "all_distinct": true,
+   "consecutive_differ_in_one_bit": true,
+   "hamiltonian_cycle": true,
+   "inscribed_squares": 0,
+   "first_square": null,
+   "square_free_hamiltonian_cycle": true
+  },
+  "Q8_lean": {
+   "n": 8,
+   "vertices": 256,
+   "all_strings_length_n": true,
+   "length_is_2^n": true,
+   "all_distinct": true,
+   "consecutive_differ_in_one_bit": true,
+   "hamiltonian_cycle": true,
+   "inscribed_squares": 0,
+   "first_square": null,
+   "square_free_hamiltonian_cycle": true
+  },
+  "Q9": {
+   "n": 9,
+   "vertices": 512,
+   "all_strings_length_n": true,
+   "length_is_2^n": true,
+   "all_distinct": true,
+   "consecutive_differ_in_one_bit": true,
+   "hamiltonian_cycle": true,
+   "inscribed_squares": 0,
+   "first_square": null,
+   "square_free_hamiltonian_cycle": true
+  },
+  "control_gray_Q8": {
+   "n": 8,
+   "vertices": 256,
+   "all_strings_length_n": true,
+   "length_is_2^n": true,
+   "all_distinct": true,
+   "consecutive_differ_in_one_bit": true,
+   "hamiltonian_cycle": true,
+   "inscribed_squares": 770,
+   "first_square": [
+    "00000000",
+    "00000001",
+    "00000011",
+    "00000010"
+   ],
+   "square_free_hamiltonian_cycle": false
+  }
+ }
+}

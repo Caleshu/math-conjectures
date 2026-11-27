@@ -1,0 +1,3368 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 64.911,
+ "result": {
+  "sanity": {
+   "n5_k16_alternating": [
+    "OPTIMAL",
+    true
+   ],
+   "n5_k16_0^8_1^8_conds": [
+    true,
+    true,
+    false
+   ],
+   "n5_k16_0^8_1^8_cpsat": [
+    "INFEASIBLE",
+    null
+   ],
+   "n3_k4_0011": [
+    "INFEASIBLE",
+    null
+   ],
+   "n3_k2_01": [
+    "OPTIMAL",
+    true
+   ]
+  },
+  "per_n": {
+   "4": {
+    "2": {
+     "summary": {
+      "num_classes": 1,
+      "num_ABC": 1,
+      "ABC_feasible": 1,
+      "ABC_infeasible": [],
+      "ABC_unknown_or_skipped": [],
+      "nonABC_feasible": [],
+      "nonABC_statuses": [],
+      "all_feasible_verified": true,
+      "num_balanced_classes_not_realizable_proved": 0,
+      "cpsat_matches_exhaustive": true,
+      "ABC_matches_exhaustive": true
+     },
+     "records": [
+      {
+       "v": "01",
+       "A": true,
+       "B": true,
+       "C": true,
+       "exhaustive_achieved": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      }
+     ]
+    },
+    "4": {
+     "summary": {
+      "num_classes": 3,
+      "num_ABC": 3,
+      "ABC_feasible": 3,
+      "ABC_infeasible": [],
+      "ABC_unknown_or_skipped": [],
+      "nonABC_feasible": [],
+      "nonABC_statuses": [],
+      "all_feasible_verified": true,
+      "num_balanced_classes_not_realizable_proved": 0,
+      "cpsat_matches_exhaustive": true,
+      "ABC_matches_exhaustive": true
+     },
+     "records": [
+      {
+       "v": "0011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "exhaustive_achieved": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "exhaustive_achieved": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "exhaustive_achieved": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      }
+     ]
+    },
+    "6": {
+     "summary": {
+      "num_classes": 4,
+      "num_ABC": 4,
+      "ABC_feasible": 4,
+      "ABC_infeasible": [],
+      "ABC_unknown_or_skipped": [],
+      "nonABC_feasible": [],
+      "nonABC_statuses": [],
+      "all_feasible_verified": true,
+      "num_balanced_classes_not_realizable_proved": 0,
+      "cpsat_matches_exhaustive": true,
+      "ABC_matches_exhaustive": true
+     },
+     "records": [
+      {
+       "v": "000111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "exhaustive_achieved": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "exhaustive_achieved": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "010101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "exhaustive_achieved": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "010110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "exhaustive_achieved": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      }
+     ]
+    },
+    "8": {
+     "summary": {
+      "num_classes": 13,
+      "num_ABC": 1,
+      "ABC_feasible": 1,
+      "ABC_infeasible": [],
+      "ABC_unknown_or_skipped": [],
+      "nonABC_feasible": [],
+      "nonABC_statuses": [
+       [
+        "00001111",
+        "INFEASIBLE"
+       ],
+       [
+        "00010111",
+        "INFEASIBLE"
+       ],
+       [
+        "00011011",
+        "INFEASIBLE"
+       ],
+       [
+        "00011101",
+        "INFEASIBLE"
+       ],
+       [
+        "00011110",
+        "INFEASIBLE"
+       ],
+       [
+        "00100111",
+        "INFEASIBLE"
+       ],
+       [
+        "00101011",
+        "INFEASIBLE"
+       ],
+       [
+        "00101101",
+        "INFEASIBLE"
+       ],
+       [
+        "00110011",
+        "INFEASIBLE"
+       ],
+       [
+        "01010110",
+        "INFEASIBLE"
+       ]
+      ],
+      "all_feasible_verified": true,
+      "num_balanced_classes_not_realizable_proved": 12,
+      "cpsat_matches_exhaustive": true,
+      "ABC_matches_exhaustive": true
+     },
+     "records": [
+      {
+       "v": "00001111",
+       "A": true,
+       "B": true,
+       "C": false,
+       "exhaustive_achieved": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "00010111",
+       "A": true,
+       "B": true,
+       "C": false,
+       "exhaustive_achieved": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "00011011",
+       "A": true,
+       "B": true,
+       "C": false,
+       "exhaustive_achieved": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "00011101",
+       "A": true,
+       "B": true,
+       "C": false,
+       "exhaustive_achieved": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "00011110",
+       "A": true,
+       "B": true,
+       "C": false,
+       "exhaustive_achieved": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "00100111",
+       "A": true,
+       "B": true,
+       "C": false,
+       "exhaustive_achieved": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "00101011",
+       "A": true,
+       "B": true,
+       "C": false,
+       "exhaustive_achieved": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "00101101",
+       "A": true,
+       "B": true,
+       "C": false,
+       "exhaustive_achieved": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "00110011",
+       "A": true,
+       "B": true,
+       "C": false,
+       "exhaustive_achieved": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "01010101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "exhaustive_achieved": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "01010110",
+       "A": true,
+       "B": true,
+       "C": false,
+       "exhaustive_achieved": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "01011010",
+       "A": true,
+       "B": true,
+       "C": false,
+       "exhaustive_achieved": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "01100110",
+       "A": true,
+       "B": true,
+       "C": false,
+       "exhaustive_achieved": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      }
+     ]
+    }
+   },
+   "5": {
+    "2": {
+     "summary": {
+      "num_classes": 1,
+      "num_ABC": 1,
+      "ABC_feasible": 1,
+      "ABC_infeasible": [],
+      "ABC_unknown_or_skipped": [],
+      "nonABC_feasible": [],
+      "nonABC_statuses": [],
+      "all_feasible_verified": true,
+      "num_balanced_classes_not_realizable_proved": 0
+     },
+     "records": [
+      {
+       "v": "01",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      }
+     ]
+    },
+    "4": {
+     "summary": {
+      "num_classes": 3,
+      "num_ABC": 3,
+      "ABC_feasible": 3,
+      "ABC_infeasible": [],
+      "ABC_unknown_or_skipped": [],
+      "nonABC_feasible": [],
+      "nonABC_statuses": [],
+      "all_feasible_verified": true,
+      "num_balanced_classes_not_realizable_proved": 0
+     },
+     "records": [
+      {
+       "v": "0011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      }
+     ]
+    },
+    "6": {
+     "summary": {
+      "num_classes": 4,
+      "num_ABC": 4,
+      "ABC_feasible": 4,
+      "ABC_infeasible": [],
+      "ABC_unknown_or_skipped": [],
+      "nonABC_feasible": [],
+      "nonABC_statuses": [],
+      "all_feasible_verified": true,
+      "num_balanced_classes_not_realizable_proved": 0
+     },
+     "records": [
+      {
+       "v": "000111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "010101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "010110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      }
+     ]
+    },
+    "8": {
+     "summary": {
+      "num_classes": 13,
+      "num_ABC": 13,
+      "ABC_feasible": 13,
+      "ABC_infeasible": [],
+      "ABC_unknown_or_skipped": [],
+      "nonABC_feasible": [],
+      "nonABC_statuses": [],
+      "all_feasible_verified": true,
+      "num_balanced_classes_not_realizable_proved": 0
+     },
+     "records": [
+      {
+       "v": "00001111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00010111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00011011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00011101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00011110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00100111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00101011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00101101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00110011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "01010101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "01010110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "01011010",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "01100110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      }
+     ]
+    },
+    "10": {
+     "summary": {
+      "num_classes": 26,
+      "num_ABC": 26,
+      "ABC_feasible": 26,
+      "ABC_infeasible": [],
+      "ABC_unknown_or_skipped": [],
+      "nonABC_feasible": [],
+      "nonABC_statuses": [],
+      "all_feasible_verified": true,
+      "num_balanced_classes_not_realizable_proved": 0
+     },
+     "records": [
+      {
+       "v": "0000011111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0000101111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0000110111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0000111011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0001010111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0001011011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0001011101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0001011110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0001100111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0001101011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0001101101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0001101110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0001110011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0001110101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0001110110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0010010111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0010011011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0010011101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0010100111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0010101011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0010101101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0010110011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0101010101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0101010110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0101011010",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "0101100110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      }
+     ]
+    },
+    "12": {
+     "summary": {
+      "num_classes": 86,
+      "num_ABC": 80,
+      "ABC_feasible": 80,
+      "ABC_infeasible": [],
+      "ABC_unknown_or_skipped": [],
+      "nonABC_feasible": [],
+      "nonABC_statuses": [
+       [
+        "000000111111",
+        "UNKNOWN"
+       ],
+       [
+        "000001111110",
+        "UNKNOWN"
+       ]
+      ],
+      "all_feasible_verified": true,
+      "num_balanced_classes_not_realizable_proved": 6
+     },
+     "records": [
+      {
+       "v": "000000111111",
+       "A": true,
+       "B": true,
+       "C": false,
+       "cpsat": "UNKNOWN",
+       "verified": null
+      },
+      {
+       "v": "000001011111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000001101111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000001110111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000001111011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000001111101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000001111110",
+       "A": true,
+       "B": true,
+       "C": false,
+       "cpsat": "UNKNOWN",
+       "verified": null
+      },
+      {
+       "v": "000010011111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000010101111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000010110111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000010111011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000010111101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000011001111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "000011010111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000011011011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000011011101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000011011110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000011100111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000011101011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000011101101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000011101110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000100110111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000100111011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101010111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101011011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101011101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101011110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101100111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101101011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101101101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101101110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101110011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101110101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101110110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101111001",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000101111010",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000110010111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000110011011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000110011101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000110011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "000110100111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000110101011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000110101101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000110101110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000110110011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000110110101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000110110110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000110111001",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000111000111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000111001011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000111001101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000111001110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000111010011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000111010101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000111010110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000111011001",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "000111011010",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001000110111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001001010111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001001011011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001001011101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001001100111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001001101011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001001101101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001001110011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001001110101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001001110110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001010010111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001010011011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001010011101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001010100111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001010101011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001010101101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001010110011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001010110101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001011001011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001011001101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "001100110011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "010101010101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "010101010110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "010101011010",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "010101100110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "010101101010",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "010110010110",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "010110011010",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "011001100110",
+       "A": true,
+       "B": true,
+       "C": false
+      }
+     ]
+    },
+    "14": {
+     "summary": {
+      "num_classes": 246,
+      "num_ABC": 42,
+      "ABC_feasible": 42,
+      "ABC_infeasible": [],
+      "ABC_unknown_or_skipped": [],
+      "nonABC_feasible": [],
+      "nonABC_statuses": [
+       [
+        "00000001111111",
+        "INFEASIBLE"
+       ],
+       [
+        "00000010111111",
+        "INFEASIBLE"
+       ]
+      ],
+      "all_feasible_verified": true,
+      "num_balanced_classes_not_realizable_proved": 204
+     },
+     "records": [
+      {
+       "v": "00000001111111",
+       "A": true,
+       "B": true,
+       "C": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "00000010111111",
+       "A": true,
+       "B": true,
+       "C": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "00000011011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000011101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000011110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000011111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000101011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000101101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000101110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000101111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000101111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000101111110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000110011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000110101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000110110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000110111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000110111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000110111110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000111001111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000111010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000111011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000111011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000111011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000111100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000111101011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000111101101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000111101110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000111110011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000111110101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00000111110110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001001011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001001101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001001110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001001111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001001111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001010011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001010101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001010110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001010111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001010111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001011001111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001011010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001011011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001011011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001011011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001011100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001011101011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001011101101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001011101110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001011110011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001100011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001100101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001100110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001100111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101001111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101101011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101101101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101101110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101110011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101110101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101110110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101111001",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001101111010",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110001111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110101011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110101101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110101110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110110011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110110101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110110110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110111001",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00001110111010",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010001110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010001111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010010110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010010111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010011010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010011011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010011011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010011011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010011100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010011101011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010100110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010101010111",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00010101011011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00010101011101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00010101011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010101100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010101101011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00010101101101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00010101101110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010101110011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010101110101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00010101110110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010101111001",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010101111010",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010110010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010110011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010110011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010110011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010110100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010110101011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00010110101101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00010110101110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010110110011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010110110101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00010110110110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010110111001",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010110111010",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010111000111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010111001011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010111001101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010111001110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010111010011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010111010101",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      },
+      {
+       "v": "00010111010110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010111011001",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010111011010",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010111100011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010111100101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00010111100110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011000110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011001010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011001011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011001011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011001011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011001100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011001101011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011001101101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011001101110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011001110011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011001110101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011001110110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011001111001",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011010010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011010011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011010011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011010011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011010100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "00011010101011",
+       "A": true,
+       "B": true,
+       "C": true,
+       "cpsat": "OPTIMAL",
+       "verified": true
+      }
+     ]
+    },
+    "16": {
+     "summary": {
+      "num_classes": 829,
+      "num_ABC": 1,
+      "ABC_feasible": 1,
+      "ABC_infeasible": [],
+      "ABC_unknown_or_skipped": [],
+      "nonABC_feasible": [],
+      "nonABC_statuses": [
+       [
+        "0000000011111111",
+        "INFEASIBLE"
+       ],
+       [
+        "0000000101111111",
+        "INFEASIBLE"
+       ]
+      ],
+      "all_feasible_verified": true,
+      "num_balanced_classes_not_realizable_proved": 828
+     },
+     "records": [
+      {
+       "v": "0000000011111111",
+       "A": true,
+       "B": true,
+       "C": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "0000000101111111",
+       "A": true,
+       "B": true,
+       "C": false,
+       "cpsat": "INFEASIBLE",
+       "verified": null
+      },
+      {
+       "v": "0000000110111111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000000111011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000000111101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000000111110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000000111111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000000111111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000000111111110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001001111111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001010111111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001011011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001011101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001011110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001011111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001011111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001100111111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001101011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001101101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001101110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001101111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001101111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001101111110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001110011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001110101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001110110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001110111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001110111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001110111110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001111001111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001111010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001111011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001111011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001111011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001111100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001111101011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001111101101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000001111101110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010011011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010011101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010011110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010011111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010101011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010101101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010101110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010101111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010101111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010101111110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010110011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010110101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010110110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010110111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010110111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010110111110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111001111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111101011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111101101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111101110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111110011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111110101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111110110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111111001",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000010111111010",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011001011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011001101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011001110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011001111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011001111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011001111110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011010011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011010101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011010110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011010111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011010111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011010111110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011001111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011101011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011101101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011101110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011110011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011110101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011110110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011011111001",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011100011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011100101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011100110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011100111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011100111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011100111110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101001111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101101011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101101101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101101110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101110011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101110101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101110110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101111001",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011101111010",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110001111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110010111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110011011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110011101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110011110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110100111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110101011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110101101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110101110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110110011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110110101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110110110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110111001",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011110111010",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011111000111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011111001011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011111001101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011111001110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011111010011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011111010101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011111010110",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011111011001",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000011111011010",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100011011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100011101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100011110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100101011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100101101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100101110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100101111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100101111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100110011111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100110101111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100110110111",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100110111011",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100110111101",
+       "A": true,
+       "B": true,
+       "C": false
+      },
+      {
+       "v": "0000100111001111",
+       "A": true,
+       "B": true,
+       "C": false
+      }
+     ]
+    }
+   }
+  },
+  "summary": "sanity={'n5_k16_alternating': ('OPTIMAL', True), 'n5_k16_0^8_1^8_conds': (True, True, False), 'n5_k16_0^8_1^8_cpsat': ('INFEASIBLE', None), 'n3_k4_0011': ('INFEASIBLE', None), 'n3_k2_01': ('OPTIMAL', True)} | n=4,k=2: classes=1 ABC=1 ABCfeas=1 ABCinf=0 ABCunk=0 nonABCfeas=0 exhMatch=True/True | n=4,k=4: classes=3 ABC=3 ABCfeas=3 ABCinf=0 ABCunk=0 nonABCfeas=0 exhMatch=True/True | n=4,k=6: classes=4 ABC=4 ABCfeas=4 ABCinf=0 ABCunk=0 nonABCfeas=0 exhMatch=True/True | n=4,k=8: classes=13 ABC=1 ABCfeas=1 ABCinf=0 ABCunk=0 nonABCfeas=0 exhMatch=True/True | n=5,k=2: classes=1 ABC=1 ABCfeas=1 ABCinf=0 ABCunk=0 nonABCfeas=0 | n=5,k=4: classes=3 ABC=3 ABCfeas=3 ABCinf=0 ABCunk=0 nonABCfeas=0 | n=5,k=6: classes=4 ABC=4 ABCfeas=4 ABCinf=0 ABCunk=0 nonABCfeas=0 | n=5,k=8: classes=13 ABC=13 ABCfeas=13 ABCinf=0 ABCunk=0 nonABCfeas=0 | n=5,k=10: classes=26 ABC=26 ABCfeas=26 ABCinf=0 ABCunk=0 nonABCfeas=0 | n=5,k=12: classes=86 ABC=80 ABCfeas=80 ABCinf=0 ABCunk=0 nonABCfeas=0 | n=5,k=14: classes=246 ABC=42 ABCfeas=42 ABCinf=0 ABCunk=0 nonABCfeas=0 | n=5,k=16: classes=829 ABC=1 ABCfeas=1 ABCinf=0 ABCunk=0 nonABCfeas=0 | partial=False time=54.7s",
+  "partial": false
+ }
+}

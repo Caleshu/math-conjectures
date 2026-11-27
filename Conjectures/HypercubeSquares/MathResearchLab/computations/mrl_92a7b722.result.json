@@ -1,0 +1,221 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 57.63,
+ "result": {
+  "per_m": {
+   "1": {
+    "cpsat": {
+     "status": "OPTIMAL",
+     "wall": 0.06,
+     "objective": 0,
+     "bound": 0,
+     "witness": [],
+     "witness_valid": true
+    },
+    "brute": 0,
+    "brute_witness_valid": true,
+    "agree": true
+   },
+   "2": {
+    "cpsat": {
+     "status": "OPTIMAL",
+     "wall": 0.01,
+     "objective": 0,
+     "bound": 0,
+     "witness": [],
+     "witness_valid": true
+    },
+    "brute": 0,
+    "brute_witness_valid": true,
+    "agree": true
+   },
+   "3": {
+    "cpsat": {
+     "status": "OPTIMAL",
+     "wall": 0.0,
+     "objective": 2,
+     "bound": 2,
+     "witness": [
+      0,
+      7
+     ],
+     "witness_valid": true
+    },
+    "brute": 2,
+    "brute_witness_valid": true,
+    "agree": true
+   },
+   "4": {
+    "cpsat": {
+     "status": "OPTIMAL",
+     "wall": 0.01,
+     "objective": 4,
+     "bound": 4,
+     "witness": [
+      0,
+      7,
+      11,
+      12
+     ],
+     "witness_valid": true
+    },
+    "brute": 4,
+    "brute_witness_valid": true,
+    "agree": true
+   },
+   "5": {
+    "cpsat": {
+     "status": "OPTIMAL",
+     "wall": 0.02,
+     "objective": 10,
+     "bound": 10,
+     "witness": [
+      0,
+      3,
+      5,
+      9,
+      14,
+      17,
+      22,
+      26,
+      28,
+      31
+     ],
+     "witness_valid": true
+    }
+   },
+   "6": {
+    "cpsat": {
+     "status": "OPTIMAL",
+     "wall": 0.41,
+     "objective": 20,
+     "bound": 20,
+     "witness": [
+      0,
+      7,
+      11,
+      13,
+      14,
+      19,
+      21,
+      22,
+      24,
+      31,
+      33,
+      34,
+      36,
+      40,
+      47,
+      48,
+      55,
+      57,
+      58,
+      60
+     ],
+     "witness_valid": true
+    }
+   },
+   "7": {
+    "cpsat": {
+     "status": "OPTIMAL",
+     "wall": 48.76,
+     "objective": 44,
+     "bound": 44,
+     "witness": [
+      0,
+      3,
+      5,
+      6,
+      9,
+      10,
+      12,
+      17,
+      18,
+      20,
+      24,
+      31,
+      33,
+      34,
+      36,
+      40,
+      47,
+      48,
+      55,
+      59,
+      61,
+      62,
+      65,
+      66,
+      68,
+      72,
+      79,
+      80,
+      87,
+      91,
+      93,
+      94,
+      96,
+      103,
+      107,
+      109,
+      110,
+      115,
+      117,
+      118,
+      121,
+      122,
+      124,
+      127
+     ],
+     "witness_valid": true
+    }
+   }
+  },
+  "counting_bound": {
+   "2": {
+    "alpha_eq_Q_{n-1}": 0,
+    "2^n": 4,
+    "n*alpha": 0,
+    "counting_rules_out_squarefree": true
+   },
+   "3": {
+    "alpha_eq_Q_{n-1}": 0,
+    "2^n": 8,
+    "n*alpha": 0,
+    "counting_rules_out_squarefree": true
+   },
+   "4": {
+    "alpha_eq_Q_{n-1}": 2,
+    "2^n": 16,
+    "n*alpha": 8,
+    "counting_rules_out_squarefree": true
+   },
+   "5": {
+    "alpha_eq_Q_{n-1}": 4,
+    "2^n": 32,
+    "n*alpha": 20,
+    "counting_rules_out_squarefree": true
+   },
+   "6": {
+    "alpha_eq_Q_{n-1}": 10,
+    "2^n": 64,
+    "n*alpha": 60,
+    "counting_rules_out_squarefree": true
+   },
+   "7": {
+    "alpha_eq_Q_{n-1}": 20,
+    "2^n": 128,
+    "n*alpha": 140,
+    "counting_rules_out_squarefree": false
+   },
+   "8": {
+    "alpha_eq_Q_{n-1}": 44,
+    "2^n": 256,
+    "n*alpha": 352,
+    "counting_rules_out_squarefree": false
+   }
+  },
+  "summary": "alpha_=(Q_m): m=1: OPTIMAL obj=0 bound=0 brute=0; m=2: OPTIMAL obj=0 bound=0 brute=0; m=3: OPTIMAL obj=2 bound=2 brute=2; m=4: OPTIMAL obj=4 bound=4 brute=4; m=5: OPTIMAL obj=10 bound=10; m=6: OPTIMAL obj=20 bound=20; m=7: OPTIMAL obj=44 bound=44 | counting bound 2^n>n*alpha_=(Q_{n-1}): {\"2\": true, \"3\": true, \"4\": true, \"5\": true, \"6\": true, \"7\": false, \"8\": false}",
+  "total_time": 49.7
+ }
+}

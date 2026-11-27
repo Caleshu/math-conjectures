@@ -1,0 +1,55 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.99,
+ "result": {
+  "n=3,k=2": {
+   "balanced": 2,
+   "achieved": 2,
+   "nonbalanced_achieved": 0,
+   "missing_examples": []
+  },
+  "n=3,k=4": {
+   "balanced": 6,
+   "achieved": 2,
+   "nonbalanced_achieved": 0,
+   "missing_examples": [
+    "0011",
+    "0110",
+    "1001",
+    "1100"
+   ]
+  },
+  "n=4,k=2": {
+   "balanced": 2,
+   "achieved": 2,
+   "nonbalanced_achieved": 0,
+   "missing_examples": []
+  },
+  "n=4,k=4": {
+   "balanced": 6,
+   "achieved": 6,
+   "nonbalanced_achieved": 0,
+   "missing_examples": []
+  },
+  "n=4,k=6": {
+   "balanced": 20,
+   "achieved": 20,
+   "nonbalanced_achieved": 0,
+   "missing_examples": []
+  },
+  "n=4,k=8": {
+   "balanced": 70,
+   "achieved": 2,
+   "nonbalanced_achieved": 0,
+   "missing_examples": [
+    "00001111",
+    "00010111",
+    "00011011",
+    "00011101",
+    "00011110",
+    "00100111"
+   ]
+  },
+  "summary": "Q3 k=4: 2 of 6 balanced vectors are parity vectors (0011,0110,1001,1100 never occur); Q4 k=8: 2 of 70"
+ }
+}

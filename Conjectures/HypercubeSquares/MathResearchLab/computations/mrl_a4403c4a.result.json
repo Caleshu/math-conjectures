@@ -1,0 +1,43 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 93.47,
+ "result": {
+  "sanity_Q4_no_squares": {
+   "n": 4,
+   "squares": false,
+   "n_square_constraints": 0,
+   "status": "OPTIMAL",
+   "wall": 0.51,
+   "hamiltonian": true,
+   "inscribed_squares": 14,
+   "edges_per_dim": [
+    6,
+    2,
+    4,
+    4
+   ]
+  },
+  "sanity_gray_Q4": {
+   "hamiltonian": true,
+   "inscribed_squares": 18
+  },
+  "sanity_Q5_squarefree": {
+   "n": 5,
+   "squares": true,
+   "n_square_constraints": 160,
+   "status": "INFEASIBLE",
+   "wall": 0.02
+  },
+  "main": {
+   "n": 8,
+   "squares": true,
+   "n_square_constraints": 3584,
+   "status": "UNKNOWN",
+   "wall": 80.44
+  },
+  "sanity_passed": true,
+  "squarefree_found_from_scratch": false,
+  "summary": "sanity_passed=True (Q4 unconstrained: OPTIMAL; Gray Q4 squares=18; Q5 square-free: INFEASIBLE). Q_8 square-free search: UNKNOWN in 80.44s (no cycle found; UNKNOWN is not evidence of nonexistence)",
+  "total_time": 81.8
+ }
+}
