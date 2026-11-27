@@ -25,6 +25,15 @@ Conjecture: taking the sequence [a(n) : n >= 1] modulo an integer k gives a pure
 
 Verdict: **likely_open**. The statement says the two modulo-60 congruences “hold due to the results of Stern (mod 4) and Knuth & Buckholtz (mod 3 and 5).” That settles the modulo-60 case. R5 and R7 concern powers of two. No supplied record settles whether every positive modulus k admits a period dividing φ(k) starting at n = 1. This absence of evidence does not prove openness.
 
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Independent recurrence check of the counterexample** [succeeded, finite computation]: 5 of 128 moduli have a mismatch at an index from 1 through 48. ([code](computations/mrl_6cff9027.py), [result](computations/mrl_6cff9027.result.json))
+  - [Computational Mathematician] For each $1\le k\le128$, the run tested the shift $\varphi(k)$ over $1\le n\le48$, stopping at the first mismatch. Exactly $k\in\{27,54,81,108,125\}$ failed, each at $n=1$. The recurrence follows by comparing coefficients in $\cos(x)\sec(x)=1$, and reduction modulo a common multiple of all tested moduli preserves each residue. The modulo-$21$ sanity check passed. Each mismatch is decisive for its modulus. Each passing row certifies agreement through $n=48$.
+- **Exact onset of periodicity for small odd moduli** [succeeded, finite computation]: The totient shift holds from index 1 for 115 of 121 odd moduli. Each row gives its exact first index of permanent agreement. ([code](computations/mrl_2ac8f738.py), [result](computations/mrl_2ac8f738.result.json))
+  - [Computational Mathematician] For all $121$ odd moduli $3\le k\le243$, the run checked every $1\le n<B(k)$ and checked $n=B(k)$, where $B(k)=\max_{p^e\parallel k}\lceil e/2\rceil$. The modulo-$21$ sanity check passed. Exactly $115$ moduli had onset $1$, precisely the cube-free ones in this range. The tail bound proved below covers every $n\ge B(k)$, so the finite search determines the exact onset for each tested modulus.
+
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.

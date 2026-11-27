@@ -1,0 +1,688 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.081,
+ "result": {
+  "summary": "5 of 128 moduli have a mismatch at an index from 1 through 48.",
+  "n_max": 48,
+  "sanity_mod_21": [
+   1,
+   5,
+   19,
+   20,
+   16,
+   2,
+   1,
+   5,
+   19,
+   20,
+   16,
+   2
+  ],
+  "witness_mod_27": [
+   1,
+   10
+  ],
+  "rows": [
+   {
+    "k": 1,
+    "phi": 1,
+    "first_failure": null
+   },
+   {
+    "k": 2,
+    "phi": 1,
+    "first_failure": null
+   },
+   {
+    "k": 3,
+    "phi": 2,
+    "first_failure": null
+   },
+   {
+    "k": 4,
+    "phi": 2,
+    "first_failure": null
+   },
+   {
+    "k": 5,
+    "phi": 4,
+    "first_failure": null
+   },
+   {
+    "k": 6,
+    "phi": 2,
+    "first_failure": null
+   },
+   {
+    "k": 7,
+    "phi": 6,
+    "first_failure": null
+   },
+   {
+    "k": 8,
+    "phi": 4,
+    "first_failure": null
+   },
+   {
+    "k": 9,
+    "phi": 6,
+    "first_failure": null
+   },
+   {
+    "k": 10,
+    "phi": 4,
+    "first_failure": null
+   },
+   {
+    "k": 11,
+    "phi": 10,
+    "first_failure": null
+   },
+   {
+    "k": 12,
+    "phi": 4,
+    "first_failure": null
+   },
+   {
+    "k": 13,
+    "phi": 12,
+    "first_failure": null
+   },
+   {
+    "k": 14,
+    "phi": 6,
+    "first_failure": null
+   },
+   {
+    "k": 15,
+    "phi": 8,
+    "first_failure": null
+   },
+   {
+    "k": 16,
+    "phi": 8,
+    "first_failure": null
+   },
+   {
+    "k": 17,
+    "phi": 16,
+    "first_failure": null
+   },
+   {
+    "k": 18,
+    "phi": 6,
+    "first_failure": null
+   },
+   {
+    "k": 19,
+    "phi": 18,
+    "first_failure": null
+   },
+   {
+    "k": 20,
+    "phi": 8,
+    "first_failure": null
+   },
+   {
+    "k": 21,
+    "phi": 12,
+    "first_failure": null
+   },
+   {
+    "k": 22,
+    "phi": 10,
+    "first_failure": null
+   },
+   {
+    "k": 23,
+    "phi": 22,
+    "first_failure": null
+   },
+   {
+    "k": 24,
+    "phi": 8,
+    "first_failure": null
+   },
+   {
+    "k": 25,
+    "phi": 20,
+    "first_failure": null
+   },
+   {
+    "k": 26,
+    "phi": 12,
+    "first_failure": null
+   },
+   {
+    "k": 27,
+    "phi": 18,
+    "first_failure": {
+     "n": 1,
+     "a_n": 1,
+     "a_n_plus_phi": 10
+    }
+   },
+   {
+    "k": 28,
+    "phi": 12,
+    "first_failure": null
+   },
+   {
+    "k": 29,
+    "phi": 28,
+    "first_failure": null
+   },
+   {
+    "k": 30,
+    "phi": 8,
+    "first_failure": null
+   },
+   {
+    "k": 31,
+    "phi": 30,
+    "first_failure": null
+   },
+   {
+    "k": 32,
+    "phi": 16,
+    "first_failure": null
+   },
+   {
+    "k": 33,
+    "phi": 20,
+    "first_failure": null
+   },
+   {
+    "k": 34,
+    "phi": 16,
+    "first_failure": null
+   },
+   {
+    "k": 35,
+    "phi": 24,
+    "first_failure": null
+   },
+   {
+    "k": 36,
+    "phi": 12,
+    "first_failure": null
+   },
+   {
+    "k": 37,
+    "phi": 36,
+    "first_failure": null
+   },
+   {
+    "k": 38,
+    "phi": 18,
+    "first_failure": null
+   },
+   {
+    "k": 39,
+    "phi": 24,
+    "first_failure": null
+   },
+   {
+    "k": 40,
+    "phi": 16,
+    "first_failure": null
+   },
+   {
+    "k": 41,
+    "phi": 40,
+    "first_failure": null
+   },
+   {
+    "k": 42,
+    "phi": 12,
+    "first_failure": null
+   },
+   {
+    "k": 43,
+    "phi": 42,
+    "first_failure": null
+   },
+   {
+    "k": 44,
+    "phi": 20,
+    "first_failure": null
+   },
+   {
+    "k": 45,
+    "phi": 24,
+    "first_failure": null
+   },
+   {
+    "k": 46,
+    "phi": 22,
+    "first_failure": null
+   },
+   {
+    "k": 47,
+    "phi": 46,
+    "first_failure": null
+   },
+   {
+    "k": 48,
+    "phi": 16,
+    "first_failure": null
+   },
+   {
+    "k": 49,
+    "phi": 42,
+    "first_failure": null
+   },
+   {
+    "k": 50,
+    "phi": 20,
+    "first_failure": null
+   },
+   {
+    "k": 51,
+    "phi": 32,
+    "first_failure": null
+   },
+   {
+    "k": 52,
+    "phi": 24,
+    "first_failure": null
+   },
+   {
+    "k": 53,
+    "phi": 52,
+    "first_failure": null
+   },
+   {
+    "k": 54,
+    "phi": 18,
+    "first_failure": {
+     "n": 1,
+     "a_n": 1,
+     "a_n_plus_phi": 37
+    }
+   },
+   {
+    "k": 55,
+    "phi": 40,
+    "first_failure": null
+   },
+   {
+    "k": 56,
+    "phi": 24,
+    "first_failure": null
+   },
+   {
+    "k": 57,
+    "phi": 36,
+    "first_failure": null
+   },
+   {
+    "k": 58,
+    "phi": 28,
+    "first_failure": null
+   },
+   {
+    "k": 59,
+    "phi": 58,
+    "first_failure": null
+   },
+   {
+    "k": 60,
+    "phi": 16,
+    "first_failure": null
+   },
+   {
+    "k": 61,
+    "phi": 60,
+    "first_failure": null
+   },
+   {
+    "k": 62,
+    "phi": 30,
+    "first_failure": null
+   },
+   {
+    "k": 63,
+    "phi": 36,
+    "first_failure": null
+   },
+   {
+    "k": 64,
+    "phi": 32,
+    "first_failure": null
+   },
+   {
+    "k": 65,
+    "phi": 48,
+    "first_failure": null
+   },
+   {
+    "k": 66,
+    "phi": 20,
+    "first_failure": null
+   },
+   {
+    "k": 67,
+    "phi": 66,
+    "first_failure": null
+   },
+   {
+    "k": 68,
+    "phi": 32,
+    "first_failure": null
+   },
+   {
+    "k": 69,
+    "phi": 44,
+    "first_failure": null
+   },
+   {
+    "k": 70,
+    "phi": 24,
+    "first_failure": null
+   },
+   {
+    "k": 71,
+    "phi": 70,
+    "first_failure": null
+   },
+   {
+    "k": 72,
+    "phi": 24,
+    "first_failure": null
+   },
+   {
+    "k": 73,
+    "phi": 72,
+    "first_failure": null
+   },
+   {
+    "k": 74,
+    "phi": 36,
+    "first_failure": null
+   },
+   {
+    "k": 75,
+    "phi": 40,
+    "first_failure": null
+   },
+   {
+    "k": 76,
+    "phi": 36,
+    "first_failure": null
+   },
+   {
+    "k": 77,
+    "phi": 60,
+    "first_failure": null
+   },
+   {
+    "k": 78,
+    "phi": 24,
+    "first_failure": null
+   },
+   {
+    "k": 79,
+    "phi": 78,
+    "first_failure": null
+   },
+   {
+    "k": 80,
+    "phi": 32,
+    "first_failure": null
+   },
+   {
+    "k": 81,
+    "phi": 54,
+    "first_failure": {
+     "n": 1,
+     "a_n": 1,
+     "a_n_plus_phi": 10
+    }
+   },
+   {
+    "k": 82,
+    "phi": 40,
+    "first_failure": null
+   },
+   {
+    "k": 83,
+    "phi": 82,
+    "first_failure": null
+   },
+   {
+    "k": 84,
+    "phi": 24,
+    "first_failure": null
+   },
+   {
+    "k": 85,
+    "phi": 64,
+    "first_failure": null
+   },
+   {
+    "k": 86,
+    "phi": 42,
+    "first_failure": null
+   },
+   {
+    "k": 87,
+    "phi": 56,
+    "first_failure": null
+   },
+   {
+    "k": 88,
+    "phi": 40,
+    "first_failure": null
+   },
+   {
+    "k": 89,
+    "phi": 88,
+    "first_failure": null
+   },
+   {
+    "k": 90,
+    "phi": 24,
+    "first_failure": null
+   },
+   {
+    "k": 91,
+    "phi": 72,
+    "first_failure": null
+   },
+   {
+    "k": 92,
+    "phi": 44,
+    "first_failure": null
+   },
+   {
+    "k": 93,
+    "phi": 60,
+    "first_failure": null
+   },
+   {
+    "k": 94,
+    "phi": 46,
+    "first_failure": null
+   },
+   {
+    "k": 95,
+    "phi": 72,
+    "first_failure": null
+   },
+   {
+    "k": 96,
+    "phi": 32,
+    "first_failure": null
+   },
+   {
+    "k": 97,
+    "phi": 96,
+    "first_failure": null
+   },
+   {
+    "k": 98,
+    "phi": 42,
+    "first_failure": null
+   },
+   {
+    "k": 99,
+    "phi": 60,
+    "first_failure": null
+   },
+   {
+    "k": 100,
+    "phi": 40,
+    "first_failure": null
+   },
+   {
+    "k": 101,
+    "phi": 100,
+    "first_failure": null
+   },
+   {
+    "k": 102,
+    "phi": 32,
+    "first_failure": null
+   },
+   {
+    "k": 103,
+    "phi": 102,
+    "first_failure": null
+   },
+   {
+    "k": 104,
+    "phi": 48,
+    "first_failure": null
+   },
+   {
+    "k": 105,
+    "phi": 48,
+    "first_failure": null
+   },
+   {
+    "k": 106,
+    "phi": 52,
+    "first_failure": null
+   },
+   {
+    "k": 107,
+    "phi": 106,
+    "first_failure": null
+   },
+   {
+    "k": 108,
+    "phi": 36,
+    "first_failure": {
+     "n": 1,
+     "a_n": 1,
+     "a_n_plus_phi": 37
+    }
+   },
+   {
+    "k": 109,
+    "phi": 108,
+    "first_failure": null
+   },
+   {
+    "k": 110,
+    "phi": 40,
+    "first_failure": null
+   },
+   {
+    "k": 111,
+    "phi": 72,
+    "first_failure": null
+   },
+   {
+    "k": 112,
+    "phi": 48,
+    "first_failure": null
+   },
+   {
+    "k": 113,
+    "phi": 112,
+    "first_failure": null
+   },
+   {
+    "k": 114,
+    "phi": 36,
+    "first_failure": null
+   },
+   {
+    "k": 115,
+    "phi": 88,
+    "first_failure": null
+   },
+   {
+    "k": 116,
+    "phi": 56,
+    "first_failure": null
+   },
+   {
+    "k": 117,
+    "phi": 72,
+    "first_failure": null
+   },
+   {
+    "k": 118,
+    "phi": 58,
+    "first_failure": null
+   },
+   {
+    "k": 119,
+    "phi": 96,
+    "first_failure": null
+   },
+   {
+    "k": 120,
+    "phi": 32,
+    "first_failure": null
+   },
+   {
+    "k": 121,
+    "phi": 110,
+    "first_failure": null
+   },
+   {
+    "k": 122,
+    "phi": 60,
+    "first_failure": null
+   },
+   {
+    "k": 123,
+    "phi": 80,
+    "first_failure": null
+   },
+   {
+    "k": 124,
+    "phi": 60,
+    "first_failure": null
+   },
+   {
+    "k": 125,
+    "phi": 100,
+    "first_failure": {
+     "n": 1,
+     "a_n": 1,
+     "a_n_plus_phi": 101
+    }
+   },
+   {
+    "k": 126,
+    "phi": 36,
+    "first_failure": null
+   },
+   {
+    "k": 127,
+    "phi": 126,
+    "first_failure": null
+   },
+   {
+    "k": 128,
+    "phi": 64,
+    "first_failure": null
+   }
+  ]
+ }
+}

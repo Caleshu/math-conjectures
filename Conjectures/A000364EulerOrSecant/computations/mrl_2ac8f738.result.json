@@ -1,0 +1,1887 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.043,
+ "result": {
+  "summary": "The totient shift holds from index 1 for 115 of 121 odd moduli. Each row gives its exact first index of permanent agreement.",
+  "sanity_mod_21": [
+   1,
+   5,
+   19,
+   20,
+   16,
+   2
+  ],
+  "rows": [
+   {
+    "k": 3,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ]
+    ],
+    "phi": 2,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 5,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ]
+    ],
+    "phi": 4,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 7,
+    "prime_factorization": [
+     [
+      7,
+      1
+     ]
+    ],
+    "phi": 6,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 9,
+    "prime_factorization": [
+     [
+      3,
+      2
+     ]
+    ],
+    "phi": 6,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 11,
+    "prime_factorization": [
+     [
+      11,
+      1
+     ]
+    ],
+    "phi": 10,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 13,
+    "prime_factorization": [
+     [
+      13,
+      1
+     ]
+    ],
+    "phi": 12,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 15,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      5,
+      1
+     ]
+    ],
+    "phi": 8,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 17,
+    "prime_factorization": [
+     [
+      17,
+      1
+     ]
+    ],
+    "phi": 16,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 19,
+    "prime_factorization": [
+     [
+      19,
+      1
+     ]
+    ],
+    "phi": 18,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 21,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      7,
+      1
+     ]
+    ],
+    "phi": 12,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 23,
+    "prime_factorization": [
+     [
+      23,
+      1
+     ]
+    ],
+    "phi": 22,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 25,
+    "prime_factorization": [
+     [
+      5,
+      2
+     ]
+    ],
+    "phi": 20,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 27,
+    "prime_factorization": [
+     [
+      3,
+      3
+     ]
+    ],
+    "phi": 18,
+    "proved_tail_bound": 2,
+    "least_onset": 2,
+    "all_failures": [
+     {
+      "n": 1,
+      "a_n": 1,
+      "a_n_plus_phi": 10
+     }
+    ]
+   },
+   {
+    "k": 29,
+    "prime_factorization": [
+     [
+      29,
+      1
+     ]
+    ],
+    "phi": 28,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 31,
+    "prime_factorization": [
+     [
+      31,
+      1
+     ]
+    ],
+    "phi": 30,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 33,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      11,
+      1
+     ]
+    ],
+    "phi": 20,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 35,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ],
+     [
+      7,
+      1
+     ]
+    ],
+    "phi": 24,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 37,
+    "prime_factorization": [
+     [
+      37,
+      1
+     ]
+    ],
+    "phi": 36,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 39,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      13,
+      1
+     ]
+    ],
+    "phi": 24,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 41,
+    "prime_factorization": [
+     [
+      41,
+      1
+     ]
+    ],
+    "phi": 40,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 43,
+    "prime_factorization": [
+     [
+      43,
+      1
+     ]
+    ],
+    "phi": 42,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 45,
+    "prime_factorization": [
+     [
+      3,
+      2
+     ],
+     [
+      5,
+      1
+     ]
+    ],
+    "phi": 24,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 47,
+    "prime_factorization": [
+     [
+      47,
+      1
+     ]
+    ],
+    "phi": 46,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 49,
+    "prime_factorization": [
+     [
+      7,
+      2
+     ]
+    ],
+    "phi": 42,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 51,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      17,
+      1
+     ]
+    ],
+    "phi": 32,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 53,
+    "prime_factorization": [
+     [
+      53,
+      1
+     ]
+    ],
+    "phi": 52,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 55,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ],
+     [
+      11,
+      1
+     ]
+    ],
+    "phi": 40,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 57,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      19,
+      1
+     ]
+    ],
+    "phi": 36,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 59,
+    "prime_factorization": [
+     [
+      59,
+      1
+     ]
+    ],
+    "phi": 58,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 61,
+    "prime_factorization": [
+     [
+      61,
+      1
+     ]
+    ],
+    "phi": 60,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 63,
+    "prime_factorization": [
+     [
+      3,
+      2
+     ],
+     [
+      7,
+      1
+     ]
+    ],
+    "phi": 36,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 65,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ],
+     [
+      13,
+      1
+     ]
+    ],
+    "phi": 48,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 67,
+    "prime_factorization": [
+     [
+      67,
+      1
+     ]
+    ],
+    "phi": 66,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 69,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      23,
+      1
+     ]
+    ],
+    "phi": 44,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 71,
+    "prime_factorization": [
+     [
+      71,
+      1
+     ]
+    ],
+    "phi": 70,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 73,
+    "prime_factorization": [
+     [
+      73,
+      1
+     ]
+    ],
+    "phi": 72,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 75,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "phi": 40,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 77,
+    "prime_factorization": [
+     [
+      7,
+      1
+     ],
+     [
+      11,
+      1
+     ]
+    ],
+    "phi": 60,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 79,
+    "prime_factorization": [
+     [
+      79,
+      1
+     ]
+    ],
+    "phi": 78,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 81,
+    "prime_factorization": [
+     [
+      3,
+      4
+     ]
+    ],
+    "phi": 54,
+    "proved_tail_bound": 2,
+    "least_onset": 2,
+    "all_failures": [
+     {
+      "n": 1,
+      "a_n": 1,
+      "a_n_plus_phi": 10
+     }
+    ]
+   },
+   {
+    "k": 83,
+    "prime_factorization": [
+     [
+      83,
+      1
+     ]
+    ],
+    "phi": 82,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 85,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ],
+     [
+      17,
+      1
+     ]
+    ],
+    "phi": 64,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 87,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      29,
+      1
+     ]
+    ],
+    "phi": 56,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 89,
+    "prime_factorization": [
+     [
+      89,
+      1
+     ]
+    ],
+    "phi": 88,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 91,
+    "prime_factorization": [
+     [
+      7,
+      1
+     ],
+     [
+      13,
+      1
+     ]
+    ],
+    "phi": 72,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 93,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      31,
+      1
+     ]
+    ],
+    "phi": 60,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 95,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ],
+     [
+      19,
+      1
+     ]
+    ],
+    "phi": 72,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 97,
+    "prime_factorization": [
+     [
+      97,
+      1
+     ]
+    ],
+    "phi": 96,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 99,
+    "prime_factorization": [
+     [
+      3,
+      2
+     ],
+     [
+      11,
+      1
+     ]
+    ],
+    "phi": 60,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 101,
+    "prime_factorization": [
+     [
+      101,
+      1
+     ]
+    ],
+    "phi": 100,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 103,
+    "prime_factorization": [
+     [
+      103,
+      1
+     ]
+    ],
+    "phi": 102,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 105,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      7,
+      1
+     ]
+    ],
+    "phi": 48,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 107,
+    "prime_factorization": [
+     [
+      107,
+      1
+     ]
+    ],
+    "phi": 106,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 109,
+    "prime_factorization": [
+     [
+      109,
+      1
+     ]
+    ],
+    "phi": 108,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 111,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      37,
+      1
+     ]
+    ],
+    "phi": 72,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 113,
+    "prime_factorization": [
+     [
+      113,
+      1
+     ]
+    ],
+    "phi": 112,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 115,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ],
+     [
+      23,
+      1
+     ]
+    ],
+    "phi": 88,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 117,
+    "prime_factorization": [
+     [
+      3,
+      2
+     ],
+     [
+      13,
+      1
+     ]
+    ],
+    "phi": 72,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 119,
+    "prime_factorization": [
+     [
+      7,
+      1
+     ],
+     [
+      17,
+      1
+     ]
+    ],
+    "phi": 96,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 121,
+    "prime_factorization": [
+     [
+      11,
+      2
+     ]
+    ],
+    "phi": 110,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 123,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      41,
+      1
+     ]
+    ],
+    "phi": 80,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 125,
+    "prime_factorization": [
+     [
+      5,
+      3
+     ]
+    ],
+    "phi": 100,
+    "proved_tail_bound": 2,
+    "least_onset": 2,
+    "all_failures": [
+     {
+      "n": 1,
+      "a_n": 1,
+      "a_n_plus_phi": 101
+     }
+    ]
+   },
+   {
+    "k": 127,
+    "prime_factorization": [
+     [
+      127,
+      1
+     ]
+    ],
+    "phi": 126,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 129,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      43,
+      1
+     ]
+    ],
+    "phi": 84,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 131,
+    "prime_factorization": [
+     [
+      131,
+      1
+     ]
+    ],
+    "phi": 130,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 133,
+    "prime_factorization": [
+     [
+      7,
+      1
+     ],
+     [
+      19,
+      1
+     ]
+    ],
+    "phi": 108,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 135,
+    "prime_factorization": [
+     [
+      3,
+      3
+     ],
+     [
+      5,
+      1
+     ]
+    ],
+    "phi": 72,
+    "proved_tail_bound": 2,
+    "least_onset": 2,
+    "all_failures": [
+     {
+      "n": 1,
+      "a_n": 1,
+      "a_n_plus_phi": 91
+     }
+    ]
+   },
+   {
+    "k": 137,
+    "prime_factorization": [
+     [
+      137,
+      1
+     ]
+    ],
+    "phi": 136,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 139,
+    "prime_factorization": [
+     [
+      139,
+      1
+     ]
+    ],
+    "phi": 138,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 141,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      47,
+      1
+     ]
+    ],
+    "phi": 92,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 143,
+    "prime_factorization": [
+     [
+      11,
+      1
+     ],
+     [
+      13,
+      1
+     ]
+    ],
+    "phi": 120,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 145,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ],
+     [
+      29,
+      1
+     ]
+    ],
+    "phi": 112,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 147,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      7,
+      2
+     ]
+    ],
+    "phi": 84,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 149,
+    "prime_factorization": [
+     [
+      149,
+      1
+     ]
+    ],
+    "phi": 148,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 151,
+    "prime_factorization": [
+     [
+      151,
+      1
+     ]
+    ],
+    "phi": 150,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 153,
+    "prime_factorization": [
+     [
+      3,
+      2
+     ],
+     [
+      17,
+      1
+     ]
+    ],
+    "phi": 96,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 155,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ],
+     [
+      31,
+      1
+     ]
+    ],
+    "phi": 120,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 157,
+    "prime_factorization": [
+     [
+      157,
+      1
+     ]
+    ],
+    "phi": 156,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 159,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      53,
+      1
+     ]
+    ],
+    "phi": 104,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 161,
+    "prime_factorization": [
+     [
+      7,
+      1
+     ],
+     [
+      23,
+      1
+     ]
+    ],
+    "phi": 132,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 163,
+    "prime_factorization": [
+     [
+      163,
+      1
+     ]
+    ],
+    "phi": 162,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 165,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      11,
+      1
+     ]
+    ],
+    "phi": 80,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 167,
+    "prime_factorization": [
+     [
+      167,
+      1
+     ]
+    ],
+    "phi": 166,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 169,
+    "prime_factorization": [
+     [
+      13,
+      2
+     ]
+    ],
+    "phi": 156,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 171,
+    "prime_factorization": [
+     [
+      3,
+      2
+     ],
+     [
+      19,
+      1
+     ]
+    ],
+    "phi": 108,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 173,
+    "prime_factorization": [
+     [
+      173,
+      1
+     ]
+    ],
+    "phi": 172,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 175,
+    "prime_factorization": [
+     [
+      5,
+      2
+     ],
+     [
+      7,
+      1
+     ]
+    ],
+    "phi": 120,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 177,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      59,
+      1
+     ]
+    ],
+    "phi": 116,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 179,
+    "prime_factorization": [
+     [
+      179,
+      1
+     ]
+    ],
+    "phi": 178,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 181,
+    "prime_factorization": [
+     [
+      181,
+      1
+     ]
+    ],
+    "phi": 180,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 183,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      61,
+      1
+     ]
+    ],
+    "phi": 120,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 185,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ],
+     [
+      37,
+      1
+     ]
+    ],
+    "phi": 144,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 187,
+    "prime_factorization": [
+     [
+      11,
+      1
+     ],
+     [
+      17,
+      1
+     ]
+    ],
+    "phi": 160,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 189,
+    "prime_factorization": [
+     [
+      3,
+      3
+     ],
+     [
+      7,
+      1
+     ]
+    ],
+    "phi": 108,
+    "proved_tail_bound": 2,
+    "least_onset": 2,
+    "all_failures": [
+     {
+      "n": 1,
+      "a_n": 1,
+      "a_n_plus_phi": 64
+     }
+    ]
+   },
+   {
+    "k": 191,
+    "prime_factorization": [
+     [
+      191,
+      1
+     ]
+    ],
+    "phi": 190,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 193,
+    "prime_factorization": [
+     [
+      193,
+      1
+     ]
+    ],
+    "phi": 192,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 195,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      13,
+      1
+     ]
+    ],
+    "phi": 96,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 197,
+    "prime_factorization": [
+     [
+      197,
+      1
+     ]
+    ],
+    "phi": 196,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 199,
+    "prime_factorization": [
+     [
+      199,
+      1
+     ]
+    ],
+    "phi": 198,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 201,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      67,
+      1
+     ]
+    ],
+    "phi": 132,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 203,
+    "prime_factorization": [
+     [
+      7,
+      1
+     ],
+     [
+      29,
+      1
+     ]
+    ],
+    "phi": 168,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 205,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ],
+     [
+      41,
+      1
+     ]
+    ],
+    "phi": 160,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 207,
+    "prime_factorization": [
+     [
+      3,
+      2
+     ],
+     [
+      23,
+      1
+     ]
+    ],
+    "phi": 132,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 209,
+    "prime_factorization": [
+     [
+      11,
+      1
+     ],
+     [
+      19,
+      1
+     ]
+    ],
+    "phi": 180,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 211,
+    "prime_factorization": [
+     [
+      211,
+      1
+     ]
+    ],
+    "phi": 210,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 213,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      71,
+      1
+     ]
+    ],
+    "phi": 140,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 215,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ],
+     [
+      43,
+      1
+     ]
+    ],
+    "phi": 168,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 217,
+    "prime_factorization": [
+     [
+      7,
+      1
+     ],
+     [
+      31,
+      1
+     ]
+    ],
+    "phi": 180,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 219,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      73,
+      1
+     ]
+    ],
+    "phi": 144,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 221,
+    "prime_factorization": [
+     [
+      13,
+      1
+     ],
+     [
+      17,
+      1
+     ]
+    ],
+    "phi": 192,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 223,
+    "prime_factorization": [
+     [
+      223,
+      1
+     ]
+    ],
+    "phi": 222,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 225,
+    "prime_factorization": [
+     [
+      3,
+      2
+     ],
+     [
+      5,
+      2
+     ]
+    ],
+    "phi": 120,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 227,
+    "prime_factorization": [
+     [
+      227,
+      1
+     ]
+    ],
+    "phi": 226,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 229,
+    "prime_factorization": [
+     [
+      229,
+      1
+     ]
+    ],
+    "phi": 228,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 231,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      7,
+      1
+     ],
+     [
+      11,
+      1
+     ]
+    ],
+    "phi": 120,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 233,
+    "prime_factorization": [
+     [
+      233,
+      1
+     ]
+    ],
+    "phi": 232,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 235,
+    "prime_factorization": [
+     [
+      5,
+      1
+     ],
+     [
+      47,
+      1
+     ]
+    ],
+    "phi": 184,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 237,
+    "prime_factorization": [
+     [
+      3,
+      1
+     ],
+     [
+      79,
+      1
+     ]
+    ],
+    "phi": 156,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 239,
+    "prime_factorization": [
+     [
+      239,
+      1
+     ]
+    ],
+    "phi": 238,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 241,
+    "prime_factorization": [
+     [
+      241,
+      1
+     ]
+    ],
+    "phi": 240,
+    "proved_tail_bound": 1,
+    "least_onset": 1,
+    "all_failures": []
+   },
+   {
+    "k": 243,
+    "prime_factorization": [
+     [
+      3,
+      5
+     ]
+    ],
+    "phi": 162,
+    "proved_tail_bound": 3,
+    "least_onset": 3,
+    "all_failures": [
+     {
+      "n": 1,
+      "a_n": 1,
+      "a_n_plus_phi": 10
+     },
+     {
+      "n": 2,
+      "a_n": 5,
+      "a_n_plus_phi": 167
+     }
+    ]
+   }
+  ]
+ }
+}
