@@ -37,7 +37,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 |---|---|---|
 | [A combinatorial interpretation of Kazhdan–Lusztig coefficients](Conjectures/CombinatorialInterpretationKazhdanLuszti/) 🤖 | Novelty pre-check: likely open. | AI research (not human-reviewed) |
 | [A combinatorial interpretation of Kronecker coefficients](Conjectures/CombinatorialInterpretationKroneckerCoef/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
-| [A combinatorial interpretation of ordinary Schubert structure constants](Conjectures/CombinatorialInterpretationOrdinarySchub/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
+| [A combinatorial interpretation of ordinary Schubert structure constants](Conjectures/CombinatorialInterpretationOrdinarySchub/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A combinatorial interpretation of symmetric-group character-table row sums](Conjectures/CombinatorialInterpretationSymmetricGrou/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A common right descent decreases the length-thirteen Kazhdan–Lusztig coefficient by at most four](Conjectures/CommonRightDescentDecreases/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A zero–one bound for the top permitted Kazhdan–Lusztig coefficient when $G=0$](Conjectures/ZeroOneBoundTop/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |

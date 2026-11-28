@@ -42,6 +42,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run completed all $1{,}115$ eligible triples and found zero violations of the weighted Hall inequalities. All $24$ factor polynomials agreed with divided differences, and all $1{,}115$ signed totals agreed with independent coefficient extraction. Both synthetic matching checks passed, including a case where moving one positive copy preserved the signed total but caused a Hall violation.
 - **Exact adjacent-swap matching test in rank five** [succeeded, finite computation]: Every eligible ordered triple in S5 has a covering matching. ([code](computations/mrl_6d12fc68.py), [result](computations/mrl_6d12fc68.result.json))
   - [Computational Mathematician] The run completed its exhaustive enumeration and passed its sanity checks, including a test where equal odd and even totals conceal a Hall obstruction. For every nonempty odd population, the program checked that the certificate used only adjacent swaps, exhausted every odd block, and respected every even block's capacity. The displayed certificate list is excerpted. The complete supplied source specifies how to regenerate each matching. The result settles the stated test in $S_5$ and leaves the assertion for arbitrary rank open.
+- **Check every possible rank-six summand index at degree fifteen** [succeeded, finite computation]: Only the longest index lacks a usable ascent. ([code](computations/mrl_a9e9699e.py), [result](computations/mrl_a9e9699e.result.json))
+  - [Computational Mathematician] At $n=6$, the run exhaustively checked all $3{,}876=\binom{19}{4}$ nonnegative five-entry Lehmer codes of sum $15$, verifying each by decoding and re-encoding. Only $(5,4,3,2,1)$ gave an index with no ascent in positions $1$ through $5$. For each of the five swap positions, the run also checked that the $720$ staircase weights split into $360$ opposite-sign pairs. This is an exact check of the index and parity assertions at rank six. Equality of the multiplicities at paired weights and the count of unmatched objects follow from the proof below.
 
 ## AI research runs
 
@@ -49,5 +51,5 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 
 - [2026-11-27 run f140f6f1](research/2026-11-27-run-f140f6f1.md): completed. orchestrator: Iteration 2 exhausts the two-iteration limit. The existing reviews suffice to distinguish the algebraic cardinality result, the corrected local obstruction, and the open general matching proposal.
 - [2026-11-28 run b8c7c345](research/2026-11-28-run-b8c7c345.md): completed. focused round complete
-- [2026-11-28 run c9374ade](research/2026-11-28-run-c9374ade.md): running. 
+- [2026-11-28 run c9374ade](research/2026-11-28-run-c9374ade.md): completed. focused round complete
 
