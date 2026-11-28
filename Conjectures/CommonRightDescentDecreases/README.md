@@ -51,6 +51,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run passed its sanity checks and returned a checkpoint at its internal time limit. In the processed range, the saturated bound rejected $291432$ pairs and the second coefficient test rejected $5003$. These counts precede the canonical tie-break and the full connectivity test. They certify threshold exclusions for all $296435$ pairs reaching the coefficient tests. The exact maximum in the range was not determined.
 - **Canonical suffix search by inversion number and descent sets** [succeeded, finite computation]: Only the processed half-open prefix is settled. Resume at next_start, inclusively. ([code](computations/mrl_9d353f30.py), [result](computations/mrl_9d353f30.result.json))
   - [Computational Mathematician] The run passed its sanity checks and returned a partial checkpoint at its internal time budget. In the processed range, the capped bound rejected $345907$ pairs. Among those reaching the chain test, $12723$ were disconnected. Exact coefficient evaluation rejected the remaining $1471$ connected candidates. The separate counts of $2525$ noncanonical pairs and $135065$ pairs with the wrong cycle count are structural exclusions. No witness was reported.
+- **Exact suffix scan with 720 upper-endpoint ranks per block** [succeeded, finite computation]: The processed half-open prefix contains no witness. Resume inclusively at next_start. ([code](computations/mrl_970c1202.py), [result](computations/mrl_970c1202.result.json))
+  - [Computational Mathematician] The sanity checks passed. The run gave an exhaustive finite exclusion through the reported checkpoint. The capped recurrence rejected $353303$ pairs, and exact evaluation gave $[q^5]P_{a,v}<5$ for all $1827$ pairs that reached it. The run stopped at its time budget with status `partial`. Its negative conclusion applies only to the processed half-open range.
 
 ## AI research runs
 
@@ -62,5 +64,5 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run 710fb770](research/2026-11-28-run-710fb770.md): completed. focused round complete
 - [2026-11-28 run e3d69b9c](research/2026-11-28-run-e3d69b9c.md): completed. focused round complete
 - [2026-11-28 run f8469d92](research/2026-11-28-run-f8469d92.md): completed. focused round complete
-- [2026-11-28 run 209d19f2](research/2026-11-28-run-209d19f2.md): running. 
+- [2026-11-28 run 209d19f2](research/2026-11-28-run-209d19f2.md): completed. focused round complete
 

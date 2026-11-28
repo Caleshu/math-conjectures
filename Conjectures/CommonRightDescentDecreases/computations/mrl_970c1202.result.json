@@ -1,0 +1,52 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 95.818,
+ "result": {
+  "summary": "The processed half-open prefix contains no witness. Resume inclusively at next_start.",
+  "status": "partial",
+  "sanity_passed": true,
+  "requested_half_open": [
+   [
+    109574,
+    1365498
+   ],
+   [
+    3628800,
+    0
+   ]
+  ],
+  "processed_half_open": [
+   [
+    109574,
+    1365498
+   ],
+   [
+    147374,
+    1000702
+   ]
+  ],
+  "unscanned_half_open": [
+   [
+    147374,
+    1000702
+   ],
+   [
+    3628800,
+    0
+   ]
+  ],
+  "next_start": [
+   147374,
+   1000702
+  ],
+  "counts": {
+   "exact_below_five": 1827,
+   "wrong_cycle_count": 142227,
+   "disconnected": 25388,
+   "capped_bound_below_five": 353303,
+   "noncanonical": 13867
+  },
+  "witness": null,
+  "elapsed_seconds": 95.004
+ }
+}
