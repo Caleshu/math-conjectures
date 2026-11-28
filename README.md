@@ -58,7 +58,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 | [Critical exponents of morphic images (Currie Conj. 1)](Conjectures/CurrieExponent/) | 4 of 10 morphisms proved, the rest reduce to two words; numerics consistent | Partial proof |
 | [Equi-independence number α₌(Qₙ) of the hypercube (Sagols–Morales-Luna)](Conjectures/EquiIndependenceNumberHypercube/) 🤖 | Exact values for $m\le 7$: 0, 0, 2, 4, 10, 20, 44 (CP-SAT; $m\le 4$ also brute force). Open in general | Computational (solver-dependent for m ≥ 5) |
 | [Erdős Problem 151 — cliqueFree four](Conjectures/ErdS151CliqueFree/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
-| [Erdős Problem 366 — weaker](Conjectures/ErdS366Weaker/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
+| [Erdős Problem 366 — weaker](Conjectures/ErdS366Weaker/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
 | [Erdős Problem 614](Conjectures/Erdos614/) | Formula proved for k+2 ≤ n ≤ (3k+2)/2, extending Erdős–Reid–Schelp–Staton / Pikhurko–Thomason; fails for all n ≥ 2k+1 | Partial result Lean-verified |
 | [Erdős Problem 64 (Erdős–Gyárfás conjecture)](Conjectures/Erdos64/) | Statement formalized | Statement formalized in Lean |
 | [Hypercubes with distant faulty vertices (Gregor–Škrekovski)](Conjectures/DistantFaults/) | Holds for n ≤ 6 in both forms (exhaustive) | Computational evidence |

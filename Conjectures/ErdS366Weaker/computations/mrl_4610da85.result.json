@@ -1,0 +1,39 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.741,
+ "result": {
+  "summary": "Exhausted the bounded range by exact continued fractions and substitution.",
+  "status": "INFEASIBLE",
+  "author_support": "proved_here",
+  "justification": "The rational approximation and Legendre criterion in the experiment description cover every eligible reduced fraction.",
+  "coefficients": [
+   1,
+   16,
+   32,
+   81,
+   243,
+   625,
+   1296,
+   2401,
+   2592,
+   3125,
+   3888,
+   7776,
+   10000,
+   14641,
+   16807,
+   20000,
+   28561,
+   38416,
+   50000,
+   50625,
+   76832,
+   83521,
+   100000
+  ],
+  "coprime_pairs": 152,
+  "inclusive_multiplier_cutoff": "1000000000000000000000000000000000000000000000000000000000000",
+  "witnesses_A_B_x_y_signed_difference": [],
+  "sanity": "Direct enumeration on small inputs agreed, including known solutions of both signs."
+ }
+}
