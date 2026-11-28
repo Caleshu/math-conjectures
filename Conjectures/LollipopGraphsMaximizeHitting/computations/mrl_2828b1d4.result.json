@@ -1,0 +1,24 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 9.321,
+ "result": {
+  "summary": "PASS",
+  "checked_half_open": [
+   "0",
+   "8268327440875520"
+  ],
+  "requested_stop": "8268327440875520",
+  "full_stop": "8268327440875520",
+  "witness": null,
+  "sanity": {
+   "P3_HT": "10",
+   "lollipop_three_HT": "11950",
+   "tree_shapes": 235
+  },
+  "counts": {
+   "scope_closures": 602,
+   "bound_closures": 94871,
+   "exact_scores": 3816
+  }
+ }
+}
