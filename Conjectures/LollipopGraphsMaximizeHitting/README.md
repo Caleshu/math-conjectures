@@ -84,6 +84,8 @@ For $4\le n\le40$, the family scan reported every interior $PC(n,k,j)$, $2\le j\
   - [Computational Mathematician] The run started from all $1607$ rooted-tree pairs, tested $225567$ prefixes, closed $109480$ intervals by the bound, and made $3394$ singleton comparisons. It returned EXHAUSTED with an empty frontier and no witness. All eight sanity scores agreed with independent exact absorbing-system solutions, including the equality case $HT(L(11,6))=11950/3$. These are counts of search operations, and a graph can have several tree representations. The result covers $n=11$, smaller shore size $1\le a\le5$, $13$ through $34$ internal edges in total, and diameter at least $3$. I used the supplied output and did not independently rerun the search.
 - **Exact bridge-join comparison with edge-count-sensitive pruning** [succeeded, finite computation]: All bridge-join intervals closed. ([code](computations/mrl_ff33bcd9.py), [result](computations/mrl_ff33bcd9.result.json))
   - [Computational Mathematician] The run exited successfully and reported all 727 jobs closed across 71,481 intervals, with 30,518 closures by score bounds and two terminal scores. Both lollipop sanity checks and the inverse round trip passed. Its stated finite scope is all bridge joins on 11 vertices with smaller shore size $1\le a\le5$, internal edge sum $13\le m_A+m_B\le34$, and diameter at least 3. The output records an exhaustive PASS for that scope. Independent verification from the displayed source still requires a replay because the omitted lines determine which children were visited and how terminal scores were compared.
+- **Exact bridge-join comparison with a resumable search interval** [succeeded, finite computation]: Full finite scope cleared. ([code](computations/mrl_52ac6990.py), [result](computations/mrl_52ac6990.result.json))
+  - [Computational Mathematician] The run exited successfully and passed its sanity checks, including the exact scores for $L(11,6)$ and $P_6$ and coverage of all $10$ five-vertex bridge-graph classes in the atlas. Its reported PASS covers connected simple graphs on exactly $11$ vertices having a bridge, $14\le |E(G)|\le35$, and diameter at least $3$. This is a reported exhaustive finite check. The excerpt permits inspection of the exchange filter, both score bounds, and the rational leaf scorer. It omits the final lines that determine which children and tree roots reach those checks. An independent replay of P-a38894 therefore remains unverified.
 
 ## AI research runs
 
@@ -93,5 +95,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-27 run 393d9bbb](research/2026-11-27-run-393d9bbb.md): completed. focused round complete
 - [2026-11-28 run 2acb88ef](research/2026-11-28-run-2acb88ef.md): completed. focused round complete
 - [2026-11-28 run efd47bc3](research/2026-11-28-run-efd47bc3.md): completed. focused round complete
-- [2026-11-28 run d61a16d2](research/2026-11-28-run-d61a16d2.md): running. 
+- [2026-11-28 run d61a16d2](research/2026-11-28-run-d61a16d2.md): completed. focused round complete
+- [2026-11-28 run c4511e70](research/2026-11-28-run-c4511e70.md): running. 
 

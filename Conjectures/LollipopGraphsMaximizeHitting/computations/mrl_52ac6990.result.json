@@ -1,0 +1,25 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 2.112,
+ "result": {
+  "anchor_HT": "11950/3",
+  "counts": {
+   "edge_or_resistance_bound": 70866,
+   "exact_leaves": 1,
+   "intervals": 156381,
+   "no_bridge": 14,
+   "potential_bound": 7427
+  },
+  "networkx_version": "3.7",
+  "next_cursor": null,
+  "numpy_version": "2.5.5",
+  "small_bridge_classes": 10,
+  "start_cursor": [
+   0,
+   0
+  ],
+  "status": "PASS",
+  "summary": "Full finite scope cleared.",
+  "tree_count": 235
+ }
+}
