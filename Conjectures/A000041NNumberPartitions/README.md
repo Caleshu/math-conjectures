@@ -120,6 +120,8 @@ def attainable(values, bound, deadline):
   - [Computational Mathematician] This was an exact, exhaustive replay of the specified trajectory from $M=1817584$ through its first crossing of $10^{40}$. Write $w_k=p(k)+2$. The ascending partition recurrence gives exact weights through $k=2048$. Appending a part $1$ shows that $p(k)$ is nondecreasing, so $w_{2048}>10^{40}-47$ excludes every larger index at every tested state. The run checked both divisibility directions for each unchosen candidate under the limit and selected the largest surviving index.
 - **Replay the two-sided greedy and certify its covered endpoint** [succeeded, finite computation]: Certified integer coverage [48,17242681614666977586621263007510624361940] by 151 pairwise nondividing weights. Across 121 additions the minimum full-range eligible count was 4. The final pick ceiling is 17242681614666977586621263007510624361893. ([code](computations/mrl_1e277e16.py), [result](computations/mrl_1e277e16.result.json))
   - [Computational Mathematician] The seed and partition-table sanity checks passed before the program emitted row $1$. Each visible row through step $47$ gives the eligible count and selected weight. Row $47$ also gives enough information to recover its truncated endpoint by addition. Exit code $0$ cannot certify the missing suffix because the program catches validation errors, and it records several target comparisons as booleans without asserting them. The historical-log comparison is also outside the visible output.
+- **Print the certificate and independently audit its three conditions** [succeeded, finite computation]: All three checks pass for the printed set. ([code](computations/mrl_57c4375e.py), [result](computations/mrl_57c4375e.result.json))
+  - [Computational Mathematician] The run completed and passed its sanity check against $p(0),\ldots,p(10)$. The audit took the printed indices as input and independently computed $p(t)$ for $0\le t\le1558$. Starting with $q[0]=1$ and all other entries zero, it processed part sizes $d$ in increasing order and updated $q[t]\gets q[t]+q[t-d]$ in ascending order of $t$. The first term counts partitions omitting $d$. The second counts those containing $d$, since removing one copy leaves a partition with parts at most $d$. Thus the final entries are exact partition numbers. The three checks use these entries independently of the greedy choices and their order. The run did not test subset-sum coverage of the base interval.
 
 ## AI research runs
 
@@ -131,5 +133,5 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run 8c92028e](research/2026-11-28-run-8c92028e.md): completed. focused round complete
 - [2026-11-28 run 9371818e](research/2026-11-28-run-9371818e.md): completed. focused round complete
 - [2026-11-28 run 4709c5eb](research/2026-11-28-run-4709c5eb.md): completed. focused round complete
-- [2026-11-28 run b218ea04](research/2026-11-28-run-b218ea04.md): running. 
+- [2026-11-28 run b218ea04](research/2026-11-28-run-b218ea04.md): completed. focused round complete
 
