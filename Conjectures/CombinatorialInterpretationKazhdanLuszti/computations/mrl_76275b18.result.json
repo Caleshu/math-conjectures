@@ -1,0 +1,24 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.753,
+ "result": {
+  "target": "645312",
+  "candidate": "2342512342321",
+  "candidate_is_reduced_word": true,
+  "number_of_reduced_words": 11583,
+  "expected_rules": {
+   "action": "right adjacent position swaps, one-based",
+   "endpoint": "product of kept letters in word order",
+   "defect": "all pre-step descents, whether skipped or kept",
+   "bans": "arbitrary position-specific binary triples",
+   "validity": "survivor counts equal every ordinary KL coefficient by endpoint and defect"
+  },
+  "sanity_check": "passed",
+  "rules_match": null,
+  "coverage_evidence": "E-c88e68 coverage record absent",
+  "coverage_match": null,
+  "summary": "The historical claim remains unverified. Inspect the coverage record and rule comparison fields for the outstanding evidence.",
+  "author_support": "proved_here",
+  "justification": "The count partitions reduced words by their last generator. Removing it swaps a descent and lowers the inversion count by one. Appending it reverses this bijection. The identity has one empty word. The membership test requires each swap to increase the inversion count by one and checks the final permutation. Thus, once D is established to be a subset of R, the two conditions |D|=|R|-1 and a outside D are necessary and sufficient. The compact branch is conditional on the provenance of its two recorded facts. For this 13-letter word every shorter marked binary block lies in a fixed triple, and banning all its extensions at that triple removes exactly the same masks. This justifies normalizing widths one through three to position-specific triples."
+ }
+}

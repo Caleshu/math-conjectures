@@ -35,7 +35,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 
 | Problem | Progress so far | Verification |
 |---|---|---|
-| [A combinatorial interpretation of Kazhdan–Lusztig coefficients](Conjectures/CombinatorialInterpretationKazhdanLuszti/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
+| [A combinatorial interpretation of Kazhdan–Lusztig coefficients](Conjectures/CombinatorialInterpretationKazhdanLuszti/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A combinatorial interpretation of Kronecker coefficients](Conjectures/CombinatorialInterpretationKroneckerCoef/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A combinatorial interpretation of ordinary Schubert structure constants](Conjectures/CombinatorialInterpretationOrdinarySchub/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A combinatorial interpretation of symmetric-group character-table row sums](Conjectures/CombinatorialInterpretationSymmetricGrou/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |

@@ -45,6 +45,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run enumerated all $2^{13}=8192$ masks of this one word, counted descents before each keep-or-skip decision, and computed the KL targets by triangular Hecke-algebra elimination. Its sanity checks passed, including replay of a feasible list on the toy word $121$. The reported two-class core admits the direct verification below.
 - **Exact existence test across reduced words of $645312$** [succeeded, finite computation]: Every reduced word is excluded, including the single word covered by the supplied core. ([code](computations/mrl_c88e688a.py), [result](computations/mrl_c88e688a.result.json))
   - [Computational Mathematician] The run decided all $11{,}582$ words outside the prior certificate. For $11{,}535$ words, a mask forced to survive belonged to a class with target coefficient zero. Exact feasibility search excluded the other $47$, with no undecided cases. The KL check gave $P_{e,341256}(q)=1+q$. The search passed both toy feasibility checks, including direct replay of all seven survivors in the feasible toy.
+- **Check the complement of E-c88e68’s coverage** [succeeded, finite computation]: The historical claim remains unverified. Inspect the coverage record and rule comparison fields for the outstanding evidence. ([code](computations/mrl_76275b18.py), [result](computations/mrl_76275b18.result.json))
+  - [Computational Mathematician] The sanity checks passed. The descent recurrence counted all reduced words of this one permutation in $S_6$, and the membership test verified $a$ by checking that every swap increases length and the final product is $w$. Both `coverage_match` and `rules_match` are null because the E-c88e68 record and rule comparison were absent.
 
 ## AI research runs
 
@@ -55,5 +57,5 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run 5633831e](research/2026-11-28-run-5633831e.md): completed. focused round complete
 - [2026-11-28 run 943bc97d](research/2026-11-28-run-943bc97d.md): completed. focused round complete
 - [2026-11-28 run 0059e39f](research/2026-11-28-run-0059e39f.md): completed. focused round complete
-- [2026-11-28 run 81fd10cc](research/2026-11-28-run-81fd10cc.md): running. 
+- [2026-11-28 run 81fd10cc](research/2026-11-28-run-81fd10cc.md): completed. focused round complete
 
