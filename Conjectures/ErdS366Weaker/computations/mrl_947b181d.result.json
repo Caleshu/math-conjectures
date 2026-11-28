@@ -1,0 +1,15 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.624,
+ "result": {
+  "summary": "The rational certificate succeeds.",
+  "s": 2,
+  "d": 6,
+  "prefactor": 1174136684544,
+  "log_argument": 24,
+  "strict_lower_bound_for_exp_4": "103/3",
+  "candidate_upper_bound_for_C": 4696546738176,
+  "target": 10000000000000,
+  "certified_from_supplied_formula": true
+ }
+}

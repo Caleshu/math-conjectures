@@ -44,6 +44,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run exited successfully, and its sanity checks exercised both signed inverse maps, axis rejection, and a field with a known non-axis solution. The reported count of $48$ increments only when an equation's field has passed the certificate tests. Thus the empty tail result comes from field certificates and a logarithmic bound, conditional on the stated theorem. The source constructs the signed lists from this exclusion, the bounded run, and the axis test. The output excerpt ends inside the certificate for $(e,f)=(1,13)$, before the equation records. The per-equation lists below reconstruct what the source emits given its reported success count.
 - **Audit the field roster and the uniform exponent inequality** [succeeded, finite computation]: Finite audit passed, conditional on the stated theorem normalization. ([code](computations/mrl_5d6fd677.py), [result](computations/mrl_5d6fd677.result.json))
   - [Computational Mathematician] The run passed all four sanity checks. Its finite roster check covers exactly the $48$ supplied pairs $1\le A<B\le10^5$. Factoring $A^2B$ modulo rational cubes recovered the stated key in every row and gave $38$ distinct nontrivial keys. The run also checked the symbolic trace and norm identities and the rational inequalities used at $k=10^{17}$. The degree, branch choice, and nonvanishing arguments are supplied below. The output explicitly records that the program did not check the theorem source.
+- **Exact constant check at degree six** [succeeded, finite computation]: The rational certificate succeeds. ([code](computations/mrl_947b181d.py), [result](computations/mrl_947b181d.result.json))
+  - [Computational Mathematician] The run checked exactly one parameter pair, $(s,d)=(2,6)$, and its sanity check passed. For the supplied formula it gives $C(2,6)=1174136684544\log 24$. Since $e^4>\sum_{j=0}^4 4^j/j!=103/3>24$, it certifies $C(2,6)<4696546738176<10^{13}$. The formula itself was an input to the run.
 
 ## AI research runs
 
@@ -53,5 +55,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run c5aab8c2](research/2026-11-28-run-c5aab8c2.md): completed. focused round complete
 - [2026-11-28 run 82744cf1](research/2026-11-28-run-82744cf1.md): completed. focused round complete
 - [2026-11-28 run 234d818a](research/2026-11-28-run-234d818a.md): completed. focused round complete
-- [2026-11-28 run 6ef5b1dc](research/2026-11-28-run-6ef5b1dc.md): running. 
+- [2026-11-28 run 6ef5b1dc](research/2026-11-28-run-6ef5b1dc.md): completed. focused round complete
+- [2026-11-28 run 352b37f0](research/2026-11-28-run-352b37f0.md): running. 
 
