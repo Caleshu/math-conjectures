@@ -40,10 +40,14 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run completed an exact matching test on every degree-compatible triple in $S_4$ and every degree-compatible triple in $S_5$ with $\ell(u),\ell(v)\le3$. In $S_4$, widths one and two failed on $125$ and $35$ of $1{,}115$ triples, respectively. In the stated $S_5$ range, they failed on $1{,}843$ and $467$ of $16{,}329$. The pipe-dream monomials agreed with the divided-difference Schubert polynomials, and the signed chain count agreed with independent coefficient extraction for every tested triple. The failures certify obstructions for this graph, whose edges compare steps at the same indices.
 - **Weighted Hall test for adjacent coordinate swaps in $S_4$** [succeeded, finite computation]: Checked 1115 of 1115 degree-compatible ordered triples in S_4. Hall failed on 0 tested triples. ([code](computations/mrl_a62eef1d.py), [result](computations/mrl_a62eef1d.result.json))
   - [Computational Mathematician] The run completed all $1{,}115$ eligible triples and found zero violations of the weighted Hall inequalities. All $24$ factor polynomials agreed with divided differences, and all $1{,}115$ signed totals agreed with independent coefficient extraction. Both synthetic matching checks passed, including a case where moving one positive copy preserved the signed total but caused a Hall violation.
+- **Exact adjacent-swap matching test in rank five** [succeeded, finite computation]: Every eligible ordered triple in S5 has a covering matching. ([code](computations/mrl_6d12fc68.py), [result](computations/mrl_6d12fc68.result.json))
+  - [Computational Mathematician] The run completed its exhaustive enumeration and passed its sanity checks, including a test where equal odd and even totals conceal a Hall obstruction. For every nonempty odd population, the program checked that the certificate used only adjacent swaps, exhausted every odd block, and respected every even block's capacity. The displayed certificate list is excerpted. The complete supplied source specifies how to regenerate each matching. The result settles the stated test in $S_5$ and leaves the assertion for arbitrary rank open.
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
 - [2026-11-27 run f140f6f1](research/2026-11-27-run-f140f6f1.md): completed. orchestrator: Iteration 2 exhausts the two-iteration limit. The existing reviews suffice to distinguish the algebraic cardinality result, the corrected local obstruction, and the open general matching proposal.
+- [2026-11-28 run b8c7c345](research/2026-11-28-run-b8c7c345.md): completed. focused round complete
+- [2026-11-28 run c9374ade](research/2026-11-28-run-c9374ade.md): running. 
 
