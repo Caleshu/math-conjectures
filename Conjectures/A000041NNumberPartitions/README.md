@@ -110,10 +110,14 @@ def attainable(values, bound, deadline):
     for i in range(size):
         for j in range(i + 1, size):
             if values[j] %
+- **Exact coverage by pairwise nondividing partition weights** [succeeded, finite computation]: 250000 of 250000 targets have validated index lists. 0 certified gaps. 0 unresolved targets. ([code](computations/mrl_a97b81ca.py), [result](computations/mrl_a97b81ca.result.json))
+  - [Computational Mathematician] The run succeeded, and its search agreed with exhaustive enumeration on the sanity instance $\{3,4,12,17\}$. For the target interval, the decisive check was direct validation of every witness. The program checked its sum against its assigned target and checked every divisibility conflict. This establishes the existential claim throughout the stated finite interval. Every target had a witness, so an exhaustive exclusion certificate was unnecessary.
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
 - [2026-11-27 run 8d2ba2a0](research/2026-11-27-run-8d2ba2a0.md): completed. orchestrator: Iteration $2$ of $2$ and all four experiments are complete. The outstanding review issues concern evidence presentation and a missing qualification. Resolving them would improve the record while leaving both universal clauses open.
+- [2026-11-28 run a161debe](research/2026-11-28-run-a161debe.md): completed. focused round complete
+- [2026-11-28 run cd8ef158](research/2026-11-28-run-cd8ef158.md): running. 
 
