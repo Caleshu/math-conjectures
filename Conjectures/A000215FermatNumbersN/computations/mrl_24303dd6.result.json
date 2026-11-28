@@ -1,0 +1,42 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 4.518,
+ "result": {
+  "summary": "EMPTY. Exhaustively checked 10000000 < m <= 1000000000 and found 0 solutions there.",
+  "status": "EMPTY",
+  "complete": true,
+  "requested_bounds_open_closed": [
+   10000000,
+   1000000000
+  ],
+  "checked_bounds_open_closed": [
+   10000000,
+   1000000000
+  ],
+  "unexamined_bounds_open_closed": null,
+  "counts": {
+   "multiples_of_four": 247500000,
+   "after_prime_sieve": 37308099,
+   "passed_m_minus_1": 2077,
+   "also_passed_m_plus_1": 472
+  },
+  "solutions": [],
+  "validation": {
+   "literal_bounds_closed": [
+    1,
+    10000
+   ],
+   "literal_solutions": [
+    16,
+    256
+   ],
+   "intermediate_stages_match": true,
+   "large_arithmetic_probes": [
+    999999996,
+    1000000000
+   ]
+  },
+  "author_support": "proved_here",
+  "justification": "Exact enumeration on the reported checked interval using the stated necessary filters and all three pairwise coprime factors."
+ }
+}

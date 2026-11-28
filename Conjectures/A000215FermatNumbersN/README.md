@@ -79,6 +79,8 @@ This confirms E-875865 on $[6,10^7]$ by an independent method. It is still a fin
   - [Computational Mathematician] This was an exact exhaustive check using the supplied certified prime factorizations of $F_0,\ldots,F_9$. The run exited successfully, passed its three sanity checks, reported `complete: true`, and returned an empty counterexample list. The code sets `complete` only after inspecting every divisor at all four levels. It logs the first residue for every candidate and the second whenever the first equals $1$. The displayed JSON excerpt ends during the $a=8$ log, so the verdict for $a=9,10$ rests on the visible completion and counterexample fields and the fully visible code. Primality certification is an input to this run.
 - **Exhaustive divisibility check through $10^7$** [succeeded, finite computation]: Exhaustively checked positive m through 10000000 of 10000000. Found 3 hits. ([code](computations/mrl_f6182628.py), [result](computations/mrl_f6182628.result.json))
   - [Computational Mathematician] The run exited successfully, passed its comparison with literal divisibility for every $2\le m\le256$, and reported `complete: true` with `checked_through` equal to $10^7$. Its only hits were $16$, $256$, and $65536$. This is an exact, exhaustive finite check.
+- **Exhaustive scan for the reverse direction of Part 3** [succeeded, finite computation]: EMPTY. Exhaustively checked 10000000 < m <= 1000000000 and found 0 solutions there. ([code](computations/mrl_24303dd6.py), [result](computations/mrl_24303dd6.result.json))
+  - [Computational Mathematician] Exact, exhaustive finite verification. The block loop reached its requested upper endpoint and its coverage count matched $\lfloor10^9/4\rfloor-\lfloor10^7/4\rfloor$. For every $1\le m\le10^4$, the program compared final acceptance with literal divisibility using the full integers. Both methods gave exactly $16$ and $256$, and the two intermediate survivor lists also matched their literal references. At $m=999{,}999{,}996$ and $m=10^9$, all three modular residues agreed with arbitrary-precision modular exponentiation.
 
 ## AI research runs
 
@@ -90,5 +92,5 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run bb21e07e](research/2026-11-28-run-bb21e07e.md): completed. focused round complete
 - [2026-11-28 run e75208e2](research/2026-11-28-run-e75208e2.md): completed. focused round complete
 - [2026-11-28 run 04c41b2e](research/2026-11-28-run-04c41b2e.md): completed. focused round complete
-- [2026-11-28 run ac08048d](research/2026-11-28-run-ac08048d.md): running. 
+- [2026-11-28 run ac08048d](research/2026-11-28-run-ac08048d.md): completed. focused round complete
 
