@@ -27,7 +27,7 @@ It is conjectured that just the first 5 numbers in this sequence are primes. · 
 
 ## Novelty pre-check
 
-Verdict: **likely_open**. Whether any Fermat number beyond F(4) is prime is a genuine research question. R3, R4, and R7 concern factors, primality, and divisibility, but their titles report no result settling any of the three claims. No repository match is apparent. The records lack abstracts, so the absence of a reported resolution does not prove openness.
+Verdict: **likely_open**. The records on factors, primality, and divisibility have titles only. None states a resolution, and absence of such evidence does not prove openness. All three full claims appear unresolved. Earlier work reports that the least-factor bound remains to be shown for products of two distinct primes. For the divisibility characterization, it reports the forward implication and the converse when n−1 is a power of two. The remaining candidates have 4 dividing n−1 and an odd prime factor of n−1. The reported finite search leaves that converse open.
 
 ## Computations
 
