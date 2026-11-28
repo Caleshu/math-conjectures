@@ -27,3 +27,7 @@ Source: Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, Emily Xia Meng, Henry Kv
 
 - Direct baselines gave coefficient formulas for restricted interval families, including Boolean-middle intervals with specified endpoints. *(Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, PatternMiner: Automated Mathematical Discovery Through LLM-Guided Training and Interpretation of Small Models, arXiv:2611.33966 (Appendix C, Table 22, p. 46))*
 
+## Novelty pre-check
+
+Verdict: **likely_open**. R2 settles the coefficient of q for finite simply-laced Weyl groups, including every S_n. R11 gives counting rules for a pattern-avoiding family, and R12 describes a route that requires a parabolic factorization. The path expansion in R1 and the Bruhat-graph formula in R5 give ways to compute the polynomials. Neither abstract claims an unsigned count for every coefficient. The recorded computations concern bounds on particular coefficients. This leaves the general counting problem likely open, although absence of a resolution in the supplied evidence does not prove openness.
+
