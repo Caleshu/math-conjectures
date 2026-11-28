@@ -50,5 +50,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-27 run 5f997de2](research/2026-11-27-run-5f997de2.md): completed. orchestrator: Both authorized iterations and all four experiments are complete. The outstanding gap is to exclude every index beyond the finite search. The reviews identify no pending local calculation that would close that gap.
 - [2026-11-28 run 0d7e75ba](research/2026-11-28-run-0d7e75ba.md): completed. focused round complete
 - [2026-11-28 run 63097342](research/2026-11-28-run-63097342.md): completed. focused round complete
-- [2026-11-28 run 4677ea6c](research/2026-11-28-run-4677ea6c.md): running. 
+- [2026-11-28 run 4677ea6c](research/2026-11-28-run-4677ea6c.md): completed. focused round complete
+- [2026-11-28 run 282e308a](research/2026-11-28-run-282e308a.md): running. 
 
