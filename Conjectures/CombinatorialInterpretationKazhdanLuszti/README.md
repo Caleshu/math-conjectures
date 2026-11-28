@@ -42,5 +42,6 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
-- [2026-11-28 run 6ba1074d](research/2026-11-28-run-6ba1074d.md): running. 
+- [2026-11-28 run 6ba1074d](research/2026-11-28-run-6ba1074d.md): completed. focused round complete
+- [2026-11-28 run 64a70a8c](research/2026-11-28-run-64a70a8c.md): running. 
 
