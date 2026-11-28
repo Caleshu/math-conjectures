@@ -114,6 +114,8 @@ def attainable(values, bound, deadline):
   - [Computational Mathematician] The run succeeded, and its search agreed with exhaustive enumeration on the sanity instance $\{3,4,12,17\}$. For the target interval, the decisive check was direct validation of every witness. The program checked its sum against its assigned target and checked every divisibility conflict. This establishes the existential claim throughout the stated finite interval. Every target had a witness, so an exhaustive exclusion certificate was unnecessary.
 - **Extend the antichain by one index and certify any remaining gaps** [failed, finite computation] ([code](computations/mrl_381a7346.py), [result](computations/mrl_381a7346.result.json))
   - [Computational Mathematician] The assertion required the witness $(1,2)$ for $7$, since $3+4=7$. But $p(4)+2=7$ is also a legal singleton, and the search tries the largest eligible weight first, so it returns $(4,)$. The assertion stopped execution before the target loop and no result file was produced.  (marked UNTRUSTWORTHY by the agent)
+- **Exact greedy trace from the 27 seed indices and index 58** [succeeded, finite computation]: increasing: empty_window, final M=159674704403672, minimum eligible=0 at M=159674704403672 | literal: reached_target, final M=17242681614666977586621263007510624376178, minimum eligible=8 at M=1000000 ([code](computations/mrl_c916de76.py), [result](computations/mrl_c916de76.result.json))
+  - [Computational Mathematician] Both runs passed the partition and seed checks. Each count is exhaustive for its visited window. In the literal run, eligibility counts use exactly the stated one-way divisibility test. The program separately checked reverse divisibility for every selected weight, including backward choices. The empty window in the increasing-index run is an exact obstruction to that variant. The finite scope ends at the first threshold crossing or the first empty window.
 
 ## AI research runs
 
@@ -122,5 +124,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-27 run 8d2ba2a0](research/2026-11-27-run-8d2ba2a0.md): completed. orchestrator: Iteration $2$ of $2$ and all four experiments are complete. The outstanding review issues concern evidence presentation and a missing qualification. Resolving them would improve the record while leaving both universal clauses open.
 - [2026-11-28 run a161debe](research/2026-11-28-run-a161debe.md): completed. focused round complete
 - [2026-11-28 run cd8ef158](research/2026-11-28-run-cd8ef158.md): completed. focused round complete
-- [2026-11-28 run 8c92028e](research/2026-11-28-run-8c92028e.md): running. 
+- [2026-11-28 run 8c92028e](research/2026-11-28-run-8c92028e.md): completed. focused round complete
+- [2026-11-28 run 9371818e](research/2026-11-28-run-9371818e.md): running. 
 
