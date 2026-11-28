@@ -1,0 +1,31 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.552,
+ "result": {
+  "summary": "The congruences have no solution in the specified divisor class.",
+  "lhs_by_h_mod_5": [
+   0,
+   4,
+   1,
+   1,
+   4
+  ],
+  "rhs_by_c_mod_5": [
+   2,
+   3,
+   0,
+   3,
+   2
+  ],
+  "lift_tests": [
+   {
+    "c_mod_5": 2,
+    "h_mod_5": 0,
+    "reduced_mod_25": 20,
+    "original_mod_15625": 3125
+   }
+  ],
+  "positive_control_mod_3125": 0,
+  "positive_control_mod_15625": 3125
+ }
+}

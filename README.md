@@ -49,7 +49,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 | [A000215: Fermat numbers: a(n) = 2^(2^n) + 1.](Conjectures/A000215FermatNumbersN/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A000247: a(n) = 2^n - n - 2.](Conjectures/A000247N2N/) 🤖 | Novelty pre-check: trivial or ill posed. | AI research (not human-reviewed) |
 | [A000254: Unsigned Stirling numbers of first kind, s(n+1,2): a(n+1) = (n+1)*a(n) + n!.](Conjectures/A000254UnsignedStirlingNumbers/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
-| [A000330: Square pyramidal numbers: a(n) = 0^2 + 1^2 + 2^2 + ... + n^2 = n*(n+1)*(2*n+1)/6.](Conjectures/A000330SquarePyramidalNumbers/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
+| [A000330: Square pyramidal numbers: a(n) = 0^2 + 1^2 + 2^2 + ... + n^2 = n*(n+1)*(2*n+1)/6.](Conjectures/A000330SquarePyramidalNumbers/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [A000332: Binomial coefficient binomial(n,4) = n*(n-1)*(n-2)*(n-3)/24.](Conjectures/A000332BinomialCoefficientBinomial/) 🤖 | Novelty pre-check: trivial or ill posed. | AI research (not human-reviewed) |
 | [A000364: Euler (or secant or "Zig") numbers: e.g.f. (even powers only) sec(x) = 1/cos(x).](Conjectures/A000364EulerOrSecant/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [Additive colouring of bipartite graphs](Conjectures/AdditiveColouring/) | η ≤ 2 for all connected bipartite graphs on ≤ 15 vertices (exhaustive) | Computational evidence |
