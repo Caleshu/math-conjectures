@@ -1,0 +1,7703 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 14.231,
+ "result": {
+  "indexing": "Values, positions and simple-reflection indices start at zero. Index i exchanges i and i+1.",
+  "sanity": {
+   "P_1234_3412_in_one_based_notation": [
+    1,
+    1
+   ],
+   "P_identity_longest_S4": [
+    1
+   ],
+   "geometry_and_flatten_checks": "passed"
+  },
+  "phases": {
+   "all_rank_ten_subintervals_of_seed": "complete",
+   "all_potential_witness_children_with_seed_upper_endpoint": "complete"
+  },
+  "supplied_or_nearby_parents": [
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      9,
+      3,
+      2,
+      1,
+      0,
+      4,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0
+      ],
+      [
+       1,
+       5,
+       6,
+       2,
+       8,
+       9,
+       4,
+       3,
+       7
+      ]
+     ],
+     "components": [
+      [
+       0
+      ],
+      [
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": false
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      8,
+      3,
+      2,
+      1,
+      0,
+      9,
+      4,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       6,
+       2,
+       8,
+       9,
+       4,
+       3,
+       7
+      ]
+     ],
+     "components": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       2,
+       3,
+       4,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       6
+      ],
+      [
+       2,
+       6
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       6
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      7,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      4,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       9,
+       4,
+       3
+      ],
+      [
+       1,
+       7
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       7
+      ],
+      [
+       2,
+       7
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "left",
+      "simple_index": 3,
+      "raw_child_x": [
+       7,
+       4,
+       2,
+       1,
+       0,
+       9,
+       8,
+       3,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       1
+      ],
+      "flattened_child": {
+       "x": [
+        6,
+        2,
+        1,
+        0,
+        8,
+        7,
+        3,
+        5,
+        4
+       ],
+       "w": [
+        8,
+        5,
+        6,
+        1,
+        7,
+        2,
+        3,
+        4,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         4,
+         5,
+         1,
+         7,
+         8,
+         3,
+         2
+        ],
+        [
+         6
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         4
+        ],
+        [
+         1,
+         6
+        ],
+        [
+         1,
+         7
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         3,
+         4
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       4,
+       6,
+       4,
+       1
+      ],
+      "child_q4": 1
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      6,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      4,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2
+      ],
+      [
+       1,
+       8,
+       9,
+       4,
+       3,
+       7
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       8
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "right",
+      "simple_index": 8,
+      "raw_child_x": [
+       6,
+       3,
+       2,
+       1,
+       0,
+       9,
+       8,
+       7,
+       5,
+       4
+      ],
+      "deleted_original_positions": [
+       8
+      ],
+      "flattened_child": {
+       "x": [
+        5,
+        3,
+        2,
+        1,
+        0,
+        8,
+        7,
+        6,
+        4
+       ],
+       "w": [
+        8,
+        4,
+        5,
+        6,
+        1,
+        7,
+        2,
+        3,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         5,
+         6,
+         2
+        ],
+        [
+         1,
+         8,
+         4,
+         3,
+         7
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         5
+        ],
+        [
+         1,
+         8
+        ],
+        [
+         2,
+         5
+        ],
+        [
+         3,
+         5
+        ],
+        [
+         3,
+         7
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     },
+     {
+      "side": "left",
+      "simple_index": 3,
+      "raw_child_x": [
+       6,
+       4,
+       2,
+       1,
+       0,
+       9,
+       8,
+       7,
+       3,
+       5
+      ],
+      "deleted_original_positions": [
+       1
+      ],
+      "flattened_child": {
+       "x": [
+        5,
+        2,
+        1,
+        0,
+        8,
+        7,
+        6,
+        3,
+        4
+       ],
+       "w": [
+        8,
+        5,
+        6,
+        1,
+        7,
+        2,
+        3,
+        4,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         4,
+         5,
+         1
+        ],
+        [
+         2,
+         6,
+         7,
+         8,
+         3
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         4
+        ],
+        [
+         1,
+         4
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         2,
+         6
+        ],
+        [
+         3,
+         4
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     5,
+     8,
+     5
+    ],
+    "parent_q4": 0
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      5,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      4
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8
+      ],
+      [
+       1,
+       9,
+       4,
+       3,
+       7
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       9
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "left",
+      "simple_index": 3,
+      "raw_child_x": [
+       5,
+       4,
+       2,
+       1,
+       0,
+       9,
+       8,
+       7,
+       6,
+       3
+      ],
+      "deleted_original_positions": [
+       1
+      ],
+      "flattened_child": {
+       "x": [
+        4,
+        2,
+        1,
+        0,
+        8,
+        7,
+        6,
+        5,
+        3
+       ],
+       "w": [
+        8,
+        5,
+        6,
+        1,
+        7,
+        2,
+        3,
+        4,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         4,
+         5,
+         1,
+         7
+        ],
+        [
+         2,
+         6,
+         8,
+         3
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         4
+        ],
+        [
+         1,
+         4
+        ],
+        [
+         1,
+         7
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         2,
+         6
+        ],
+        [
+         3,
+         4
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     },
+     {
+      "side": "left",
+      "simple_index": 5,
+      "raw_child_x": [
+       6,
+       3,
+       2,
+       1,
+       0,
+       9,
+       8,
+       7,
+       5,
+       4
+      ],
+      "deleted_original_positions": [
+       8
+      ],
+      "flattened_child": {
+       "x": [
+        5,
+        3,
+        2,
+        1,
+        0,
+        8,
+        7,
+        6,
+        4
+       ],
+       "w": [
+        8,
+        4,
+        5,
+        6,
+        1,
+        7,
+        2,
+        3,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         5,
+         6,
+         2
+        ],
+        [
+         1,
+         8,
+         4,
+         3,
+         7
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         5
+        ],
+        [
+         1,
+         8
+        ],
+        [
+         2,
+         5
+        ],
+        [
+         3,
+         5
+        ],
+        [
+         3,
+         7
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     5,
+     8,
+     5
+    ],
+    "parent_q4": 0
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      9,
+      2,
+      1,
+      0,
+      3,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       1
+      ],
+      [
+       2,
+       8,
+       9,
+       4,
+       3,
+       7,
+       5,
+       6
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1
+      ],
+      [
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       1
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      8,
+      2,
+      1,
+      0,
+      9,
+      3,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       1
+      ],
+      [
+       2,
+       8,
+       9,
+       4,
+       3,
+       7,
+       6
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       5
+      ],
+      [
+       2,
+       3,
+       4,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       2,
+       6
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       6
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      7,
+      2,
+      1,
+      0,
+      9,
+      8,
+      3,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       9,
+       4,
+       3,
+       1
+      ],
+      [
+       7
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       2,
+       7
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "right",
+      "simple_index": 0,
+      "raw_child_x": [
+       7,
+       4,
+       2,
+       1,
+       0,
+       9,
+       8,
+       3,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       1
+      ],
+      "flattened_child": {
+       "x": [
+        6,
+        2,
+        1,
+        0,
+        8,
+        7,
+        3,
+        5,
+        4
+       ],
+       "w": [
+        8,
+        5,
+        6,
+        1,
+        7,
+        2,
+        3,
+        4,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         4,
+         5,
+         1,
+         7,
+         8,
+         3,
+         2
+        ],
+        [
+         6
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         4
+        ],
+        [
+         1,
+         6
+        ],
+        [
+         1,
+         7
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         3,
+         4
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       4,
+       6,
+       4,
+       1
+      ],
+      "child_q4": 1
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      6,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      3,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       1
+      ],
+      [
+       3,
+       7,
+       8,
+       9,
+       4
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "right",
+      "simple_index": 0,
+      "raw_child_x": [
+       6,
+       4,
+       2,
+       1,
+       0,
+       9,
+       8,
+       7,
+       3,
+       5
+      ],
+      "deleted_original_positions": [
+       1
+      ],
+      "flattened_child": {
+       "x": [
+        5,
+        2,
+        1,
+        0,
+        8,
+        7,
+        6,
+        3,
+        4
+       ],
+       "w": [
+        8,
+        5,
+        6,
+        1,
+        7,
+        2,
+        3,
+        4,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         4,
+         5,
+         1
+        ],
+        [
+         2,
+         6,
+         7,
+         8,
+         3
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         4
+        ],
+        [
+         1,
+         4
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         2,
+         6
+        ],
+        [
+         3,
+         4
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     },
+     {
+      "side": "right",
+      "simple_index": 8,
+      "raw_child_x": [
+       4,
+       6,
+       2,
+       1,
+       0,
+       9,
+       8,
+       7,
+       5,
+       3
+      ],
+      "deleted_original_positions": [
+       8
+      ],
+      "flattened_child": {
+       "x": [
+        4,
+        5,
+        2,
+        1,
+        0,
+        8,
+        7,
+        6,
+        3
+       ],
+       "w": [
+        8,
+        4,
+        5,
+        6,
+        1,
+        7,
+        2,
+        3,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         5,
+         6,
+         2,
+         1
+        ],
+        [
+         3,
+         7,
+         8,
+         4
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         1
+        ],
+        [
+         0,
+         5
+        ],
+        [
+         2,
+         5
+        ],
+        [
+         3,
+         5
+        ],
+        [
+         3,
+         7
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     5,
+     8,
+     5
+    ],
+    "parent_q4": 0
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      5,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      3
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       1
+      ],
+      [
+       3,
+       7,
+       9,
+       4
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "right",
+      "simple_index": 0,
+      "raw_child_x": [
+       5,
+       4,
+       2,
+       1,
+       0,
+       9,
+       8,
+       7,
+       6,
+       3
+      ],
+      "deleted_original_positions": [
+       1
+      ],
+      "flattened_child": {
+       "x": [
+        4,
+        2,
+        1,
+        0,
+        8,
+        7,
+        6,
+        5,
+        3
+       ],
+       "w": [
+        8,
+        5,
+        6,
+        1,
+        7,
+        2,
+        3,
+        4,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         4,
+         5,
+         1,
+         7
+        ],
+        [
+         2,
+         6,
+         8,
+         3
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         4
+        ],
+        [
+         1,
+         4
+        ],
+        [
+         1,
+         7
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         2,
+         6
+        ],
+        [
+         3,
+         4
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     },
+     {
+      "side": "left",
+      "simple_index": 5,
+      "raw_child_x": [
+       4,
+       6,
+       2,
+       1,
+       0,
+       9,
+       8,
+       7,
+       5,
+       3
+      ],
+      "deleted_original_positions": [
+       8
+      ],
+      "flattened_child": {
+       "x": [
+        4,
+        5,
+        2,
+        1,
+        0,
+        8,
+        7,
+        6,
+        3
+       ],
+       "w": [
+        8,
+        4,
+        5,
+        6,
+        1,
+        7,
+        2,
+        3,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         5,
+         6,
+         2,
+         1
+        ],
+        [
+         3,
+         7,
+         8,
+         4
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         1
+        ],
+        [
+         0,
+         5
+        ],
+        [
+         2,
+         5
+        ],
+        [
+         3,
+         5
+        ],
+        [
+         3,
+         7
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     5,
+     8,
+     5
+    ],
+    "parent_q4": 0
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      9,
+      1,
+      0,
+      2,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       2,
+       8,
+       9,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       2
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "right",
+      "simple_index": 5,
+      "raw_child_x": [
+       4,
+       3,
+       9,
+       1,
+       0,
+       8,
+       2,
+       7,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       5
+      ],
+      "flattened_child": {
+       "x": [
+        4,
+        3,
+        8,
+        1,
+        0,
+        2,
+        7,
+        6,
+        5
+       ],
+       "w": [
+        8,
+        4,
+        6,
+        7,
+        1,
+        2,
+        3,
+        5,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         2,
+         7,
+         8,
+         4,
+         3,
+         6,
+         1
+        ],
+        [
+         5
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         2
+        ],
+        [
+         1,
+         2
+        ],
+        [
+         2,
+         7
+        ],
+        [
+         3,
+         5
+        ],
+        [
+         3,
+         6
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       4,
+       6,
+       4,
+       1
+      ],
+      "child_q4": 1
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      8,
+      1,
+      0,
+      9,
+      2,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       2,
+       8,
+       9,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       6
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       6
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "left",
+      "simple_index": 8,
+      "raw_child_x": [
+       4,
+       3,
+       9,
+       1,
+       0,
+       8,
+       2,
+       7,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       5
+      ],
+      "flattened_child": {
+       "x": [
+        4,
+        3,
+        8,
+        1,
+        0,
+        2,
+        7,
+        6,
+        5
+       ],
+       "w": [
+        8,
+        4,
+        6,
+        7,
+        1,
+        2,
+        3,
+        5,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         2,
+         7,
+         8,
+         4,
+         3,
+         6,
+         1
+        ],
+        [
+         5
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         2
+        ],
+        [
+         1,
+         2
+        ],
+        [
+         2,
+         7
+        ],
+        [
+         3,
+         5
+        ],
+        [
+         3,
+         6
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       4,
+       6,
+       4,
+       1
+      ],
+      "child_q4": 1
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      7,
+      1,
+      0,
+      9,
+      8,
+      2,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       7,
+       1
+      ],
+      [
+       2,
+       8,
+       9,
+       4,
+       3
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      6,
+      1,
+      0,
+      9,
+      8,
+      7,
+      2,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       8,
+       9,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       2
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "right",
+      "simple_index": 8,
+      "raw_child_x": [
+       4,
+       3,
+       6,
+       1,
+       0,
+       9,
+       8,
+       7,
+       5,
+       2
+      ],
+      "deleted_original_positions": [
+       8
+      ],
+      "flattened_child": {
+       "x": [
+        4,
+        3,
+        5,
+        1,
+        0,
+        8,
+        7,
+        6,
+        2
+       ],
+       "w": [
+        8,
+        4,
+        5,
+        6,
+        1,
+        7,
+        2,
+        3,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         5,
+         6,
+         8,
+         4,
+         3,
+         7,
+         1
+        ],
+        [
+         2
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         2
+        ],
+        [
+         0,
+         5
+        ],
+        [
+         1,
+         2
+        ],
+        [
+         2,
+         5
+        ],
+        [
+         3,
+         5
+        ],
+        [
+         3,
+         7
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       4,
+       6,
+       4,
+       1
+      ],
+      "child_q4": 1
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      5,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      2
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       9,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       2,
+       8
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       2
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       2
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "left",
+      "simple_index": 5,
+      "raw_child_x": [
+       4,
+       3,
+       6,
+       1,
+       0,
+       9,
+       8,
+       7,
+       5,
+       2
+      ],
+      "deleted_original_positions": [
+       8
+      ],
+      "flattened_child": {
+       "x": [
+        4,
+        3,
+        5,
+        1,
+        0,
+        8,
+        7,
+        6,
+        2
+       ],
+       "w": [
+        8,
+        4,
+        5,
+        6,
+        1,
+        7,
+        2,
+        3,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         5,
+         6,
+         8,
+         4,
+         3,
+         7,
+         1
+        ],
+        [
+         2
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         2
+        ],
+        [
+         0,
+         5
+        ],
+        [
+         1,
+         2
+        ],
+        [
+         2,
+         5
+        ],
+        [
+         3,
+         5
+        ],
+        [
+         3,
+         7
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       4,
+       6,
+       4,
+       1
+      ],
+      "child_q4": 1
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      9,
+      0,
+      1,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       3,
+       7,
+       1
+      ],
+      [
+       2,
+       8,
+       9,
+       4,
+       5,
+       6
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       3
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "right",
+      "simple_index": 5,
+      "raw_child_x": [
+       4,
+       3,
+       2,
+       9,
+       0,
+       8,
+       1,
+       7,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       5
+      ],
+      "flattened_child": {
+       "x": [
+        4,
+        3,
+        2,
+        8,
+        0,
+        1,
+        7,
+        6,
+        5
+       ],
+       "w": [
+        8,
+        4,
+        6,
+        7,
+        1,
+        2,
+        3,
+        5,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         3,
+         6,
+         1
+        ],
+        [
+         2,
+         7,
+         8,
+         4,
+         5
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         3
+        ],
+        [
+         1,
+         3
+        ],
+        [
+         2,
+         3
+        ],
+        [
+         2,
+         7
+        ],
+        [
+         3,
+         6
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     },
+     {
+      "side": "left",
+      "simple_index": 0,
+      "raw_child_x": [
+       4,
+       3,
+       2,
+       9,
+       1,
+       0,
+       8,
+       7,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       4
+      ],
+      "flattened_child": {
+       "x": [
+        3,
+        2,
+        1,
+        8,
+        0,
+        7,
+        6,
+        5,
+        4
+       ],
+       "w": [
+        8,
+        3,
+        5,
+        6,
+        7,
+        1,
+        2,
+        4,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         3,
+         6,
+         1
+        ],
+        [
+         2,
+         7,
+         8,
+         4,
+         5
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         3
+        ],
+        [
+         1,
+         3
+        ],
+        [
+         2,
+         3
+        ],
+        [
+         2,
+         7
+        ],
+        [
+         3,
+         6
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     5,
+     8,
+     5
+    ],
+    "parent_q4": 0
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      8,
+      0,
+      9,
+      1,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       3,
+       7,
+       1
+      ],
+      [
+       2,
+       8,
+       9,
+       4,
+       6
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "left",
+      "simple_index": 0,
+      "raw_child_x": [
+       4,
+       3,
+       2,
+       8,
+       1,
+       9,
+       0,
+       7,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       4
+      ],
+      "flattened_child": {
+       "x": [
+        3,
+        2,
+        1,
+        7,
+        8,
+        0,
+        6,
+        5,
+        4
+       ],
+       "w": [
+        8,
+        3,
+        5,
+        6,
+        7,
+        1,
+        2,
+        4,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         4,
+         3,
+         6,
+         1
+        ],
+        [
+         2,
+         7,
+         8,
+         5
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         3
+        ],
+        [
+         0,
+         4
+        ],
+        [
+         1,
+         3
+        ],
+        [
+         2,
+         3
+        ],
+        [
+         2,
+         7
+        ],
+        [
+         3,
+         6
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     },
+     {
+      "side": "left",
+      "simple_index": 8,
+      "raw_child_x": [
+       4,
+       3,
+       2,
+       9,
+       0,
+       8,
+       1,
+       7,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       5
+      ],
+      "flattened_child": {
+       "x": [
+        4,
+        3,
+        2,
+        8,
+        0,
+        1,
+        7,
+        6,
+        5
+       ],
+       "w": [
+        8,
+        4,
+        6,
+        7,
+        1,
+        2,
+        3,
+        5,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         3,
+         6,
+         1
+        ],
+        [
+         2,
+         7,
+         8,
+         4,
+         5
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         3
+        ],
+        [
+         1,
+         3
+        ],
+        [
+         2,
+         3
+        ],
+        [
+         2,
+         7
+        ],
+        [
+         3,
+         6
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     5,
+     8,
+     5
+    ],
+    "parent_q4": 0
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      7,
+      0,
+      9,
+      8,
+      1,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       9,
+       4,
+       7,
+       1
+      ],
+      [
+       3
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       4,
+       7
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "left",
+      "simple_index": 0,
+      "raw_child_x": [
+       4,
+       3,
+       2,
+       7,
+       1,
+       9,
+       8,
+       0,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       4
+      ],
+      "flattened_child": {
+       "x": [
+        3,
+        2,
+        1,
+        6,
+        8,
+        7,
+        0,
+        5,
+        4
+       ],
+       "w": [
+        8,
+        3,
+        5,
+        6,
+        7,
+        1,
+        2,
+        4,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         4,
+         5,
+         2,
+         7,
+         8,
+         6,
+         1
+        ],
+        [
+         3
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         3
+        ],
+        [
+         0,
+         4
+        ],
+        [
+         1,
+         3
+        ],
+        [
+         2,
+         3
+        ],
+        [
+         2,
+         7
+        ],
+        [
+         3,
+         4
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       4,
+       6,
+       4,
+       1
+      ],
+      "child_q4": 1
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      6,
+      0,
+      9,
+      8,
+      7,
+      1,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       3,
+       7,
+       1
+      ],
+      [
+       4,
+       8,
+       9
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       5,
+       6,
+       7
+      ],
+      [
+       4,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       8
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      5,
+      0,
+      9,
+      8,
+      7,
+      6,
+      1
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       3,
+       7,
+       1
+      ],
+      [
+       4,
+       9
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       4,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       3
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       3
+      ],
+      [
+       2,
+       3
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       9
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      9,
+      0,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       2,
+       8,
+       9,
+       5,
+       6
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       4
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "right",
+      "simple_index": 3,
+      "raw_child_x": [
+       4,
+       3,
+       2,
+       9,
+       1,
+       0,
+       8,
+       7,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       4
+      ],
+      "flattened_child": {
+       "x": [
+        3,
+        2,
+        1,
+        8,
+        0,
+        7,
+        6,
+        5,
+        4
+       ],
+       "w": [
+        8,
+        3,
+        5,
+        6,
+        7,
+        1,
+        2,
+        4,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         3,
+         6,
+         1
+        ],
+        [
+         2,
+         7,
+         8,
+         4,
+         5
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         3
+        ],
+        [
+         1,
+         3
+        ],
+        [
+         2,
+         3
+        ],
+        [
+         2,
+         7
+        ],
+        [
+         3,
+         6
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     },
+     {
+      "side": "right",
+      "simple_index": 5,
+      "raw_child_x": [
+       4,
+       3,
+       2,
+       1,
+       9,
+       8,
+       0,
+       7,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       5
+      ],
+      "flattened_child": {
+       "x": [
+        4,
+        3,
+        2,
+        1,
+        8,
+        0,
+        7,
+        6,
+        5
+       ],
+       "w": [
+        8,
+        4,
+        6,
+        7,
+        1,
+        2,
+        3,
+        5,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         4,
+         3,
+         6,
+         1
+        ],
+        [
+         2,
+         7,
+         8,
+         5
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         4
+        ],
+        [
+         1,
+         4
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         2,
+         7
+        ],
+        [
+         3,
+         4
+        ],
+        [
+         3,
+         6
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     5,
+     8,
+     5
+    ],
+    "parent_q4": 0
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      8,
+      9,
+      0,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       2,
+       8,
+       9,
+       6
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       4
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "right",
+      "simple_index": 3,
+      "raw_child_x": [
+       4,
+       3,
+       2,
+       8,
+       1,
+       9,
+       0,
+       7,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       4
+      ],
+      "flattened_child": {
+       "x": [
+        3,
+        2,
+        1,
+        7,
+        8,
+        0,
+        6,
+        5,
+        4
+       ],
+       "w": [
+        8,
+        3,
+        5,
+        6,
+        7,
+        1,
+        2,
+        4,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         4,
+         3,
+         6,
+         1
+        ],
+        [
+         2,
+         7,
+         8,
+         5
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         3
+        ],
+        [
+         0,
+         4
+        ],
+        [
+         1,
+         3
+        ],
+        [
+         2,
+         3
+        ],
+        [
+         2,
+         7
+        ],
+        [
+         3,
+         6
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     },
+     {
+      "side": "left",
+      "simple_index": 8,
+      "raw_child_x": [
+       4,
+       3,
+       2,
+       1,
+       9,
+       8,
+       0,
+       7,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       5
+      ],
+      "flattened_child": {
+       "x": [
+        4,
+        3,
+        2,
+        1,
+        8,
+        0,
+        7,
+        6,
+        5
+       ],
+       "w": [
+        8,
+        4,
+        6,
+        7,
+        1,
+        2,
+        3,
+        5,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         4,
+         3,
+         6,
+         1
+        ],
+        [
+         2,
+         7,
+         8,
+         5
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         4
+        ],
+        [
+         1,
+         4
+        ],
+        [
+         2,
+         4
+        ],
+        [
+         2,
+         7
+        ],
+        [
+         3,
+         4
+        ],
+        [
+         3,
+         6
+        ],
+        [
+         5,
+         6
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       5,
+       8,
+       5
+      ],
+      "child_q4": 0
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     5,
+     8,
+     5
+    ],
+    "parent_q4": 0
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      7,
+      9,
+      8,
+      0,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       9,
+       7,
+       1
+      ],
+      [
+       3,
+       4
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       4
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [
+     {
+      "side": "right",
+      "simple_index": 3,
+      "raw_child_x": [
+       4,
+       3,
+       2,
+       7,
+       1,
+       9,
+       8,
+       0,
+       6,
+       5
+      ],
+      "deleted_original_positions": [
+       4
+      ],
+      "flattened_child": {
+       "x": [
+        3,
+        2,
+        1,
+        6,
+        8,
+        7,
+        0,
+        5,
+        4
+       ],
+       "w": [
+        8,
+        3,
+        5,
+        6,
+        7,
+        1,
+        2,
+        4,
+        0
+       ],
+       "d": 9,
+       "comparable": true,
+       "cycles": [
+        [
+         0,
+         4,
+         5,
+         2,
+         7,
+         8,
+         6,
+         1
+        ],
+        [
+         3
+        ]
+       ],
+       "components": [
+        [
+         0,
+         1,
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8
+        ]
+       ],
+       "chain_position_swaps": [
+        [
+         0,
+         3
+        ],
+        [
+         0,
+         4
+        ],
+        [
+         1,
+         3
+        ],
+        [
+         2,
+         3
+        ],
+        [
+         2,
+         7
+        ],
+        [
+         3,
+         4
+        ],
+        [
+         4,
+         5
+        ],
+        [
+         6,
+         7
+        ],
+        [
+         7,
+         8
+        ]
+       ],
+       "connected": true,
+       "genus_numerator_if_connected": 0,
+       "uncompressible": true
+      },
+      "child_KL": [
+       1,
+       4,
+       6,
+       4,
+       1
+      ],
+      "child_q4": 1
+     }
+    ],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      6,
+      9,
+      8,
+      7,
+      0,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       4
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      5,
+      9,
+      8,
+      7,
+      6,
+      0
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       9
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       4
+      ],
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       4
+      ],
+      [
+       2,
+       4
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       4
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       5,
+       6
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": false
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      4,
+      9,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0
+      ],
+      [
+       1,
+       5,
+       6,
+       2,
+       8,
+       9,
+       4,
+       3,
+       7
+      ]
+     ],
+     "components": [
+      [
+       0
+      ],
+      [
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": false
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      6,
+      4,
+      9,
+      7,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       8,
+       9,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       2,
+       5,
+       6
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       8
+      ],
+      [
+       1,
+       8
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      7,
+      4,
+      6,
+      9,
+      1,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       7,
+       1
+      ],
+      [
+       2,
+       8,
+       9,
+       4,
+       3,
+       5,
+       6
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       7
+      ],
+      [
+       1,
+       7
+      ],
+      [
+       2,
+       7
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      8,
+      4,
+      6,
+      7,
+      1,
+      9,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       6,
+       2,
+       8,
+       9,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       5
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       6,
+       7,
+       8,
+       9
+      ],
+      [
+       5
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       6
+      ],
+      [
+       1,
+       6
+      ],
+      [
+       2,
+       6
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       6
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": false
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      3,
+      6,
+      7,
+      1,
+      8,
+      2,
+      4,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       9,
+       4,
+       3,
+       7
+      ],
+      [
+       1
+      ]
+     ],
+     "components": [
+      [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      [
+       1
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": false
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      2,
+      7,
+      1,
+      8,
+      6,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       8,
+       9,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       2
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      [
+       2
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": false
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      3,
+      7,
+      1,
+      8,
+      2,
+      6,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       1
+      ],
+      [
+       3,
+       7,
+       8,
+       9,
+       4
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     5,
+     3
+    ],
+    "parent_q4": 3
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      5,
+      7,
+      1,
+      8,
+      2,
+      3,
+      6,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       9,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       8
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       9
+      ],
+      [
+       8
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       9
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": false
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      1,
+      7,
+      8,
+      2,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       9,
+       4,
+       7,
+       1
+      ],
+      [
+       3
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      [
+       3
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       4,
+       7
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": false
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      2,
+      1,
+      8,
+      7,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       7,
+       1
+      ],
+      [
+       2,
+       8,
+       9,
+       4,
+       3
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     5,
+     3
+    ],
+    "parent_q4": 3
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      3,
+      1,
+      8,
+      2,
+      7,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       9,
+       4,
+       3,
+       1
+      ],
+      [
+       7
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       8,
+       9
+      ],
+      [
+       7
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       8
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": false
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      0,
+      8,
+      2,
+      3,
+      5,
+      1
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       9,
+       3,
+       7,
+       1
+      ],
+      [
+       4
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      [
+       4
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": false
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      2,
+      8,
+      3,
+      5,
+      0
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       2,
+       8,
+       9,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       6
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       7,
+       8,
+       9
+      ],
+      [
+       6
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": false
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      0,
+      3,
+      5,
+      2
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       2,
+       8,
+       9
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      0,
+      5,
+      3
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       9,
+       1
+      ],
+      [
+       3,
+       7,
+       4
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       8,
+       9
+      ]
+     ],
+     "connected": true,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": true
+    },
+    "moves": [],
+    "status": "complete",
+    "parent_KL": [
+     1,
+     4,
+     6,
+     4,
+     1
+    ],
+    "parent_q4": 1
+   },
+   {
+    "origin": "all_rank_ten_subintervals_of_seed",
+    "parent": {
+     "x": [
+      4,
+      3,
+      2,
+      1,
+      0,
+      9,
+      8,
+      7,
+      6,
+      5
+     ],
+     "w": [
+      9,
+      4,
+      6,
+      7,
+      1,
+      8,
+      2,
+      3,
+      0,
+      5
+     ],
+     "d": 10,
+     "comparable": true,
+     "cycles": [
+      [
+       0,
+       5,
+       6,
+       2,
+       8,
+       4,
+       3,
+       7,
+       1
+      ],
+      [
+       9
+      ]
+     ],
+     "components": [
+      [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8
+      ],
+      [
+       9
+      ]
+     ],
+     "chain_position_swaps": [
+      [
+       0,
+       5
+      ],
+      [
+       1,
+       5
+      ],
+      [
+       2,
+       5
+      ],
+      [
+       2,
+       8
+      ],
+      [
+       3,
+       5
+      ],
+      [
+       3,
+       7
+      ],
+      [
+       4,
+       5
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       7
+      ],
+      [
+       7,
+       8
+      ]
+     ],
+     "connected": false,
+     "genus_numerator_if_connected": 0,
+     "uncompressible": false
+    },
+    "moves": [],
+    "status": "fails reported parent size, rank, comparability or genus"
+   }
+  ],
+  "witnesses": [],
+  "fixed_upper_children_after_descent_and_order_filters": 797,
+  "fixed_upper_qualifying_flattenings_with_parent_candidate": 368,
+  "seed": {
+   "x": [
+    4,
+    3,
+    2,
+    1,
+    0,
+    9,
+    8,
+    7,
+    6,
+    5
+   ],
+   "w": [
+    9,
+    4,
+    6,
+    7,
+    1,
+    8,
+    2,
+    3,
+    5,
+    0
+   ],
+   "d": 11,
+   "comparable": true,
+   "cycles": [
+    [
+     0,
+     5,
+     6,
+     2,
+     8,
+     9,
+     4,
+     3,
+     7,
+     1
+    ]
+   ],
+   "components": [
+    [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ]
+   ],
+   "chain_position_swaps": [
+    [
+     0,
+     5
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     8
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     8,
+     9
+    ]
+   ],
+   "connected": true,
+   "genus_numerator_if_connected": 2,
+   "uncompressible": true
+  },
+  "number_of_nearby_parents": 41,
+  "completed_parent_inspections": 41,
+  "elapsed_seconds": 13.415,
+  "summary": "No matching descent witness in the completed domains listed under phases."
+ }
+}
