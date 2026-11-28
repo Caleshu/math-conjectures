@@ -46,6 +46,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run passed all four sanity checks. Its finite roster check covers exactly the $48$ supplied pairs $1\le A<B\le10^5$. Factoring $A^2B$ modulo rational cubes recovered the stated key in every row and gave $38$ distinct nontrivial keys. The run also checked the symbolic trace and norm identities and the rational inequalities used at $k=10^{17}$. The degree, branch choice, and nonvanishing arguments are supplied below. The output explicitly records that the program did not check the theorem source.
 - **Exact constant check at degree six** [succeeded, finite computation]: The rational certificate succeeds. ([code](computations/mrl_947b181d.py), [result](computations/mrl_947b181d.result.json))
   - [Computational Mathematician] The run checked exactly one parameter pair, $(s,d)=(2,6)$, and its sanity check passed. For the supplied formula it gives $C(2,6)=1174136684544\log 24$. Since $e^4>\sum_{j=0}^4 4^j/j!=103/3>24$, it certifies $C(2,6)<4696546738176<10^{13}$. The formula itself was an input to the run.
+- **Exact arithmetic audit of the printed specialization** [succeeded, finite computation]: Checked six ordered ratios and one specialization of the printed constant. ([code](computations/mrl_20b6dc0e.py), [result](computations/mrl_20b6dc0e.result.json))
+  - [Computational Mathematician] The run checked exactly six ordered ratios of distinct conjugates and one constant specialization, $(n,d)=(2,6)$. From the input weights $(2,-1,-1)$ it obtained the positive log-modulus sum $3\log U$ and its degree-six average $(\log U)/2$. For the supplied constant formula it obtained the integer prefactor $1174136684544$ and the strict upper bound $4696546738176$. All assertions passed. The program takes the constant formula and the root weights as inputs. Its source contains no theorem passage or coefficient-height definition.
 
 ## AI research runs
 
@@ -57,5 +59,5 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run 234d818a](research/2026-11-28-run-234d818a.md): completed. focused round complete
 - [2026-11-28 run 6ef5b1dc](research/2026-11-28-run-6ef5b1dc.md): completed. focused round complete
 - [2026-11-28 run 352b37f0](research/2026-11-28-run-352b37f0.md): completed. focused round complete
-- [2026-11-28 run 4e0dae22](research/2026-11-28-run-4e0dae22.md): running. 
+- [2026-11-28 run 4e0dae22](research/2026-11-28-run-4e0dae22.md): completed. focused round complete
 

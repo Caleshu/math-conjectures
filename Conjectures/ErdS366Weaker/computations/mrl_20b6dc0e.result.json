@@ -1,0 +1,20 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.81,
+ "result": {
+  "summary": "Checked six ordered ratios and one specialization of the printed constant.",
+  "twice_log_moduli_over_log_U": [
+   3,
+   3,
+   -3,
+   0,
+   -3,
+   0
+  ],
+  "relative_height_over_log_U": "3",
+  "absolute_height_over_log_U": "1/2",
+  "integer_prefactor": 1174136684544,
+  "exp4_lower_bound": "103/3",
+  "constant_strict_upper_bound": 4696546738176
+ }
+}
