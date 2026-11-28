@@ -1,0 +1,191 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 3.067,
+ "result": {
+  "summary": "All-mask assertion: false. Single-skip assertion: false.",
+  "word_count_by_descent_recursion": 11583,
+  "checked_half_open_ordinal_range": [
+   0,
+   39
+  ],
+  "single_skip_witness_count": 35,
+  "first_single_skip_failure_in_range": {
+   "word": "2345123412321",
+   "ordinal": 0,
+   "all_masks": 8192,
+   "protected": 1176,
+   "protected_zero_coefficient": 144,
+   "general_witness": {
+    "mask": 44,
+    "product": [
+     1,
+     3,
+     2,
+     5,
+     6,
+     4
+    ],
+    "defect": 2,
+    "KL_row": [
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "cover_masks_in_window_order": [
+     12,
+     12,
+     12,
+     232,
+     3360,
+     3360,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   }
+  },
+  "first_all_mask_failure_in_range": {
+   "word": "2342512342321",
+   "ordinal": 38,
+   "all_masks": 8192,
+   "protected": 816,
+   "protected_zero_coefficient": 0
+  },
+  "conditional_CP_SAT_results": {
+   "2345123412321": {
+    "solver_status": "INFEASIBLE",
+    "free_ban_count": 12,
+    "forced_allowed_label_count": 60,
+    "sufficient_core_product_degree_required_count": [
+     [
+      [
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      1,
+      1
+     ]
+    ]
+   },
+   "2342512342321": {
+    "solver_status": "INFEASIBLE",
+    "free_ban_count": 14,
+    "forced_allowed_label_count": 58,
+    "sufficient_core_product_degree_required_count": [
+     [
+      [
+       1,
+       3,
+       4,
+       2,
+       5,
+       6
+      ],
+      1,
+      1
+     ]
+    ]
+   }
+  },
+  "example_certificate": {
+   "word": "2345123412321",
+   "mask": 44,
+   "product": [
+    1,
+    3,
+    2,
+    5,
+    6,
+    4
+   ],
+   "defect": 2,
+   "KL_row": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "cover_masks_in_window_order": [
+    12,
+    12,
+    12,
+    232,
+    3360,
+    3360,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "sanity_solver_status": "OPTIMAL",
+  "KL_column_sums_by_degree": [
+   564,
+   252,
+   96,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "P_e_w": [
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "witnesses_zlib_base64": "eJzTYdgv/x0I74PJ90C4H85qwiNXD4SockoM//8DANkJJmk=",
+  "decoding": "Enumerate words lexicographically by reversed generator sequence. Each little-endian uint16 is one witness for the next ordinal. Bit j keeps position j+1. Value 65535 denotes exhaustive failure. Window patterns use the same least-significant-bit-first order.",
+  "author_support": "proved_here",
+  "justification": "For the reported finite range, right descents partition reduced words by their last letter. Each KL column comes from the right-descent recurrence with exact integer arithmetic. At a defect-zero step the pre-step permutation is ascending at the generator, so the post-step permutation has a descent there exactly when the bit is one. This forces every reverse decision. The program checks that all interval endpoints reverse to the identity and have constant coefficient one. Their masks are therefore forced survivors. Every window of a reported witness is covered by one of these masks, so banning it would remove a forced survivor. Every shorter window extends to a triple. The witness itself lies in a zero-coefficient class. For an all-mask failure the forward table considers both decisions at every position, counts descents before the decision, and compares the full protected set with every zero-coefficient class. For CP-SAT each survival variable is equivalent to the absence of all bans in its signature. Its multiplicity is counted separately in every product and degree class. An infeasible core is relative to the explicitly reconstructible background that all labels occurring in a defect-zero mask must be allowed."
+ }
+}
