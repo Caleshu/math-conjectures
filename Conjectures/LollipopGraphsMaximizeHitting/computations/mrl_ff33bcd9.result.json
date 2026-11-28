@@ -1,0 +1,22 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 4.263,
+ "result": {
+  "status": "PASS",
+  "summary": "All bridge-join intervals closed.",
+  "sanity": {
+   "L(6,4)": "224",
+   "L(11,6)": "11950/3",
+   "inverse_round_trip": true
+  },
+  "total_jobs": 727,
+  "stats": {
+   "jobs_closed": 727,
+   "intervals": 71481,
+   "score_bounds": 30518,
+   "terminal": 2,
+   "symmetry": 5581
+  },
+  "elapsed_seconds": 3.112
+ }
+}
