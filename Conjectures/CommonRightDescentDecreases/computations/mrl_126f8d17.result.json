@@ -1,0 +1,57 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.526,
+ "result": {
+  "summary": "The specified pair has coefficient 1 at q^5. Threshold met: False.",
+  "status": "exact",
+  "sanity": {
+   "ordinary_S4": [
+    1,
+    1
+   ],
+   "block_reduced_S4": [
+    1,
+    1
+   ]
+  },
+  "a": [
+   4,
+   3,
+   2,
+   1,
+   6,
+   5,
+   10,
+   9,
+   8,
+   7
+  ],
+  "v": [
+   10,
+   4,
+   3,
+   2,
+   6,
+   5,
+   9,
+   8,
+   7,
+   1
+  ],
+  "lengths": [
+   13,
+   24
+  ],
+  "coefficients_low_to_high": [
+   1,
+   2,
+   3,
+   2,
+   1,
+   1
+  ],
+  "coefficient_q5": 1,
+  "threshold_met": false,
+  "block_representatives_below_v": 129
+ }
+}

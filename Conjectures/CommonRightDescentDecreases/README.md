@@ -43,6 +43,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run sampled lower endpoints formed from direct sums of decreasing blocks of sizes $(5,5)$, $(4,6)$, $(4,2,4)$, $(3,4,3)$, or $(4,3,3)$, followed by zero to three adjacent position or value swaps. It generated upper endpoints by eleven random ascending Bruhat covers, allowing component joins and at most two cycle splits. It retained pairs whose upper endpoint's left and right descent sets were contained in the corresponding lower endpoint sets. With random seed $182731$, there were $8{,}875$ draws and $8{,}222$ completed chains. The run stopped at $350$ distinct eligible evaluations, before the $40{,}000$-draw cap. The $16{,}000$-element seed interval cap skipped no evaluations, and none was interrupted. The reported $S_4$ and $S_6$ sanity checks passed. The coefficient calculations were exact for the sampled pairs. The endpoint search was heuristic and did not exhaust even the stated family.
 - **Exact threshold search with resumable endpoint ranges** [succeeded, finite computation]: Partial traversal. Resume at next_cursor, inclusively. For interval_cap, increase interval_cap on retry. ([code](computations/mrl_455ca01d.py), [result](computations/mrl_455ca01d.result.json))
   - [Computational Mathematician] The run passed its sanity checks and exited normally at its internal time budget. It generated $63{,}802$ endpoint candidates, counted $37{,}551$ at the canonical three-cycle stage, and completed $1{,}644$ connected-interval polynomial evaluations. The completed cursor range is $[(0,0),(260,2628690))$ in lexicographic cursor order. Its maximum is exact for that range. The output gives no upper bound for the remaining range.
+- **Exact KL recurrence for the specified pair** [succeeded, finite computation]: The specified pair has coefficient 1 at q^5. Threshold met: False. ([code](computations/mrl_126f8d17.py), [result](computations/mrl_126f8d17.result.json))
+  - [Computational Mathematician] The exact recurrence returned $P_{a,v}(q)=1+2q+3q^2+2q^3+q^4+q^5$. The finite scope was one target pair. Of the $3150$ permutations decreasing within the consecutive position blocks of sizes $(4,2,4)$, exactly $129$ lay below or equal to $v$ and formed the recurrence pool. The ordinary and block-reduced recurrences both returned $1+q$ on the supplied $S_4$ sanity interval.
 
 ## AI research runs
 
@@ -50,5 +52,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 
 - [2026-11-27 run 5fa55f38](research/2026-11-27-run-5fa55f38.md): completed. orchestrator: Iteration two exhausted the two-iteration limit. The reviewed reductions narrow the question, and neither experiment settles it.
 - [2026-11-28 run 17e77d96](research/2026-11-28-run-17e77d96.md): completed. focused round complete
-- [2026-11-28 run 86ae3df8](research/2026-11-28-run-86ae3df8.md): running. 
+- [2026-11-28 run 86ae3df8](research/2026-11-28-run-86ae3df8.md): completed. focused round complete
+- [2026-11-28 run 710fb770](research/2026-11-28-run-710fb770.md): running. 
 
