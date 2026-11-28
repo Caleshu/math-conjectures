@@ -1,0 +1,27 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 6.749,
+ "result": {
+  "summary": "Every rooted bridge join in the specified range satisfies the inequality.",
+  "status": "EXHAUSTED",
+  "initial_scope": "all cases",
+  "rooted_tree_pair_cases": 1607,
+  "stats": {
+   "prefixes_tested": 225567,
+   "intervals_closed_by_bound": 109480,
+   "singleton_comparisons": 3394
+  },
+  "sanity_scores": [
+   "9997/3",
+   "17754/5",
+   "17754/5",
+   "7531/2",
+   "17754/5",
+   "7531/2",
+   "7531/2",
+   "11950/3"
+  ],
+  "witness": null,
+  "frontier": []
+ }
+}
