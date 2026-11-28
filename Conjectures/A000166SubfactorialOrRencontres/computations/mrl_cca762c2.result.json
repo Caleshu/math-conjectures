@@ -1,0 +1,27 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.152,
+ "result": {
+  "summary": "The residue excludes a seventeenth power.",
+  "offset": 57,
+  "modulus": 103,
+  "checkpoints": {
+   "10": 81,
+   "20": 1,
+   "30": 79,
+   "40": 40,
+   "50": 79,
+   "51": 11,
+   "52": 58,
+   "53": 86,
+   "54": 10,
+   "55": 34,
+   "56": 51,
+   "57": 22
+  },
+  "residue": 22,
+  "sixth_power_mod_103": 79,
+  "matches_supplied_certificate": true,
+  "excludes_seventeenth_power": true
+ }
+}

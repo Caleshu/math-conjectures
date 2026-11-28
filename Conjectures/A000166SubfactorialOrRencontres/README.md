@@ -40,6 +40,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] Sanity checks passed: recurrences, brute force, D(4)=9, P* membership. The run gives exact big-integer valuations for 3≤n≤5000. The joint (v3(n-1), v3(D_n)) table confirms every part of C-f782d1 and the v3(n-1)≥3 formula of C-55c254 within this range, with 0 violations. Statements fixed by D mod 3^e can be lifted to all n by periodicity (period 2·3^e), because 3..5000 covers full periods for e≤5. That covers the mod-3 and mod-27 parts of C-f782d1 and the v3(n-1)=2 split by n mod 27. The v3(n-1)≥3 formula with unbounded valuation is not covered by periodicity; it remains a finite check (cases up to v3(n-1)=7) backed by the p-adic sketch. The good-prime valuation lemma had 0 violations in 9616 pairs (finite check). The Kurepa-type congruence was checked only for n≤2000.
 - **A single prime witness modulo 103** [succeeded, finite computation]: D(131073) is not a perfect power. ([code](computations/mrl_5f5e5ced.py), [result](computations/mrl_5f5e5ced.result.json))
   - [Computational Mathematician] The run passed the sanity check $D_4\equiv9\pmod{103}$. For the single target $n=131073$, it reduced the index to $57$ and returned $D_n\equiv22\pmod{103}$ and $22^6\equiv79\pmod{103}$. These exact residues certify the exclusion of a seventeenth power at this index.
+- **Check the single residue shared by the target class** [succeeded, finite computation]: The residue excludes a seventeenth power. ([code](computations/mrl_cca762c2.py), [result](computations/mrl_cca762c2.result.json))
+  - [Computational Mathematician] The run checked one recurrence segment modulo $103$, starting at $r_0=1$ and updating at exactly the offsets $1\le j\le57$. The sanity check $r_4=9$ passed. The run returned $r_{57}=22$ and checked one modular exponentiation, $22^6\equiv79\pmod{103}$. The recurrence argument below shows why this single segment covers every target index.
 
 ## AI research runs
 
@@ -47,5 +49,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 
 - [2026-11-27 run 5f997de2](research/2026-11-27-run-5f997de2.md): completed. orchestrator: Both authorized iterations and all four experiments are complete. The outstanding gap is to exclude every index beyond the finite search. The reviews identify no pending local calculation that would close that gap.
 - [2026-11-28 run 0d7e75ba](research/2026-11-28-run-0d7e75ba.md): completed. focused round complete
-- [2026-11-28 run 63097342](research/2026-11-28-run-63097342.md): running. 
+- [2026-11-28 run 63097342](research/2026-11-28-run-63097342.md): completed. focused round complete
+- [2026-11-28 run 4677ea6c](research/2026-11-28-run-4677ea6c.md): running. 
 
