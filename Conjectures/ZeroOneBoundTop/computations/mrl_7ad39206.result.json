@@ -1,0 +1,9 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.429,
+ "result": {
+  "sanity_checks": "passed",
+  "status": "missing_source_rows",
+  "summary": "Both Table 20 endpoint rows are needed to decide the requested case."
+ }
+}

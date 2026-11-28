@@ -49,6 +49,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run returned $P_{1234,3412}=P_{1324,3412}=1+q$ and $P_{123,321}=1$. These are exact checks on the three named pairs. The output contains no Table 20 polynomial, recurrence trace, or saturated chain. In particular, it gives no independent value for the reported coefficient $[q^4]P_{x,w}=8$.
 - **Exact descent-move certificates for Table 20 and a bounded search for its endpoints** [succeeded, finite computation]: No matching descent witness in the completed domains listed under phases. ([code](computations/mrl_d410c963.py), [result](computations/mrl_d410c963.result.json))
   - [Computational Mathematician] The run passed its KL, geometry, and flattening sanity checks. It completed two finite searches. The first inspected every length-ten subinterval of $[4321098765,9467182350]$. The second fixed $w=9467182350$ and searched every possible length-nine child of a connected genus-zero length-ten parent with $[q^4]P=8$ that could yield the requested witness. The second phase was entered only if the first had found no witness, and its status would have been ‘stopped after witness’ on success. Its recorded status was ‘complete’. Thus both exclusions follow even though the output excerpt ends before the witness list. The fixed-upper search specifically required the parent coefficient $8$, so its result leaves other parent coefficients open.
+- **Exact descent and coefficient test for the Table 20 rows** [succeeded, finite computation]: Both Table 20 endpoint rows are needed to decide the requested case. ([code](computations/mrl_7ad39206.py), [result](computations/mrl_7ad39206.result.json))
+  - [Computational Mathematician] The sanity checks passed on one $S_3$ polynomial, one $S_4$ example with coincident left and right moves and child polynomial $1+q$, and the flattening of that example after inserting a common minimum. The program then returned `missing_source_rows` before evaluating the Table 20 parent or any of its moves. The reported parent coefficient $8$ remains unverified.
 
 ## AI research runs
 
@@ -56,5 +58,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 
 - [2026-11-27 run 0ad80265](research/2026-11-27-run-0ad80265.md): completed. orchestrator: Iteration two exhausts the two-iteration limit. E-21dffd reports no counterexample among its $60$ evaluated candidates. E-27d54a returned only sanity checks, leaving the most direct counterexample test dependent on recovery of the Table 20 endpoints.
 - [2026-11-28 run aa45cc73](research/2026-11-28-run-aa45cc73.md): completed. focused round complete
-- [2026-11-28 run a187e964](research/2026-11-28-run-a187e964.md): running. 
+- [2026-11-28 run a187e964](research/2026-11-28-run-a187e964.md): completed. focused round complete
+- [2026-11-28 run 7b4776fa](research/2026-11-28-run-7b4776fa.md): running. 
 
