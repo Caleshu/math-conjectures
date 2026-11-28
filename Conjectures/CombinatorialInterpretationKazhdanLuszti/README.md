@@ -31,3 +31,16 @@ Source: Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, Emily Xia Meng, Henry Kv
 
 Verdict: **likely_open**. R2 settles the coefficient of q for finite simply-laced Weyl groups, including every S_n. R11 gives counting rules for a pattern-avoiding family, and R12 describes a route that requires a parabolic factorization. The path expansion in R1 and the Bruhat-graph formula in R5 give ways to compute the polynomials. Neither abstract claims an unsigned count for every coefficient. The recorded computations concern bounds on particular coefficients. This leaves the general counting problem likely open, although absence of a resolution in the supplied evidence does not prove openness.
 
+## Computations
+
+Run in the MathResearchLab sandbox. Code and results are in `computations/`.
+
+- **Decide the length-three forbidden-block rule for $645312$** [failed, finite computation] ([code](computations/mrl_235db9da.py), [result](computations/mrl_235db9da.result.json))
+  - [Computational Mathematician] The program called the dictionary `index` as a function while constructing the right-multiplication table. It exited before the KL sanity checks, mask enumeration, or word search. The exact remaining gap is every reduced word of $645312$.  (marked UNTRUSTWORTHY by the agent)
+
+## AI research runs
+
+Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
+
+- [2026-11-28 run 6ba1074d](research/2026-11-28-run-6ba1074d.md): running. 
+
