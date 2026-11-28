@@ -59,5 +59,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-27 run 0ad80265](research/2026-11-27-run-0ad80265.md): completed. orchestrator: Iteration two exhausts the two-iteration limit. E-21dffd reports no counterexample among its $60$ evaluated candidates. E-27d54a returned only sanity checks, leaving the most direct counterexample test dependent on recovery of the Table 20 endpoints.
 - [2026-11-28 run aa45cc73](research/2026-11-28-run-aa45cc73.md): completed. focused round complete
 - [2026-11-28 run a187e964](research/2026-11-28-run-a187e964.md): completed. focused round complete
-- [2026-11-28 run 7b4776fa](research/2026-11-28-run-7b4776fa.md): running. 
+- [2026-11-28 run 7b4776fa](research/2026-11-28-run-7b4776fa.md): completed. focused round complete
+- [2026-11-28 run bad09163](research/2026-11-28-run-bad09163.md): running. 
 
