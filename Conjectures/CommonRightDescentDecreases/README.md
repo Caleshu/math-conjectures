@@ -31,7 +31,7 @@ Source: Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, Emily Xia Meng, Henry Kv
 
 ## Novelty pre-check
 
-Verdict: **likely_open**. The supplied repository index has no matching problem. None of the returned records indicates a proof or counterexample for the bound of four on the drop in the q⁶ coefficient under a common right descent. This is a precise, finite research question. Two bibliographic searches were rate-limited, so the absence of a reported resolution does not establish openness.
+Verdict: **likely_open**. No listed repository problem covers this bound, and no supplied search record or app result settles it. The earlier seed search ended at its evaluation cap without a verified witness or an exhaustive bound. This absence of evidence does not prove openness.
 
 ## Computations
 
