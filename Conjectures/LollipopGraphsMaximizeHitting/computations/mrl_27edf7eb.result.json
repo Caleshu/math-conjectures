@@ -1,0 +1,13 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.907,
+ "result": {
+  "status": "TRACE_UNAVAILABLE",
+  "progress": {
+   "comparisons_completed": 0,
+   "coverage_cubes_completed": 0,
+   "nodes": 0
+  },
+  "summary": "The actual terminal records were not supplied. No comparison or coverage verdict is available."
+ }
+}

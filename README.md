@@ -63,7 +63,7 @@ Conjectures I'm working on, each with an informal write-up and a formal statemen
 | [Erdős Problem 64 (Erdős–Gyárfás conjecture)](Conjectures/Erdos64/) | Statement formalized | Statement formalized in Lean |
 | [Hypercubes with distant faulty vertices (Gregor–Škrekovski)](Conjectures/DistantFaults/) | Holds for n ≤ 6 in both forms (exhaustive) | Computational evidence |
 | [Local Irregularity Conjecture, subcubic](Conjectures/LocalIrregularity/) | Holds for all connected subcubic graphs on ≤ 16 vertices (exhaustive) | Computational evidence |
-| [Lollipop graphs maximize the hitting time index among connected n-vertex graphs](Conjectures/LollipopGraphsMaximizeHitting/) 🤖 | AI research run in progress. | AI research (not human-reviewed) |
+| [Lollipop graphs maximize the hitting time index among connected n-vertex graphs](Conjectures/LollipopGraphsMaximizeHitting/) 🤖 | AI research run finished; see the folder's report. | AI research (not human-reviewed) |
 | [Proper conflict-free colouring, Δ = 4](Conjectures/PCFColouring/) | No counterexample on ≤ 12 vertices (exhaustive) | Computational evidence |
 
 ## 📝 Notes and handoffs

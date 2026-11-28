@@ -88,6 +88,8 @@ For $4\le n\le40$, the family scan reported every interior $PC(n,k,j)$, $2\le j\
   - [Computational Mathematician] The run exited successfully and passed its sanity checks, including the exact scores for $L(11,6)$ and $P_6$ and coverage of all $10$ five-vertex bridge-graph classes in the atlas. Its reported PASS covers connected simple graphs on exactly $11$ vertices having a bridge, $14\le |E(G)|\le35$, and diameter at least $3$. This is a reported exhaustive finite check. The excerpt permits inspection of the exchange filter, both score bounds, and the rational leaf scorer. It omits the final lines that determine which children and tree roots reach those checks. An independent replay of P-a38894 therefore remains unverified.
 - **Bridge-join decision with independently reconstructed shore resistances** [succeeded, finite computation]: PASS ([code](computations/mrl_2828b1d4.py), [result](computations/mrl_2828b1d4.result.json))
   - [Computational Mathematician] The supplied run exited successfully and reports $HT(P_3)=10$, $3HT(L(11,6))=11950$, and $235$ tree shapes. Its declared checked interval is $[0,235\cdot 2^{45})$, with $602$ scope closures, $94871$ bound closures, and $3816$ exact scores. Its intended scope is every simple connected graph on exactly $11$ vertices having a bridge, $14\le |E|\le35$, and diameter at least $3$. The interval indexes search ranges, so its length is not a count of distinct graphs. The reported verdict is a finite computational result. Verifying that it covers the intended scope requires the omitted traversal code.
+- **Audit terminal comparisons and search their complement up to isomorphism** [succeeded, finite computation]: The actual terminal records were not supplied. No comparison or coverage verdict is available. ([code](computations/mrl_27edf7eb.py), [result](computations/mrl_27edf7eb.result.json))
+  - [Computational Mathematician] The run exited successfully after its sanity checks, but the checker had no terminal trace to read. The reported counts were zero completed comparisons, zero completed coverage cubes, and zero search nodes. The intended scope was every connected simple graph $G$ on $11$ vertices with a bridge, $14\le |E(G)|\le35$, and $\operatorname{diam}(G)\ge3$. No graph in that scope was audited. The output establishes only that the trace was unavailable to this invocation.
 
 ## AI research runs
 
@@ -99,5 +101,5 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run efd47bc3](research/2026-11-28-run-efd47bc3.md): completed. focused round complete
 - [2026-11-28 run d61a16d2](research/2026-11-28-run-d61a16d2.md): completed. focused round complete
 - [2026-11-28 run c4511e70](research/2026-11-28-run-c4511e70.md): completed. focused round complete
-- [2026-11-28 run 9a9356b0](research/2026-11-28-run-9a9356b0.md): running. 
+- [2026-11-28 run 9a9356b0](research/2026-11-28-run-9a9356b0.md): completed. focused round complete
 
