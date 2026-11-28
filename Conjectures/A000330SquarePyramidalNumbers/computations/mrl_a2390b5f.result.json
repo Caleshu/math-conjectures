@@ -1,0 +1,36 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.223,
+ "result": {
+  "summary": "1 residue pairs modulo 5 lift to 0 residue pairs modulo 25.",
+  "base_pairs": [
+   [
+    2,
+    0
+   ]
+  ],
+  "lift_checks": [
+   {
+    "base_pair": [
+     2,
+     0
+    ],
+    "F_by_c": {
+     "2": 5,
+     "7": 5,
+     "12": 5,
+     "17": 5,
+     "22": 5
+    },
+    "lhs_by_k": {
+     "0": 0,
+     "5": 0,
+     "10": 0,
+     "15": 0,
+     "20": 0
+    }
+   }
+  ],
+  "solutions_mod_25": []
+ }
+}

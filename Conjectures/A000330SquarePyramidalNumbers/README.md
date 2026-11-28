@@ -45,6 +45,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run completed all $40001$ fixed-index checks, tested $79360$ signed divisors, and returned an empty witness list. It recovered all three planted controls, including divisors of both signs and a case with equal indices. The completed loop and the exhaustive divisor criterion establish the bounded exclusion. Triples with all three index magnitudes above $20000$ remain open.
 - **Check the divisor condition modulo $13$** [succeeded, finite computation]: 0 of 13 index classes satisfy the necessary divisibility condition. ([code](computations/mrl_878fe535.py), [result](computations/mrl_878fe535.result.json))
   - [Computational Mathematician] The run exhaustively checked $c=0,1,\ldots,12$. In that order, the residues of $D(c)$ modulo $13$ were $2,9,3,3,2,6,8,1,4,10,12,3,2$. The planted control passed with $D=103896=52\cdot1998$ for the modified constant. Since $D(c)$ is an integer polynomial in $c$, the thirteen tested classes cover every integer index.
+- **Check the five lifts of the sole candidate modulo $5$** [succeeded, finite computation]: 1 residue pairs modulo 5 lift to 0 residue pairs modulo 25. ([code](computations/mrl_a2390b5f.py), [result](computations/mrl_a2390b5f.result.json))
+  - [Computational Mathematician] The run checked all $25$ pairs $(c,k)\in\{0,1,2,3,4\}^2$ modulo $5$. Only $(2,0)$ survived. For its lifts modulo $25$, the five residues $c\in\{2,7,12,17,22\}$ all gave right-hand side $5$, and the five residues $k\in\{0,5,10,15,20\}$ all gave left-hand side $0$. This exhausts the possible lifts. The normalization check passed at four distinct inputs, which suffices for a polynomial identity of degree at most three.
 
 ## AI research runs
 
@@ -55,5 +57,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run e02eeebe](research/2026-11-28-run-e02eeebe.md): completed. focused round complete
 - [2026-11-28 run 31e0adc6](research/2026-11-28-run-31e0adc6.md): completed. focused round complete
 - [2026-11-28 run 37095d8c](research/2026-11-28-run-37095d8c.md): completed. focused round complete
-- [2026-11-28 run dd7761d0](research/2026-11-28-run-dd7761d0.md): running. 
+- [2026-11-28 run dd7761d0](research/2026-11-28-run-dd7761d0.md): completed. focused round complete
+- [2026-11-28 run 34667d41](research/2026-11-28-run-34667d41.md): running. 
 
