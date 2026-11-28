@@ -23,7 +23,7 @@ Conjecture: Every integer can be represented as a sum of three generalized squar
 
 ## Novelty pre-check
 
-Verdict: **likely_open**. The three-summand claim is precise, and no listed repository problem appears to contain it. R1 studies recurrences and formulas, R3 concerns differences, and R4 imposes a pairwise condition on triples. None indicates a proof or counterexample for the square case or the stronger claim for all r ≥ 3. The search was incomplete, so this absence of evidence does not establish openness.
+Verdict: **likely_open**. R2 connects triples of square pyramidal numbers to arithmetic polygons. Its existence theorem concerns polygon side counts and leaves representation of an arbitrary integer unresolved. The earlier assessment reports solvability modulo every modulus and a four-summand bound for the square case. Neither establishes equality over the integers with three summands. The supplied evidence leaves the square, pentagonal, and general cases unresolved. Absence of a reported resolution is not proof of openness.
 
 ## Computations
 
