@@ -1,0 +1,34 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 7.52,
+ "result": {
+  "summary": "Every candidate family was settled. A lollipop attains the global order-11 maximum.",
+  "status": "EXHAUSTED",
+  "n": 11,
+  "author_support": "proved_here",
+  "justification": "The benchmark and any witness satisfy the integer first-step equations. Family coverage and the pruning inequalities are given in the experiment justification. A partial run certifies only its completed branches.",
+  "lollipop_scores": {
+   "2": "2790",
+   "3": "8458/3",
+   "4": "6333/2",
+   "5": "18348/5",
+   "6": "11950/3",
+   "7": "27446/7",
+   "8": "13637/4",
+   "9": "22496/9",
+   "10": "7034/5",
+   "11": "550"
+  },
+  "B": "11950/3",
+  "maximizing_lollipop_k": [
+   6
+  ],
+  "rooted_families": 1800,
+  "nodes_this_run": 630130,
+  "pruned_nodes_this_run": 309950,
+  "exact_leaves_this_run": 6015,
+  "witness": null,
+  "resume": null,
+  "remaining_edge_patterns_counted_with_family_multiplicity": 0
+ }
+}

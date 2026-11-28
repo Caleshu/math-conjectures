@@ -78,10 +78,14 @@ For each $11\le n\le18$, the local search reached $B_n$ at a lollipop. Every non
 These comparisons are exact for the displayed witnesses. The search over connected graphs was heuristic.
 
 For $4\le n\le40$, the family scan reported every interior $PC(n,k,j)$, $2\le j\le k-1$, below $B_n$. For clique-minus-one-edge cores it reported two equalities, at $n=4,5$. In both, the core is $K_3$ minus an edge, which is $P_3$. Attaching a path at an endpoint gives $P_n$ itself. Thus strictness as phrased has two exceptions in the scanned range, both lollipops. The program sets the default all-member exact cutoff at $n=24$
+- **Exact order-11 search rooted at a pair of maximum effective resistance** [succeeded, finite computation]: Every candidate family was settled. A lollipop attains the global order-11 maximum. ([code](computations/mrl_b21ef98f.py), [result](computations/mrl_b21ef98f.result.json))
+  - [Computational Mathematician] The run exhausted all $1800$ rooted candidate families at $n=11$. It visited $630130$ search nodes, pruned $309950$ by certified bounds, and scored $6015$ leaves exactly. The counts satisfy the full binary forest identity $630130=2(309950+6015)-1800$. Zero edge patterns remain. The search tested strict improvement, so possible non-lollipop ties remain unclassified. Its global conclusion is confined to $n=11$.
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
 - [2026-11-27 run 00032b6d](research/2026-11-27-run-00032b6d.md): completed. orchestrator: Iteration 2 of 2 is complete, and all four experiments have been used. The remaining proof gap concerns the structure of an exact maximizer. Correcting the endpoint, the rounding statement, or the Wiener citation would leave that gap open.
+- [2026-11-27 run 393d9bbb](research/2026-11-27-run-393d9bbb.md): completed. focused round complete
+- [2026-11-28 run 2acb88ef](research/2026-11-28-run-2acb88ef.md): running. 
 
