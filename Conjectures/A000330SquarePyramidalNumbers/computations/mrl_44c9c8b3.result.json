@@ -1,0 +1,40 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 2.319,
+ "result": {
+  "summary": "Yes. All 40001 bounded indices are rejected with the other two indices unrestricted.",
+  "r": 27,
+  "target": -2,
+  "c_interval": [
+   -20000,
+   20000
+  ],
+  "complete": true,
+  "last_completed_divisor_magnitude_by_sign": {
+   "1": "exhausted",
+   "-1": "exhausted"
+  },
+  "divisible_pairs_passing_size_bound": 54309,
+  "witnesses": [],
+  "sanity_triples_and_targets": [
+   [
+    1,
+    -2,
+    3,
+    83
+   ],
+   [
+    1,
+    1,
+    -1,
+    2
+   ],
+   [
+    0,
+    0,
+    2,
+    28
+   ]
+  ]
+ }
+}
