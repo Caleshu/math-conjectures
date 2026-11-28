@@ -1,0 +1,124 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 1.806,
+ "result": {
+  "summary": "Search complete. Tested 387406 eligible pairs and found 0 counterexamples.",
+  "m_max_inclusive": 10000000,
+  "complete": true,
+  "sanity_prefix_max": 2048,
+  "sanity_prefix_pair_count": 187,
+  "counts_by_a": [
+   {
+    "a": 2,
+    "first_odd_p": 3,
+    "p_upper_inclusive": 2500000,
+    "last_odd_p_examined": 2499999,
+    "tested_prime_pairs": 183071,
+    "pass_minus": 0,
+    "pass_minus_and_plus": 0,
+    "pass_full": 0
+   },
+   {
+    "a": 3,
+    "first_odd_p": 5,
+    "p_upper_inclusive": 1250000,
+    "last_odd_p_examined": 1249999,
+    "tested_prime_pairs": 96467,
+    "pass_minus": 0,
+    "pass_minus_and_plus": 0,
+    "pass_full": 0
+   },
+   {
+    "a": 4,
+    "first_odd_p": 9,
+    "p_upper_inclusive": 625000,
+    "last_odd_p_examined": 624999,
+    "tested_prime_pairs": 50982,
+    "pass_minus": 1,
+    "pass_minus_and_plus": 0,
+    "pass_full": 0
+   },
+   {
+    "a": 5,
+    "first_odd_p": 17,
+    "p_upper_inclusive": 312500,
+    "last_odd_p_examined": 312499,
+    "tested_prime_pairs": 26986,
+    "pass_minus": 0,
+    "pass_minus_and_plus": 0,
+    "pass_full": 0
+   },
+   {
+    "a": 6,
+    "first_odd_p": 33,
+    "p_upper_inclusive": 156250,
+    "last_odd_p_examined": 156249,
+    "tested_prime_pairs": 14365,
+    "pass_minus": 0,
+    "pass_minus_and_plus": 0,
+    "pass_full": 0
+   },
+   {
+    "a": 7,
+    "first_odd_p": 65,
+    "p_upper_inclusive": 78125,
+    "last_odd_p_examined": 78125,
+    "tested_prime_pairs": 7653,
+    "pass_minus": 1,
+    "pass_minus_and_plus": 0,
+    "pass_full": 0
+   },
+   {
+    "a": 8,
+    "first_odd_p": 129,
+    "p_upper_inclusive": 39062,
+    "last_odd_p_examined": 39061,
+    "tested_prime_pairs": 4081,
+    "pass_minus": 0,
+    "pass_minus_and_plus": 0,
+    "pass_full": 0
+   },
+   {
+    "a": 9,
+    "first_odd_p": 257,
+    "p_upper_inclusive": 19531,
+    "last_odd_p_examined": 19531,
+    "tested_prime_pairs": 2161,
+    "pass_minus": 0,
+    "pass_minus_and_plus": 0,
+    "pass_full": 0
+   },
+   {
+    "a": 10,
+    "first_odd_p": 513,
+    "p_upper_inclusive": 9765,
+    "last_odd_p_examined": 9765,
+    "tested_prime_pairs": 1106,
+    "pass_minus": 0,
+    "pass_minus_and_plus": 0,
+    "pass_full": 0
+   },
+   {
+    "a": 11,
+    "first_odd_p": 1025,
+    "p_upper_inclusive": 4882,
+    "last_odd_p_examined": 4881,
+    "tested_prime_pairs": 481,
+    "pass_minus": 0,
+    "pass_minus_and_plus": 0,
+    "pass_full": 0
+   },
+   {
+    "a": 12,
+    "first_odd_p": 2049,
+    "p_upper_inclusive": 2441,
+    "last_odd_p_examined": 2441,
+    "tested_prime_pairs": 53,
+    "pass_minus": 0,
+    "pass_minus_and_plus": 0,
+    "pass_full": 0
+   }
+  ],
+  "counterexamples": []
+ }
+}

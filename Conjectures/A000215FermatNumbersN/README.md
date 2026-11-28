@@ -69,6 +69,8 @@ For $m^2+1\mid2^m-1$, the even solutions up to $10^7$ are $16,256,8208,65536,649
 This confirms E-875865 on $[6,10^7]$ by an independent method. It is still a finite check only.
 - **Check the sole residual prime** [succeeded, finite computation]: Checked 1 residual odd prime(s) and found 0 exception(s). ([code](computations/mrl_6afc2c22.py), [result](computations/mrl_6afc2c22.result.json))
   - [Computational Mathematician] The run exhaustively checked the odd primes $3\le p\le 4$, namely $p=3$. It found $(2^{12}-1)\bmod 11=3$, so the required divisibility fails already modulo $4p-1=11$. The full remainder was $4095$, and the positive control at $m=16$ returned zero as expected. The run itself covers only $p=3$.
+- **Exhaustive residue test through ten million** [succeeded, finite computation]: Search complete. Tested 387406 eligible pairs and found 0 counterexamples. ([code](computations/mrl_5e06b9f2.py), [result](computations/mrl_5e06b9f2.result.json))
+  - [Computational Mathematician] The program directly evaluated $2^m\bmod(m^4-1)$ for every odd prime $p$ with $2\le a\le12$ and $2^{a-1}\le p\le\lfloor10^7/2^a\rfloor$. This covers the entire requested range because $m\ge2^{2a-1}$. The run completed, both residue controls passed, and an independent enumeration agreed on all $187$ eligible pairs with $m\le2048$. Exactly one pair at $a=4$ and one at $a=7$ passed the $m-1$ test. Neither passed the $m+1$ test. Thus the two linear factors alone decide the finite range. The run gives no coverage for $m>10^7$.
 
 ## AI research runs
 
@@ -76,5 +78,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 
 - [2026-11-27 run 17a5e61d](research/2026-11-27-run-17a5e61d.md): completed. orchestrator: Iteration 2 of 2 and all four experiments are complete. The remaining mathematical gaps are a universal primality exclusion, a stronger estimate for semiprimes, and an exclusion of non-power-of-two solutions to P3. The supplied work identifies no lemma likely to close one of these gaps in another round.
 - [2026-11-28 run f5f704ff](research/2026-11-28-run-f5f704ff.md): completed. focused round complete
-- [2026-11-28 run fb494a74](research/2026-11-28-run-fb494a74.md): running. 
+- [2026-11-28 run fb494a74](research/2026-11-28-run-fb494a74.md): completed. focused round complete
+- [2026-11-28 run bb21e07e](research/2026-11-28-run-bb21e07e.md): running. 
 
