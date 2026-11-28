@@ -1,0 +1,18 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.522,
+ "result": {
+  "summary": "Checked 1 residual odd prime(s) and found 0 exception(s).",
+  "p_max": 4,
+  "control_m16_remainder": 0,
+  "rows": [
+   {
+    "p": 3,
+    "factor": 11,
+    "factor_remainder": 3,
+    "full_remainder": 4095
+   }
+  ],
+  "exceptions": []
+ }
+}

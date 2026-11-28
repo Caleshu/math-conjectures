@@ -67,10 +67,14 @@ The filter counts are also consistent: even $m$: $4999998$; strong filters 1–2
 For $m^2+1\mid2^m-1$, the even solutions up to $10^7$ are $16,256,8208,65536,649800,1382400$, all with $4\mid m$. There are no odd solutions up to $10^6$, which is trivial since $m^2+1$ is even and $2^m-1$ is odd. This list matches E-875865's compiled list, which was itself cross-checked against Python up to $2\cdot10^5$.
 
 This confirms E-875865 on $[6,10^7]$ by an independent method. It is still a finite check only.
+- **Check the sole residual prime** [succeeded, finite computation]: Checked 1 residual odd prime(s) and found 0 exception(s). ([code](computations/mrl_6afc2c22.py), [result](computations/mrl_6afc2c22.result.json))
+  - [Computational Mathematician] The run exhaustively checked the odd primes $3\le p\le 4$, namely $p=3$. It found $(2^{12}-1)\bmod 11=3$, so the required divisibility fails already modulo $4p-1=11$. The full remainder was $4095$, and the positive control at $m=16$ returned zero as expected. The run itself covers only $p=3$.
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
 - [2026-11-27 run 17a5e61d](research/2026-11-27-run-17a5e61d.md): completed. orchestrator: Iteration 2 of 2 and all four experiments are complete. The remaining mathematical gaps are a universal primality exclusion, a stronger estimate for semiprimes, and an exclusion of non-power-of-two solutions to P3. The supplied work identifies no lemma likely to close one of these gaps in another round.
+- [2026-11-28 run f5f704ff](research/2026-11-28-run-f5f704ff.md): completed. focused round complete
+- [2026-11-28 run fb494a74](research/2026-11-28-run-fb494a74.md): running. 
 
