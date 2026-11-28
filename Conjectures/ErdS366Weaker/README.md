@@ -22,7 +22,7 @@ Are there any consecutive pairs of $3$-full integers?
 
 ## Novelty pre-check
 
-Verdict: **likely_open**. Whether two consecutive positive integers can each have every prime factor occur with exponent at least three is a genuine existence question. No listed repository problem covers it, and no returned record addresses it. Two searches were rate-limited, so the absence of a reported resolution does not establish openness.
+Verdict: **likely_open**. No supplied title or abstract indicates a resolution, and the repository index lists no matching problem. The earlier assessment reports two finite exclusions, one bounded by endpoint size and one bounded by coefficients and multipliers. Both leave the existence question open beyond their ranges. Absence of a resolution in these records does not prove openness.
 
 ## Computations
 
