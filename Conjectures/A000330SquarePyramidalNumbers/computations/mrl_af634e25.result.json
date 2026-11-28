@@ -1,0 +1,22 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 3.177,
+ "result": {
+  "summary": "The entire small-index interval is excluded, with both other indices unrestricted.",
+  "r": 27,
+  "target": -2,
+  "requested_c_interval": [
+   -20000,
+   20000
+  ],
+  "checked_c_interval": [
+   -20000,
+   20000
+  ],
+  "checked_c_count": 40001,
+  "interval_exhausted": true,
+  "witness": null,
+  "planted_pairs_recovered": 66,
+  "seconds": 2.068080665776506
+ }
+}
