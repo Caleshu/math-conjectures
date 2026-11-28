@@ -43,6 +43,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run checked zero-based ordinals $0\le r<39$ of the $11583$ reduced words, ordered lexicographically by reversed generator sequence. It found a protected zero-coefficient mask on each of the first $38$ words. A single skip sufficed on $35$ of them. At ordinal $38$, exhaustive enumeration of all $2^{13}$ masks gave the counterexample. The run cross-checked the window patterns obtained by reverse reconstruction against forward enumeration on each word requiring the all-mask test. The solver sanity check on $121$ returned OPTIMAL, and its ban list passed direct replay. The two reported infeasibility results concern letter-labelled bans.
 - **Exact position-specific feasibility for $a=2342512342321$** [succeeded, finite computation]: No position-specific forbidden list of width at most three exists for this word. The core is relative to the displayed forced allowed labels. ([code](computations/mrl_46824c3d.py), [result](computations/mrl_46824c3d.result.json))
   - [Computational Mathematician] The run enumerated all $2^{13}=8192$ masks of this one word, counted descents before each keep-or-skip decision, and computed the KL targets by triangular Hecke-algebra elimination. Its sanity checks passed, including replay of a feasible list on the toy word $121$. The reported two-class core admits the direct verification below.
+- **Exact existence test across reduced words of $645312$** [succeeded, finite computation]: Every reduced word is excluded, including the single word covered by the supplied core. ([code](computations/mrl_c88e688a.py), [result](computations/mrl_c88e688a.result.json))
+  - [Computational Mathematician] The run decided all $11{,}582$ words outside the prior certificate. For $11{,}535$ words, a mask forced to survive belonged to a class with target coefficient zero. Exact feasibility search excluded the other $47$, with no undecided cases. The KL check gave $P_{e,341256}(q)=1+q$. The search passed both toy feasibility checks, including direct replay of all seven survivors in the feasible toy.
 
 ## AI research runs
 
@@ -52,5 +54,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run 64a70a8c](research/2026-11-28-run-64a70a8c.md): completed. focused round complete
 - [2026-11-28 run 5633831e](research/2026-11-28-run-5633831e.md): completed. focused round complete
 - [2026-11-28 run 943bc97d](research/2026-11-28-run-943bc97d.md): completed. focused round complete
-- [2026-11-28 run 0059e39f](research/2026-11-28-run-0059e39f.md): running. 
+- [2026-11-28 run 0059e39f](research/2026-11-28-run-0059e39f.md): completed. focused round complete
+- [2026-11-28 run 81fd10cc](research/2026-11-28-run-81fd10cc.md): running. 
 

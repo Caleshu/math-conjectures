@@ -1,0 +1,76 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 2.024,
+ "result": {
+  "summary": "Every reduced word is excluded, including the single word covered by the supplied core.",
+  "status": "INFEASIBLE",
+  "author_support": "proved_here",
+  "word_count": 11583,
+  "rank_convention": "Zero-based lexicographic order on generator strings with 1 < 2 < 3 < 4 < 5. Ranges include both ends.",
+  "prior_word": "2342512342321",
+  "prior_rank": 1897,
+  "covered_by_reason": {
+   "supplied_core": 1,
+   "protected_zero": 11535,
+   "exact_search_exclusion": 47
+  },
+  "example_by_reason": {
+   "protected_zero": {
+    "rank": 0,
+    "word": "2132143254321",
+    "detail": {
+     "endpoint": "231456",
+     "defect": 2,
+     "mask": 10
+    }
+   },
+   "exact_search_exclusion": {
+    "rank": 1896,
+    "word": "2342512324321",
+    "detail": {
+     "nodes_entered": 1,
+     "rules": {
+      "forced_labels": 12,
+      "count_contradiction": 1
+     }
+    }
+   }
+  },
+  "coverage_ledger_sha256": "cb266049108b70d7f4c86cd0732d3b47415c12aa4b2809bc95db44d8dd40831b",
+  "exact_search_attempt_statuses": {
+   "INFEASIBLE": 47
+  },
+  "witness": null,
+  "individually_undecided_count": 0,
+  "individually_undecided_rank_ranges": [],
+  "KL_sums_by_defect": [
+   564,
+   252,
+   96,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "sanity": {
+   "toy_search": [
+    "FEASIBLE",
+    "INFEASIBLE"
+   ],
+   "feasible_toy_replay_count": 7,
+   "P_e_341256": [
+    1,
+    1
+   ]
+  },
+  "seconds": 1.244,
+  "justification": "Every reduced expression ends at a right descent, and deleting its last letter gives a reduced expression for the predecessor. Recursion from the identity therefore enumerates precisely all reduced words, once each. For the KL target, the Hecke relation gives the two transitions of monomial on multiplication by $1+T_s$, each weighted by $1$ on ascents and $q$ on descents. For each $y$, its product $B_y$ is triangular with leading term $T_y$, and $q^{-\\ell(y)/2}B_y$ is bar-invariant. A subtraction at $x$ uses shifts $k$ and $g-k$ once each, where $g=\\ell(w)-\\ell(x)$, so it preserves normalized bar invariance. A distinct companion shift lies below the degree cutoff. The degree at each endpoint $u$ initially is at most $\\ell(w)-\\ell(u)$ since each descent costs at least one unit of length compared with keeping an ascent. The shifts preserve this bound. Descending elimination thus yields the defining triangular bar-invariant KL element. Binary branching gives every mask once and increments its defect on every pre-step descent. The checked degree-zero multiplicities force all their masks and hence all their labels. Any shorter window ban is equivalent to banning all extensions at one containing triple. For any partial assignment, low survives every completion, and high contains every possible survivor. A tight upper class forces all its possible masks. If allowing one label alone adds a mask to a tight lower class, that label must be banned. At a branch, a deficient lower class must acquire a mask from high outside low. Every such mask requires one of the listed signatures, each containing an inclusion-minimal signature. Allowing each minimal signature in turn therefore covers every possible solution. Each branch decides at least one label. A count contradiction excludes its branch and equality to either extreme gives an explicit assignment. Budget exhaustion excludes nothing. For the prior word the supplied exhaustive rows force labels 9, 17 and 25 banned in the identity defect-three class. After these bans the endpoint 125436 defect-two count is either zero or two, whereas its target is one. All affirmative results are replayed with direct adjacent swaps and the decoded position-specific bans."
+ }
+}
