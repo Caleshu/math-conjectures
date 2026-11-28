@@ -92,5 +92,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-27 run 00032b6d](research/2026-11-27-run-00032b6d.md): completed. orchestrator: Iteration 2 of 2 is complete, and all four experiments have been used. The remaining proof gap concerns the structure of an exact maximizer. Correcting the endpoint, the rounding statement, or the Wiener citation would leave that gap open.
 - [2026-11-27 run 393d9bbb](research/2026-11-27-run-393d9bbb.md): completed. focused round complete
 - [2026-11-28 run 2acb88ef](research/2026-11-28-run-2acb88ef.md): completed. focused round complete
-- [2026-11-28 run efd47bc3](research/2026-11-28-run-efd47bc3.md): running. 
+- [2026-11-28 run efd47bc3](research/2026-11-28-run-efd47bc3.md): completed. focused round complete
+- [2026-11-28 run d61a16d2](research/2026-11-28-run-d61a16d2.md): running. 
 
