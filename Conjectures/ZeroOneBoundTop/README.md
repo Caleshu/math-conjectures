@@ -35,7 +35,7 @@ Source: Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, Emily Xia Meng, Henry Kv
 
 ## Novelty pre-check
 
-Verdict: **likely_open**. The recorded G=0 example has coefficient 8 at even length d=10, so it falls outside the odd-length hypothesis. The common-descent results concern coefficient differences and do not settle this bound. No listed repository problem matches, and no returned record reports a proof or counterexample. The search was incomplete, so this absence of evidence does not establish openness.
+Verdict: **likely_open**. R6 proves that symmetric-group μ-coefficients can grow exponentially, but its abstract does not identify an uncompressible pair with connected transposition graph and G=0. The reported Table 20 coefficient of eight occurs at even length ten. The recorded searches supply no verified odd-length counterexample, and absence of one does not prove openness.
 
 ## Computations
 
