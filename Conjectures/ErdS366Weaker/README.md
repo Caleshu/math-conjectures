@@ -49,5 +49,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 
 - [2026-11-27 run 5437c514](research/2026-11-27-run-5437c514.md): completed. orchestrator: The earlier needs_work verdicts concerned missing evidence of search completion. The reruns E-ee7531 and E-2820df addressed those objections and agreed with the earlier results. No incompatible findings remain. The counting bound allows zero pairs, and the Pell argument supplies no proof that it forces unbounded divisors of a candidate index even for $d=2$. The run has used both perm
 - [2026-11-28 run c5aab8c2](research/2026-11-28-run-c5aab8c2.md): completed. focused round complete
-- [2026-11-28 run 82744cf1](research/2026-11-28-run-82744cf1.md): running. 
+- [2026-11-28 run 82744cf1](research/2026-11-28-run-82744cf1.md): completed. focused round complete
+- [2026-11-28 run 234d818a](research/2026-11-28-run-234d818a.md): running. 
 
