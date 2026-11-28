@@ -118,6 +118,8 @@ def attainable(values, bound, deadline):
   - [Computational Mathematician] Both runs passed the partition and seed checks. Each count is exhaustive for its visited window. In the literal run, eligibility counts use exactly the stated one-way divisibility test. The program separately checked reverse divisibility for every selected weight, including backward choices. The empty window in the increasing-index run is an exact obstruction to that variant. The finite scope ends at the first threshold crossing or the first empty window.
 - **Replay the two-sided greedy and audit its final antichain** [succeeded, finite computation]: Finite trajectory claim false. Status reached_target. Minimum top-window count observed 0. Final audit found 0 divisibilities in 22650 ordered pairs. ([code](computations/mrl_25d43eba.py), [result](computations/mrl_25d43eba.result.json))
   - [Computational Mathematician] This was an exact, exhaustive replay of the specified trajectory from $M=1817584$ through its first crossing of $10^{40}$. Write $w_k=p(k)+2$. The ascending partition recurrence gives exact weights through $k=2048$. Appending a part $1$ shows that $p(k)$ is nondecreasing, so $w_{2048}>10^{40}-47$ excludes every larger index at every tested state. The run checked both divisibility directions for each unchosen candidate under the limit and selected the largest surviving index.
+- **Replay the two-sided greedy and certify its covered endpoint** [succeeded, finite computation]: Certified integer coverage [48,17242681614666977586621263007510624361940] by 151 pairwise nondividing weights. Across 121 additions the minimum full-range eligible count was 4. The final pick ceiling is 17242681614666977586621263007510624361893. ([code](computations/mrl_1e277e16.py), [result](computations/mrl_1e277e16.result.json))
+  - [Computational Mathematician] The seed and partition-table sanity checks passed before the program emitted row $1$. Each visible row through step $47$ gives the eligible count and selected weight. Row $47$ also gives enough information to recover its truncated endpoint by addition. Exit code $0$ cannot certify the missing suffix because the program catches validation errors, and it records several target comparisons as booleans without asserting them. The historical-log comparison is also outside the visible output.
 
 ## AI research runs
 
@@ -128,5 +130,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run cd8ef158](research/2026-11-28-run-cd8ef158.md): completed. focused round complete
 - [2026-11-28 run 8c92028e](research/2026-11-28-run-8c92028e.md): completed. focused round complete
 - [2026-11-28 run 9371818e](research/2026-11-28-run-9371818e.md): completed. focused round complete
-- [2026-11-28 run 4709c5eb](research/2026-11-28-run-4709c5eb.md): running. 
+- [2026-11-28 run 4709c5eb](research/2026-11-28-run-4709c5eb.md): completed. focused round complete
+- [2026-11-28 run b218ea04](research/2026-11-28-run-b218ea04.md): running. 
 
