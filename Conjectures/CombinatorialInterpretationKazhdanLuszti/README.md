@@ -37,11 +37,14 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
 
 - **Decide the length-three forbidden-block rule for $645312$** [failed, finite computation] ([code](computations/mrl_235db9da.py), [result](computations/mrl_235db9da.result.json))
   - [Computational Mathematician] The program called the dictionary `index` as a function while constructing the right-multiplication table. It exited before the KL sanity checks, mask enumeration, or word search. The exact remaining gap is every reduced word of $645312$.  (marked UNTRUSTWORTHY by the agent)
+- **Verify both UNSAT certificates with one clause per word** [succeeded, finite computation]: Both resolution certificates verified. W0 solver INFEASIBLE and control OPTIMAL, W1 solver INFEASIBLE and control OPTIMAL ([code](computations/mrl_de344e4a.py), [result](computations/mrl_de344e4a.result.json))
+  - [Computational Mathematician] For each of the two specified length-$13$ words, the run checked all $11$ triple windows of each of two target masks against defect-zero witnesses at the same positions. The resulting clause had $16$ distinct ban variables for $W_0$ and $20$ for $W_1$. In both cases unit resolution produced the empty clause, CP-SAT returned INFEASIBLE, and removing the negative units gave the control status OPTIMAL. The run also checked the linear KL coefficient along all $13$ prefixes of each word. The contradiction decides every forbidden-triple list for these two words without requiring the full KL table.
 
 ## AI research runs
 
 Reports from the six-agent research team. Everything in them is AI-generated and unverified unless the report lists it under *Established facts*.
 
 - [2026-11-28 run 6ba1074d](research/2026-11-28-run-6ba1074d.md): completed. focused round complete
-- [2026-11-28 run 64a70a8c](research/2026-11-28-run-64a70a8c.md): running. 
+- [2026-11-28 run 64a70a8c](research/2026-11-28-run-64a70a8c.md): completed. focused round complete
+- [2026-11-28 run 5633831e](research/2026-11-28-run-5633831e.md): running. 
 
