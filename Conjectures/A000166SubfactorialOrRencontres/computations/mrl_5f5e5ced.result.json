@@ -1,0 +1,17 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.44,
+ "result": {
+  "summary": "D(131073) is not a perfect power.",
+  "author_support": "proved_here",
+  "justification": "Every nonzero seventeenth power modulo 103 has sixth power 1. The exact 2-adic valuation 17 forces any exponent greater than one to equal 17.",
+  "n": 131073,
+  "prime": 103,
+  "exponent": 17,
+  "reduced_index": 57,
+  "D4_mod_103": 9,
+  "D_n_mod_103": 22,
+  "sixth_power_mod_103": 79,
+  "seventeenth_power_excluded": true
+ }
+}
