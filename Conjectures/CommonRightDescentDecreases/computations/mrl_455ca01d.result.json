@@ -1,0 +1,135 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 85.774,
+ "result": {
+  "summary": "Partial traversal. Resume at next_cursor, inclusively. For interval_cap, increase interval_cap on retry.",
+  "status": "time_budget",
+  "sanity": "Passed polynomial, connectivity, descent, Bruhat-order and restart checks.",
+  "start_cursor": [
+   0,
+   0
+  ],
+  "next_cursor": [
+   260,
+   2628690
+  ],
+  "outer_end": 3628800,
+  "full_outer_end": 3628800,
+  "lower_rank_rotation": 767663,
+  "counters_this_invocation": {
+   "generated": 63802,
+   "canonical_three_cycle": 37551,
+   "connected_evaluated": 1644
+  },
+  "maximum_among_evaluated": {
+   "a": [
+    3,
+    2,
+    1,
+    6,
+    5,
+    9,
+    8,
+    10,
+    4,
+    7
+   ],
+   "v": [
+    6,
+    3,
+    4,
+    9,
+    5,
+    10,
+    7,
+    8,
+    1,
+    2
+   ],
+   "lengths": [
+    13,
+    24
+   ],
+   "relative_cycles": [
+    [
+     1,
+     4,
+     6,
+     8,
+     7,
+     10,
+     2
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     5
+    ]
+   ],
+   "upward_position_swaps": [
+    [
+     9,
+     10
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     3,
+     5
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "interval_size": 4792,
+   "coefficients_low_to_high": [
+    1,
+    6,
+    13,
+    13,
+    6,
+    1
+   ],
+   "mu": 1,
+   "candidate_cursor": [
+    65,
+    1909072
+   ]
+  },
+  "witness": null,
+  "elapsed_seconds": 85.001
+ }
+}
