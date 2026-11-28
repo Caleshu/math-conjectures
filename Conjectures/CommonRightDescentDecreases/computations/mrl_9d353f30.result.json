@@ -1,0 +1,52 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 95.649,
+ "result": {
+  "summary": "Only the processed half-open prefix is settled. Resume at next_start, inclusively.",
+  "status": "partial",
+  "sanity_passed": true,
+  "requested_half_open": [
+   [
+    87175,
+    980034
+   ],
+   [
+    3628800,
+    0
+   ]
+  ],
+  "processed_half_open": [
+   [
+    87175,
+    980034
+   ],
+   [
+    109574,
+    1365498
+   ]
+  ],
+  "unscanned_half_open": [
+   [
+    109574,
+    1365498
+   ],
+   [
+    3628800,
+    0
+   ]
+  ],
+  "next_start": [
+   109574,
+   1365498
+  ],
+  "counts": {
+   "rejected_by_exact_coefficient": 1471,
+   "rejected_by_capped_bound": 345907,
+   "disconnected_after_bound": 12723,
+   "wrong_cycle_count": 135065,
+   "noncanonical": 2525
+  },
+  "witness": null,
+  "elapsed_seconds": 95.004
+ }
+}
