@@ -71,6 +71,10 @@ This confirms E-875865 on $[6,10^7]$ by an independent method. It is still a fin
   - [Computational Mathematician] The run exhaustively checked the odd primes $3\le p\le 4$, namely $p=3$. It found $(2^{12}-1)\bmod 11=3$, so the required divisibility fails already modulo $4p-1=11$. The full remainder was $4095$, and the positive control at $m=16$ returned zero as expected. The run itself covers only $p=3$.
 - **Exhaustive residue test through ten million** [succeeded, finite computation]: Search complete. Tested 387406 eligible pairs and found 0 counterexamples. ([code](computations/mrl_5e06b9f2.py), [result](computations/mrl_5e06b9f2.result.json))
   - [Computational Mathematician] The program directly evaluated $2^m\bmod(m^4-1)$ for every odd prime $p$ with $2\le a\le12$ and $2^{a-1}\le p\le\lfloor10^7/2^a\rfloor$. This covers the entire requested range because $m\ge2^{2a-1}$. The run completed, both residue controls passed, and an independent enumeration agreed on all $187$ eligible pairs with $m\le2048$. Exactly one pair at $a=4$ and one at $a=7$ passed the $m-1$ test. Neither passed the $m+1$ test. Thus the two linear factors alone decide the finite range. The run gives no coverage for $m>10^7$.
+- **Certify the Fermat factor table** [succeeded, finite computation]: Factorization certificates complete for divisor searches at a = [7, 8, 9, 10] ([code](computations/mrl_be114290.py), [result](computations/mrl_be114290.result.json))
+  - [Computational Mathematician] All twelve rows passed the exact product and distinctness checks. Every entry in rows $F_0,\ldots,F_9$ passed an exact primality check, so those rows give complete prime factorizations. Rows $F_{10}$ and $F_{11}$ each have at least one entry whose primality remains uncertified. The run succeeded and its sanity checks passed.
+- **Exhaust the exact valuation class and test the two remaining factors** [succeeded, finite computation]: Completed exclusions conditional on the factor table: [7, 8, 9, 10, 11]. Indices with certified counterexamples: [] ([code](computations/mrl_5d552f32.py), [result](computations/mrl_5d552f32.result.json))
+  - [Computational Mathematician] For $a=7,8,9,10,11$, respectively, the enumeration exhausted 32, 64, 128, 128, and 7,168 subset products with $v_2(D+1)=a$. These counts precede the threshold and compositeness filters. Every product was accounted for, with zero survivors. At $a=12$, the run reached its internal time limit after accounting for 102,661 matching products, with zero survivors in that prefix. The valuation and modular-test sanity checks passed.
 
 ## AI research runs
 
@@ -79,5 +83,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-27 run 17a5e61d](research/2026-11-27-run-17a5e61d.md): completed. orchestrator: Iteration 2 of 2 and all four experiments are complete. The remaining mathematical gaps are a universal primality exclusion, a stronger estimate for semiprimes, and an exclusion of non-power-of-two solutions to P3. The supplied work identifies no lemma likely to close one of these gaps in another round.
 - [2026-11-28 run f5f704ff](research/2026-11-28-run-f5f704ff.md): completed. focused round complete
 - [2026-11-28 run fb494a74](research/2026-11-28-run-fb494a74.md): completed. focused round complete
-- [2026-11-28 run bb21e07e](research/2026-11-28-run-bb21e07e.md): running. 
+- [2026-11-28 run bb21e07e](research/2026-11-28-run-bb21e07e.md): completed. focused round complete
+- [2026-11-28 run e75208e2](research/2026-11-28-run-e75208e2.md): running. 
 

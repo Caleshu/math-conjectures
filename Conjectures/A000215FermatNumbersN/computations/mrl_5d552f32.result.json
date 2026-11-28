@@ -1,0 +1,223 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 104.021,
+ "result": {
+  "summary": "Completed exclusions conditional on the factor table: [7, 8, 9, 10, 11]. Indices with certified counterexamples: []",
+  "excluded_conditional_on_table": [
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "refuted": [],
+  "first_invalid_factor_row": null,
+  "reports": [
+   {
+    "a": 7,
+    "factor_entries": [
+     3,
+     5,
+     17,
+     257,
+     65537,
+     641,
+     6700417,
+     274177,
+     67280421310721
+    ],
+    "counts": {
+     "valuation_matches": 32,
+     "below_threshold": 0,
+     "composite_by_gcd": 22,
+     "small_modulus_failure": 7,
+     "plus_one_failure": 3,
+     "square_plus_one_failure": 0,
+     "composite_after_both": 0,
+     "certified_counterexamples": 0,
+     "pending_primality": 0
+    },
+    "survivors": [],
+    "complete": true
+   },
+   {
+    "a": 8,
+    "factor_entries": [
+     3,
+     5,
+     17,
+     257,
+     65537,
+     641,
+     6700417,
+     274177,
+     67280421310721,
+     59649589127497217,
+     5704689200685129054721
+    ],
+    "counts": {
+     "valuation_matches": 64,
+     "below_threshold": 1,
+     "composite_by_gcd": 44,
+     "small_modulus_failure": 19,
+     "plus_one_failure": 0,
+     "square_plus_one_failure": 0,
+     "composite_after_both": 0,
+     "certified_counterexamples": 0,
+     "pending_primality": 0
+    },
+    "survivors": [],
+    "complete": true
+   },
+   {
+    "a": 9,
+    "factor_entries": [
+     3,
+     5,
+     17,
+     257,
+     65537,
+     641,
+     6700417,
+     274177,
+     67280421310721,
+     59649589127497217,
+     5704689200685129054721,
+     1238926361552897,
+     93461639715357977769163558199606896584051237541638188580280321
+    ],
+    "counts": {
+     "valuation_matches": 128,
+     "below_threshold": 0,
+     "composite_by_gcd": 98,
+     "small_modulus_failure": 29,
+     "plus_one_failure": 0,
+     "square_plus_one_failure": 1,
+     "composite_after_both": 0,
+     "certified_counterexamples": 0,
+     "pending_primality": 0
+    },
+    "survivors": [],
+    "complete": true
+   },
+   {
+    "a": 10,
+    "factor_entries": [
+     3,
+     5,
+     17,
+     257,
+     65537,
+     641,
+     6700417,
+     274177,
+     67280421310721,
+     59649589127497217,
+     5704689200685129054721,
+     1238926361552897,
+     93461639715357977769163558199606896584051237541638188580280321,
+     2424833,
+     7455602825647884208337395736200454918783366342657,
+     741640062627530801524787141901937474059940781097519023905821316144415759504705008092818711693940737
+    ],
+    "counts": {
+     "valuation_matches": 128,
+     "below_threshold": 0,
+     "composite_by_gcd": 105,
+     "small_modulus_failure": 23,
+     "plus_one_failure": 0,
+     "square_plus_one_failure": 0,
+     "composite_after_both": 0,
+     "certified_counterexamples": 0,
+     "pending_primality": 0
+    },
+    "survivors": [],
+    "complete": true
+   },
+   {
+    "a": 11,
+    "factor_entries": [
+     3,
+     5,
+     17,
+     257,
+     65537,
+     641,
+     6700417,
+     274177,
+     67280421310721,
+     59649589127497217,
+     5704689200685129054721,
+     1238926361552897,
+     93461639715357977769163558199606896584051237541638188580280321,
+     2424833,
+     7455602825647884208337395736200454918783366342657,
+     741640062627530801524787141901937474059940781097519023905821316144415759504705008092818711693940737,
+     45592577,
+     6487031809,
+     4659775785220018543264560743076778192897,
+     130439874405488189727484768796509903946608530841611892186895295776832416251471863574140227977573104895898783928842923844831149032913798729088601617946094119449010595906710130531906171018354491609619193912488538116080712299672322806217820753127014424577
+    ],
+    "counts": {
+     "valuation_matches": 7168,
+     "below_threshold": 0,
+     "composite_by_gcd": 5389,
+     "small_modulus_failure": 1655,
+     "plus_one_failure": 120,
+     "square_plus_one_failure": 4,
+     "composite_after_both": 0,
+     "certified_counterexamples": 0,
+     "pending_primality": 0
+    },
+    "survivors": [],
+    "complete": true
+   },
+   {
+    "a": 12,
+    "factor_entries": [
+     3,
+     5,
+     17,
+     257,
+     65537,
+     641,
+     6700417,
+     274177,
+     67280421310721,
+     59649589127497217,
+     5704689200685129054721,
+     1238926361552897,
+     93461639715357977769163558199606896584051237541638188580280321,
+     2424833,
+     7455602825647884208337395736200454918783366342657,
+     741640062627530801524787141901937474059940781097519023905821316144415759504705008092818711693940737,
+     45592577,
+     6487031809,
+     4659775785220018543264560743076778192897,
+     130439874405488189727484768796509903946608530841611892186895295776832416251471863574140227977573104895898783928842923844831149032913798729088601617946094119449010595906710130531906171018354491609619193912488538116080712299672322806217820753127014424577,
+     319489,
+     974849,
+     167988556341760475137,
+     3560841906445833920513,
+     173462447179147555430258970864309778377421844723664084649347019061363579192879108857591038330408837177983810868451546421940712978306134189864280826014542758708589243873685563973118948869399158545506611147420216132557017260564139394366945793220968665108959685482705388072645828554151936401912464931182546092879815733057795573358504982279280090942872567591518912118622751714319229788100979251036035496917279912663527358783236647193154777091427745377038294584918917590325110939381322486044298573971650711059244462177542540706913047034664643603491382441723306598834177
+    ],
+    "counts": {
+     "valuation_matches": 102661,
+     "below_threshold": 0,
+     "composite_by_gcd": 76284,
+     "small_modulus_failure": 24368,
+     "plus_one_failure": 1971,
+     "square_plus_one_failure": 38,
+     "composite_after_both": 0,
+     "certified_counterexamples": 0,
+     "pending_primality": 0
+    },
+    "survivors": [],
+    "complete": false
+   }
+  ],
+  "sanity_passed": true,
+  "author_support": "proved_here",
+  "justification": "With certified distinct prime entries, each positive divisor is a unique subset product. Splitting the subset into left and right halves and inverting the odd right product selects exactly D congruent to 2^a-1 modulo 2^(a+1). Since D divides 2^(2^a)-1 and 2^a divides m, D divides 2^m-1. For even m the three odd factors m-1, m+1 and m^2+1 are pairwise coprime: each pair has gcd dividing 2. Their product is m^4-1. Thus the two remaining power tests are equivalent to the requested divisibility on this list. For the small-modulus rejection, an odd prime ell in the bad product has order dividing ell-1 and not dividing 2^a. If p is prime and p exceeds ell-1, this order cannot divide 2^a*p. If p is composite the candidate is already ineligible."
+ }
+}
