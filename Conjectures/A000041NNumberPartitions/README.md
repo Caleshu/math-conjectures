@@ -112,6 +112,8 @@ def attainable(values, bound, deadline):
             if values[j] %
 - **Exact coverage by pairwise nondividing partition weights** [succeeded, finite computation]: 250000 of 250000 targets have validated index lists. 0 certified gaps. 0 unresolved targets. ([code](computations/mrl_a97b81ca.py), [result](computations/mrl_a97b81ca.result.json))
   - [Computational Mathematician] The run succeeded, and its search agreed with exhaustive enumeration on the sanity instance $\{3,4,12,17\}$. For the target interval, the decisive check was direct validation of every witness. The program checked its sum against its assigned target and checked every divisibility conflict. This establishes the existential claim throughout the stated finite interval. Every target had a witness, so an exhaustive exclusion certificate was unnecessary.
+- **Extend the antichain by one index and certify any remaining gaps** [failed, finite computation] ([code](computations/mrl_381a7346.py), [result](computations/mrl_381a7346.result.json))
+  - [Computational Mathematician] The assertion required the witness $(1,2)$ for $7$, since $3+4=7$. But $p(4)+2=7$ is also a legal singleton, and the search tries the largest eligible weight first, so it returns $(4,)$. The assertion stopped execution before the target loop and no result file was produced.  (marked UNTRUSTWORTHY by the agent)
 
 ## AI research runs
 
@@ -119,5 +121,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 
 - [2026-11-27 run 8d2ba2a0](research/2026-11-27-run-8d2ba2a0.md): completed. orchestrator: Iteration $2$ of $2$ and all four experiments are complete. The outstanding review issues concern evidence presentation and a missing qualification. Resolving them would improve the record while leaving both universal clauses open.
 - [2026-11-28 run a161debe](research/2026-11-28-run-a161debe.md): completed. focused round complete
-- [2026-11-28 run cd8ef158](research/2026-11-28-run-cd8ef158.md): running. 
+- [2026-11-28 run cd8ef158](research/2026-11-28-run-cd8ef158.md): completed. focused round complete
+- [2026-11-28 run 8c92028e](research/2026-11-28-run-8c92028e.md): running. 
 
