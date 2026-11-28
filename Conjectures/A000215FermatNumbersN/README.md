@@ -77,6 +77,8 @@ This confirms E-875865 on $[6,10^7]$ by an independent method. It is still a fin
   - [Computational Mathematician] For $a=7,8,9,10,11$, respectively, the enumeration exhausted 32, 64, 128, 128, and 7,168 subset products with $v_2(D+1)=a$. These counts precede the threshold and compositeness filters. Every product was accounted for, with zero survivors. At $a=12$, the run reached its internal time limit after accounting for 102,661 matching products, with zero survivors in that prefix. The valuation and modular-test sanity checks passed.
 - **Exhaustive divisor and residue log for the four levels** [succeeded, finite computation]: Verified exhaustively at a = 7, 8, 9, 10. The sole passing m is 256 at a = 8. ([code](computations/mrl_7b17facc.py), [result](computations/mrl_7b17facc.result.json))
   - [Computational Mathematician] This was an exact exhaustive check using the supplied certified prime factorizations of $F_0,\ldots,F_9$. The run exited successfully, passed its three sanity checks, reported `complete: true`, and returned an empty counterexample list. The code sets `complete` only after inspecting every divisor at all four levels. It logs the first residue for every candidate and the second whenever the first equals $1$. The displayed JSON excerpt ends during the $a=8$ log, so the verdict for $a=9,10$ rests on the visible completion and counterexample fields and the fully visible code. Primality certification is an input to this run.
+- **Exhaustive divisibility check through $10^7$** [succeeded, finite computation]: Exhaustively checked positive m through 10000000 of 10000000. Found 3 hits. ([code](computations/mrl_f6182628.py), [result](computations/mrl_f6182628.result.json))
+  - [Computational Mathematician] The run exited successfully, passed its comparison with literal divisibility for every $2\le m\le256$, and reported `complete: true` with `checked_through` equal to $10^7$. Its only hits were $16$, $256$, and $65536$. This is an exact, exhaustive finite check.
 
 ## AI research runs
 
@@ -87,5 +89,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run fb494a74](research/2026-11-28-run-fb494a74.md): completed. focused round complete
 - [2026-11-28 run bb21e07e](research/2026-11-28-run-bb21e07e.md): completed. focused round complete
 - [2026-11-28 run e75208e2](research/2026-11-28-run-e75208e2.md): completed. focused round complete
-- [2026-11-28 run 04c41b2e](research/2026-11-28-run-04c41b2e.md): running. 
+- [2026-11-28 run 04c41b2e](research/2026-11-28-run-04c41b2e.md): completed. focused round complete
+- [2026-11-28 run ac08048d](research/2026-11-28-run-ac08048d.md): running. 
 
