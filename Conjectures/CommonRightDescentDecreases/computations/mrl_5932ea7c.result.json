@@ -1,0 +1,51 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 97.255,
+ "result": {
+  "summary": "Partial scan. The first unsettled cursor is included in the remaining range.",
+  "status": "partial",
+  "sanity": "S4 Bruhat comparisons and covers checked exhaustively, coefficient modes cross-checked, singular and smooth coefficients and graph controls passed",
+  "requested": [
+   [
+    68089,
+    926592
+   ],
+   [
+    3628800,
+    0
+   ]
+  ],
+  "processed_half_open": [
+   [
+    68089,
+    926592
+   ],
+   [
+    87175,
+    980034
+   ]
+  ],
+  "unscanned_half_open": [
+   [
+    87175,
+    980034
+   ],
+   [
+    3628800,
+    0
+   ]
+  ],
+  "next_start": [
+   87175,
+   980034
+  ],
+  "counts": {
+   "discarded_by_exact_initial_terms_or_subtractions": 5003,
+   "discarded_by_saturated_bound": 291432
+  },
+  "witness": null,
+  "other_admissible_threshold_hits": [],
+  "coefficient_cache_misses": 8703133,
+  "elapsed_seconds": 96.0
+ }
+}

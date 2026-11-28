@@ -47,6 +47,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The exact recurrence returned $P_{a,v}(q)=1+2q+3q^2+2q^3+q^4+q^5$. The finite scope was one target pair. Of the $3150$ permutations decreasing within the consecutive position blocks of sizes $(4,2,4)$, exactly $129$ lay below or equal to $v$ and formed the recurrence pool. The ordinary and block-reduced recurrences both returned $1+q$ on the supplied $S_4$ sanity interval.
 - **Threshold check on the remaining gap-eleven representatives** [succeeded, finite computation]: Time budget reached. Every remaining canonical representative before next_cursor in this run was excluded. Resume at next_cursor. ([code](computations/mrl_9e725688.py), [result](computations/mrl_9e725688.result.json))
   - [Computational Mathematician] The run passed its sanity checks and reached its time limit. Within $[(260,2628690),(68089,926592))$, it reported certified upper bounds $0,1,2,3,4$ for $96{,}738$, $1{,}687$, $285$, $27$, and $9$ representatives, respectively. These counts sum to $98{,}746$. Each bound decides the threshold question for that representative. A positive upper bound may exceed the exact coefficient, so the nine bounds of $4$ do not establish an attained maximum of $4$. The timeout left the suffix undecided.  (marked UNTRUSTWORTHY by the agent)
+- **Threshold scan from the first unsettled cursor** [succeeded, finite computation]: Partial scan. The first unsettled cursor is included in the remaining range. ([code](computations/mrl_5932ea7c.py), [result](computations/mrl_5932ea7c.result.json))
+  - [Computational Mathematician] The run passed its sanity checks and returned a checkpoint at its internal time limit. In the processed range, the saturated bound rejected $291432$ pairs and the second coefficient test rejected $5003$. These counts precede the canonical tie-break and the full connectivity test. They certify threshold exclusions for all $296435$ pairs reaching the coefficient tests. The exact maximum in the range was not determined.
 
 ## AI research runs
 
@@ -56,5 +58,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run 17e77d96](research/2026-11-28-run-17e77d96.md): completed. focused round complete
 - [2026-11-28 run 86ae3df8](research/2026-11-28-run-86ae3df8.md): completed. focused round complete
 - [2026-11-28 run 710fb770](research/2026-11-28-run-710fb770.md): completed. focused round complete
-- [2026-11-28 run e3d69b9c](research/2026-11-28-run-e3d69b9c.md): running. 
+- [2026-11-28 run e3d69b9c](research/2026-11-28-run-e3d69b9c.md): completed. focused round complete
+- [2026-11-28 run f8469d92](research/2026-11-28-run-f8469d92.md): running. 
 
