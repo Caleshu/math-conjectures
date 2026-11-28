@@ -41,6 +41,8 @@ Run in the MathResearchLab sandbox. Code and results are in `computations/`.
   - [Computational Mathematician] The run exhausted all $257$ pair sums $-128\le a+b\le128$ with $20{,}000<|c|\le20{,}000{,}000$ and $|a|,|b|>20{,}000$. It validated all four planted triples and found no witness after $4{,}427{,}417$ exact tests following the modular sieves. By symmetry, the exclusion applies whenever any permutation meets these bounds.
 - **Audit every admissible signed divisor across the full interval** [succeeded, finite computation]: Yes. All 40001 bounded indices are rejected with the other two indices unrestricted. ([code](computations/mrl_44c9c8b3.py), [result](computations/mrl_44c9c8b3.result.json))
   - [Computational Mathematician] The run exhausted both divisor signs. Across the full interval, $54{,}309$ pairs $(c,s)$ passed divisibility and the size bound. None passed both the square test and the index congruences. All three planted representations were recovered, including cases with a negative divisor, equal indices, and $sD<0$. This decides the stated finite exclusion. Existence with all three index magnitudes above $20000$ remains open.
+- **Audit the full interval with the signed-divisor test** [succeeded, finite computation]: The exhaustive interval audit returned an empty witness list. ([code](computations/mrl_f36e78f7.py), [result](computations/mrl_f36e78f7.result.json))
+  - [Computational Mathematician] The run completed all $40001$ fixed-index checks, tested $79360$ signed divisors, and returned an empty witness list. It recovered all three planted controls, including divisors of both signs and a case with equal indices. The completed loop and the exhaustive divisor criterion establish the bounded exclusion. Triples with all three index magnitudes above $20000$ remain open.
 
 ## AI research runs
 
@@ -49,5 +51,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-27 run 74796540](research/2026-11-27-run-74796540.md): completed. orchestrator: Iteration 2 exhausts the two-round limit. The stopping assessment has author_support = "proved_here". Its justification is that E-357d81 exhausts triples with at least one index of absolute value at most $20000$, while P-f82c42 supplies no bound placing a solution in that range. Extending the search could find a witness, but another finite miss would still leave the unrestricted case
 - [2026-11-28 run 9a270a03](research/2026-11-28-run-9a270a03.md): completed. focused round complete
 - [2026-11-28 run e02eeebe](research/2026-11-28-run-e02eeebe.md): completed. focused round complete
-- [2026-11-28 run 31e0adc6](research/2026-11-28-run-31e0adc6.md): running. 
+- [2026-11-28 run 31e0adc6](research/2026-11-28-run-31e0adc6.md): completed. focused round complete
+- [2026-11-28 run 37095d8c](research/2026-11-28-run-37095d8c.md): running. 
 
