@@ -30,7 +30,7 @@ Source: Michael Ruofan Zeng, Junaid Hasan, Xuanyu Yang, Emily Xia Meng, Henry Kv
 
 ## Novelty pre-check
 
-Verdict: **likely_open**. R1 gives a signed puzzle rule. Turning its signed sum into a count for arbitrary permutations would require explaining the cancellations. R9 gives a positive puzzle rule for the Grassmannian case. No supplied record gives a positive counting rule for all permutation triples, and no listed repository problem matches. The absence of a general rule in these results does not prove the problem is open.
+Verdict: **likely_open**. R9 gives an unsigned puzzle rule for Grassmannians. R11 reports a signed rule for general Schubert structure constants, and R7 gives descent relations that determine all values through rank five. The earlier standard-monomial construction addresses the literal cardinality condition under its geometric assumptions, but membership requires computing an initial ideal. A direct combinatorial rule for arbitrary permutations therefore appears open. The absence of a resolution in the supplied records does not prove openness.
 
 ## Computations
 
