@@ -1,0 +1,28 @@
+{
+ "status": "succeeded",
+ "runtime_seconds": 0.898,
+ "result": {
+  "summary": "0 of 13 index classes satisfy the necessary divisibility condition.",
+  "D_mod_13_by_c_mod_13": [
+   2,
+   9,
+   3,
+   3,
+   2,
+   6,
+   8,
+   1,
+   4,
+   10,
+   12,
+   3,
+   2
+  ],
+  "passing_c_mod_13": [],
+  "positive_control": {
+   "c": -20001,
+   "modified_constant": -125018000587396656,
+   "D": 103896
+  }
+ }
+}
