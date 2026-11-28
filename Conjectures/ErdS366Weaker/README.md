@@ -56,5 +56,6 @@ Reports from the six-agent research team. Everything in them is AI-generated and
 - [2026-11-28 run 82744cf1](research/2026-11-28-run-82744cf1.md): completed. focused round complete
 - [2026-11-28 run 234d818a](research/2026-11-28-run-234d818a.md): completed. focused round complete
 - [2026-11-28 run 6ef5b1dc](research/2026-11-28-run-6ef5b1dc.md): completed. focused round complete
-- [2026-11-28 run 352b37f0](research/2026-11-28-run-352b37f0.md): running. 
+- [2026-11-28 run 352b37f0](research/2026-11-28-run-352b37f0.md): completed. focused round complete
+- [2026-11-28 run 4e0dae22](research/2026-11-28-run-4e0dae22.md): running. 
 
